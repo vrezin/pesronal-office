@@ -1,0 +1,7 @@
+[Unit]
+Description=Personal Office HH Gmail monitor
+
+[Service]
+Type=oneshot
+WorkingDirectory=<repo-root>
+ExecStart=<repo-root>/automation/scripts/run-hh-gmail-monitor.sh

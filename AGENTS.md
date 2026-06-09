@@ -29,6 +29,7 @@ For routing new incoming information into artifacts, use `secretaries/routing-ma
 - Company matters belong in `companies/<company>/`.
 - People, relationship context, and follow-ups belong in `people/`.
 - Local tools, MCP servers, helper services, and personal automation belong in `tools/`.
+- Scheduled automation prompts, run wrappers, state markers, and run logs belong in `automation/`.
 - Memory summaries, entity facts, retrieval notes, and knowledge graph records belong in `memory/`.
 - Machine-readable task/domain navigation belongs in `wiki/`.
 
@@ -77,6 +78,7 @@ For personal brand / career work, prefer these skills instead of copying long pr
 - `career-offer-life-economics` - assess relocation, family lifestyle impact, market salary, and target income for vacancies/offers.
 - `vacancy-history-indexing` - maintain reviewed vacancy index after job-intake analyses.
 - `job-intake-company-notes` - maintain company and unnamed-bucket notes from vacancy intake.
+- `hh-gmail-monitor` - scheduled scanning of Gmail for HH.ru messages, employer responses, invitations, and new vacancies.
 - `cv-selection` - choose the best final CV for a role.
 - `cover-letter-screening` - draft cover letters, recruiter replies, and screening answers.
 - `final-cv-pdf-review` - validate and register final PDF resumes.
@@ -97,6 +99,20 @@ Personal-office tools live in `tools/`.
 Use this directory for local MCP servers, helper services, and automation that support personal life, finance, calendar, inbox, or personal projects. Do not place these tools in company repositories.
 
 `tools/zenmoney-mcp/` is the ZenMoney MCP server for personal finance history. Treat it as sensitive. Prefer `ZENMONEY_READ_ONLY=1` unless the user explicitly asks to create, update, or delete transactions.
+
+## Automation
+
+Repo-local scheduled automation lives in `automation/`.
+
+The HH Gmail monitor is defined by:
+
+- `.codex/skills/hh-gmail-monitor/SKILL.md`;
+- `automation/prompts/hh-gmail-monitor.md`;
+- `automation/scripts/run-hh-gmail-monitor.sh`;
+- `automation/state/hh-gmail-monitor-state.md`;
+- `automation/runs/`.
+
+It scans HH.ru mail, updates job-search tasks, promotes invitations, and routes new vacancies through the personal-brand job-intake workflow.
 
 ## Working Style
 

@@ -1,0 +1,3 @@
+# Run HH Gmail monitor every 4 hours.
+# Replace <repo-root> with the absolute path when installing into crontab.
+0 */4 * * * cd <repo-root> && <repo-root>/automation/scripts/run-hh-gmail-monitor.sh

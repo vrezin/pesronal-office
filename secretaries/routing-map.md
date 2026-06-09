@@ -21,6 +21,7 @@
 | здоровье, режим, сон, спорт | `life/health-lifestyle/` | note, routine или task |
 | Profi.ru / личная консультация | `personal-projects/profi-ru/` или `personal-projects/consulting/` | opportunity / client note |
 | вакансия, поиск работы, CV, HH, карьерное позиционирование | `personal-projects/personal-brand/` | JD archive / analysis / CV decision |
+| письмо HH.ru: отклик, приглашение, отказ, новая вакансия | `personal-projects/personal-brand/workspace/job-intake/` + `tasks/` | status update / task / JD analysis |
 | фактическая текущая работа, employment contract, условия занятости | `work/` | current role / contract note |
 | Fincom / FinSOK | `companies/fincom/` | company artifact |
 | AI Studio | `companies/ai-studio/` | company artifact |
@@ -29,6 +30,7 @@
 | устойчивый факт, предпочтение, повторяющийся контекст | `memory/` + целевой source-of-truth | memory note + source update |
 | новая область знаний или навигационное правило для агентов | `wiki/maps/` | wiki map update |
 | связь между сущностями, проектами, инструментами или темами | `memory/knowledge-graph/` | graph node/edge |
+| регулярный агентский запуск, cron/systemd/codex exec | `automation/` | prompt / script / state / run log |
 | непонятно | `inbox/processed/` | needs-clarification note |
 
 ## Known Boundary Decisions

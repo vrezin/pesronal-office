@@ -1,5 +1,11 @@
 # Tools
 
+## Stable Rules
+
+- Scheduled personal automation belongs in `automation/`.
+- Local helper services and MCP servers belong in `tools/`.
+- HH Gmail monitoring is launched by `automation/scripts/run-hh-gmail-monitor.sh` and defined by `automation/prompts/hh-gmail-monitor.md`.
+
 ## Source Of Truth
 
 - `tools/`

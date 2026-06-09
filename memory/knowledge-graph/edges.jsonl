@@ -16,3 +16,9 @@
 {"from":"topic:job-search","to":"skill:career-offer-life-economics","type":"uses_skill","source":"personal-projects/personal-brand/workspace/job-intake/jd-analysis-template.md","updated":"2026-06-09"}
 {"from":"skill:career-offer-life-economics","to":"artifact:career-relocation-baseline","type":"depends_on","source":".codex/skills/career-offer-life-economics/SKILL.md","updated":"2026-06-09"}
 {"from":"domain:wiki","to":"skill:routing-sync","type":"uses_skill","source":".codex/skills/routing-sync/SKILL.md","updated":"2026-06-09"}
+{"from":"topic:job-search","to":"skill:hh-gmail-monitor","type":"uses_skill","source":"wiki/maps/personal-brand.md","updated":"2026-06-09"}
+{"from":"skill:hh-gmail-monitor","to":"artifact:hh-gmail-monitor-prompt","type":"depends_on","source":".codex/skills/hh-gmail-monitor/SKILL.md","updated":"2026-06-09"}
+{"from":"skill:hh-gmail-monitor","to":"artifact:hh-gmail-monitor-state","type":"depends_on","source":".codex/skills/hh-gmail-monitor/SKILL.md","updated":"2026-06-09"}
+{"from":"skill:hh-gmail-monitor","to":"artifact:hh-gmail-monitor-runs","type":"source_of_truth_for","source":".codex/skills/hh-gmail-monitor/SKILL.md","updated":"2026-06-09"}
+{"from":"skill:hh-gmail-monitor","to":"artifact:vacancy-review-index","type":"depends_on","source":".codex/skills/hh-gmail-monitor/SKILL.md","updated":"2026-06-09"}
+{"from":"skill:hh-gmail-monitor","to":"artifact:company-notes-from-job-intake","type":"depends_on","source":".codex/skills/hh-gmail-monitor/SKILL.md","updated":"2026-06-09"}

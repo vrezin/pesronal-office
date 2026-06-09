@@ -17,6 +17,7 @@ skills:
   - career-offer-life-economics
   - vacancy-history-indexing
   - job-intake-company-notes
+  - hh-gmail-monitor
   - cv-selection
   - cover-letter-screening
   - final-cv-pdf-review
@@ -35,6 +36,10 @@ do_not_read_by_default:
 # Personal Brand Map
 
 Use for CV, career positioning, vacancies, cover letters, public portfolio, and personal AI automation positioning.
+
+## Scheduled HH Mail
+
+Use `hh-gmail-monitor` for Gmail messages from HH.ru / HeadHunter. It routes employer responses, invitations, and new vacancy digests into `job-intake/`, `tasks/active/`, and `tasks/waiting/`.
 
 ## Start Here
 

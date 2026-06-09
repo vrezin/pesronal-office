@@ -20,3 +20,7 @@
 {"id":"skill:career-offer-life-economics","type":"skill","label":"Career Offer Life Economics","source":".codex/skills/career-offer-life-economics/SKILL.md","updated":"2026-06-09"}
 {"id":"skill:routing-sync","type":"skill","label":"Routing Sync","source":".codex/skills/routing-sync/SKILL.md","updated":"2026-06-09"}
 {"id":"artifact:career-relocation-baseline","type":"artifact","label":"Career Relocation Baseline","source":"finance/personal-budget/career-relocation-baseline.md","updated":"2026-06-09"}
+{"id":"skill:hh-gmail-monitor","type":"skill","label":"HH Gmail Monitor","source":".codex/skills/hh-gmail-monitor/SKILL.md","updated":"2026-06-09"}
+{"id":"artifact:hh-gmail-monitor-prompt","type":"artifact","label":"HH Gmail Monitor Prompt","source":"automation/prompts/hh-gmail-monitor.md","updated":"2026-06-09"}
+{"id":"artifact:hh-gmail-monitor-state","type":"artifact","label":"HH Gmail Monitor State","source":"automation/state/hh-gmail-monitor-state.md","updated":"2026-06-09"}
+{"id":"artifact:hh-gmail-monitor-runs","type":"artifact","label":"HH Gmail Monitor Runs","source":"automation/runs/","updated":"2026-06-09"}

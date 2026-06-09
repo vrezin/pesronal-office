@@ -21,4 +21,5 @@
 - `job-intake/COMPANY_NOTES.md` is company/bucket memory derived from prior intakes.
 - Recurring normalization and indexing work is proceduralized as skills: `personal-brand-workspace-normalization`, `vacancy-history-indexing`, `job-intake-company-notes`, and `routing-sync`.
 - Vacancy analysis must include relocation, family lifestyle impact, market salary, and target income through `career-offer-life-economics`.
+- HH.ru Gmail monitoring is a recurring workflow: scan HH mail, classify status updates / invitations / new vacancies, update tasks, update analyses/indexes, star important invitations when possible, and save run logs in `automation/runs/`.
 - Public website files may live in a dedicated site repo/folder, while planning and operating context stays here.
