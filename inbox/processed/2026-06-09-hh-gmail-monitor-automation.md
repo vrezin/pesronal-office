@@ -32,3 +32,14 @@ Current schedule:
 ```
 
 The crontab also sets an explicit `PATH` including the Node/Codex binary directory so the scheduled wrapper can find `codex`.
+
+## Unattended Permission Mode
+
+Updated on 2026-06-09:
+
+- `automation/scripts/run-hh-gmail-monitor.sh` runs `codex` with `--ask-for-approval never`;
+- sandbox is explicitly set to `workspace-write`;
+- wrapper has a `45m` timeout so cron cannot hang forever;
+- prompt instructs the agent not to wait for human confirmation;
+- prompt disables Gmail label/star/importance mutations during unattended runs and records recommended Gmail actions in the run log instead;
+- if a commit fails, the agent should leave changes in place, record the failure, and avoid updating the successful scan marker.

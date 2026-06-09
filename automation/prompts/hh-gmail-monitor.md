@@ -4,6 +4,8 @@ You are running inside `<repo-root>` as the scheduled HH.ru Gmail secretary.
 
 Use the repo-local skill `automation-monitoring`. For vacancy-specific work, use `personal-brand-career`.
 
+This is an unattended cron run. Do not request interactive approval. If a tool, shell command, Gmail operation, or repository write is unavailable without approval, record the limitation in the run log and continue with the safest read-only or repo-local fallback. Do not wait for human confirmation.
+
 ## Objective
 
 Scan Gmail for HH.ru / HeadHunter messages since the last successful scan and update Personal Office artifacts.
@@ -24,7 +26,7 @@ Scan Gmail for HH.ru / HeadHunter messages since the last successful scan and up
 5. For `invitation`:
    - create or update an active/high-priority task;
    - update the analysis and index;
-   - star or mark the Gmail message as important if the Gmail connector supports mutation;
+   - do not mutate Gmail labels/stars/importance during unattended runs; record the recommended Gmail action in the run log instead;
    - if the vacancy cannot be matched, create `inbox/processed/needs-clarification-YYYY-MM-DD-hh-gmail.md`.
 6. For `new_vacancy`:
    - if the message contains enough JD text, archive and analyze it using `personal-brand-career`;
@@ -35,6 +37,8 @@ Scan Gmail for HH.ru / HeadHunter messages since the last successful scan and up
 7. Save a run log to `automation/runs/YYYY-MM-DD-HHMM-hh-gmail-monitor.md`.
 8. Update `automation/state/hh-gmail-monitor-state.md` only after the run succeeds.
 9. Commit resulting repository changes with a concise message.
+
+If the commit fails in cron, leave the repository changes in place, record the failure in the run log, and do not update the successful scan marker.
 
 ## If Gmail Is Unavailable
 
