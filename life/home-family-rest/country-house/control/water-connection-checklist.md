@@ -1,6 +1,6 @@
 # Water Connection Checklist
 
-Источник: `C:/Users/vrezi/Downloads/ПАМЯТКА.doc`.
+Источник: `<external-downloads>/ПАМЯТКА.doc`.
 
 Дата фиксации: 2026-06-08
 

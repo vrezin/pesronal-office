@@ -2,7 +2,7 @@
 
 ## Current Boundary Task
 
-- Done: separated personal material from `/home/adre/projects/aistudio` into `personal-office` index/workspace locations.
+- Done: separated personal material from `<aistudio-root>` into `personal-office` index/workspace locations.
 
 ## Links
 

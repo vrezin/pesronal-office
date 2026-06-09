@@ -9,7 +9,7 @@ metadata:
 
 ## Workspace
 
-`/home/adre/personal-office/personal-projects/personal-brand/workspace`
+`<repo-root>/personal-projects/personal-brand/workspace`
 
 Inspect:
 

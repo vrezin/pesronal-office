@@ -34,6 +34,17 @@ If the target is unclear, create `inbox/processed/needs-clarification-YYYY-MM-DD
 - When a note implies a task, create or update the task file.
 - When a meeting changes a project, company, finance item, or personal commitment, update that target artifact too.
 
+## Path Aliases
+
+Do not write machine-specific absolute paths in repository documents.
+
+Use:
+
+- `<repo-root>` for this repository root.
+- `<aistudio-root>` for the neighboring AI Studio workspace.
+- `<fincom-root>` for the neighboring Fincom workspace.
+- `<external-downloads>` for source files outside the repository.
+
 ## Local Skills
 
 Repo-local Codex skills live in `.codex/skills/`.

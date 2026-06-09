@@ -8,13 +8,13 @@ Due:
 
 ## Context
 
-Some directories previously under `/home/adre/projects/aistudio` were personal rather than AI Studio company material.
+Some directories previously under `<aistudio-root>` were personal rather than AI Studio company material.
 
 The first routing pass identified:
 
-- `/home/adre/projects/aistudio/personal-brand-vladimir-rezin`
-- `/home/adre/projects/aistudio/vladimir-rezin-ai-automation-portfolio`
-- `/home/adre/projects/aistudio/country house`
+- `<aistudio-root>/personal-brand-vladimir-rezin`
+- `<aistudio-root>/vladimir-rezin-ai-automation-portfolio`
+- `<aistudio-root>/country house`
 
 ## Desired Outcome
 
@@ -27,13 +27,13 @@ Personal material is moved into `personal-office` with clear pointers from old A
 - Personal brand working files: moved to `personal-office/personal-projects/personal-brand/workspace/`, with the management index in `personal-office/personal-projects/personal-brand/`.
 - AI automation portfolio static site: moved to `personal-office/personal-projects/ai-automation-portfolio/site/`, with the management index in `personal-office/personal-projects/ai-automation-portfolio/`.
 - Country house: moved to `personal-office/life/home-family-rest/country-house/repo/`, preserving its existing nested git repository.
-- AI Studio company truth: remains in `/home/adre/projects/aistudio`.
+- AI Studio company truth: remains in `<aistudio-root>`.
 
 ## Result
 
 Completed physical migration on 2026-06-09.
 
-Tombstone README files were left at old locations under `/home/adre/projects/aistudio`.
+Tombstone README files were left at old locations under `<aistudio-root>`.
 
 ## Follow-Up
 

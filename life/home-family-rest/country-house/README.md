@@ -4,7 +4,7 @@ Management index for the country house personal/family project.
 
 ## Current Repo
 
-`/home/adre/personal-office/life/home-family-rest/country-house/repo`
+`<repo-root>/life/home-family-rest/country-house/repo`
 
 Observed contents include house PDFs, XLSX estimates/materials, Blender scripts, generated `.blend` files, and an existing `.git` directory.
 
@@ -12,7 +12,7 @@ Observed contents include house PDFs, XLSX estimates/materials, Blender scripts,
 
 Operational planning and checklists live in:
 
-`/home/adre/personal-office/life/home-family-rest/country-house/control`
+`<repo-root>/life/home-family-rest/country-house/control`
 
 - `control/current-plan.md` - current execution plan.
 - `control/water-connection-checklist.md` - water connection checklist.
@@ -24,7 +24,7 @@ This is a personal/family home project, not AI Studio company material.
 
 Completed handling:
 
-- moved out of `/home/adre/projects/aistudio`;
+- moved out of `<aistudio-root>`;
 - managed from `personal-office/life/home-family-rest/country-house/`;
 - preserve the existing git repository if it contains useful history;
 - avoid flattening the nested repo unless explicitly decided later.

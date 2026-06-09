@@ -11,9 +11,9 @@ metadata:
 
 Use this workspace, not the old AI Studio path:
 
-`/home/adre/personal-office/personal-projects/personal-brand/workspace`
+`<repo-root>/personal-projects/personal-brand/workspace`
 
-The old path `/home/adre/projects/aistudio/personal-brand-vladimir-rezin` is only a tombstone pointer.
+The old path `<aistudio-root>/personal-brand-vladimir-rezin` is only a tombstone pointer.
 
 ## First Files To Inspect
 
@@ -29,7 +29,7 @@ The old path `/home/adre/projects/aistudio/personal-brand-vladimir-rezin` is onl
 - "Which resume/CV should I use?": use `cv-selection`.
 - Cover letter or bot screening answers: use `cover-letter-screening`.
 - Final PDF resume review or import: use `final-cv-pdf-review`.
-- Public personal site work: route to `/home/adre/personal-office/personal-projects/ai-automation-portfolio/site`.
+- Public personal site work: route to `<repo-root>/personal-projects/ai-automation-portfolio/site`.
 
 ## Guardrails
 

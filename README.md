@@ -29,6 +29,15 @@
 
 Каждый новый вход проходит через `secretaries/routing-map.md`. Если маршрут не очевиден, агент создает clarification note в `inbox/processed/`, а не угадывает.
 
+## Path Aliases
+
+Документы не должны зависеть от абсолютного пути на конкретной машине.
+
+- `<repo-root>` - корень этой репы.
+- `<aistudio-root>` - корень соседнего AI Studio workspace, если нужен исторический или внешний указатель.
+- `<fincom-root>` - корень соседнего Fincom workspace.
+- `<external-downloads>` - внешний каталог загрузок/исходников за пределами репы.
+
 ## First Secretaries
 
 - Intake secretary: разбирает входящий поток и маршрутизирует.

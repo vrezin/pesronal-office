@@ -4,7 +4,7 @@
 
 Основной каталог данных по дому:
 
-- `/home/adre/personal-office/life/home-family-rest/country-house/repo`
+- `<repo-root>/life/home-family-rest/country-house/repo`
 
 Это отдельный git-репозиторий внутри `personal-office`. В нем лежат исходные материалы по дому: проекты, сметы, Blender-модели, рендеры и временные извлечения из PDF.
 

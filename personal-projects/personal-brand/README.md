@@ -4,7 +4,7 @@ Management index for Vladimir Rezin personal brand work.
 
 ## Current Workspace
 
-`/home/adre/personal-office/personal-projects/personal-brand/workspace`
+`<repo-root>/personal-projects/personal-brand/workspace`
 
 Observed contents include master profile, positioning, CV inventory, final CVs, job intake process, and resume target tracks.
 
@@ -14,7 +14,7 @@ This is personal career / personal brand material, not AI Studio company truth.
 
 Completed handling:
 
-- moved out of `/home/adre/projects/aistudio`;
+- moved out of `<aistudio-root>`;
 - managed from `personal-office`;
 - consider a dedicated repo later if the workflow becomes large enough.
 

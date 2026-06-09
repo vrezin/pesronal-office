@@ -6,13 +6,13 @@ Personal-office management index for AI Studio.
 
 Primary working repository:
 
-`/home/adre/projects/aistudio`
+`<aistudio-root>`
 
 This folder should track what needs Vladimir's attention as founder/operator, not duplicate the full company repository.
 
 ## Boundary
 
-Keep official AI Studio project, portfolio, commercial, process, and product material in `/home/adre/projects/aistudio`.
+Keep official AI Studio project, portfolio, commercial, process, and product material in `<aistudio-root>`.
 
 Use this folder for:
 

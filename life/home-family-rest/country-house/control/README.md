@@ -23,7 +23,7 @@
 
 Основной каталог с материалами по дому:
 
-- `/home/adre/personal-office/life/home-family-rest/country-house/repo`
+- `<repo-root>/life/home-family-rest/country-house/repo`
 
 В нем лежат рабочий проект, дизайн-проект, чертежи, электрика, сметы, Blender-модели и рендеры. Контрольные документы в этом каталоге (`control/`) являются управленческим слоем поверх этих исходников.
 
