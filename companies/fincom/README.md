@@ -1,12 +1,12 @@
-# FinSOK
+# Fincom
 
-Personal-office management index for FinSOK / Fincom-related company work.
+Personal-office management index for Fincom / Fincom-related company work.
 
 ## Source Of Truth
 
 Current visible workspace:
 
-`/home/adre/projects/fincom`
+`<fincom-root>`
 
 This folder should track Vladimir's owner/operator attention, not duplicate the company repository.
 
@@ -15,4 +15,4 @@ This folder should track Vladimir's owner/operator attention, not duplicate the 
 - founder-level decisions;
 - personal follow-ups;
 - board or commercial reminders;
-- links to FinSOK / Fincom artifacts that need attention.
+- links to Fincom / FinSOK artifacts that need attention.

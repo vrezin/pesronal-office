@@ -22,7 +22,7 @@
 | Profi.ru / личная консультация | `personal-projects/profi-ru/` или `personal-projects/consulting/` | opportunity / client note |
 | вакансия, поиск работы, CV, HH, карьерное позиционирование | `personal-projects/personal-brand/` | JD archive / analysis / CV decision |
 | фактическая текущая работа, employment contract, условия занятости | `work/` | current role / contract note |
-| FinSOK | `companies/finsok/` | company artifact |
+| Fincom / FinSOK | `companies/fincom/` | company artifact |
 | AI Studio | `companies/ai-studio/` | company artifact |
 | новый бизнес | `companies/future-companies/` | opportunity note |
 | человек / контакт / договоренность | `people/` | contact / relationship / follow-up |
@@ -39,7 +39,7 @@
 | Public Vladimir Rezin AI automation portfolio site | `personal-projects/ai-automation-portfolio/` for planning; dedicated repo for website files |
 | Country house / home construction / family house documents | `life/home-family-rest/country-house/` |
 | AI Studio official project, company, portfolio, process, and product truth | `<aistudio-root>` with management index in `companies/ai-studio/` |
-| FinSOK / Fincom company truth | `<fincom-root>` with management index in `companies/finsok/` |
+| Fincom / FinSOK company truth | `<fincom-root>` with management index in `companies/fincom/` |
 
 ## Naming
 

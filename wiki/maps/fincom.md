@@ -1,7 +1,7 @@
 ---
 domain: fincom
 source_of_truth:
-  - companies/finsok/
+  - companies/fincom/
   - <fincom-root>
 skills:
   - memory-retrieval

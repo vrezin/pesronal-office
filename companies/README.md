@@ -4,7 +4,7 @@
 
 ## Folders
 
-- `finsok/` - FinSOK / Fincom-related контур.
+- `fincom/` - Fincom / FinSOK-related контур.
 - `ai-studio/` - AI Studio / студийный контур.
 - `future-companies/` - будущие компании и идеи.
 

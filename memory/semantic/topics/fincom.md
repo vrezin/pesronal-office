@@ -2,7 +2,7 @@
 
 ## Source Of Truth
 
-- `companies/finsok/`
+- `companies/fincom/`
 - `<fincom-root>`
 
 ## Stable Rules
