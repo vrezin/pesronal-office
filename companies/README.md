@@ -6,6 +6,7 @@
 
 - `fincom/` - Fincom / FinSOK-related контур.
 - `ai-studio/` - AI Studio / студийный контур.
+- `setronica/` - Setronica contract/work management context.
 - `future-companies/` - будущие компании и идеи.
 
 ## Rule

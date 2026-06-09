@@ -26,6 +26,7 @@ Source-of-truth people notes remain in `people/`.
 | Алена Мальцева | RTCloud / Ya-Ty-IT contact | `people/contacts/alena-maltseva.md` |
 | Александра Петрова | CNMT technical director | `people/contacts/alexandra-petrova.md` |
 | Лариса Титова | Sanatorium Svetly general director | `people/contacts/larisa-titova.md` |
+| Yuliya Malinina | Setronica contract context, role unknown | `people/contacts/yuliya-malinina.md` |
 
 ## Privacy
 

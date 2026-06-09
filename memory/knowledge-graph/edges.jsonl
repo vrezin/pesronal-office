@@ -36,6 +36,9 @@
 {"from":"entity:pavel-rezin","to":"company:ai-studio","type":"managed_in","source":"people/contacts/pavel-rezin.md","updated":"2026-06-09"}
 {"from":"entity:sergey-rezin","to":"company:ai-studio","type":"managed_in","source":"people/contacts/sergey-rezin.md","updated":"2026-06-09"}
 {"from":"entity:viktor-geronimus","to":"company:fincom","type":"managed_in","source":"people/contacts/viktor-geronimus.md","updated":"2026-06-09"}
+{"from":"repo:personal-office","to":"company:setronica","type":"contains","source":"companies/setronica/README.md","updated":"2026-06-09"}
+{"from":"company:setronica","to":"artifact:setronica-active","type":"source_of_truth_for","source":"companies/setronica/active.md","updated":"2026-06-09"}
+{"from":"entity:yuliya-malinina","to":"company:setronica","type":"managed_in","source":"people/contacts/yuliya-malinina.md","updated":"2026-06-09"}
 {"from":"entity:darya-gladysheva","to":"project:medvoice","type":"managed_in","source":"people/contacts/darya-gladysheva.md","updated":"2026-06-09"}
 {"from":"entity:alexandra-petrova","to":"project:medvoice","type":"managed_in","source":"people/contacts/alexandra-petrova.md","updated":"2026-06-09"}
 {"from":"entity:larisa-titova","to":"project:medvoice","type":"managed_in","source":"people/contacts/larisa-titova.md","updated":"2026-06-09"}

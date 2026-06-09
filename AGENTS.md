@@ -52,6 +52,7 @@ Use:
 - `<repo-root>` for this repository root.
 - `<aistudio-root>` for the neighboring AI Studio workspace.
 - `<fincom-root>` for the neighboring Fincom workspace.
+- `<setronica-root>` for the neighboring Setronica workspace.
 - `<external-downloads>` for source files outside the repository.
 
 ## Health And Life Planning Safety

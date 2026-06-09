@@ -31,6 +31,7 @@
 - `contacts/alena-maltseva.md` - Алена Мальцева, RTCloud / Я-Ты-ИТ.
 - `contacts/alexandra-petrova.md` - Александра Петрова, технический директор ЦНМТ.
 - `contacts/larisa-titova.md` - Лариса Титова, генеральный директор санатория Светлый.
+- `contacts/yuliya-malinina.md` - Yuliya Malinina, Setronica contract context, role unknown.
 
 ### Team Role Notes
 

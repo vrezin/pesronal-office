@@ -25,6 +25,7 @@
 | фактическая текущая работа, employment contract, условия занятости | `work/` | current role / contract note |
 | Fincom / FinSOK | `companies/fincom/` | company artifact |
 | AI Studio | `companies/ai-studio/` | company artifact |
+| Setronica, agentic-first development, SOW / CSA contract | `companies/setronica/` | company/work artifact |
 | новый бизнес | `companies/future-companies/` | opportunity note |
 | человек / контакт / договоренность | `people/` | contact / relationship / follow-up |
 | устойчивый факт, предпочтение, повторяющийся контекст | `memory/` + целевой source-of-truth | memory note + source update |
