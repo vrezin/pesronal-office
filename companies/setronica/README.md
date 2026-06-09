@@ -9,6 +9,10 @@ Management index for Vladimir Rezin's work with Setronica.
 - Workspace: `<setronica-root>/`
 - Source: user-provided fact, 2026-06-09
 
+## Key People
+
+- `../../people/contacts/yuliya-malinina.md` - Yuliya Malinina, founder and CEO of Setronica.
+
 ## Contract Documents
 
 Local copies:

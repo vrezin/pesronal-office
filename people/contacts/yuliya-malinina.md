@@ -2,13 +2,13 @@
 
 - Type: business
 - Relationship: Setronica contract context
-- Role: unknown
-- Source: user-provided contract filenames, 2026-06-09
+- Role: founder and CEO of Setronica
+- Source: user-provided fact and contract filenames, 2026-06-09
 
 ## Notes
 
 - Mentioned in Setronica contract/SOW filenames provided by the user.
-- Do not infer role or authority until a contract/source document is reviewed or the user clarifies.
+- Founder and CEO of Setronica.
 
 ## Related Sources
 

@@ -9,6 +9,7 @@
 ## Stable Facts
 
 - Vladimir Rezin has a contract with Setronica.
+- Yuliya Malinina is Setronica founder and CEO.
 - Contract source files were copied from Downloads into `work/contracts/setronica/`.
 - Work is conducted in `<setronica-root>/`.
 - The engagement is about helping Setronica implement agentic-first development.
