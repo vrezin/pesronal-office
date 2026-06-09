@@ -2,9 +2,9 @@
 
 Management index for the public Vladimir Rezin AI automation portfolio site.
 
-## Current Source
+## Current Site Files
 
-`/home/adre/projects/aistudio/vladimir-rezin-ai-automation-portfolio`
+`/home/adre/personal-office/personal-projects/ai-automation-portfolio/site`
 
 Observed contents include static HTML pages, CSS, portfolio source markdown, and image assets.
 
@@ -12,11 +12,11 @@ Observed contents include static HTML pages, CSS, portfolio source markdown, and
 
 This is a public personal site, not an AI Studio company repository.
 
-Target handling:
+Completed handling:
 
-- split into a dedicated static-site repo;
+- moved out of `/home/adre/projects/aistudio`;
 - keep planning, tasks, and follow-ups here in `personal-office`;
-- do not duplicate deployable website files here unless explicitly needed.
+- consider a dedicated static-site repo later.
 
 ## Active Task
 

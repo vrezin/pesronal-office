@@ -22,16 +22,26 @@ Company repositories answer:
 
 | Current item | Observed source | Target handling |
 |---|---|---|
-| `personal-brand-vladimir-rezin/` | `/home/adre/projects/aistudio/personal-brand-vladimir-rezin` | Move out of `aistudio`; manage from `personal-office/personal-projects/personal-brand/` unless later split into a dedicated repo. |
-| `vladimir-rezin-ai-automation-portfolio/` | `/home/adre/projects/aistudio/vladimir-rezin-ai-automation-portfolio` | Split into a dedicated public/static site repo; keep only tasks and planning notes in `personal-office`. |
-| `country house/` | `/home/adre/projects/aistudio/country house` | Treat as personal/family home project; target home is `personal-office/life/home-family-rest/country-house/` or a separate repo referenced from there. |
+| `personal-brand-vladimir-rezin/` | `/home/adre/projects/aistudio/personal-brand-vladimir-rezin` | Moved to `/home/adre/personal-office/personal-projects/personal-brand/workspace`; manage from `personal-office/personal-projects/personal-brand/` unless later split into a dedicated repo. |
+| `vladimir-rezin-ai-automation-portfolio/` | `/home/adre/projects/aistudio/vladimir-rezin-ai-automation-portfolio` | Moved to `/home/adre/personal-office/personal-projects/ai-automation-portfolio/site`; can later become a dedicated public/static site repo. |
+| `country house/` | `/home/adre/projects/aistudio/country house` | Moved to `/home/adre/personal-office/life/home-family-rest/country-house/repo`; preserve nested git repository. |
 | AI Studio docs, MedVoice, AI board, tools | `/home/adre/projects/aistudio` | Keep in `aistudio` unless a later review proves a file is personal rather than company/studio material. |
 
 ## Important Observation
 
-`/home/adre/projects/aistudio/country house` is already a git repository with many untracked files. Do not move it casually as a plain folder without first deciding whether to preserve it as a separate repo.
+`/home/adre/personal-office/life/home-family-rest/country-house/repo` is already a git repository with many untracked files. Preserve it as a nested repo unless a later cleanup explicitly flattens it.
 
 The root `/home/adre/projects/aistudio` also appears to have many untracked directories. Any physical migration should be done as a deliberate migration task with before/after checks.
+
+## Physical Migration
+
+Completed on 2026-06-09:
+
+- `/home/adre/projects/aistudio/personal-brand-vladimir-rezin` -> `/home/adre/personal-office/personal-projects/personal-brand/workspace`
+- `/home/adre/projects/aistudio/vladimir-rezin-ai-automation-portfolio` -> `/home/adre/personal-office/personal-projects/ai-automation-portfolio/site`
+- `/home/adre/projects/aistudio/country house` -> `/home/adre/personal-office/life/home-family-rest/country-house/repo`
+
+Tombstone README files were left at the old AI Studio paths.
 
 ## Follow-Up
 

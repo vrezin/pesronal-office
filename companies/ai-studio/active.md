@@ -2,7 +2,7 @@
 
 ## Current Boundary Task
 
-- Separate personal material from `/home/adre/projects/aistudio` into `personal-office` or dedicated personal repositories.
+- Done: separated personal material from `/home/adre/projects/aistudio` into `personal-office` index/workspace locations.
 
 ## Links
 
