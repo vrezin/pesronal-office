@@ -15,6 +15,8 @@ Inspect:
 
 - `OPERATING_MODEL.md`
 - `final-cv/README.md`
+- `job-intake/INDEX.md` for prior similar vacancies and CV choices.
+- `job-intake/COMPANY_NOTES.md` for company/bucket-level patterns.
 - `job-intake/rules-draft.md`
 - `resume-targets/master-profile.md`
 - `resume-targets/experience-block-strategy-ru.md` when wording matters.
@@ -43,3 +45,8 @@ Give:
 - why it fits;
 - what risk it creates;
 - one adjustment or cover-letter angle if needed.
+
+## Supporting Skills
+
+- Use `vacancy-history-indexing` to check prior similar CV choices.
+- Use `job-intake-company-notes` to check repeated company or bucket patterns.

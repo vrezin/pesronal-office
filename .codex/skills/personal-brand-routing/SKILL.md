@@ -30,6 +30,9 @@ The old path `<aistudio-root>/personal-brand-vladimir-rezin` is only a tombstone
 - "Which resume/CV should I use?": use `cv-selection`.
 - Cover letter or bot screening answers: use `cover-letter-screening`.
 - Final PDF resume review or import: use `final-cv-pdf-review`.
+- Workspace drift, stale paths, source-of-truth conflicts, or CV portfolio inconsistency: use `personal-brand-workspace-normalization`.
+- Reviewed vacancy history/index maintenance: use `vacancy-history-indexing`.
+- Company-level notes from vacancy intake: use `job-intake-company-notes`.
 - Public personal site work: route to `<repo-root>/personal-projects/ai-automation-portfolio/site`.
 
 ## Guardrails

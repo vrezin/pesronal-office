@@ -8,7 +8,13 @@
 {"id":"topic:personal-brand","type":"topic","label":"Personal Brand","source":"memory/semantic/topics/personal-brand.md","updated":"2026-06-09"}
 {"id":"topic:job-search","type":"topic","label":"Job Search","source":"memory/semantic/topics/personal-brand.md","updated":"2026-06-09"}
 {"id":"artifact:personal-brand-operating-model","type":"artifact","label":"Personal Brand Operating Model","source":"personal-projects/personal-brand/workspace/OPERATING_MODEL.md","updated":"2026-06-09"}
+{"id":"artifact:vacancy-review-index","type":"artifact","label":"Vacancy Review Index","source":"personal-projects/personal-brand/workspace/job-intake/INDEX.md","updated":"2026-06-09"}
+{"id":"artifact:company-notes-from-job-intake","type":"artifact","label":"Company Notes From Job Intake","source":"personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md","updated":"2026-06-09"}
 {"id":"artifact:work-employment-search-tombstone","type":"artifact","label":"Employment Search Tombstone","source":"work/employment-search/README.md","updated":"2026-06-09"}
 {"id":"tool:zenmoney-mcp","type":"tool","label":"ZenMoney MCP","source":"tools/zenmoney-mcp/","updated":"2026-06-09"}
 {"id":"skill:wiki-routing","type":"skill","label":"Wiki Routing","source":".codex/skills/wiki-routing/SKILL.md","updated":"2026-06-09"}
 {"id":"skill:memory-retrieval","type":"skill","label":"Memory Retrieval","source":".codex/skills/memory-retrieval/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:personal-brand-workspace-normalization","type":"skill","label":"Personal Brand Workspace Normalization","source":".codex/skills/personal-brand-workspace-normalization/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:vacancy-history-indexing","type":"skill","label":"Vacancy History Indexing","source":".codex/skills/vacancy-history-indexing/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:job-intake-company-notes","type":"skill","label":"Job Intake Company Notes","source":".codex/skills/job-intake-company-notes/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:routing-sync","type":"skill","label":"Routing Sync","source":".codex/skills/routing-sync/SKILL.md","updated":"2026-06-09"}

@@ -9,9 +9,11 @@
 1. `resume-targets/master-profile.md` - канонические факты: роли, даты, метрики, формулировки, запреты и публичная политика.
 2. `resume-targets/evidence-bank.md` - банк доказательств и метрик; если факт спорный, проверять здесь и в master-profile.
 3. `final-cv/README.md` - актуальные финальные PDF и назначение каждой версии.
-4. `job-intake/README.md` + `job-intake/rules-draft.md` - процесс разбора вакансий и выбора CV.
-5. `positioning/brand-architecture.md` - стратегическое позиционирование и рынок.
-6. `cv-originals/` и `source/` - доноры/архив, не источник актуальной публичной версии.
+4. `job-intake/INDEX.md` - история просмотренных вакансий, решений, CV choices и next actions.
+5. `job-intake/COMPANY_NOTES.md` - что уже поняли про компании и unnamed buckets из intake.
+6. `job-intake/README.md` + `job-intake/rules-draft.md` - процесс разбора вакансий и выбора CV.
+7. `positioning/brand-architecture.md` - стратегическое позиционирование и рынок.
+8. `cv-originals/` и `source/` - доноры/архив, не источник актуальной публичной версии.
 
 Если документы расходятся, для публичного CV побеждает `master-profile.md`, затем `final-cv/README.md`, затем текущий job-intake analysis.
 
@@ -39,9 +41,18 @@
 
 1. Save full JD to `job-intake/jd-archive/YYYY-MM-DD-company-role.md`.
 2. Save analysis to `job-intake/analyses/YYYY-MM-DD-company-role-analysis.md`.
-3. Select one primary CV from the current portfolio.
-4. If needed, recommend a tailored copy, but do not fork facts from `master-profile.md`.
-5. Capture next action in the analysis.
+3. Update `job-intake/INDEX.md` with one row.
+4. Update `job-intake/COMPANY_NOTES.md` if company/bucket memory changed.
+5. Select one primary CV from the current portfolio.
+6. If needed, recommend a tailored copy, but do not fork facts from `master-profile.md`.
+7. Capture next action in the analysis and index.
+
+## Recurring Agent Skills
+
+- `personal-brand-workspace-normalization` - use when source-of-truth, stale paths, CV portfolio, wiki, memory, or graph drift.
+- `vacancy-history-indexing` - use after every new or changed job-intake analysis.
+- `job-intake-company-notes` - use when a company or unnamed-bucket pattern should be remembered.
+- `routing-sync` - use when adding recurring workflows or routing artifacts.
 
 ## Guardrails
 

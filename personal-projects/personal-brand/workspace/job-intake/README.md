@@ -23,6 +23,11 @@
 
 ## Storage
 
+Operating index of reviewed vacancies:
+
+- `INDEX.md`
+- `COMPANY_NOTES.md`
+
 Новые вакансии сохраняются в:
 
 - `jd-archive/YYYY-MM-DD-company-role.md`
@@ -30,6 +35,8 @@
 Разбор сохраняется в:
 
 - `analyses/YYYY-MM-DD-company-role-analysis.md`
+
+After saving a new analysis, update `INDEX.md` with one row. If the company is named or the role changes our view of an existing company/bucket, update `COMPANY_NOTES.md`.
 
 Если компания неизвестна, использовать `unknown-company`.
 

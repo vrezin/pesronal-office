@@ -10,7 +10,10 @@
 | Finance / ZenMoney | `wiki/maps/finance.md` |
 | Personal brand / career | `wiki/maps/personal-brand.md` |
 | Vacancy / CV / HH / cover letter | `wiki/maps/personal-brand.md` |
+| Reviewed vacancy history | `personal-projects/personal-brand/workspace/job-intake/INDEX.md` |
+| Company notes from job intake | `personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md` |
 | Personal brand workspace source-of-truth | `personal-projects/personal-brand/workspace/OPERATING_MODEL.md` |
+| Personal brand recurring workflow skills | `.codex/skills/personal-brand-workspace-normalization/`, `.codex/skills/vacancy-history-indexing/`, `.codex/skills/job-intake-company-notes/`, `.codex/skills/routing-sync/` |
 | AI Studio management | `wiki/maps/ai-studio.md` |
 | Fincom / FinSOK management | `wiki/maps/fincom.md` |
 | Tools / MCP | `wiki/maps/tools.md` |

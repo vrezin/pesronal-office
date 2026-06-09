@@ -14,6 +14,8 @@ metadata:
 Before analysis, inspect as needed:
 
 - `OPERATING_MODEL.md`
+- `job-intake/INDEX.md`
+- `job-intake/COMPANY_NOTES.md`
 - `job-intake/README.md`
 - `job-intake/rules-draft.md`
 - `job-intake/jd-analysis-template.md`
@@ -25,8 +27,10 @@ Before analysis, inspect as needed:
 1. Save the full JD to `job-intake/jd-archive/YYYY-MM-DD-company-role.md`.
 2. Save analysis to `job-intake/analyses/YYYY-MM-DD-company-role-analysis.md`.
 3. Use `job-intake/jd-analysis-template.md` as the analysis structure.
-4. If company is unknown, use `unknown-company` in the filename.
-5. If the user pasted screening questions rather than a full JD, answer directly and append Q/A to the relevant analysis when one exists.
+4. Update `job-intake/INDEX.md` with one row: date, company, role, track, CV, decision, priority, next action, analysis link.
+5. Update `job-intake/COMPANY_NOTES.md` when the intake changes company-level or bucket-level memory.
+6. If company is unknown, use `unknown-company` in the filename.
+7. If the user pasted screening questions rather than a full JD, answer directly and append Q/A to the relevant analysis when one exists.
 
 ## Chat Output
 
@@ -55,3 +59,9 @@ Answer briefly in Russian unless asked otherwise:
 - Avoid `20+ years`, `23+ years`, `26+ years` in HH/ATS-facing text unless explicitly useful for executive/direct search.
 - Be honest about AI/ML, Web3, wallet, smart contract, GPU, or local inference gaps.
 - Do not rely on inaccessible HH links; use pasted text as source of truth.
+
+## Supporting Skills
+
+- Use `vacancy-history-indexing` for `job-intake/INDEX.md`.
+- Use `job-intake-company-notes` for `job-intake/COMPANY_NOTES.md`.
+- Use `routing-sync` if this workflow adds new recurring artifacts or routes.

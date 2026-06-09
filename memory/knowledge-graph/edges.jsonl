@@ -8,3 +8,9 @@
 {"from":"topic:job-search","to":"topic:personal-brand","type":"managed_in","source":"wiki/maps/personal-brand.md","updated":"2026-06-09"}
 {"from":"topic:job-search","to":"artifact:work-employment-search-tombstone","type":"redirects_from","source":"work/employment-search/README.md","updated":"2026-06-09"}
 {"from":"topic:personal-brand","to":"artifact:personal-brand-operating-model","type":"source_of_truth_for","source":"wiki/maps/personal-brand.md","updated":"2026-06-09"}
+{"from":"topic:job-search","to":"artifact:vacancy-review-index","type":"source_of_truth_for","source":"personal-projects/personal-brand/workspace/job-intake/INDEX.md","updated":"2026-06-09"}
+{"from":"topic:job-search","to":"artifact:company-notes-from-job-intake","type":"source_of_truth_for","source":"personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md","updated":"2026-06-09"}
+{"from":"topic:personal-brand","to":"skill:personal-brand-workspace-normalization","type":"uses_skill","source":"wiki/maps/personal-brand.md","updated":"2026-06-09"}
+{"from":"topic:job-search","to":"skill:vacancy-history-indexing","type":"uses_skill","source":"personal-projects/personal-brand/workspace/job-intake/INDEX.md","updated":"2026-06-09"}
+{"from":"topic:job-search","to":"skill:job-intake-company-notes","type":"uses_skill","source":"personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md","updated":"2026-06-09"}
+{"from":"domain:wiki","to":"skill:routing-sync","type":"uses_skill","source":".codex/skills/routing-sync/SKILL.md","updated":"2026-06-09"}

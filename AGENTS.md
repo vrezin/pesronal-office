@@ -72,10 +72,14 @@ For memory and wiki work, prefer these skills:
 For personal brand / career work, prefer these skills instead of copying long process rules into chat:
 
 - `personal-brand-routing` - route career, CV, HH, JD, and personal portfolio work.
+- `personal-brand-workspace-normalization` - reconcile personal-brand source-of-truth, stale paths, CV portfolio drift, wiki, memory, and graph.
 - `job-intake-analysis` - archive and analyze pasted vacancies/JDs.
+- `vacancy-history-indexing` - maintain reviewed vacancy index after job-intake analyses.
+- `job-intake-company-notes` - maintain company and unnamed-bucket notes from vacancy intake.
 - `cv-selection` - choose the best final CV for a role.
 - `cover-letter-screening` - draft cover letters, recruiter replies, and screening answers.
 - `final-cv-pdf-review` - validate and register final PDF resumes.
+- `routing-sync` - sync new recurring workflows across AGENTS, wiki, memory, graph, and skills.
 
 For life planning, prefer these skills:
 

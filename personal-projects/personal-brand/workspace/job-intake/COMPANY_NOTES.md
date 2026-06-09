@@ -1,0 +1,55 @@
+# Company Notes From Job Intake
+
+Updated: 2026-06-09
+
+These notes are derived only from saved JD archives and analyses in `job-intake/`. They are not external due diligence.
+
+## How To Use
+
+- Check this file before reacting to a new role from the same company or a similar channel.
+- Treat notes as hypotheses from vacancy language and prior analysis, not verified company truth.
+- If a new intake changes the view, update the company note and link the relevant analysis.
+
+## Named Companies
+
+| Company | What We Think From Intake | Best Lane | Watchouts | Related Analyses |
+|---|---|---|---|---|
+| Азиатско-Тихоокеанский банк | Bank role around middle-office development; potentially useful financial-sector signal, but role may be narrower/lower than profile. | Business Unit / Product Engineering | Scope and salary may not justify senior profile; clarify before investing. | `analyses/2026-06-01-atb-head-of-middle-office-development-center-analysis.md` |
+| CROC | Strategic integrator route; strong fit if framed as Business Unit / Integration plus AI platform leadership. | Business Unit / Integration + AI | Needs tailored positioning; avoid generic CTO CV if role is client/practice-heavy. | `analyses/2026-06-01-croc-technical-leader-business-unit-llm-ai-platform-analysis.md` |
+| Innovative People | Recruiting/source channel for different shapes: AI-first CTO-like role and narrow CFT developer role. | AI Transformation when role is AI-first | Need separate signal by vacancy; not all roles are worth pursuing. | `analyses/2026-06-01-innovative-people-cto-tech-lead-ai-first-analysis.md`, `analyses/2026-06-02-innovative-people-cft-developer-analysis.md` |
+| Контур / СКБ Контур | Strong local tech company signal; role may be practical because of Novosibirsk, but can be down-leveled. | Product Engineering / Stability | Check salary, team, product scope, hands-on depth. | `analyses/2026-06-01-kontur-development-team-lead-novosibirsk-analysis.md` |
+| MTS Web Services | Product CTO stream role with high strategic value; can work as startup/product leadership inside a large company. | Startup / Product Engineering | If recruiter emphasizes large-org governance, switch framing to Heavy Enterprise. | `analyses/2026-06-01-mts-mws-tables-stream-cto-analysis.md` |
+| red_mad_robot AI | AI implementation/techlead route; likely values practical AI delivery and technical screening. | AI Transformation | Prepare honest RAG/LLMOps/framework answers; avoid overclaiming deep ML. | `analyses/2026-06-01-red-mad-robot-techlead-ai-analysis.md` |
+| Сбербанк | Multiple AI/product/transformation roles; strong brand and fit for AI implementation, but likely formal filters and onsite/hybrid constraints. | AI Transformation | Clarify hands-on ratio, Moscow/onsite, product vs engineering ownership. | `analyses/2026-06-01-sber-product-owner-ml-ai-nlp-llm-agents-analysis.md`, `analyses/2026-06-01-sber-senior-ai-engineer-ai-architect-analysis.md`, `analyses/2026-06-08-sber-business-process-transformation-ai-disrupt-pdlc-analysis.md` |
+| ТехВилл / ВкусВилл | LLM architect role looked close by topic but screened toward local inference/MLOps/Python-heavy profile. | AI Transformation only if application architecture matters | Do not pursue similar roles if they are deep ML platform/local inference first. | `analyses/2026-06-01-techvill-vkusvill-llm-application-architect-analysis.md` |
+| Tensor / Saby | Repeated development-direction roles; potentially practical due to Russian/local context, especially Novosibirsk. | Stability / Product Engineering | Need clarify exact direction, hands-on depth, compensation; some roles may be down-leveled. | `analyses/2026-06-01-tensor-saby-head-of-development-direction-analysis.md`, `analyses/2026-06-03-tensor-saby-head-of-development-direction-novosibirsk-analysis.md`, `analyses/2026-06-03-tensor-saby-head-of-direction-yaroslavl-analysis.md` |
+| ВСК | Data/AI platform CTO role; interesting transformation-level fit if not a narrow Big Data platform architect. | Digital Transformation | Big Data governance/tooling gap must be framed honestly. | `analyses/2026-06-01-vsk-cto-data-ai-platform-analysis.md` |
+| Askona | AI department CTO/technical leader role; promising if they need AI implementation leadership rather than narrow coding. | AI Transformation | Screening around Python/SQL/cloud should be calibrated, not inflated. | `analyses/2026-06-03-askona-cto-ai-analysis.md` |
+| Фордевинд | AI delivery lead / AI agents architecture; strong match to AI-assisted delivery and agent workflows. | AI Transformation | Clarify hands-on expectations and English C1 verification. | `analyses/2026-06-03-fordevind-ai-delivery-lead-agent-architect-analysis.md` |
+| INSOFT | Technical Director around data/highload/CRM/leadgen; fit through stability, architecture, and data-heavy product systems. | Stability & Governance | Domain and exact data/leadgen expectations need bridging. | `analyses/2026-06-03-insoft-technical-director-data-leadgen-analysis.md` |
+| ProBack | Teamlead analysts AI role; may be below level but can use AI delivery governance and requirements artifacts. | Tailored AI / analyst leadership | Overqualification risk; keep response concise and practical. | `analyses/2026-06-03-proback-teamlead-analysts-ai-analysis.md` |
+| Расчетные решения | Transport IT products leadership; adjacent to logistics/fintech and transformation. | Digital Transformation / Business Unit | Moscow/on-site and domain specificity need clarification. | `analyses/2026-06-03-raschetnye-resheniya-transport-it-products-head-analysis.md` |
+| Selecta | AI solutions specialist role raises concern around employee monitoring/control use cases. | AI Transformation with boundaries | Explicitly set ethical boundary; withdraw if punitive surveillance is central. | `analyses/2026-06-03-selecta-ai-solutions-specialist-analysis.md` |
+| Siberian Wellness | AI-first senior product engineer; can fit as product-builder/AI implementation if compensation and hands-on share align. | AI Transformation | Could be too hands-on/full-stack; ask salary and coding share. | `analyses/2026-06-03-siberian-wellness-senior-product-engineer-ai-first-analysis.md` |
+| РСХБ Факторинг | AI lead role in factoring/bank-adjacent context; good content fit. | AI Transformation | Moscow onsite and salary should be clarified early. | `analyses/2026-06-05-rshb-factoring-ai-agents-lead-analysis.md` |
+| Shopinion / VivoSocial | International startup CTO-like role; interesting only if high-risk startup setup is acceptable. | Startup / Product Engineering | Need sanity check on funding, equity, schedule, role balance. | `analyses/2026-06-06-shopinion-cto-social-shopping-startup-analysis.md` |
+| Альфа-Банк | Enterprise AI/vibe-coding team lead; strong signal for AI-assisted development inside large bank. | AI Transformation | Clarify whether they need AI engineering lead/hands-on architect or pure senior full-stack developer. | `analyses/2026-06-08-alfa-bank-enterprise-vibe-coding-team-lead-analysis.md` |
+| Alfi Group | Holding CIO role; potentially strong transformation scope. | Digital Transformation | Direct holding CIO/ERP migration/onsite Moscow constraints are real. | `analyses/2026-06-08-alfigroup-cio-analysis.md` |
+| RapidSeedbox | Remote fractional CTO role for small SaaS team and legacy WHMCS/PHP modernization. | Startup / Product Engineering | Very hands-on and tiny team; clarify compensation and first-90-day expectations. | `analyses/2026-06-08-rapidseedbox-fractional-cto-analysis.md` |
+
+## Unknown / Unnamed Company Buckets
+
+| Bucket | What We Think | Best Lane | Watchouts | Related Analyses |
+|---|---|---|---|---|
+| Unknown fintech / Web3 / digital assets | Some roles are content-adjacent but legally and technically risky. | Startup or Stability only after screening | Wallet/custody, smart contracts, payment legality, Web3 depth, compensation. | `analyses/2026-06-01-fintech-web3-payment-gateway-cto-analysis.md`, `analyses/2026-06-01-unknown-fintech-digital-assets-cto-analysis.md` |
+| Unknown retail tech / hardware / POS | Good fit for Business Unit / Integration when role covers development, implementation, support, and customer delivery. | Business Unit / Integration | Hardware/POS depth, onsite, salary, operational overload. | `analyses/2026-06-01-retail-tech-cto-development-implementation-support-analysis.md`, `analyses/2026-06-03-unknown-retail-technical-project-manager-integration-analysis.md`, `analyses/2026-06-08-unknown-retail-tech-cio-technical-director-analysis.md` |
+| Unknown integrator / business systems | Strong lane after Business Unit CV became available. | Business Unit / Integration | 1C/ERP depth, strict P&L ownership, onsite. | `analyses/2026-06-01-unknown-integrator-it-development-director-analysis.md`, `analyses/2026-06-04-unknown-business-systems-development-head-analysis.md` |
+| Unknown stability / governance CTO | Often strong content fit but can be lost through HH filters or overqualification. | Stability & Governance | Direct contact may be better than HH; avoid long-career signal in first touch. | `analyses/2026-06-01-unknown-company-cto-head-of-engineering-stability-analysis.md`, `analyses/2026-06-01-unknown-cto-automation-ci-cd-hardware-software-analysis.md` |
+| Unknown AI-native product | Interesting AI/product technologist lane if authority and compensation are real. | AI Transformation + Product Engineering | Avoid overplaying enterprise scale; ask first-90-day challenge and authority. | `analyses/2026-06-09-unknown-ai-native-product-technologist-analysis.md` |
+
+## Company-Level Lessons
+
+- Named banks and large enterprises are best approached with precise CV choice and early clarification of onsite/hybrid constraints.
+- Integrator/business-unit roles became more viable after the Business Unit CV was finalized.
+- AI roles split into two markets: practical AI implementation/product leadership versus deep ML platform/local inference. Treat them differently.
+- Rejections are often more about filter/channel/overqualification than pure substantive mismatch; direct channels may matter for strong matches.

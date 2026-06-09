@@ -3,16 +3,22 @@ domain: personal-brand
 source_of_truth:
   - personal-projects/personal-brand/
   - personal-projects/personal-brand/workspace/OPERATING_MODEL.md
+  - personal-projects/personal-brand/workspace/job-intake/INDEX.md
+  - personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md
   - personal-projects/personal-brand/workspace/job-intake/
   - personal-projects/personal-brand/workspace/final-cv/
   - personal-projects/personal-brand/workspace/resume-targets/master-profile.md
   - personal-projects/ai-automation-portfolio/
 skills:
   - personal-brand-routing
+  - personal-brand-workspace-normalization
   - job-intake-analysis
+  - vacancy-history-indexing
+  - job-intake-company-notes
   - cv-selection
   - cover-letter-screening
   - final-cv-pdf-review
+  - routing-sync
 memory:
   - memory/semantic/topics/personal-brand.md
 retrieval:
