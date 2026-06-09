@@ -7,6 +7,7 @@
 - `daily/` - дневные планы и brief.
 - `weekly/` - недельные обзоры и планирование.
 - `meetings/` - заметки по встречам.
+- `planning/` - личные daily/weekly planning rules and operating rhythm.
 - `travel/` - поездки и логистика.
 
 ## Rule
