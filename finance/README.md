@@ -14,3 +14,9 @@
 ## Rule
 
 Если вход содержит сумму, актив, обязательство, платеж, налог, договор или финансовый риск, агент должен создать финансовую запись или задачу.
+
+## Tools
+
+- `../tools/zenmoney-mcp/` - ZenMoney MCP server for personal finance history: accounts, transactions, categories, and budgets.
+
+Default stance for finance tooling: read-only unless the user explicitly asks to write.

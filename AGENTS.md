@@ -22,6 +22,7 @@ Start with `secretaries/routing-map.md`.
 - Profi.ru, consulting, experiments, and personal opportunities belong in `personal-projects/`.
 - Company matters belong in `companies/<company>/`.
 - People, relationship context, and follow-ups belong in `people/`.
+- Local tools, MCP servers, helper services, and personal automation belong in `tools/`.
 
 If the target is unclear, create `inbox/processed/needs-clarification-YYYY-MM-DD.md` with the specific question that blocks routing.
 
@@ -44,6 +45,14 @@ For personal brand / career work, prefer these skills instead of copying long pr
 - `cv-selection` - choose the best final CV for a role.
 - `cover-letter-screening` - draft cover letters, recruiter replies, and screening answers.
 - `final-cv-pdf-review` - validate and register final PDF resumes.
+
+## Local Tools
+
+Personal-office tools live in `tools/`.
+
+Use this directory for local MCP servers, helper services, and automation that support personal life, finance, calendar, inbox, or personal projects. Do not place these tools in company repositories.
+
+`tools/zenmoney-mcp/` is the ZenMoney MCP server for personal finance history. Treat it as sensitive. Prefer `ZENMONEY_READ_ONLY=1` unless the user explicitly asks to create, update, or delete transactions.
 
 ## Working Style
 
