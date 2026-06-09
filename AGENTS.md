@@ -10,7 +10,11 @@ If an input contains a decision, promise, deadline, meeting, amount of money, ob
 
 ## Routing
 
-Start with `secretaries/routing-map.md`.
+Start with `wiki/README.md`.
+
+Use `wiki/maps/` to choose the smallest relevant set of source documents and local skills for the task. Do not read the whole repository by default.
+
+For routing new incoming information into artifacts, use `secretaries/routing-map.md`.
 
 - Raw unprocessed input belongs in `inbox/raw/`.
 - Processed input should leave a trace in `inbox/processed/`.
@@ -25,6 +29,8 @@ Start with `secretaries/routing-map.md`.
 - Company matters belong in `companies/<company>/`.
 - People, relationship context, and follow-ups belong in `people/`.
 - Local tools, MCP servers, helper services, and personal automation belong in `tools/`.
+- Memory summaries, entity facts, retrieval notes, and knowledge graph records belong in `memory/`.
+- Machine-readable task/domain navigation belongs in `wiki/`.
 
 If the target is unclear, create `inbox/processed/needs-clarification-YYYY-MM-DD.md` with the specific question that blocks routing.
 
@@ -54,6 +60,14 @@ For medications, health constraints, diet, and training, agents must not invent 
 ## Local Skills
 
 Repo-local Codex skills live in `.codex/skills/`.
+
+For memory and wiki work, prefer these skills:
+
+- `wiki-routing` - choose the relevant wiki map and minimum source set before reading.
+- `memory-retrieval` - search memory, entities, graph, and source artifacts before answering or planning.
+- `memory-capture` - capture durable facts, decisions, events, and relations from new intake.
+- `memory-consolidation` - periodically compress episodic memory into semantic memory, entity records, and graph edges.
+- `knowledge-graph-indexing` - update the file-backed knowledge graph from repository artifacts.
 
 For personal brand / career work, prefer these skills instead of copying long process rules into chat:
 

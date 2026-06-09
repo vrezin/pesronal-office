@@ -1,0 +1,7 @@
+{"from":"repo:personal-office","to":"domain:memory","type":"contains","source":"memory/README.md","updated":"2026-06-09"}
+{"from":"repo:personal-office","to":"domain:wiki","type":"contains","source":"wiki/README.md","updated":"2026-06-09"}
+{"from":"domain:wiki","to":"skill:wiki-routing","type":"uses_skill","source":"wiki/README.md","updated":"2026-06-09"}
+{"from":"domain:memory","to":"skill:memory-retrieval","type":"uses_skill","source":"memory/README.md","updated":"2026-06-09"}
+{"from":"topic:finance","to":"tool:zenmoney-mcp","type":"depends_on","source":"memory/semantic/topics/finance.md","updated":"2026-06-09"}
+{"from":"topic:life-planning","to":"topic:health","type":"depends_on","source":"memory/semantic/topics/life-planning.md","updated":"2026-06-09"}
+{"from":"domain:wiki","to":"topic:memory-system","type":"routes_to","source":"wiki/maps/memory-system.md","updated":"2026-06-09"}

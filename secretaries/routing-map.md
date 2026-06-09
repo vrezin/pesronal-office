@@ -25,6 +25,9 @@
 | AI Studio | `companies/ai-studio/` | company artifact |
 | новый бизнес | `companies/future-companies/` | opportunity note |
 | человек / контакт / договоренность | `people/` | contact / relationship / follow-up |
+| устойчивый факт, предпочтение, повторяющийся контекст | `memory/` + целевой source-of-truth | memory note + source update |
+| новая область знаний или навигационное правило для агентов | `wiki/maps/` | wiki map update |
+| связь между сущностями, проектами, инструментами или темами | `memory/knowledge-graph/` | graph node/edge |
 | непонятно | `inbox/processed/` | needs-clarification note |
 
 ## Known Boundary Decisions
