@@ -98,6 +98,10 @@
 
 ## Decision
 
-- Apply: maybe / apply after clarification; interesting but high-risk
+- Apply: applied / waiting for employer response
 - Priority: medium-high strategic interest, high domain-filter risk
-- Next action: ask hard screening questions before investing in a tailored CV. If HFT domain depth is a strict first-line filter, deprioritize. If they need a CTO to build engineering, production discipline, AI/MLOps and systems organization around strong domain specialists, apply with a tailored executive systems/AI cover letter.
+- Next action: wait for response. If the employer replies, clarify HFT/domain depth, latency targets, hardware layer, team composition, compensation/options and relocation/legal setup before investing in deeper tailoring. If HFT domain depth is a strict first-line filter, deprioritize. If they need a CTO to build engineering, production discipline, AI/MLOps and systems organization around strong domain specialists, continue with a tailored executive systems/AI positioning.
+
+## Application Status
+
+- 2026-06-09: отклик отправлен; работодатель пока не ответил.
