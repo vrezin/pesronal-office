@@ -5,3 +5,5 @@
 {"from":"topic:finance","to":"tool:zenmoney-mcp","type":"depends_on","source":"memory/semantic/topics/finance.md","updated":"2026-06-09"}
 {"from":"topic:life-planning","to":"topic:health","type":"depends_on","source":"memory/semantic/topics/life-planning.md","updated":"2026-06-09"}
 {"from":"domain:wiki","to":"topic:memory-system","type":"routes_to","source":"wiki/maps/memory-system.md","updated":"2026-06-09"}
+{"from":"topic:job-search","to":"topic:personal-brand","type":"managed_in","source":"wiki/maps/personal-brand.md","updated":"2026-06-09"}
+{"from":"topic:job-search","to":"artifact:work-employment-search-tombstone","type":"redirects_from","source":"work/employment-search/README.md","updated":"2026-06-09"}

@@ -58,3 +58,4 @@ Required fields:
 - `summarizes`
 - `managed_in`
 - `external_truth_in`
+- `redirects_from`

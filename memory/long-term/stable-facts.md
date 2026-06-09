@@ -7,6 +7,7 @@ Updated: 2026-06-09
 - AI Studio company work belongs in the neighboring AI Studio workspace, with only a management index in this repository.
 - Fincom/FinSOK company work belongs in the neighboring Fincom workspace, with only a management index in this repository.
 - Personal brand, job search, household projects, finance, health, lifestyle, tasks, and personal planning belong in this repository.
+- Job search source of truth is `personal-projects/personal-brand/`; `work/employment-search/` is only a redirect/tombstone.
 
 ## Tools
 

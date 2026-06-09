@@ -2,6 +2,8 @@
 domain: personal-brand
 source_of_truth:
   - personal-projects/personal-brand/
+  - personal-projects/personal-brand/workspace/job-intake/
+  - personal-projects/personal-brand/workspace/final-cv/
   - personal-projects/ai-automation-portfolio/
 skills:
   - personal-brand-routing
@@ -18,7 +20,12 @@ safety:
 do_not_read_by_default:
   - finance/
   - life/health-lifestyle/health-facts/
+  - work/employment-search/
 ---
 # Personal Brand Map
 
 Use for CV, career positioning, vacancies, cover letters, public portfolio, and personal AI automation positioning.
+
+## Boundary
+
+`work/employment-search/` is a tombstone only. Job-search artifacts belong here, under `personal-projects/personal-brand/`.

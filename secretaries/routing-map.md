@@ -20,7 +20,8 @@
 | дом, семья, отдых, бытовой вопрос | `life/home-family-rest/` | note или task |
 | здоровье, режим, сон, спорт | `life/health-lifestyle/` | note, routine или task |
 | Profi.ru / личная консультация | `personal-projects/profi-ru/` или `personal-projects/consulting/` | opportunity / client note |
-| работа или вакансия | `work/` | work note / application task |
+| вакансия, поиск работы, CV, HH, карьерное позиционирование | `personal-projects/personal-brand/` | JD archive / analysis / CV decision |
+| фактическая текущая работа, employment contract, условия занятости | `work/` | current role / contract note |
 | FinSOK | `companies/finsok/` | company artifact |
 | AI Studio | `companies/ai-studio/` | company artifact |
 | новый бизнес | `companies/future-companies/` | opportunity note |

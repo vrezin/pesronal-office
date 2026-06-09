@@ -9,6 +9,7 @@
 | Health facts | `wiki/maps/health.md` |
 | Finance / ZenMoney | `wiki/maps/finance.md` |
 | Personal brand / career | `wiki/maps/personal-brand.md` |
+| Vacancy / CV / HH / cover letter | `wiki/maps/personal-brand.md` |
 | AI Studio management | `wiki/maps/ai-studio.md` |
 | Fincom / FinSOK management | `wiki/maps/fincom.md` |
 | Tools / MCP | `wiki/maps/tools.md` |
