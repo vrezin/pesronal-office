@@ -17,4 +17,6 @@
 {"id":"skill:personal-brand-workspace-normalization","type":"skill","label":"Personal Brand Workspace Normalization","source":".codex/skills/personal-brand-workspace-normalization/SKILL.md","updated":"2026-06-09"}
 {"id":"skill:vacancy-history-indexing","type":"skill","label":"Vacancy History Indexing","source":".codex/skills/vacancy-history-indexing/SKILL.md","updated":"2026-06-09"}
 {"id":"skill:job-intake-company-notes","type":"skill","label":"Job Intake Company Notes","source":".codex/skills/job-intake-company-notes/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:career-offer-life-economics","type":"skill","label":"Career Offer Life Economics","source":".codex/skills/career-offer-life-economics/SKILL.md","updated":"2026-06-09"}
 {"id":"skill:routing-sync","type":"skill","label":"Routing Sync","source":".codex/skills/routing-sync/SKILL.md","updated":"2026-06-09"}
+{"id":"artifact:career-relocation-baseline","type":"artifact","label":"Career Relocation Baseline","source":"finance/personal-budget/career-relocation-baseline.md","updated":"2026-06-09"}

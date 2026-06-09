@@ -48,9 +48,10 @@ After saving a new analysis, update `INDEX.md` with one row. If the company is n
 2. `Лучшее резюме`: одно из финальных CV или рекомендация сделать tailored copy.
 3. `Почему матч`: 5-7 конкретных совпадений с JD.
 4. `Риски`: overqualification, hands-on mismatch, age/years signal, domain gap, tech-stack gap, relocation/format, salary/level ambiguity.
-5. `Как снять риски`: 2-4 формулировки для сопроводительного или интервью.
-6. `Сопроводительное`: готовый текст.
-7. `Вопросы`: 2-5 вопросов, которые стоит задать.
+5. `Уровень жизни / релокация / деньги`: как меняются costs, логистика семьи, school impact, и на какую ЗП ориентироваться.
+6. `Как снять риски`: 2-4 формулировки для сопроводительного или интервью.
+7. `Сопроводительное`: готовый текст.
+8. `Вопросы`: 2-5 вопросов, которые стоит задать.
 
 ## Current Final CV Set
 
@@ -82,3 +83,4 @@ After saving a new analysis, update `INDEX.md` with one row. If the company is n
 - как оценивать tech-stack gaps;
 - как учитывать российский / международный рынок;
 - как классифицировать вакансии интеграторов и business-unit roles.
+- как уточнять cost-of-living и relocation economics по разным городам.

@@ -9,6 +9,7 @@
 - `personal-projects/personal-brand/workspace/job-intake/`
 - `personal-projects/personal-brand/workspace/final-cv/`
 - `personal-projects/personal-brand/workspace/resume-targets/master-profile.md`
+- `finance/personal-budget/career-relocation-baseline.md`
 - `personal-projects/ai-automation-portfolio/`
 
 ## Stable Rules
@@ -19,4 +20,5 @@
 - `job-intake/INDEX.md` is the reviewed-vacancy memory: check it before analyzing similar roles.
 - `job-intake/COMPANY_NOTES.md` is company/bucket memory derived from prior intakes.
 - Recurring normalization and indexing work is proceduralized as skills: `personal-brand-workspace-normalization`, `vacancy-history-indexing`, `job-intake-company-notes`, and `routing-sync`.
+- Vacancy analysis must include relocation, family lifestyle impact, market salary, and target income through `career-offer-life-economics`.
 - Public website files may live in a dedicated site repo/folder, while planning and operating context stays here.

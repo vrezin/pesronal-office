@@ -27,6 +27,7 @@ The old path `<aistudio-root>/personal-brand-vladimir-rezin` is only a tombstone
 ## Routing
 
 - Vacancy/JD pasted by the user: use `job-intake-analysis`.
+- Vacancy salary, relocation, family logistics, lifestyle impact, or target income: use `career-offer-life-economics`.
 - "Which resume/CV should I use?": use `cv-selection`.
 - Cover letter or bot screening answers: use `cover-letter-screening`.
 - Final PDF resume review or import: use `final-cv-pdf-review`.

@@ -19,6 +19,7 @@ Before analysis, inspect as needed:
 - `job-intake/README.md`
 - `job-intake/rules-draft.md`
 - `job-intake/jd-analysis-template.md`
+- `finance/personal-budget/career-relocation-baseline.md`
 - `resume-targets/master-profile.md`
 - `final-cv/README.md`
 
@@ -40,6 +41,7 @@ Answer briefly in Russian unless asked otherwise:
 - best CV;
 - match reasons;
 - risks;
+- lifestyle / relocation / compensation;
 - how to defuse risks;
 - cover letter or screening answer if useful;
 - questions to ask recruiter or hiring manager.
@@ -59,9 +61,12 @@ Answer briefly in Russian unless asked otherwise:
 - Avoid `20+ years`, `23+ years`, `26+ years` in HH/ATS-facing text unless explicitly useful for executive/direct search.
 - Be honest about AI/ML, Web3, wallet, smart contract, GPU, or local inference gaps.
 - Do not rely on inaccessible HH links; use pasted text as source of truth.
+- Always add `Lifestyle / Relocation / Compensation`.
+- If salary is missing, check current market rates for similar roles or clearly mark the estimate as unverified.
 
 ## Supporting Skills
 
 - Use `vacancy-history-indexing` for `job-intake/INDEX.md`.
 - Use `job-intake-company-notes` for `job-intake/COMPANY_NOTES.md`.
+- Use `career-offer-life-economics` for relocation, lifestyle, market salary, and target-income analysis.
 - Use `routing-sync` if this workflow adds new recurring artifacts or routes.

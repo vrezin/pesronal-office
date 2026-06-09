@@ -31,6 +31,8 @@ Each reviewed vacancy needs one row:
 - next action;
 - link to `analyses/*.md`.
 
+If relocation, salary, or target income materially affects the decision, include that in `next action` or a short note in the row. Do not expand the index into a financial model.
+
 ## Rules
 
 - Keep this as an index, not a full duplicated analysis.

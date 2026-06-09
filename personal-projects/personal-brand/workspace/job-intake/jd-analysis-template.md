@@ -64,6 +64,18 @@
 - Risk 2:
 - Risk 3:
 
+## Lifestyle / Relocation / Compensation
+
+- Current location fit:
+- Relocation required:
+- Family / school impact:
+- Housing impact:
+- One-time adaptation costs:
+- Monthly cost change:
+- Market salary benchmark:
+- Target income:
+- Quality-of-life verdict:
+
 ## Risk Mitigation
 
 - Mitigation 1:

@@ -17,6 +17,7 @@ Inspect:
 - `final-cv/README.md`
 - `job-intake/INDEX.md` for prior similar vacancies and CV choices.
 - `job-intake/COMPANY_NOTES.md` for company/bucket-level patterns.
+- `finance/personal-budget/career-relocation-baseline.md` when salary, location, or relocation affects CV/application strategy.
 - `job-intake/rules-draft.md`
 - `resume-targets/master-profile.md`
 - `resume-targets/experience-block-strategy-ru.md` when wording matters.

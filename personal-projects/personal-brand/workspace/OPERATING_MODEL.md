@@ -44,14 +44,16 @@
 3. Update `job-intake/INDEX.md` with one row.
 4. Update `job-intake/COMPANY_NOTES.md` if company/bucket memory changed.
 5. Select one primary CV from the current portfolio.
-6. If needed, recommend a tailored copy, but do not fork facts from `master-profile.md`.
-7. Capture next action in the analysis and index.
+6. Add `Lifestyle / Relocation / Compensation` using `career-offer-life-economics`.
+7. If needed, recommend a tailored copy, but do not fork facts from `master-profile.md`.
+8. Capture next action in the analysis and index.
 
 ## Recurring Agent Skills
 
 - `personal-brand-workspace-normalization` - use when source-of-truth, stale paths, CV portfolio, wiki, memory, or graph drift.
 - `vacancy-history-indexing` - use after every new or changed job-intake analysis.
 - `job-intake-company-notes` - use when a company or unnamed-bucket pattern should be remembered.
+- `career-offer-life-economics` - use for relocation, family lifestyle, market salary, and target income.
 - `routing-sync` - use when adding recurring workflows or routing artifacts.
 
 ## Guardrails

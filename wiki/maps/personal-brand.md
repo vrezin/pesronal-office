@@ -8,11 +8,13 @@ source_of_truth:
   - personal-projects/personal-brand/workspace/job-intake/
   - personal-projects/personal-brand/workspace/final-cv/
   - personal-projects/personal-brand/workspace/resume-targets/master-profile.md
+  - finance/personal-budget/career-relocation-baseline.md
   - personal-projects/ai-automation-portfolio/
 skills:
   - personal-brand-routing
   - personal-brand-workspace-normalization
   - job-intake-analysis
+  - career-offer-life-economics
   - vacancy-history-indexing
   - job-intake-company-notes
   - cv-selection
