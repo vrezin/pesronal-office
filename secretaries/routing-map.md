@@ -27,6 +27,16 @@
 | человек / контакт / договоренность | `people/` | contact / relationship / follow-up |
 | непонятно | `inbox/processed/` | needs-clarification note |
 
+## Known Boundary Decisions
+
+| Item | Route |
+|---|---|
+| Personal brand / CV / career positioning for Vladimir Rezin | `personal-projects/personal-brand/` |
+| Public Vladimir Rezin AI automation portfolio site | `personal-projects/ai-automation-portfolio/` for planning; dedicated repo for website files |
+| Country house / home construction / family house documents | `life/home-family-rest/country-house/` |
+| AI Studio official project, company, portfolio, process, and product truth | `/home/adre/projects/aistudio` with management index in `companies/ai-studio/` |
+| FinSOK / Fincom company truth | `/home/adre/projects/fincom` with management index in `companies/finsok/` |
+
 ## Naming
 
 Use stable names:
