@@ -21,4 +21,14 @@ Create a repo-local automation workflow driven by `codex exec`, with:
 - state file for idempotency;
 - per-run logs.
 
-The actual OS timer is not installed yet because that writes outside the repository and should be confirmed separately.
+## OS Install Status
+
+Installed on 2026-06-09 as a user crontab entry.
+
+Current schedule:
+
+```cron
+0 */4 * * * cd /home/adre/personal-office && /home/adre/personal-office/automation/scripts/run-hh-gmail-monitor.sh >> /home/adre/personal-office/automation/runs/hh-gmail-monitor.cron.log 2>&1
+```
+
+The crontab also sets an explicit `PATH` including the Node/Codex binary directory so the scheduled wrapper can find `codex`.
