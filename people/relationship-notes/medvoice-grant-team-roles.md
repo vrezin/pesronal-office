@@ -21,9 +21,22 @@ The grant source describes team roles, not named people. Do not invent names for
 
 ## Related Named People
 
+- `people/contacts/stanislav-barilnik.md` - AI Studio CTO / Solution Architect.
+- `people/contacts/lilia-barilnik.md` - AI Studio Lead Developer.
+- `people/contacts/pavel-rezin.md` - AI Studio ML Engineer.
+- `people/contacts/sergey-rezin.md` - AI Studio Hardware Engineer.
 - `people/contacts/darya-gladysheva.md` - MedVoice sales director.
 - `people/contacts/alexandra-petrova.md` - CNMT technical director.
 - `people/contacts/larisa-titova.md` - Sanatorium Svetly general director.
+
+## Named Team Source Note
+
+The migrated Start-AI grant role document uses generic roles, while older AI Studio / MedVoice context documents name the AI Studio participants:
+
+- Барильник Станислав - CTO / Solution Architect.
+- Барильник Лилия - Lead Developer.
+- Резин Павел - ML Engineer.
+- Резин Сергей - Hardware Engineer.
 
 ## Routing Note
 

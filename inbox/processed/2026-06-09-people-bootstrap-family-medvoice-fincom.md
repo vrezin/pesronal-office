@@ -17,6 +17,15 @@ The user provided initial people facts for family members and business/project c
 
 Created contact cards in `people/contacts/` and a MedVoice grant team-role note in `people/relationship-notes/`.
 
+## Follow-Up Correction
+
+After user reminder, added named AI Studio / MedVoice team members that were present in broader AI Studio documents but not in the migrated generic grant role file:
+
+- Барильник Станислав;
+- Барильник Лилия;
+- Резин Павел AI Studio role;
+- Резин Сергей AI Studio role.
+
 ## Privacy
 
 Family dates of birth were stored because the user explicitly provided them. Treat them as private family facts.

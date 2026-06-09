@@ -9,3 +9,11 @@
 ## Notes
 
 - Сын Владимира Резина.
+- In AI Studio documents, listed as ML Engineer / инженер-исследователь по машинному обучению.
+- AI Studio competence context: Python, Whisper, diarization, LLM/NLU.
+
+## Related Sources
+
+- `<aistudio-root>/docs/README.md`
+- `<aistudio-root>/docs/company/charter/Agreement_of_Intent.md`
+- `<aistudio-root>/docs/projects/medvoice-ai/aisupport/AI_Studio_MedVoice_AI_Project_Context.md`

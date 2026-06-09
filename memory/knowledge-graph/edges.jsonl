@@ -30,6 +30,11 @@
 {"from":"topic:family","to":"entity:viktoria-rezina","type":"contains","source":"people/contacts/viktoria-rezina.md","updated":"2026-06-09"}
 {"from":"topic:family","to":"entity:serafima-rezina","type":"contains","source":"people/contacts/serafima-rezina.md","updated":"2026-06-09"}
 {"from":"company:ai-studio","to":"project:medvoice","type":"contains","source":"companies/ai-studio/active.md","updated":"2026-06-09"}
+{"from":"entity:stanislav-barilnik","to":"company:ai-studio","type":"managed_in","source":"people/contacts/stanislav-barilnik.md","updated":"2026-06-09"}
+{"from":"entity:lilia-barilnik","to":"company:ai-studio","type":"managed_in","source":"people/contacts/lilia-barilnik.md","updated":"2026-06-09"}
+{"from":"entity:lilia-barilnik","to":"entity:stanislav-barilnik","type":"depends_on","source":"people/contacts/lilia-barilnik.md","updated":"2026-06-09"}
+{"from":"entity:pavel-rezin","to":"company:ai-studio","type":"managed_in","source":"people/contacts/pavel-rezin.md","updated":"2026-06-09"}
+{"from":"entity:sergey-rezin","to":"company:ai-studio","type":"managed_in","source":"people/contacts/sergey-rezin.md","updated":"2026-06-09"}
 {"from":"entity:viktor-geronimus","to":"company:fincom","type":"managed_in","source":"people/contacts/viktor-geronimus.md","updated":"2026-06-09"}
 {"from":"entity:darya-gladysheva","to":"project:medvoice","type":"managed_in","source":"people/contacts/darya-gladysheva.md","updated":"2026-06-09"}
 {"from":"entity:alexandra-petrova","to":"project:medvoice","type":"managed_in","source":"people/contacts/alexandra-petrova.md","updated":"2026-06-09"}

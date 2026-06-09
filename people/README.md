@@ -25,6 +25,8 @@
 ### Business / Projects
 
 - `contacts/viktor-geronimus.md` - Виктор Геронимус, партнер по Fincom.
+- `contacts/stanislav-barilnik.md` - Барильник Станислав, AI Studio CTO / Solution Architect.
+- `contacts/lilia-barilnik.md` - Барильник Лилия, AI Studio Lead Developer.
 - `contacts/darya-gladysheva.md` - Дарья Гладышева, директор по продажам MedVoice.
 - `contacts/alena-maltseva.md` - Алена Мальцева, RTCloud / Я-Ты-ИТ.
 - `contacts/alexandra-petrova.md` - Александра Петрова, технический директор ЦНМТ.
