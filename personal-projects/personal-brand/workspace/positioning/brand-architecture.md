@@ -210,6 +210,7 @@
 - для ролей ниже CTO сразу снимать objection: “осознанно рассматриваю hands-on delivery / playing coach формат”;
 - добавить рыночный маршрут через крупных интеграторов, ERP/1С/enterprise automation и роли business unit head / mini-CEO / mini-CTO.
 - добавить отдельную ATS-friendly версию `CTO / Head of Engineering — Stability & Governance`, потому что AI-first заголовок может вредить на вакансиях про production / governance.
+- новый сигнал дополнительно усиливает нишевое позиционирование: AI / cloud / security / analytics / integration продаются лучше, чем generic seniority.
 
 ### ATS-Friendly Трек: CTO Stability & Governance
 

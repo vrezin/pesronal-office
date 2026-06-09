@@ -251,3 +251,14 @@ Warm intros:
 
 - бывшие коллеги, клиенты, партнеры;
 - запрос не на вакансию, а на “кому сейчас нужен человек под отдельное направление / enterprise implementation / AI automation”.
+
+## Fresh Market Signal
+
+См. также: `positioning/2026-06-09-alla-dortman-it-market-signal.md`
+
+Этот сигнал подтверждает ту же логику:
+
+- рынок стал плотнее и более фильтрующим;
+- растут AI, cloud, security, analytics и integration;
+- generic seniority продается хуже, чем конкретная ниша;
+- прямые контакты и referrals важнее пассивной видимости на HH.
