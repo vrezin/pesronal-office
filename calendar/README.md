@@ -6,6 +6,7 @@
 
 - `daily/` - дневные планы и brief.
 - `weekly/` - недельные обзоры и планирование.
+- `monthly/` - месячные планы и обзоры.
 - `meetings/` - заметки по встречам.
 - `planning/` - личные daily/weekly planning rules and operating rhythm.
 - `travel/` - поездки и логистика.

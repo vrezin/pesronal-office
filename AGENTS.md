@@ -18,6 +18,8 @@ Start with `secretaries/routing-map.md`.
 - Active next actions belong in `tasks/active/`.
 - Waiting items belong in `tasks/waiting/`.
 - Personal and family matters belong in `life/`.
+- Health facts belong in `life/health-lifestyle/health-facts/`.
+- Lifestyle facts belong in `life/health-lifestyle/lifestyle-facts/`.
 - Money, assets, obligations, taxes, investments, and major financial decisions belong in `finance/`.
 - Profi.ru, consulting, experiments, and personal opportunities belong in `personal-projects/`.
 - Company matters belong in `companies/<company>/`.
@@ -45,6 +47,10 @@ Use:
 - `<fincom-root>` for the neighboring Fincom workspace.
 - `<external-downloads>` for source files outside the repository.
 
+## Health And Life Planning Safety
+
+For medications, health constraints, diet, and training, agents must not invent recommendations. Use only user-provided facts, doctor instructions, or source documents. If a health input is unclear, create a clarification note instead of making a medical decision.
+
 ## Local Skills
 
 Repo-local Codex skills live in `.codex/skills/`.
@@ -56,6 +62,14 @@ For personal brand / career work, prefer these skills instead of copying long pr
 - `cv-selection` - choose the best final CV for a role.
 - `cover-letter-screening` - draft cover letters, recruiter replies, and screening answers.
 - `final-cv-pdf-review` - validate and register final PDF resumes.
+
+For life planning, prefer these skills:
+
+- `life-intake-router` - route raw life inputs into facts, tasks, calendar, and plans.
+- `weekly-life-plan` - build weekly life plans from facts and current obligations.
+- `medication-schedule-planning` - plan medication reminders from saved instructions only.
+- `meal-grocery-planning` - plan weekly menu and Saturday groceries.
+- `life-plan-maintenance` - rebalance daily, weekly, and monthly plans after new intake.
 
 ## Local Tools
 

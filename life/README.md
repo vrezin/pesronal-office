@@ -5,6 +5,11 @@
 ## Folders
 
 - `home-family-rest/` - дом, семья, отдых, бытовые вопросы.
-- `health-lifestyle/` - здоровье, спорт, сон, питание, самочувствие.
+- `health-lifestyle/` - здоровье, лекарства, сон, питание, самочувствие, образ жизни.
 - `routines/` - регулярные практики и бытовые ритмы.
 - `long-term-goals/` - долгосрочные личные цели.
+
+## Fact Sections
+
+- `health-lifestyle/health-facts/` - устойчивые факты о здоровье.
+- `health-lifestyle/lifestyle-facts/` - устойчивые факты об образе жизни.
