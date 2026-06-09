@@ -90,6 +90,11 @@
 
 ## Decision
 
-- Apply: maybe / apply if compensation and role authority are adequate
-- Priority: medium
-- Next action: send AI-first cover letter, ask compensation and first-90-days challenge; avoid overplaying enterprise scale in first touch.
+- Apply: not moving forward after employer reply
+- Priority: low
+- Next action: no further pursuit unless a future direct message changes the process substantially.
+
+## Status Updates
+
+- 2026-06-09: user sent the application; employer had not replied yet.
+- 2026-06-09: employer replied via HH status update and declined to invite further.

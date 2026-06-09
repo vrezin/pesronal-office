@@ -105,3 +105,8 @@
 ## Application Status
 
 - 2026-06-09: отклик отправлен; работодатель пока не ответил.
+- 2026-06-09: employer / recruiter replied in HH chat with screening questions about trading-company experience, project-vs-staff format, and daily AI-tool usage.
+
+## Status Update
+
+The HH thread is now an active screening conversation. The next step is to answer the recruiter honestly and keep the reply aligned with the current positioning: strong systems / production / AI leadership, without overstating direct HFT background.
