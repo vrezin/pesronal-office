@@ -1,0 +1,6 @@
+[mcp_servers.zenmoney]
+command = "/home/adre/.local/bin/uv"
+args = ["run", "--directory", "/home/adre/personal-office/tools/zenmoney-mcp", "zenmoney-mcp"]
+
+[mcp_servers.zenmoney.env]
+ZENMONEY_READ_ONLY = "1"
