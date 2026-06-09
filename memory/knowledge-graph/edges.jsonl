@@ -7,3 +7,4 @@
 {"from":"domain:wiki","to":"topic:memory-system","type":"routes_to","source":"wiki/maps/memory-system.md","updated":"2026-06-09"}
 {"from":"topic:job-search","to":"topic:personal-brand","type":"managed_in","source":"wiki/maps/personal-brand.md","updated":"2026-06-09"}
 {"from":"topic:job-search","to":"artifact:work-employment-search-tombstone","type":"redirects_from","source":"work/employment-search/README.md","updated":"2026-06-09"}
+{"from":"topic:personal-brand","to":"artifact:personal-brand-operating-model","type":"source_of_truth_for","source":"wiki/maps/personal-brand.md","updated":"2026-06-09"}

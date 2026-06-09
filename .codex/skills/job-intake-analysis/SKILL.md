@@ -13,6 +13,7 @@ metadata:
 
 Before analysis, inspect as needed:
 
+- `OPERATING_MODEL.md`
 - `job-intake/README.md`
 - `job-intake/rules-draft.md`
 - `job-intake/jd-analysis-template.md`

@@ -1,6 +1,6 @@
 # CV Inventory
 
-Источник: `C:\Users\vrezi\Downloads\CV's`
+Источник: `<external-downloads>/CVs`
 
 ## AI / Automation
 
@@ -49,7 +49,7 @@
 - `CL MUFG Investor Services.docx`
 - `Cover Letter Apaleo.docx`
 
-Использовать после сборки 4 резюме: сделать по одному cover letter template на каждый трек.
+Использовать после стабилизации портфеля CV: сделать по одному cover letter template на каждый активный трек.
 
 ## Certificates / Other PDFs
 

@@ -26,8 +26,9 @@ Director of software development in an IT integrator. Strong emphasis on strateg
 
 ## Best CV
 
-- Recommended ready CV: `CTO - VP Engineering - Director of Engineering.pdf`
-- Strong tailored need: Business Unit / Integration CV.
+- Current recommended CV: `Director of Development - Business Unit Technical Leader.pdf`
+- Historical note: at original analysis time, this Business Unit / Integration PDF was not yet finalized, so Heavy Enterprise was the best ready fallback.
+- Fallback if emphasizing large engineering org over integrator/P&L: `CTO - VP Engineering - Director of Engineering.pdf`
 - Alternative if wanting less "too big" signal: `Digital - Technology Transformation Director.pdf`
 - Do not use: AI Transformation, Startup CTO.
 
@@ -51,7 +52,7 @@ Director of software development in an IT integrator. Strong emphasis on strateg
 
 ## Risks
 
-- We do not yet have finalized Business Unit / Integration PDF.
+- Business Unit / Integration PDF now exists and should be the default for this shape.
 - Heavy Enterprise CV may under-emphasize P&L/margin/customer cost justification.
 - Office-only Moscow may be a hard constraint.
 - If they want classic integrator delivery director with strict P&L ownership, need foreground Sobit/CFT more than Arameem.
@@ -65,7 +66,7 @@ If already applied with one of current CVs:
 
 Best next move:
 
-- Create tailored `Director of IT Development / Business Unit Technical Leader` resume.
+- Use `Director of Development - Business Unit Technical Leader.pdf`; tailor cover letter toward integrator P&L, customer-facing estimates, financial-sector delivery, and project portfolio.
 
 ## Cover Letter
 
@@ -100,4 +101,4 @@ Best next move:
 
 - Apply: already applied.
 - Priority: high.
-- Next action: if company responds, lean into CFT + Sobit + Arameem. Create missing Business Unit / Integration CV for future similar roles.
+- Next action: if company responds, lean into CFT + Sobit + Arameem and use Business Unit / Integration positioning.

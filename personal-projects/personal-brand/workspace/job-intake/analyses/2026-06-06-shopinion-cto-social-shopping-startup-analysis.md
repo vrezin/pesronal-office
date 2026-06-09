@@ -9,7 +9,7 @@
 - Location / format: remote or hybrid; Moscow listed; evening/night hours or negotiable; 6/1 or flexible
 - Salary: USD 6,000-12,000 gross monthly, possible equity
 - Link: not provided
-- Archive file: `personal-brand-vladimir-rezin/job-intake/jd-archive/2026-06-06-shopinion-cto-social-shopping-startup.md`
+- Archive file: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-06-shopinion-cto-social-shopping-startup.md`
 
 ## Raw JD Summary
 

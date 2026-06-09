@@ -13,6 +13,7 @@ metadata:
 
 Inspect:
 
+- `OPERATING_MODEL.md`
 - `final-cv/README.md`
 - `job-intake/rules-draft.md`
 - `resume-targets/master-profile.md`

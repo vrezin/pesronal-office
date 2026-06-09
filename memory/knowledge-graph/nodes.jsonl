@@ -7,6 +7,7 @@
 {"id":"topic:finance","type":"topic","label":"Finance","source":"memory/semantic/topics/finance.md","updated":"2026-06-09"}
 {"id":"topic:personal-brand","type":"topic","label":"Personal Brand","source":"memory/semantic/topics/personal-brand.md","updated":"2026-06-09"}
 {"id":"topic:job-search","type":"topic","label":"Job Search","source":"memory/semantic/topics/personal-brand.md","updated":"2026-06-09"}
+{"id":"artifact:personal-brand-operating-model","type":"artifact","label":"Personal Brand Operating Model","source":"personal-projects/personal-brand/workspace/OPERATING_MODEL.md","updated":"2026-06-09"}
 {"id":"artifact:work-employment-search-tombstone","type":"artifact","label":"Employment Search Tombstone","source":"work/employment-search/README.md","updated":"2026-06-09"}
 {"id":"tool:zenmoney-mcp","type":"tool","label":"ZenMoney MCP","source":"tools/zenmoney-mcp/","updated":"2026-06-09"}
 {"id":"skill:wiki-routing","type":"skill","label":"Wiki Routing","source":".codex/skills/wiki-routing/SKILL.md","updated":"2026-06-09"}

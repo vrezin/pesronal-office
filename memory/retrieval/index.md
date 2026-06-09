@@ -10,6 +10,7 @@
 | Finance / ZenMoney | `wiki/maps/finance.md` |
 | Personal brand / career | `wiki/maps/personal-brand.md` |
 | Vacancy / CV / HH / cover letter | `wiki/maps/personal-brand.md` |
+| Personal brand workspace source-of-truth | `personal-projects/personal-brand/workspace/OPERATING_MODEL.md` |
 | AI Studio management | `wiki/maps/ai-studio.md` |
 | Fincom / FinSOK management | `wiki/maps/fincom.md` |
 | Tools / MCP | `wiki/maps/tools.md` |

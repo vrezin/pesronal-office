@@ -9,7 +9,7 @@
 - Location / format: Moscow, Presnenskaya embankment, 12; onsite, 5/2, 9 working hours
 - Salary: not specified
 - Link:
-- Archive file: `personal-brand-vladimir-rezin/job-intake/jd-archive/2026-06-08-alfigroup-cio.md`
+- Archive file: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-08-alfigroup-cio.md`
 - Published: 2026-06-05, Moscow
 
 ## Raw JD Summary

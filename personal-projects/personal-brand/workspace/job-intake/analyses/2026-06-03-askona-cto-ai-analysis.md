@@ -9,7 +9,7 @@
 - Location / format: гибрид, Москва, 5/2
 - Salary: не указана
 - Link:
-- Archive file: `personal-brand-vladimir-rezin/job-intake/jd-archive/2026-06-03-askona-cto-ai.md`
+- Archive file: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-03-askona-cto-ai.md`
 
 ## Raw JD Summary
 

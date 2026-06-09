@@ -9,7 +9,7 @@
 - Location / format: Москва, Курская, Нижний Сусальный переулок, 5с18; гибрид
 - Salary: не указан
 - Link:
-- Archive file: `personal-brand-vladimir-rezin/job-intake/jd-archive/2026-06-04-unknown-business-systems-development-head.md`
+- Archive file: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-04-unknown-business-systems-development-head.md`
 
 ## Raw JD Summary
 

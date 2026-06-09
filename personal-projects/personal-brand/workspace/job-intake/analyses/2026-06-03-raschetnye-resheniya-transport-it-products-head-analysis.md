@@ -9,7 +9,7 @@
 - Location / format: Москва, Минская улица, 2Ж; on-site; full-time
 - Salary: не указан
 - Link: not provided
-- Archive file: `personal-brand-vladimir-rezin/job-intake/jd-archive/2026-06-03-raschetnye-resheniya-transport-it-products-head.md`
+- Archive file: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-03-raschetnye-resheniya-transport-it-products-head.md`
 
 ## Raw JD Summary
 

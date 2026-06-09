@@ -9,7 +9,7 @@
 - Location / format: Москва, м. Беговая; гибрид; 5/2; возможны командировки на производство в Серпухов
 - Salary: не указана
 - Link:
-- Archive file: `personal-brand-vladimir-rezin/job-intake/jd-archive/2026-06-03-selecta-ai-solutions-specialist.md`
+- Archive file: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-03-selecta-ai-solutions-specialist.md`
 
 ## Raw JD Summary
 

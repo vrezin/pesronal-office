@@ -17,6 +17,7 @@ The old path `<aistudio-root>/personal-brand-vladimir-rezin` is only a tombstone
 
 ## First Files To Inspect
 
+- `OPERATING_MODEL.md` for source-of-truth order and current CV portfolio.
 - `README.md` for the workspace map.
 - `resume-targets/master-profile.md` for canonical facts, dates, metrics, and exclusions.
 - `resume-targets/experience-block-strategy-ru.md` for experience block framing.

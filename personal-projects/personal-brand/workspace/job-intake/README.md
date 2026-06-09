@@ -52,6 +52,7 @@
 - `CTO - Head of Engineering - Stability and Governance.pdf`
 - `CTO - VP Engineering - Director of Engineering.pdf`
 - `Digital - Technology Transformation Director.pdf`
+- `Director of Development - Business Unit Technical Leader.pdf`
 
 ## Default Recommendation Logic
 
@@ -60,7 +61,7 @@
 - Large engineering org, VP Engineering, Director Engineering, platform scale, 100+ engineers -> Heavy Enterprise.
 - Digital transformation, modernization program, business process transformation, CIO transformation -> Digital / Technology Transformation.
 - Production stability, technical debt, SDLC, release governance, incidents, legacy modernization, predictable delivery -> Stability & Governance.
-- Integrator, ERP, 1C, business unit, P&L, enterprise implementation -> Business Unit / Integration track, not yet finalized as a PDF.
+- Integrator, ERP, 1C, business unit, P&L, enterprise implementation -> Business Unit / Integration CV.
 
 ## Rule Discussion Backlog
 

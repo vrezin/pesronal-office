@@ -9,7 +9,7 @@
 - Location / format: Remote, part-time, 5/2, 4 hours/day; published in Minsk
 - Salary: Not specified
 - Link:
-- Archive file: `personal-brand-vladimir-rezin/job-intake/jd-archive/2026-06-08-rapidseedbox-fractional-cto.md`
+- Archive file: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-08-rapidseedbox-fractional-cto.md`
 
 ## Raw JD Summary
 

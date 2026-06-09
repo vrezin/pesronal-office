@@ -9,7 +9,7 @@
 - Location / format: Moscow / remote, full-time, 5/2
 - Salary: not stated
 - Link:
-- Archive file: `personal-brand-vladimir-rezin/job-intake/jd-archive/2026-06-09-unknown-ai-native-product-technologist.md`
+- Archive file: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-09-unknown-ai-native-product-technologist.md`
 
 ## Raw JD Summary
 
