@@ -1,6 +1,6 @@
 ---
 name: job-intake-company-notes
-description: Use when job-intake analysis reveals reusable company or unnamed-bucket memory: what we inferred from vacancy language, best lane, watchouts, and related analyses. Maintains COMPANY_NOTES.md.
+description: "Use when job-intake analysis reveals reusable company or unnamed-bucket memory: what we inferred from vacancy language, best lane, watchouts, and related analyses. Maintains COMPANY_NOTES.md."
 metadata:
   short-description: Maintain company notes from job intake
 ---

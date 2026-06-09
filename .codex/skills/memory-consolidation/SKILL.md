@@ -1,6 +1,6 @@
 ---
 name: memory-consolidation
-description: Use for periodic cleanup of Personal Office memory: compress short-term and episodic memory into semantic topics, entity records, graph edges, retrieval indexes, and archive obsolete working context.
+description: "Use for periodic cleanup of Personal Office memory: compress short-term and episodic memory into semantic topics, entity records, graph edges, retrieval indexes, and archive obsolete working context."
 metadata:
   short-description: Consolidate memory into stable recall
 ---

@@ -1,6 +1,6 @@
 ---
 name: weekly-life-plan
-description: Use when creating or updating a weekly life plan from personal-office facts: health, lifestyle, medication instructions, meals/groceries, calendar, tasks, finance constraints, personal projects, family/home blockers, and company attention.
+description: "Use when creating or updating a weekly life plan from personal-office facts: health, lifestyle, medication instructions, meals/groceries, calendar, tasks, finance constraints, personal projects, family/home blockers, and company attention."
 metadata:
   short-description: Build weekly life plans
 ---
