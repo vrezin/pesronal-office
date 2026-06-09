@@ -4,7 +4,8 @@ source_of_truth:
   - companies/ai-studio/
   - <aistudio-root>
 skills:
-  - memory-retrieval
+  - company-work
+  - memory-system
 memory:
   - memory/semantic/topics/ai-studio.md
 retrieval:

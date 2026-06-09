@@ -6,9 +6,9 @@ source_of_truth:
   - calendar/
   - secretaries/routing-map.md
 skills:
-  - life-intake-router
-  - life-plan-maintenance
-  - memory-capture
+  - personal-office-intake
+  - life-planning
+  - memory-system
 memory:
   - memory/short-term/current-context.md
   - memory/short-term/open-loops.md

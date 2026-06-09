@@ -4,7 +4,8 @@ source_of_truth:
   - companies/fincom/
   - <fincom-root>
 skills:
-  - memory-retrieval
+  - company-work
+  - memory-system
 memory:
   - memory/semantic/topics/fincom.md
 retrieval:

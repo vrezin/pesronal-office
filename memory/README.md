@@ -25,7 +25,6 @@ Memory helps agents recall relevant context without rereading the whole reposito
 ## Operating Loop
 
 1. Route new input through `wiki/README.md` and `secretaries/routing-map.md`.
-2. Capture durable facts through `memory-capture`.
-3. Search relevant memory through `memory-retrieval` before planning or answering.
-4. Consolidate dated events into semantic/entity/graph memory through `memory-consolidation`.
-5. Rebuild graph and retrieval indexes through `knowledge-graph-indexing`.
+2. Use `memory-system` for durable fact capture, retrieval, consolidation, entities, and graph updates.
+3. Search relevant memory before planning or answering.
+4. Rebuild graph and retrieval indexes when source artifacts materially change.

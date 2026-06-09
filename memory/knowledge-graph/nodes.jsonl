@@ -12,15 +12,13 @@
 {"id":"artifact:company-notes-from-job-intake","type":"artifact","label":"Company Notes From Job Intake","source":"personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md","updated":"2026-06-09"}
 {"id":"artifact:work-employment-search-tombstone","type":"artifact","label":"Employment Search Tombstone","source":"work/employment-search/README.md","updated":"2026-06-09"}
 {"id":"tool:zenmoney-mcp","type":"tool","label":"ZenMoney MCP","source":"tools/zenmoney-mcp/","updated":"2026-06-09"}
-{"id":"skill:wiki-routing","type":"skill","label":"Wiki Routing","source":".codex/skills/wiki-routing/SKILL.md","updated":"2026-06-09"}
-{"id":"skill:memory-retrieval","type":"skill","label":"Memory Retrieval","source":".codex/skills/memory-retrieval/SKILL.md","updated":"2026-06-09"}
-{"id":"skill:personal-brand-workspace-normalization","type":"skill","label":"Personal Brand Workspace Normalization","source":".codex/skills/personal-brand-workspace-normalization/SKILL.md","updated":"2026-06-09"}
-{"id":"skill:vacancy-history-indexing","type":"skill","label":"Vacancy History Indexing","source":".codex/skills/vacancy-history-indexing/SKILL.md","updated":"2026-06-09"}
-{"id":"skill:job-intake-company-notes","type":"skill","label":"Job Intake Company Notes","source":".codex/skills/job-intake-company-notes/SKILL.md","updated":"2026-06-09"}
-{"id":"skill:career-offer-life-economics","type":"skill","label":"Career Offer Life Economics","source":".codex/skills/career-offer-life-economics/SKILL.md","updated":"2026-06-09"}
-{"id":"skill:routing-sync","type":"skill","label":"Routing Sync","source":".codex/skills/routing-sync/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:personal-office-intake","type":"skill","label":"Personal Office Intake","source":".codex/skills/personal-office-intake/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:memory-system","type":"skill","label":"Memory System","source":".codex/skills/memory-system/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:personal-brand-career","type":"skill","label":"Personal Brand Career","source":".codex/skills/personal-brand-career/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:life-planning","type":"skill","label":"Life Planning","source":".codex/skills/life-planning/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:company-work","type":"skill","label":"Company Work","source":".codex/skills/company-work/SKILL.md","updated":"2026-06-09"}
+{"id":"skill:automation-monitoring","type":"skill","label":"Automation Monitoring","source":".codex/skills/automation-monitoring/SKILL.md","updated":"2026-06-09"}
 {"id":"artifact:career-relocation-baseline","type":"artifact","label":"Career Relocation Baseline","source":"finance/personal-budget/career-relocation-baseline.md","updated":"2026-06-09"}
-{"id":"skill:hh-gmail-monitor","type":"skill","label":"HH Gmail Monitor","source":".codex/skills/hh-gmail-monitor/SKILL.md","updated":"2026-06-09"}
 {"id":"artifact:hh-gmail-monitor-prompt","type":"artifact","label":"HH Gmail Monitor Prompt","source":"automation/prompts/hh-gmail-monitor.md","updated":"2026-06-09"}
 {"id":"artifact:hh-gmail-monitor-state","type":"artifact","label":"HH Gmail Monitor State","source":"automation/state/hh-gmail-monitor-state.md","updated":"2026-06-09"}
 {"id":"artifact:hh-gmail-monitor-runs","type":"artifact","label":"HH Gmail Monitor Runs","source":"automation/runs/","updated":"2026-06-09"}

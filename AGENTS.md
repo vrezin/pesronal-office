@@ -63,35 +63,18 @@ For medications, health constraints, diet, and training, agents must not invent 
 
 Repo-local Codex skills live in `.codex/skills/`.
 
-For memory and wiki work, prefer these skills:
+Skills are short domain routers. Detailed procedures live in `wiki/playbooks/`.
 
-- `wiki-routing` - choose the relevant wiki map and minimum source set before reading.
-- `memory-retrieval` - search memory, entities, graph, and source artifacts before answering or planning.
-- `memory-capture` - capture durable facts, decisions, events, and relations from new intake.
-- `memory-consolidation` - periodically compress episodic memory into semantic memory, entity records, and graph edges.
-- `knowledge-graph-indexing` - update the file-backed knowledge graph from repository artifacts.
+Use:
 
-For personal brand / career work, prefer these skills instead of copying long process rules into chat:
+- `personal-office-intake` - raw intake and routing into artifacts.
+- `memory-system` - memory retrieval, capture, consolidation, entities, and graph.
+- `personal-brand-career` - vacancies, HH, CVs, cover letters, and career economics.
+- `life-planning` - health/lifestyle facts, medication, meals, groceries, and plans.
+- `company-work` - AI Studio, Fincom, Setronica, contracts, company signals, and handoffs.
+- `automation-monitoring` - scheduled jobs, prompts, state, run logs, and monitors.
 
-- `personal-brand-routing` - route career, CV, HH, JD, and personal portfolio work.
-- `personal-brand-workspace-normalization` - reconcile personal-brand source-of-truth, stale paths, CV portfolio drift, wiki, memory, and graph.
-- `job-intake-analysis` - archive and analyze pasted vacancies/JDs.
-- `career-offer-life-economics` - assess relocation, family lifestyle impact, market salary, and target income for vacancies/offers.
-- `vacancy-history-indexing` - maintain reviewed vacancy index after job-intake analyses.
-- `job-intake-company-notes` - maintain company and unnamed-bucket notes from vacancy intake.
-- `hh-gmail-monitor` - scheduled scanning of Gmail for HH.ru messages, employer responses, invitations, and new vacancies.
-- `cv-selection` - choose the best final CV for a role.
-- `cover-letter-screening` - draft cover letters, recruiter replies, and screening answers.
-- `final-cv-pdf-review` - validate and register final PDF resumes.
-- `routing-sync` - sync new recurring workflows across AGENTS, wiki, memory, graph, and skills.
-
-For life planning, prefer these skills:
-
-- `life-intake-router` - route raw life inputs into facts, tasks, calendar, and plans.
-- `weekly-life-plan` - build weekly life plans from facts and current obligations.
-- `medication-schedule-planning` - plan medication reminders from saved instructions only.
-- `meal-grocery-planning` - plan weekly menu and Saturday groceries.
-- `life-plan-maintenance` - rebalance daily, weekly, and monthly plans after new intake.
+Old micro-skills were moved to `.codex/skills.disabled/` as historical reference to reduce skills context pressure.
 
 ## Local Tools
 
@@ -107,7 +90,7 @@ Repo-local scheduled automation lives in `automation/`.
 
 The HH Gmail monitor is defined by:
 
-- `.codex/skills/hh-gmail-monitor/SKILL.md`;
+- `.codex/skills/automation-monitoring/SKILL.md`;
 - `automation/prompts/hh-gmail-monitor.md`;
 - `automation/scripts/run-hh-gmail-monitor.sh`;
 - `automation/state/hh-gmail-monitor-state.md`;

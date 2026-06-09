@@ -3,9 +3,8 @@ domain: health
 source_of_truth:
   - life/health-lifestyle/health-facts/
 skills:
-  - life-intake-router
-  - medication-schedule-planning
-  - weekly-life-plan
+  - life-planning
+  - personal-office-intake
 memory:
   - memory/semantic/topics/health.md
 retrieval:

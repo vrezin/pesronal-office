@@ -5,11 +5,8 @@ source_of_truth:
   - wiki/
   - AGENTS.md
 skills:
-  - wiki-routing
-  - memory-capture
-  - memory-consolidation
-  - memory-retrieval
-  - knowledge-graph-indexing
+  - memory-system
+  - personal-office-intake
 memory:
   - memory/semantic/topics/memory-system.md
   - memory/long-term/principles.md

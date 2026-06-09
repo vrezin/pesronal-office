@@ -2,7 +2,7 @@
 
 You are running inside `<repo-root>` as the scheduled HH.ru Gmail secretary.
 
-Use the repo-local skill `hh-gmail-monitor`.
+Use the repo-local skill `automation-monitoring`. For vacancy-specific work, use `personal-brand-career`.
 
 ## Objective
 
@@ -27,9 +27,9 @@ Scan Gmail for HH.ru / HeadHunter messages since the last successful scan and up
    - star or mark the Gmail message as important if the Gmail connector supports mutation;
    - if the vacancy cannot be matched, create `inbox/processed/needs-clarification-YYYY-MM-DD-hh-gmail.md`.
 6. For `new_vacancy`:
-   - if the message contains enough JD text, archive and analyze it using `job-intake-analysis`;
-   - include `career-offer-life-economics`;
-   - update `vacancy-history-indexing` and `job-intake-company-notes`;
+   - if the message contains enough JD text, archive and analyze it using `personal-brand-career`;
+   - include relocation, family lifestyle, market salary, and target income analysis;
+   - update `job-intake/INDEX.md` and `job-intake/COMPANY_NOTES.md`;
    - rank it as interesting / maybe / not interesting, with a short reason;
    - if only a thin digest/link exists, create a raw intake or clarification note instead of inventing a JD.
 7. Save a run log to `automation/runs/YYYY-MM-DD-HHMM-hh-gmail-monitor.md`.

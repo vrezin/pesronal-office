@@ -5,8 +5,8 @@ source_of_truth:
   - <setronica-root>/
   - people/contacts/yuliya-malinina.md
 skills:
-  - memory-retrieval
-  - memory-capture
+  - company-work
+  - memory-system
 memory:
   - memory/semantic/topics/setronica.md
 retrieval:

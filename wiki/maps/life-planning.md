@@ -10,11 +10,8 @@ source_of_truth:
   - tasks/active/
   - tasks/waiting/
 skills:
-  - life-intake-router
-  - weekly-life-plan
-  - life-plan-maintenance
-  - medication-schedule-planning
-  - meal-grocery-planning
+  - life-planning
+  - personal-office-intake
 memory:
   - memory/semantic/topics/life-planning.md
   - memory/short-term/current-week.md

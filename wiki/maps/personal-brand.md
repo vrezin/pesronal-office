@@ -11,17 +11,8 @@ source_of_truth:
   - finance/personal-budget/career-relocation-baseline.md
   - personal-projects/ai-automation-portfolio/
 skills:
-  - personal-brand-routing
-  - personal-brand-workspace-normalization
-  - job-intake-analysis
-  - career-offer-life-economics
-  - vacancy-history-indexing
-  - job-intake-company-notes
-  - hh-gmail-monitor
-  - cv-selection
-  - cover-letter-screening
-  - final-cv-pdf-review
-  - routing-sync
+  - personal-brand-career
+  - automation-monitoring
 memory:
   - memory/semantic/topics/personal-brand.md
 retrieval:
@@ -39,7 +30,7 @@ Use for CV, career positioning, vacancies, cover letters, public portfolio, and 
 
 ## Scheduled HH Mail
 
-Use `hh-gmail-monitor` for Gmail messages from HH.ru / HeadHunter. It routes employer responses, invitations, and new vacancy digests into `job-intake/`, `tasks/active/`, and `tasks/waiting/`.
+Use `automation-monitoring` and `wiki/playbooks/personal-brand-career.md` for Gmail messages from HH.ru / HeadHunter. It routes employer responses, invitations, and new vacancy digests into `job-intake/`, `tasks/active/`, and `tasks/waiting/`.
 
 ## Start Here
 

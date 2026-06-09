@@ -4,7 +4,8 @@ source_of_truth:
   - finance/
   - tools/zenmoney-mcp/
 skills:
-  - memory-retrieval
+  - memory-system
+  - personal-office-intake
 memory:
   - memory/semantic/topics/finance.md
   - memory/entities/tools/

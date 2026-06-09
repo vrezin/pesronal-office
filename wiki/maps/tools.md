@@ -4,8 +4,8 @@ source_of_truth:
   - tools/
   - automation/
 skills:
-  - memory-retrieval
-  - hh-gmail-monitor
+  - automation-monitoring
+  - memory-system
 memory:
   - memory/semantic/topics/tools.md
   - memory/entities/tools/
