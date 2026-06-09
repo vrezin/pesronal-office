@@ -33,6 +33,18 @@ If the target is unclear, create `inbox/processed/needs-clarification-YYYY-MM-DD
 - When a note implies a task, create or update the task file.
 - When a meeting changes a project, company, finance item, or personal commitment, update that target artifact too.
 
+## Local Skills
+
+Repo-local Codex skills live in `.codex/skills/`.
+
+For personal brand / career work, prefer these skills instead of copying long process rules into chat:
+
+- `personal-brand-routing` - route career, CV, HH, JD, and personal portfolio work.
+- `job-intake-analysis` - archive and analyze pasted vacancies/JDs.
+- `cv-selection` - choose the best final CV for a role.
+- `cover-letter-screening` - draft cover letters, recruiter replies, and screening answers.
+- `final-cv-pdf-review` - validate and register final PDF resumes.
+
 ## Working Style
 
 Before closing a request, state what files were created or updated and what still needs attention.
