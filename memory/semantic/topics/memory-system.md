@@ -1,5 +1,9 @@
 # Memory System
 
+## Related Patterns
+
+- `owned-context-operating-system.md` captures the user's recurring pattern across Personal Office, `secretar_bot`, and `mind_muscle`: chaotic human input -> structured owned memory -> concrete actions -> later search/context.
+
 ## Architecture
 
 Personal Office uses hybrid agent memory:
