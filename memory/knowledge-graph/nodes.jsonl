@@ -24,3 +24,19 @@
 {"id":"artifact:hh-gmail-monitor-prompt","type":"artifact","label":"HH Gmail Monitor Prompt","source":"automation/prompts/hh-gmail-monitor.md","updated":"2026-06-09"}
 {"id":"artifact:hh-gmail-monitor-state","type":"artifact","label":"HH Gmail Monitor State","source":"automation/state/hh-gmail-monitor-state.md","updated":"2026-06-09"}
 {"id":"artifact:hh-gmail-monitor-runs","type":"artifact","label":"HH Gmail Monitor Runs","source":"automation/runs/","updated":"2026-06-09"}
+{"id":"topic:people","type":"topic","label":"People","source":"people/README.md","updated":"2026-06-09"}
+{"id":"topic:family","type":"topic","label":"Family","source":"people/README.md","updated":"2026-06-09"}
+{"id":"company:ai-studio","type":"company","label":"AI Studio","source":"companies/ai-studio/README.md","updated":"2026-06-09"}
+{"id":"company:fincom","type":"company","label":"Fincom","source":"companies/fincom/README.md","updated":"2026-06-09"}
+{"id":"project:medvoice","type":"project","label":"MedVoice","source":"companies/ai-studio/active.md","updated":"2026-06-09"}
+{"id":"entity:ekaterina-rezina","type":"entity","label":"Екатерина Резина","source":"people/contacts/ekaterina-rezina.md","updated":"2026-06-09"}
+{"id":"entity:sergey-rezin","type":"entity","label":"Сергей Резин","source":"people/contacts/sergey-rezin.md","updated":"2026-06-09"}
+{"id":"entity:pavel-rezin","type":"entity","label":"Павел Резин","source":"people/contacts/pavel-rezin.md","updated":"2026-06-09"}
+{"id":"entity:viktoria-rezina","type":"entity","label":"Виктория Резина","source":"people/contacts/viktoria-rezina.md","updated":"2026-06-09"}
+{"id":"entity:serafima-rezina","type":"entity","label":"Серафима Резина","source":"people/contacts/serafima-rezina.md","updated":"2026-06-09"}
+{"id":"entity:viktor-geronimus","type":"entity","label":"Виктор Геронимус","source":"people/contacts/viktor-geronimus.md","updated":"2026-06-09"}
+{"id":"entity:darya-gladysheva","type":"entity","label":"Дарья Гладышева","source":"people/contacts/darya-gladysheva.md","updated":"2026-06-09"}
+{"id":"entity:alena-maltseva","type":"entity","label":"Алена Мальцева","source":"people/contacts/alena-maltseva.md","updated":"2026-06-09"}
+{"id":"entity:alexandra-petrova","type":"entity","label":"Александра Петрова","source":"people/contacts/alexandra-petrova.md","updated":"2026-06-09"}
+{"id":"entity:larisa-titova","type":"entity","label":"Лариса Титова","source":"people/contacts/larisa-titova.md","updated":"2026-06-09"}
+{"id":"artifact:medvoice-grant-team-roles","type":"artifact","label":"MedVoice Grant Team Roles","source":"people/relationship-notes/medvoice-grant-team-roles.md","updated":"2026-06-09"}

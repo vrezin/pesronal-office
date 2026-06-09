@@ -21,4 +21,6 @@ do_not_read_by_default:
 ---
 # Inbox / Tasks / Calendar Map
 
+Use `people/` when an intake contains a person, relationship context, follow-up owner, or recurring external contact.
+
 Use for raw intake, processed notes, active tasks, waiting items, meetings, daily plans, weekly plans, and monthly plans.

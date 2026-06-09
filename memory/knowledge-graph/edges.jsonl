@@ -22,3 +22,17 @@
 {"from":"skill:hh-gmail-monitor","to":"artifact:hh-gmail-monitor-runs","type":"source_of_truth_for","source":".codex/skills/hh-gmail-monitor/SKILL.md","updated":"2026-06-09"}
 {"from":"skill:hh-gmail-monitor","to":"artifact:vacancy-review-index","type":"depends_on","source":".codex/skills/hh-gmail-monitor/SKILL.md","updated":"2026-06-09"}
 {"from":"skill:hh-gmail-monitor","to":"artifact:company-notes-from-job-intake","type":"depends_on","source":".codex/skills/hh-gmail-monitor/SKILL.md","updated":"2026-06-09"}
+{"from":"repo:personal-office","to":"topic:people","type":"contains","source":"people/README.md","updated":"2026-06-09"}
+{"from":"topic:people","to":"topic:family","type":"contains","source":"people/README.md","updated":"2026-06-09"}
+{"from":"topic:family","to":"entity:ekaterina-rezina","type":"contains","source":"people/contacts/ekaterina-rezina.md","updated":"2026-06-09"}
+{"from":"topic:family","to":"entity:sergey-rezin","type":"contains","source":"people/contacts/sergey-rezin.md","updated":"2026-06-09"}
+{"from":"topic:family","to":"entity:pavel-rezin","type":"contains","source":"people/contacts/pavel-rezin.md","updated":"2026-06-09"}
+{"from":"topic:family","to":"entity:viktoria-rezina","type":"contains","source":"people/contacts/viktoria-rezina.md","updated":"2026-06-09"}
+{"from":"topic:family","to":"entity:serafima-rezina","type":"contains","source":"people/contacts/serafima-rezina.md","updated":"2026-06-09"}
+{"from":"company:ai-studio","to":"project:medvoice","type":"contains","source":"companies/ai-studio/active.md","updated":"2026-06-09"}
+{"from":"entity:viktor-geronimus","to":"company:fincom","type":"managed_in","source":"people/contacts/viktor-geronimus.md","updated":"2026-06-09"}
+{"from":"entity:darya-gladysheva","to":"project:medvoice","type":"managed_in","source":"people/contacts/darya-gladysheva.md","updated":"2026-06-09"}
+{"from":"entity:alexandra-petrova","to":"project:medvoice","type":"managed_in","source":"people/contacts/alexandra-petrova.md","updated":"2026-06-09"}
+{"from":"entity:larisa-titova","to":"project:medvoice","type":"managed_in","source":"people/contacts/larisa-titova.md","updated":"2026-06-09"}
+{"from":"project:medvoice","to":"artifact:medvoice-grant-team-roles","type":"source_of_truth_for","source":"people/relationship-notes/medvoice-grant-team-roles.md","updated":"2026-06-09"}
+{"from":"topic:people","to":"artifact:medvoice-grant-team-roles","type":"source_of_truth_for","source":"people/relationship-notes/medvoice-grant-team-roles.md","updated":"2026-06-09"}
