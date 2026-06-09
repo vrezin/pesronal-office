@@ -12,8 +12,8 @@
 
 ## Related Sources
 
-- `<external-downloads>/20260312 SOW 1 CSA Rezin Vladimir _Yuliya Malinina -signed-certificate.pdf`
-- `<external-downloads>/20260312-01 CSA Rezin Vladimir_Yuliya Malinina -signed-certificate.pdf`
+- `../../work/contracts/setronica/20260312-sow-1-csa-rezin-vladimir-yuliya-malinina-signed-certificate.pdf`
+- `../../work/contracts/setronica/20260312-01-csa-rezin-vladimir-yuliya-malinina-signed-certificate.pdf`
 
 ## Related
 

@@ -45,3 +45,4 @@
 {"id":"entity:yuliya-malinina","type":"entity","label":"Yuliya Malinina","source":"people/contacts/yuliya-malinina.md","updated":"2026-06-09"}
 {"id":"artifact:medvoice-grant-team-roles","type":"artifact","label":"MedVoice Grant Team Roles","source":"people/relationship-notes/medvoice-grant-team-roles.md","updated":"2026-06-09"}
 {"id":"artifact:setronica-active","type":"artifact","label":"Setronica Active","source":"companies/setronica/active.md","updated":"2026-06-09"}
+{"id":"artifact:setronica-contracts","type":"artifact","label":"Setronica Contracts","source":"work/contracts/setronica/README.md","updated":"2026-06-09"}

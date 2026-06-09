@@ -9,7 +9,7 @@
 ## Stable Facts
 
 - Vladimir Rezin has a contract with Setronica.
-- Contract source files are external PDF documents in Downloads; Personal Office stores pointers, not copies.
+- Contract source files were copied from Downloads into `work/contracts/setronica/`.
 - Work is conducted in `<setronica-root>/`.
 - The engagement is about helping Setronica implement agentic-first development.
 - Stage 1 was completed and closed in mid-May 2026.

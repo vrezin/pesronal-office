@@ -14,7 +14,7 @@ Stage 2 should be treated as using the specification/handoff standard as the con
 
 ## Source Pointers
 
-- Contract/SOW pointers: `README.md`
+- Contract/SOW local copies: `../../work/contracts/setronica/`
 - Project workspace: `<setronica-root>/`
 
 ## Open Questions

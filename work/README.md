@@ -18,6 +18,10 @@
 - `current-role/` - текущая личная работа, если появится.
 - `contracts/` - договоры и условия.
 
+## Current Contract Index
+
+- `contracts/setronica/` - Setronica CSA/SOW contract documents.
+
 ## Rule
 
 Если вход касается поиска работы, вакансии, резюме, сопроводительного письма или карьерного позиционирования, маршрут должен идти через `wiki/maps/personal-brand.md` и skill `personal-brand-routing`.

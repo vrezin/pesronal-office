@@ -20,6 +20,14 @@ The user provided Setronica engagement context:
 - `companies/setronica/README.md`
 - `companies/setronica/active.md`
 - `people/contacts/yuliya-malinina.md`
+- `work/contracts/setronica/`
+
+## Contract Migration
+
+On 2026-06-09, copied the user-provided external PDF files into:
+
+- `work/contracts/setronica/20260312-sow-1-csa-rezin-vladimir-yuliya-malinina-signed-certificate.pdf`
+- `work/contracts/setronica/20260312-01-csa-rezin-vladimir-yuliya-malinina-signed-certificate.pdf`
 
 ## Boundary
 
