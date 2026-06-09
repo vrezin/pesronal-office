@@ -84,6 +84,10 @@
 
 ## Decision
 
-- Apply: maybe / apply only after clarification
+- Apply: applied / waiting for employer response
 - Priority: medium-low to medium
-- Next action: Ask salary, hybrid/on-site cadence, seniority/ownership level, and how strict the Replit-only requirement is before investing in a tailored response.
+- Next action: Wait for employer response. If they reply, clarify salary, hybrid/on-site cadence, seniority/ownership level, and how strict the Replit-only requirement is.
+
+## Status Updates
+
+- 2026-06-09: User sent the application; employer has not replied yet.
