@@ -25,6 +25,7 @@
 - `CTO Vladimir Rezin (Heavy Enterprise) 010326.docx`
 - `CTO Vladimir Rezin (Heavy Enterprise) Rus.docx`
 - `CTO Vladimir Rezin (Heavy Enterprise) Teya.docx`
+- `CTO Vladimir Rezin (Heavy Enterprise) ENG.docx` - current English working copy, promoted to `final-cv/`.
 - `CTO Vladimir Rezin (ISX Group) 25022026.docx`
 - `CTO Vladimir Rezin (MUFG Investor Services) .docx`
 - `CTO Vladimir Rezin (Chief Technology Officer, Investment Firm  CASP  EMD) .docx`

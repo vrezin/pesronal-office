@@ -76,3 +76,68 @@ Keep it short and direct:
 - Best track: Heavy Enterprise
 - Alternate track: Stability & Governance
 - Main caution: relocation/compensation fit
+- Working tailored CV: `final-cv/CTO Vladimir Rezin (Heavy Enterprise) ENG.docx`
+
+## Application Fields
+
+### Summary
+
+Hands-on product engineering leader for regulated fintech, distributed teams, platform reliability, and delivery excellence. I have led large distributed product and engineering organizations in fintech, logistics, and e-commerce, with strong focus on execution excellence, security, release governance, and customer-facing delivery.
+
+### LinkedIn URL
+
+- `https://www.linkedin.com/in/vladimirrezin/?locale=en-US`
+
+### Website / Blog / Portfolio
+
+- No separate public website or blog is captured in the workspace right now.
+- If the form allows blanks, leave this empty.
+- If the form requires a URL, use your public portfolio link if you have one outside the repo, or reuse LinkedIn only if the form accepts a single social/profile link.
+
+### Cover Letter 1
+
+I am applying for the Head of Product Engineering role because it sits at the intersection of product delivery, engineering governance, reliability, and regulated fintech. My background is in leading distributed engineering organizations, stabilizing platform delivery, and keeping customer-facing systems predictable under growth and operational pressure. Pepperstone looks very close to the kind of environment where I can contribute quickly.
+
+I would bring a hands-on leadership style, a strong delivery and execution mindset, and practical experience with large-scale platform work across fintech, logistics, and e-commerce. I am also comfortable using AI as an engineering efficiency tool, but my main value is in building teams, operating models, and reliable product systems.
+
+I would welcome the chance to discuss compensation, relocation terms, and the first 6-12 month priorities.
+
+### Cover Letter 2
+
+Pepperstone’s Head of Product Engineering role is attractive to me because it combines regulated fintech, distributed teams, product engineering, and platform reliability. That is a strong fit for my background in leading large engineering organizations, building delivery discipline, and improving stability and predictability in customer-facing systems.
+
+I have worked across fintech, logistics, and e-commerce environments where execution quality, security, release governance, and cross-functional alignment mattered every day. I am comfortable in a hands-on leadership role and would be glad to bring that style to Pepperstone while also helping the team use AI pragmatically for engineering efficiency.
+
+I would be happy to discuss the role, the relocation setup, and what success should look like in the first 6-12 months.
+
+### Other Form Fields
+
+- Desired salary: `Market-competitive and negotiable; open to discussing the full package, including bonus, relocation support, and tax handling.`
+- Available start date: `Immediate to standard notice period; relocation timing to be agreed.`
+- How did you hear about this job?: `LinkedIn`
+- Referred by (Name): `N/A`
+- Personal data consent: `I agree`
+
+## Candidate Interview Pack Notes
+
+- Pack file in workspace: `Candidate_Interview_Pack-_PepperstoneCareers.pdf`
+- Tone: global, fast-growing retail trading company; values learning, growth, innovation, inclusion, and human connection.
+- Interview flow: 1) screening, 2) video interview, 3) assessment for technical/specialist roles, 4) final interview.
+- Assessment window: usually 24 hours to one week.
+- Likely emphasis: motivation, recent wins, fit with team/culture, practical problem-solving, and values alignment.
+- Technical/specialist roles may receive a case study, task, or psychometric test.
+- Useful signals in the pack: flexibility, wellbeing, 3 days paid volunteer leave, work from anywhere up to 4 weeks per year, and a strong focus on impact.
+- Support contact in the pack: `talent@pepperstone.com`
+- Working prep directory: `../prep/2026-06-09-pepperstone-head-of-product-engineering/`
+
+## Prep Angle For Next Step
+
+- Lead with hands-on product engineering, reliability, delivery governance, and regulated fintech experience.
+- Use STAR structure for examples.
+- Prepare one concise story for:
+  - scaling distributed teams;
+  - stabilizing customer-facing platforms;
+  - balancing speed, quality, and cross-functional alignment;
+  - why Pepperstone and why relocation.
+- Be ready for a case/task around product engineering decisions, delivery tradeoffs, or operating model design.
+- Use the prep directory for copy-ready form answers and interview notes; keep the analysis page for rationale and decisioning.

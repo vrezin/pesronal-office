@@ -16,6 +16,7 @@
 
 - phone: +7 913 928 2900
 - email: v.rezin@gmail.com
+- linkedin: https://www.linkedin.com/in/vladimirrezin/?locale=en-US
 
 ## Core Brand
 

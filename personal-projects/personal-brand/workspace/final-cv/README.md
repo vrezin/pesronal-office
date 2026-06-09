@@ -4,16 +4,32 @@
 
 Файл:
 
+- `AI Transformation Lead - AI Automation Architect.docx`
 - `AI Transformation Lead - AI Automation Architect.pdf`
 
 Назначение:
 
 - HH / ATS-friendly версия под AI Transformation Lead, AI Automation Architect, Head of AI Implementation.
+- Англоязычная версия, собранная по структуре шаблона `CTO Vladimir Rezin (Heavy Enterprise) .docx`.
 - Без полного раннего опыта и без RTK.
 - Опыт в HH сокращен до 11 лет 10 месяцев.
 - Позиционирование AI/automation встроено в первый блок опыта, потому что HH размещает “Обо мне” ниже опыта.
 
-Дата сохранения: 2026-05-31.
+Дата сохранения: 2026-06-09.
+
+## CTO / VP Engineering / Director of Engineering - ENG working copy
+
+Файл:
+
+- `CTO Vladimir Rezin (Heavy Enterprise) ENG.docx`
+
+Назначение:
+
+- English working copy of the Heavy Enterprise CV, tuned for regulated fintech / product engineering roles like Pepperstone.
+- Used as the editable source for further tailoring before PDF export.
+- Keeps the heavy-enterprise evidence base, but shifts the opening summary toward hands-on product engineering, reliability, delivery governance and distributed teams.
+
+Дата сохранения: 2026-06-09.
 
 ## CTO / Co-founder CTO / Head of Product Engineering
 

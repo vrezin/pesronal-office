@@ -36,6 +36,12 @@ Operating index of reviewed vacancies:
 
 - `analyses/YYYY-MM-DD-company-role-analysis.md`
 
+Если для роли нужна отдельная подготовка к интервью или заполнению формы, создавай рядом папку:
+
+- `prep/YYYY-MM-DD-company-role/`
+
+и складывай туда короткие рабочие артефакты: summary, form answers, interview notes, recruiter questions.
+
 After saving a new analysis, update `INDEX.md` with one row. If the company is named or the role changes our view of an existing company/bucket, update `COMPANY_NOTES.md`.
 
 Если компания неизвестна, использовать `unknown-company`.
