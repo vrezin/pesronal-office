@@ -113,7 +113,7 @@ Email: v.rezin@gmail.com
 
 ## Decision
 
-- Apply: applied on 2026-06-09
-- Priority: medium-high if remote and compensation are real; medium-low if they need a hands-on 1C architect at modest salary
+- Apply: rejected on 2026-06-10 after employer chat response
+- Priority: closed
 - Best CV: `Director of Development - Business Unit Technical Leader.pdf`
-- Next action: wait for employer response; if they reply, ask salary, remote policy and whether personal hands-on 1C depth is mandatory before investing in tailored CV
+- Next action: no further follow-up needed unless a new direct contact or fresh role appears

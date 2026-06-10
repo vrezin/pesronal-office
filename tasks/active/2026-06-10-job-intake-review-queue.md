@@ -37,11 +37,6 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
   - Next: wait for recruiter response; watch for Java/React depth, salary, relocation support and employer name
   - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-10-selby-jennings-head-of-engineering-amsterdam-analysis.md`
 
-- Unknown wholesale company — Руководитель ИТ-отдела
-  - State: applied
-  - Next: wait for reply; if they write back, ask salary and how much 1C depth is mandatory
-  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-unknown-wholesale-it-head-1c-migration-analysis.md`
-
 - Pepperstone — Head of Product Engineering
   - State: applied
   - Next: wait for recruiter next step
@@ -52,7 +47,6 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
 - Pepperstone — Head of Product Engineering
 - MineHub Technologies — VP of Engineering
 - Shaw Daniels Solutions — Head of Engineering
-- Unknown wholesale company — Руководитель ИТ-отдела
 
 ### Parked
 
