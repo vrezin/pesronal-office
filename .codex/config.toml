@@ -4,3 +4,6 @@ args = ["run", "--directory", "/home/adre/personal-office/tools/zenmoney-mcp", "
 
 [mcp_servers.zenmoney.env]
 ZENMONEY_READ_ONLY = "1"
+
+[mcp_servers.linkedin]
+command = "/home/adre/personal-office/tools/linkedin-mcp/scripts/start-local.sh"

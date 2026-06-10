@@ -2,6 +2,8 @@
 
 Local packaged LinkedIn MCP runtime for authenticated job/profile lookup.
 
+This tool is registered for Codex in `<repo-root>/.codex/config.toml` as the `linkedin` MCP server.
+
 ## What Lives Here
 
 - Authenticated browser profile copied from the working Linux host.
@@ -14,6 +16,12 @@ Start the server locally:
 
 ```bash
 ./scripts/start.sh
+```
+
+Start the local agent-facing server on loopback:
+
+```bash
+./scripts/start-local.sh
 ```
 
 Run a one-shot task with the server up, then stop it automatically:
@@ -39,3 +47,4 @@ Stop the server if it was started in background mode:
 - Keep this tool local to `personal-office`; do not move auth material into company repos.
 - Do not commit `profile/`, `cookies.json`, browser caches, or the virtualenv.
 - If LinkedIn invalidates the copied session, log in again through this local profile and refresh the state here.
+- The Codex runtime configuration points to `scripts/start-local.sh`, which keeps the MCP endpoint on `127.0.0.1` for safety.
