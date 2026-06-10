@@ -27,6 +27,17 @@ Operating index of reviewed vacancies:
 
 - `INDEX.md`
 - `COMPANY_NOTES.md`
+- `TODAY.md`
+- `tasks/active/2026-06-10-review-*.md`
+
+`TODAY.md` is the first screen for active job-search work. It should answer:
+
+- what needs a decision now;
+- what is waiting for reply;
+- what is parked;
+- what was reviewed most recently.
+
+The actual working queue lives in the per-vacancy task files above.
 
 Новые вакансии сохраняются в:
 

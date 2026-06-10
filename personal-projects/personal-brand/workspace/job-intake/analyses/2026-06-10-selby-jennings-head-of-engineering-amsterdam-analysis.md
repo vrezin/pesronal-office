@@ -8,6 +8,8 @@
 - Role title: Head of Engineering
 - Location / format: Amsterdam, Netherlands; full-time
 - Status: analyzed from LinkedIn email and MCP job details
+- Application status: applied via LinkedIn on 2026-06-10
+- Resume used: `CTO Vladimir Rezin (StartUps).pdf`
 - Archive file: `../jd-archive/2026-06-10-selby-jennings-head-of-engineering-amsterdam.md`
 
 ## Verdict
@@ -74,6 +76,20 @@ Questions that matter immediately:
 - Main caution: unnamed employer and exact Java/React hands-on expectations
 - Country card to check: Netherlands
 
+## Application Snapshot
+
+LinkedIn stored the following submission profile details:
+
+- Display name: Vladimir Rezin
+- Headline: CTO / Engineering Executive | Scaling High-Load Platforms | AI-Driven Digital Transformation | FinTech, E-commerce & Logistics | Built & Led 200+ Engineering Organizations
+- Country shown: Cyprus
+- First name: Vladimir
+- Last name: Rezin
+- Phone: +7 913 928 2900
+- Email: v.rezin@gmail.com
+- Resume selected in LinkedIn: `CTO Vladimir Rezin (StartUps).pdf`
+- Last use of that resume in LinkedIn: 2026-05-28
+
 ## Notes From LinkedIn MCP Check
 
 - Job id: `4417656397`
@@ -81,4 +97,3 @@ Questions that matter immediately:
 - Posting highlights Java Spring Boot, React, microservices, APIs, SaaS, and cloud.
 - The company is described as fast-growing and AI-driven.
 - The role already had >100 applicants.
-
