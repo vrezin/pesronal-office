@@ -1,13 +1,13 @@
-# Review Shaw Daniels Head of Engineering
+# Waiting For Shaw Daniels Head Of Engineering Employer Response
 
 - Created: 2026-06-10
-- Status: active
+- Status: waiting
 - Area: personal-projects / personal-brand / job-search process
 - Related workspace: `personal-projects/personal-brand/workspace/`
 
 ## Purpose
 
-Decide whether to continue pursuing Shaw Daniels Solutions — Head of Engineering.
+Track the Shaw Daniels Solutions — Head of Engineering application while waiting for reply.
 
 ## Current Facts
 
@@ -18,5 +18,5 @@ Decide whether to continue pursuing Shaw Daniels Solutions — Head of Engineeri
 
 ## Next Step
 
-- Clarify actual client, salary band, and whether the role is truly UK-remote.
-- Decide whether it is worth a tailored follow-up or can stay as a warm maybe.
+- Clarify actual client, salary band, and whether the role is truly UK-remote if they reply.
+- Keep the application as a warm maybe until more facts arrive.

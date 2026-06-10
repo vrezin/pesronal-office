@@ -8,6 +8,7 @@
 - Role title: VP of Engineering
 - Location / format: Portugal; remote / hybrid; full-time
 - Status: analyzed from LinkedIn email and MCP job details
+- Application status: applied via LinkedIn on 2026-06-10
 - Archive file: `../jd-archive/2026-06-10-minehub-vp-of-engineering.md`
 
 ## Verdict
@@ -88,4 +89,3 @@ Keep it short and direct:
 - Near-term priorities are consolidation of two acquired platforms, shared services, and architectural risk reduction.
 - The company already uses AI for code review and generation and wants a deliberate AI engineering strategy.
 - The technical environment is AWS, JavaScript / TypeScript, Python, Django, and a monolith moving toward a hybrid model.
-

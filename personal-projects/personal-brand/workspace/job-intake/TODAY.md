@@ -16,11 +16,18 @@ Open this file first, then jump to the per-vacancy tasks.
 
 Current tasks:
 
-- `tasks/active/2026-06-10-review-selby-jennings-head-of-engineering.md`
-- `tasks/active/2026-06-10-review-minehub-vp-of-engineering.md`
-- `tasks/active/2026-06-10-review-shaw-daniels-head-of-engineering.md`
-- `tasks/active/2026-06-10-review-unknown-wholesale-it-head.md`
-- `tasks/active/2026-06-10-review-pepperstone-head-of-product-engineering.md`
+- `tasks/active/2026-06-10-unknown-hedge-fund-cto-trading-ai-screening.md`
+
+Waiting for reply:
+
+- `tasks/waiting/2026-06-10-minehub-vp-of-engineering-employer-response.md`
+- `tasks/waiting/2026-06-10-selby-jennings-head-of-engineering-employer-response.md`
+- `tasks/waiting/2026-06-10-shaw-daniels-head-of-engineering-employer-response.md`
+- `tasks/waiting/2026-06-09-unknown-wholesale-it-head-employer-response.md`
+
+Recently closed:
+
+- Pepperstone - `Head of Product Engineering` - rejected on 2026-06-10
 
 Deprecated queue note:
 

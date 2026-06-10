@@ -1,14 +1,14 @@
 # Unknown Hedge Fund CTO / Trading AI - screening follow-up
 
 - Created: 2026-06-10
-- Status: active
+- Status: applied / screening open
 - Priority: high
 - Area: personal brand / job search
 - Related analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-unknown-hedge-fund-cto-trading-ai-analysis.md`
 
 ## Current State
 
-The employer / recruiter replied in HH chat and is actively screening the application. The conversation is still open and needs a response.
+The employer / recruiter replied in HH chat and is actively screening the application. The conversation is still open and needs a response, but the application itself is already submitted.
 
 ## Employer Questions Seen in HH
 
