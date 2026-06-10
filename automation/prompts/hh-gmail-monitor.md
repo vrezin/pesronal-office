@@ -21,16 +21,19 @@ Scan Gmail for HH.ru / HeadHunter messages since the last successful scan and up
    - `noise`.
 4. For `status_update`:
    - update the linked `tasks/active/` or `tasks/waiting/` file;
+   - if the vacancy belongs on the active job-intake queue, update `tasks/active/2026-06-10-job-intake-review-queue.md`;
    - update the corresponding `job-intake/analyses/*.md` status section if the application state changed;
    - update `job-intake/INDEX.md` if decision/status/next action changed.
 5. For `invitation`:
    - create or update an active/high-priority task;
+   - if the invitation belongs on the active job-intake queue, update `tasks/active/2026-06-10-job-intake-review-queue.md`;
    - update the analysis and index;
    - do not mutate Gmail labels/stars/importance during unattended runs; record the recommended Gmail action in the run log instead;
    - if the vacancy cannot be matched, create `inbox/processed/needs-clarification-YYYY-MM-DD-hh-gmail.md`.
 6. For `new_vacancy`:
    - if the message contains enough JD text, archive and analyze it using `personal-brand-career`;
    - include relocation, family lifestyle, market salary, and target income analysis;
+   - update `tasks/active/2026-06-10-job-intake-review-queue.md` with the new vacancy state and next step;
    - update `job-intake/INDEX.md` and `job-intake/COMPANY_NOTES.md`;
    - rank it as interesting / maybe / not interesting, with a short reason;
    - if only a thin digest/link exists, create a raw intake or clarification note instead of inventing a JD.
