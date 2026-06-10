@@ -4,7 +4,7 @@ You are running inside `<repo-root>` as the scheduled LinkedIn Gmail secretary.
 
 Use the repo-local skill `automation-monitoring`. For vacancy-specific work, use `personal-brand-career`.
 
-This repo registers a local LinkedIn MCP server named `linkedin` in `.codex/config.toml`. Prefer that registered local MCP server when enriching job ids. Only fall back to the local loopback wrapper in `tools/linkedin-mcp/` if the registered server is unavailable inside this run.
+This repo registers a local LinkedIn MCP server named `linkedin` in `.codex/config.toml` and points it at the local streamable HTTP endpoint `http://127.0.0.1:8019/mcp`. Prefer that registered MCP server when enriching job ids. If it is unavailable, use `tools/linkedin-mcp/scripts/start-daemon.sh` to ensure the daemon is up, then connect to the HTTP endpoint. Do not start duplicate server instances.
 
 This is an unattended cron run. Do not request interactive approval. If a tool, shell command, Gmail operation, or repository write is unavailable without approval, record the limitation in the run log and continue with the safest read-only or repo-local fallback. Do not wait for human confirmation.
 
@@ -42,7 +42,7 @@ The monitor must also remain useful for future LinkedIn vacancy mail, connection
    - update `job-intake/INDEX.md` and `job-intake/COMPANY_NOTES.md`;
    - rank it as interesting / maybe / not interesting, with a short reason;
    - if only a thin digest/link exists, create a raw intake or clarification note instead of inventing a JD;
-   - if the email includes a LinkedIn job id or job URL, enrich it with the registered local MCP server `linkedin` from `.codex/config.toml`; if the registered server is unavailable, start `tools/linkedin-mcp/scripts/start-local.sh` on loopback and then call `automation/scripts/linkedin-mcp-client.py job-details <JOB_ID>` against `http://127.0.0.1:${LINKEDIN_MCP_PORT:-8019}/mcp` before writing the analysis.
+   - if the email includes a LinkedIn job id or job URL, enrich it with the registered local MCP server `linkedin` from `.codex/config.toml`; if the registered server is unavailable, run `tools/linkedin-mcp/scripts/start-daemon.sh` once and then call `automation/scripts/linkedin-mcp-client.py job-details <JOB_ID>` against `http://127.0.0.1:${LINKEDIN_MCP_PORT:-8019}/mcp` before writing the analysis. Do not launch a second copy if one is already running.
 7. Save a run log to `automation/runs/YYYY-MM-DD-HHMM-linkedin-gmail-monitor.md`.
 8. Update `automation/state/linkedin-gmail-monitor-state.md` only after the run succeeds.
 9. Commit resulting repository changes with a concise message.

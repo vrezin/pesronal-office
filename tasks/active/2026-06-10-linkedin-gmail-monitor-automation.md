@@ -32,5 +32,5 @@ Hook the new monitor into cron and verify one dry run against the current Linked
 
 - The cron entry has been added.
 - The LinkedIn MCP client helper is in place.
-- The repo now registers a local LinkedIn MCP server named `linkedin` in `.codex/config.toml`; the monitor should prefer that registered server and only fall back to `tools/linkedin-mcp/scripts/start-local.sh` if the server is unavailable inside the run.
+- The repo now registers a local LinkedIn MCP server named `linkedin` in `.codex/config.toml` and points it to `http://127.0.0.1:8019/mcp`; the monitor should prefer that registered server and only fall back to `tools/linkedin-mcp/scripts/start-daemon.sh` if the daemon is unavailable inside the run.
 - The remaining check is a first live dry run, which depends on the local runtime binding cleanly on the host outside this editing sandbox.
