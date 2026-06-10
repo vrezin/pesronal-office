@@ -17,6 +17,11 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
 
 ### Needs Decision Now
 
+- HH digest received on 2026-06-10 09:01
+  - State: thin digest with six vacancy leads, no JD text yet
+  - Next: open selected HH links only if one becomes strategically relevant; otherwise wait for a full JD
+  - Note: `inbox/processed/2026-06-10-hh-vacancy-digest-thin-links.md`
+
 - MineHub Technologies — VP of Engineering
   - State: maybe / apply only if Portugal fits
   - Next: clarify salary and relocation before spending more time
