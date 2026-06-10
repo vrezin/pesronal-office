@@ -1,0 +1,1 @@
+0 */4 * * * cd <repo-root> && <repo-root>/automation/scripts/run-linkedin-gmail-monitor.sh >> <repo-root>/automation/runs/linkedin-gmail-monitor.cron.log 2>&1

@@ -14,3 +14,8 @@ Scheduled Personal Office jobs live here.
 ## Rule
 
 Automation must leave a trace in `runs/` and update `state/` only after successful processing.
+
+## Active Monitors
+
+- `hh-gmail-monitor`
+- `linkedin-gmail-monitor`

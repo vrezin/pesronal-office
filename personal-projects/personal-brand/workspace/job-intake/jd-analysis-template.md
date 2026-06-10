@@ -68,6 +68,10 @@
 
 - Current location fit:
 - Relocation required:
+- Remote without relocation:
+- Country card checked:
+- Company-sponsored relocation:
+- Self-relocation option:
 - Family / school impact:
 - Housing impact:
 - One-time adaptation costs:

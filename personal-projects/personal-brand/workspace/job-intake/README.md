@@ -42,7 +42,17 @@ Operating index of reviewed vacancies:
 
 и складывай туда короткие рабочие артефакты: summary, form answers, interview notes, recruiter questions.
 
+If the role depends on relocation economics or family fit, check the country cards in:
+
+- `relocation/README.md`
+- `relocation/country-index.md`
+- `relocation/countries/`
+
+When a new country shows up, create a card first, then fetch baseline figures from the internet and cite the sources in that card.
+
 After saving a new analysis, update `INDEX.md` with one row. If the company is named or the role changes our view of an existing company/bucket, update `COMPANY_NOTES.md`.
+
+For relocation-heavy roles, compare the vacancy against the relevant country card before finalizing the verdict.
 
 Если компания неизвестна, использовать `unknown-company`.
 

@@ -1,0 +1,9 @@
+.venv/
+profile/
+patchright-browsers/
+trace-runs/
+cookies.json
+browser-install.json
+source-state.json
+.run/
+__pycache__/

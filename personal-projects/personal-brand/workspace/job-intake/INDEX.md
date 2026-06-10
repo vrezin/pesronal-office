@@ -1,6 +1,6 @@
 # Vacancy Review Index
 
-Updated: 2026-06-09
+Updated: 2026-06-10
 
 This is the operating index of reviewed vacancies. It summarizes the detailed artifacts in `analyses/` and links each row back to the full analysis.
 
@@ -30,6 +30,9 @@ This is the operating index of reviewed vacancies. It summarizes the detailed ar
 | 2026-06-01 | Контур / СКБ Контур | Руководитель команды разработки | Startup / Product Engineering, down-leveled | Product Engineering CV | maybe | medium | Ask salary/team/product before investing heavily. | `analyses/2026-06-01-kontur-development-team-lead-novosibirsk-analysis.md` |
 | 2026-06-01 | unknown international technology company | CTO / Technical Director | Heavy Enterprise | `CTO - VP Engineering - Director of Engineering.pdf` | already rejected | low | Do not reopen via HH; only direct hiring-manager channel could matter. | `analyses/2026-06-01-limassol-international-platform-cto-rejection-analysis.md` |
 | 2026-06-09 | Pepperstone | Head of Product Engineering | Heavy Enterprise / Stability & Governance | `CTO - VP Engineering - Director of Engineering.pdf` | yes | high | Apply with Heavy Enterprise CV; clarify relocation and compensation early. | `analyses/2026-06-09-pepperstone-head-of-product-engineering-analysis.md` |
+| 2026-06-10 | MineHub Technologies | VP of Engineering | Heavy Enterprise / Stability & Governance | `CTO - VP Engineering - Director of Engineering.pdf` | maybe / apply only if Portugal fits | medium-high if location is workable | Clarify Portugal requirement, relocation, comp, and first 6-12 month priorities. | `analyses/2026-06-10-minehub-vp-of-engineering-analysis.md` |
+| 2026-06-10 | unknown AI-driven technology company (via Selby Jennings) | Head of Engineering | Startup / Product Engineering | `CTO - Co-founder CTO - Head of Product Engineering.pdf` | apply after adaptation | medium-high | Clarify actual employer, salary, relocation support, and hands-on Java/React ratio. | `analyses/2026-06-10-selby-jennings-head-of-engineering-amsterdam-analysis.md` |
+| 2026-06-10 | large digital media / consumer tech platform (via RedHolt) | Vice President, Technology & Analytics | Digital / Technology Transformation | `Digital - Technology Transformation Director.pdf` | no / parked | low | Office-only Dubai blocks the current relocation strategy. | `analyses/2026-06-10-redholt-vice-president-technology-dubai-analysis.md` |
 | 2026-06-01 | МТС / MTS Web Services | Stream CTO / MWS Tables | Startup / Scale-up CTO | `CTO - Co-founder CTO - Head of Product Engineering.pdf` | yes | high | Send Product Engineering CV; switch to Heavy Enterprise if recruiter emphasizes scale. | `analyses/2026-06-01-mts-mws-tables-stream-cto-analysis.md` |
 | 2026-06-01 | red_mad_robot AI | Techlead AI | AI Transformation | `AI Transformation Lead - AI Automation Architect.pdf` | yes if AI technical screening is acceptable | medium-high | Prepare honest screening answers on RAG, LLMOps, auth, multi-tenancy, frameworks. | `analyses/2026-06-01-red-mad-robot-techlead-ai-analysis.md` |
 | 2026-06-01 | unknown retail tech company | Technical Director / CTO | Business Unit / Integration | `Director of Development - Business Unit Technical Leader.pdf` | yes if onsite acceptable | high if salary/onsite fit | Ask about onsite, salary, hardware depth. | `analyses/2026-06-01-retail-tech-cto-development-implementation-support-analysis.md` |

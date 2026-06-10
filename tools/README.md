@@ -11,6 +11,7 @@ Do not put personal finance, calendar, inbox, or life-management tools into comp
 ## Current Tools
 
 - `zenmoney-mcp/` - MCP server for ZenMoney, the source of personal finance transaction history, accounts, categories, and budgets.
+- `linkedin-mcp/` - local LinkedIn MCP runtime with copied authenticated browser profile and helper scripts for job/profile lookup.
 
 ## Safety
 
