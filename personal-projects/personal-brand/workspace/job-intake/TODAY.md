@@ -16,6 +16,7 @@ Open this file first, then jump to the per-vacancy tasks.
 
 Current tasks:
 
+- `tasks/active/2026-06-10-jobgether-director-of-engineering.md`
 - `tasks/active/2026-06-10-unknown-hedge-fund-cto-trading-ai-screening.md`
 
 Waiting for reply:
@@ -28,6 +29,10 @@ Waiting for reply:
 Recently closed:
 
 - Pepperstone - `Head of Product Engineering` - rejected on 2026-06-10
+
+Recently reviewed:
+
+- `2026-06-10-jobgether-director-of-engineering-analysis.md`
 
 Deprecated queue note:
 

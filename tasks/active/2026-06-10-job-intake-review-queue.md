@@ -22,6 +22,11 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
   - Next: open selected HH links only if one becomes strategically relevant; otherwise wait for a full JD
   - Note: `inbox/processed/2026-06-10-hh-vacancy-digest-thin-links.md`
 
+- Jobgether — Director of Engineering
+  - State: maybe / interesting if Portugal and comp fit
+  - Next: review the analysis, then ask for the actual employer, salary band, and whether Portugal is mandatory
+  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-10-jobgether-director-of-engineering-analysis.md`
+
 - MineHub Technologies — VP of Engineering
   - State: maybe / apply only if Portugal fits
   - Next: clarify salary and relocation before spending more time
