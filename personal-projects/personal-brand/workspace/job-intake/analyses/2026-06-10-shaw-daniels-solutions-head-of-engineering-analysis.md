@@ -3,42 +3,42 @@
 ## Metadata
 
 - Date: 2026-06-10
-- Source: LinkedIn job alert email
+- Source: LinkedIn job alert email + LinkedIn MCP job details
 - Company: Shaw Daniels Solutions
 - Role title: Head of Engineering
-- Location / format: United Kingdom; remote
-- Salary: not shown in email
-- Link: `https://www.linkedin.com/comm/jobs/view/4422285343/`
+- Location / format: United Kingdom; fully remote
+- Salary: not shown
+- Link: `https://www.linkedin.com/jobs/view/4422285343/`
 - Archive file: `../jd-archive/2026-06-10-shaw-daniels-solutions-head-of-engineering.md`
 
 ## Raw JD Summary
 
-This is a Head of Engineering alert for a UK remote role. The email does not include the full job description, compensation, or team details. At this stage it reads as a generic but potentially relevant engineering leadership opportunity rather than a clearly differentiated strategic fit.
+This is a real senior engineering leadership role, not just a generic recruiter alert. The JD asks for ownership of architecture, delivery, operational excellence, and organizational leadership across software, hardware, data, and AI. It points to a multidisciplinary team of about 25 engineers and explicitly mentions pace, predictability, quality, and commercial impact.
 
 ## Classification
 
 - Primary track: Heavy Enterprise
-- Secondary track: Stability & Governance
+- Secondary track: Stability & Governance / Business Unit elements
 - Seniority: Head of Engineering
-- Role shape: executive / people-and-delivery leadership
-- Business context: recruiter-driven UK remote hiring
+- Role shape: executive / principal-architect / people-and-delivery leadership
+- Business context: recruiter-driven UK remote hiring for a scaling product/platform business
 
 ## Match Score
 
-- Overall: medium
+- Overall: medium-high
 - Leadership: high
-- Architecture: medium
+- Architecture: high
 - Delivery / operations: high
-- Domain: unknown
-- Tech stack: unknown
-- Hands-on: unclear
-- Risk: medium-high due to missing detail
+- Domain: medium-high
+- Tech stack: medium-high
+- Hands-on: moderate / desirable rather than core
+- Risk: medium due to recruiter channel and some vague company positioning
 
 ## Best CV
 
 - Recommended CV: `CTO - VP Engineering - Director of Engineering.pdf`
-- Use as-is / tailor: use as-is first; tailor only if the employer turns out to want a stronger delivery/governance emphasis
-- Tailoring notes: keep it broad executive/engineering leadership rather than AI-first
+- Use as-is / tailor: use as-is first; consider a light tailor if we want to foreground architecture, delivery predictability, and multidisciplinary org leadership
+- Tailoring notes: keep it broad executive/engineering leadership rather than AI-first; emphasize principal-architect ownership, delivery performance, and multi-domain org leadership
 
 ## Evidence To Use
 
@@ -46,17 +46,17 @@ This is a Head of Engineering alert for a UK remote role. The email does not inc
 - Evidence 2: platform scale, reliability, and delivery governance stories
 - Evidence 3: cross-functional execution across product / ops / commercial
 - Evidence 4: stability, release control, and quality leadership
-- Evidence 5: relocation-aware leadership fit if the role turns into a real UK remote / hybrid discussion
+- Evidence 5: architecture / standards / senior technical authority stories
 
 ## Risks
 
-- Risk 1: actual employer and product are not visible from the email
+- Risk 1: the business is recruiter-mediated, so we still need the actual client and comp band
 - Risk 2: salary and relocation rules are not visible
-- Risk 3: LinkedIn alert quality may be broader than the real fit
+- Risk 3: the technology mix includes hardware and AI, so we need to be honest about the depth expected in each area
 
 ## Lifestyle / Relocation / Compensation
 
-- Current location fit: possibly good if true remote is global or EU-friendly; unclear if UK-only
+- Current location fit: good on paper for remote; verify whether this is truly outside-UK remote or UK-employment-only
 - Relocation required: not shown
 - Remote without relocation: yes on email text, but the legal/work-location constraint is unknown
 - Country card checked: UK not yet added as a formal country card
@@ -68,18 +68,19 @@ This is a Head of Engineering alert for a UK remote role. The email does not inc
 - Monthly cost change: unknown
 - Market salary benchmark: not yet researched
 - Target income: not yet set
-- Quality-of-life verdict: conditional maybe, pending actual employer and constraints
+- Quality-of-life verdict: conditional maybe, but less blocked than the first email-only read suggested
 
 ## Risk Mitigation
 
 - Clarify whether this is UK-only employment or true remote anywhere
 - Ask for salary band and reporting line before investing more
-- Ask whether the role expects hands-on coding or mostly leadership
+- Ask how the 25-person team breaks down across software, hardware, data, and AI
+- Ask whether the role expects hands-on code/system design or mainly architectural leadership
 
 ## Cover Letter
 
 ```text
-I lead engineering organizations in product and platform environments where delivery discipline, reliability, and cross-functional execution matter. This role is interesting because it combines engineering leadership, operational ownership, and a practical execution mandate. I would like to understand the actual employer, team shape, salary range, and working-location constraints before taking the next step.
+I lead engineering organizations in product and platform environments where architecture, delivery discipline, reliability, and cross-functional execution matter. This role is interesting because it combines senior technical leadership with operational ownership across software, hardware, data, and AI. I would like to understand the actual client, team shape, salary range, and working-location constraints before taking the next step.
 ```
 
 ## Questions For Recruiter / Hiring Manager
@@ -87,11 +88,11 @@ I lead engineering organizations in product and platform environments where deli
 - What is the actual employer behind Shaw Daniels Solutions?
 - Is this role UK-only, or can it be done from outside the UK?
 - What is the salary band and employment setup?
-- How large is the team, and what is the first 6-12 month mandate?
-- Is the expectation hands-on engineering leadership or mainly people/delivery leadership?
+- How large is the team, and how is the 25-person org split across disciplines?
+- Is the expectation hands-on engineering leadership, principal-architect ownership, or mainly people/delivery leadership?
 
 ## Decision
 
 - Apply: maybe
-- Priority: medium
-- Next action: hold until the actual employer, salary band, and location constraints are known
+- Priority: medium-high
+- Next action: keep warm; clarify employer, salary band, and UK-remote legality before spending more tailoring effort

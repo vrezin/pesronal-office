@@ -3,6 +3,7 @@
 ## Source
 
 - LinkedIn job alert email
+- LinkedIn MCP job details
 - Date received: 2026-06-10
 - Email subject: `Head of Engineering в компании Shaw Daniels Solutions`
 - Job alert query: `Software Engineering Director`
@@ -11,11 +12,11 @@
 
 - Company: Shaw Daniels Solutions
 - Role title: Head of Engineering
-- Location / format: United Kingdom (remote)
+- Location / format: United Kingdom (fully remote)
 - Posting date: 2026-06-09
 - Status in email: active hiring / simple apply
 - Link in email: LinkedIn job view `4422285343`
 
 ## Notes
 
-The LinkedIn MCP enrichment for this job id was attempted but did not start cleanly in this environment, so this archive is email-first and should be refreshed later if the job remains relevant.
+The LinkedIn MCP enrichment succeeded once the server was manually started in detached mode on the local machine. The archive now reflects the actual JD rather than only the alert email.
