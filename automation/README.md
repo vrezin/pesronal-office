@@ -18,4 +18,4 @@ Automation must leave a trace in `runs/` and update `state/` only after successf
 ## Active Monitors
 
 - `hh-gmail-monitor`
-- `linkedin-gmail-monitor`
+- `linkedin-gmail-monitor` - uses the registered local LinkedIn MCP server from `.codex/config.toml`, with a loopback wrapper fallback if needed.
