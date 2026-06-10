@@ -29,4 +29,4 @@
 
 ## Commit
 
-- Pending
+- `6ad1942` `Record HH Gmail digest scan`
