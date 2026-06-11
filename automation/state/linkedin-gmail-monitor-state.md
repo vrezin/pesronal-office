@@ -1,8 +1,8 @@
 # LinkedIn Gmail Monitor State
 
-- Last successful scan: 2026-06-11 20:03:24 +07
-- Last processed Gmail message id: 19eb63c44e1415f0
-- Last processed Gmail internal date: 2026-06-11T10:31:03
+- Last successful scan: 2026-06-12 00:02:00 +07
+- Last processed Gmail message id: 19eb785fed7843c1
+- Last processed Gmail internal date: 2026-06-11T16:31:10
 - Last run status: success
 
 ## Notes
