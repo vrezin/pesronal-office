@@ -46,4 +46,4 @@
 
 - No Gmail labels, stars, importance markers, archive state, or other mailbox state were changed.
 - The previous Revolut thin-digest assumption was superseded by a full job-id-backed posting during this run.
-- Repository commit is still pending at the time this log was written.
+- Repository commit: `06bd87e` (`Update LinkedIn vacancy monitor`)
