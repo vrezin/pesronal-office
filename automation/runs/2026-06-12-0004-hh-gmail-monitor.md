@@ -73,4 +73,4 @@ Processed the HH / HeadHunter mail returned by Gmail search and updated the pers
 
 ## Commit
 
-- Pending.
+- `f9b06bc` - `chore: record hh monitor scan and alpha strakhovanie lead`
