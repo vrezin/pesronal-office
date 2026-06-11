@@ -1,6 +1,6 @@
 # Job Intake Today
 
-Updated: 2026-06-10
+Updated: 2026-06-11
 
 This is the lightweight entrance to the active job-search tasks.
 Open this file first, then jump to the per-vacancy tasks.
@@ -16,6 +16,8 @@ Open this file first, then jump to the per-vacancy tasks.
 
 Current tasks:
 
+- `tasks/active/2026-06-11-overstory-director-of-platform-engineering.md`
+- `tasks/active/2026-06-11-revolut-applied-ai-engineer.md`
 - `tasks/active/2026-06-10-jobgether-director-of-engineering.md`
 - `tasks/active/2026-06-10-unknown-hedge-fund-cto-trading-ai-screening.md`
 
@@ -24,14 +26,18 @@ Waiting for reply:
 - `tasks/waiting/2026-06-10-minehub-vp-of-engineering-employer-response.md`
 - `tasks/waiting/2026-06-10-selby-jennings-head-of-engineering-employer-response.md`
 - `tasks/waiting/2026-06-10-shaw-daniels-head-of-engineering-employer-response.md`
-- `tasks/waiting/2026-06-09-unknown-wholesale-it-head-employer-response.md`
 
 Recently closed:
 
 - Pepperstone - `Head of Product Engineering` - rejected on 2026-06-10
+- `tasks/done/2026-06-10-unknown-wholesale-it-head-employer-response.md`
+- Sberbank / Сбер IT - `Руководитель по трансформации бизнес-процессов` - rejected on 2026-06-11
+- Инфинити - `Tech Lead / AI Engineer` - rejected on 2026-06-10
 
 Recently reviewed:
 
+- `2026-06-11-overstory-director-of-platform-engineering-analysis.md`
+- `2026-06-11-revolut-applied-ai-engineer-analysis.md`
 - `2026-06-10-jobgether-director-of-engineering-analysis.md`
 
 Deprecated queue note:

@@ -17,6 +17,16 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
 
 ### Needs Decision Now
 
+- Overstory — Director of Platform Engineering
+  - State: maybe / interesting if eligible-country relocation is workable
+  - Next: review the analysis and decide whether the country filter and family economics justify a reply
+  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-11-overstory-director-of-platform-engineering-analysis.md`
+
+- Revolut — Applied AI Engineer
+  - State: maybe / lower priority until the Cyprus economics are clear
+  - Next: review the analysis and decide whether Cyprus relocation and the hands-on AI/product mix are worth a reply
+  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-11-revolut-applied-ai-engineer-analysis.md`
+
 - HH digest received on 2026-06-10 09:01
   - State: thin digest with six vacancy leads, no JD text yet
   - Next: open selected HH links only if one becomes strategically relevant; otherwise wait for a full JD
@@ -61,6 +71,8 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
 
 ### Recently Reviewed
 
+- `2026-06-11-overstory-director-of-platform-engineering-analysis.md`
+- `2026-06-11-revolut-applied-ai-engineer-analysis.md`
 - `2026-06-10-selby-jennings-head-of-engineering-amsterdam-analysis.md`
 - `2026-06-10-redholt-vice-president-technology-dubai-analysis.md`
 - `2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md`
