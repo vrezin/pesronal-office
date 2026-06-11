@@ -1,6 +1,6 @@
 # Job Intake Today
 
-Updated: 2026-06-11
+Updated: 2026-06-12
 
 This is the lightweight entrance to the active job-search tasks.
 Open this file first, then jump to the per-vacancy tasks.
@@ -18,6 +18,7 @@ Current tasks:
 
 - `tasks/active/2026-06-11-overstory-director-of-platform-engineering.md`
 - `tasks/active/2026-06-11-revolut-applied-ai-engineer.md`
+- `tasks/active/2026-06-11-alpha-strahovanie-platform-development-lead.md`
 - `tasks/active/2026-06-10-jobgether-director-of-engineering.md`
 - `tasks/active/2026-06-10-unknown-hedge-fund-cto-trading-ai-screening.md`
 
@@ -36,6 +37,7 @@ Recently closed:
 
 Recently reviewed:
 
+- `2026-06-11-alpha-strahovanie-platform-development-lead-analysis.md`
 - `2026-06-11-overstory-director-of-platform-engineering-analysis.md`
 - `2026-06-11-revolut-applied-ai-engineer-analysis.md`
 - `2026-06-10-jobgether-director-of-engineering-analysis.md`

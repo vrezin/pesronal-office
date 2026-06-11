@@ -87,9 +87,11 @@
 - 2026-06-09 14:49: Screening question: "Есть ли у вас опыт технического лидерства (код-ревью, декомпозиция задач, помощь разработчикам и т.д.)?" Answer: "Да".
 - 2026-06-09 14:49: Робот-рекрутер сообщил, что ответы отправлены работодателю.
 - 2026-06-09: Recruiter Валерия Нифталиева replied: "Владимир Сергеевич, здравствуйте! Рассмотрим ваше резюме. Если навыки и опыт подойдут для позиции, мы свяжемся с вами."
+- 2026-06-10: HH email confirmed the employer is not ready to invite to the next stage for `Tech Lead / AI Engineer`.
+- 2026-06-11: Follow-up HH email repeated the rejection message in the same thread.
 
 ## Decision
 
-- Apply: applied / screening completed
-- Priority: medium-low to medium
-- Next action: wait for employer response; if they continue, ask salary, hands-on ratio, team/project scope and expected AI-agent outcomes.
+- Apply: rejected on 2026-06-10
+- Priority: closed
+- Next action: no further follow-up needed unless a new direct contact or fresh role appears

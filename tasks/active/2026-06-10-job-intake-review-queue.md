@@ -27,6 +27,11 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
   - Next: review the analysis and decide whether Cyprus relocation and the hands-on AI/product mix are worth a reply
   - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-11-revolut-applied-ai-engineer-analysis.md`
 
+- АльфаСтрахование — Technical Lead, Development Platform
+  - State: invitation / maybe interesting if Moscow hybrid economics are workable
+  - Next: review the analysis, then ask salary band, hybrid cadence, relocation support, and team scope
+  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-11-alpha-strahovanie-platform-development-lead-analysis.md`
+
 - HH digest received on 2026-06-10 09:01
   - State: thin digest with six vacancy leads, no JD text yet
   - Next: open selected HH links only if one becomes strategically relevant; otherwise wait for a full JD

@@ -1,6 +1,6 @@
 # Vacancy Review Index
 
-Updated: 2026-06-11
+Updated: 2026-06-12
 
 This is the operating index of reviewed vacancies. It summarizes the detailed artifacts in `analyses/` and links each row back to the full analysis.
 
@@ -23,6 +23,7 @@ This is the operating index of reviewed vacancies. It summarizes the detailed ar
 |---|---|---|---|---|---|---|---|---|
 | 2026-06-11 | Overstory | Director of Platform Engineering | Stability & Governance / AI Transformation | `CTO - Head of Engineering - Stability and Governance.pdf` | maybe / interesting if eligible-country relocation is workable | medium-high | Review the country filter and family economics before replying. | `analyses/2026-06-11-overstory-director-of-platform-engineering-analysis.md` |
 | 2026-06-11 | Revolut | Applied AI Engineer | AI Transformation | `AI Transformation Lead - AI Automation Architect.pdf` | maybe / lower priority until the Cyprus economics are clear | medium | Review the analysis, then decide whether Cyprus relocation and the hands-on AI/product mix are worth a reply. | `analyses/2026-06-11-revolut-applied-ai-engineer-analysis.md` |
+| 2026-06-11 | АльфаСтрахование | Technical Lead, Development Platform | Stability & Governance / Heavy Enterprise | `CTO - Head of Engineering - Stability and Governance.pdf` | maybe / interesting if Moscow hybrid economics are workable | medium-high | Review the analysis, then ask salary band, hybrid cadence, relocation support, and team scope. | `analyses/2026-06-11-alpha-strahovanie-platform-development-lead-analysis.md` |
 | 2026-06-09 | Castle | Agentic AI Architect - AI Financial Coach & Gamified Wealth Platform | AI Transformation | `AI Transformation Lead - AI Automation Architect.pdf` | yes / worth pursuing if compensation and contractor terms are sane | medium-high | Ask compensation, contractor setup, timezone overlap, and first-90-day success metrics. | `analyses/2026-06-09-castle-agentic-ai-architect-financial-coach-gamified-wealth-platform-analysis.md` |
 | 2026-06-01 | Азиатско-Тихоокеанский банк | Руководитель центра разработки мидл-офиса | Business Unit / Integration or Startup/Product Engineering | Product Engineering CV | maybe / low priority unless role scope is larger than JD says | medium-low | Ask scope/salary before spending much time. | `analyses/2026-06-01-atb-head-of-middle-office-development-center-analysis.md` |
 | 2026-06-01 | CROC | Технический лидер бизнес-юнита | Business Unit / Integration + AI Platform | Tailored Business Unit / AI Platform | yes, if interested in CROC/integrator route | high strategic value | Decide whether to create a Business Unit / AI Platform tailored CV. | `analyses/2026-06-01-croc-technical-leader-business-unit-llm-ai-platform-analysis.md` |
@@ -76,3 +77,4 @@ This is the operating index of reviewed vacancies. It summarizes the detailed ar
 | 2026-06-09 | unknown | AI-Native Product Technologist | AI Transformation | `AI Transformation Lead - AI Automation Architect.pdf` | rejected | low | No further pursuit unless a later direct employer message changes the picture. | `analyses/2026-06-09-unknown-ai-native-product-technologist-analysis.md` |
 | 2026-06-09 | unknown hedge fund | CTO / Trading AI | Tailored / hybrid: AI Transformation + Heavy Enterprise + Startup CTO | Tailored from `CTO - VP Engineering - Director of Engineering.pdf` | screening in progress | medium-high interest, high domain risk | Reply to the recruiter: answer trading-company / project-vs-staff / daily AI-tool questions honestly, then clarify direct HFT requirement, latency targets, hardware layer, team composition, comp/options and relocation/legal setup if the process continues. | `analyses/2026-06-09-unknown-hedge-fund-cto-trading-ai-analysis.md` |
 | 2026-06-09 | unknown wholesale company | Руководитель ИТ-отдела | Business Unit / Integration | `Director of Development - Business Unit Technical Leader.pdf` | rejected on 2026-06-10 | closed | No further follow-up needed unless a new direct contact or fresh role appears. | `analyses/2026-06-09-unknown-wholesale-it-head-1c-migration-analysis.md` |
+

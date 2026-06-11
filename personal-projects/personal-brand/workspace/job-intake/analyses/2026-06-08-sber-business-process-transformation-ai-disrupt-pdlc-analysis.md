@@ -97,8 +97,13 @@
 - Где сейчас главное сопротивление: безопасность, качество кода, зрелость команд, руководители направлений, процесс закупки/доступов или отсутствие понятных метрик?
 - Какой баланс роли: экспертные ad hoc запросы, презентации для руководства, фасилитация рабочих групп, управление программой и hands-on прототипирование?
 
+## Application / Screening Log
+
+- 2026-06-11: HH email said the employer is not ready to invite to the next stage for `Руководитель по трансформации бизнес-процессов`.
+- 2026-06-11: Status updated from active pursuit to rejected / closed.
+
 ## Decision
 
-- Apply: yes
-- Priority: high if onsite Moscow is acceptable or negotiable; medium-high if relocation/onsite is problematic
-- Next action: send `AI Transformation Lead - AI Automation Architect.pdf` with the tailored cover letter above. Clarify onsite expectations early.
+- Apply: rejected on 2026-06-11 after employer reply
+- Priority: closed
+- Next action: no further follow-up needed unless a new direct contact or fresh role appears

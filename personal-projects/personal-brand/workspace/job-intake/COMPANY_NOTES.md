@@ -1,6 +1,6 @@
 # Company Notes From Job Intake
 
-Updated: 2026-06-10
+Updated: 2026-06-12
 
 These notes are derived only from saved JD archives and analyses in `job-intake/`. They are not external due diligence.
 
@@ -16,6 +16,7 @@ These notes are derived only from saved JD archives and analyses in `job-intake/
 |---|---|---|---|---|
 | Overstory | Climate-tech company using AI and satellites to help utilities reduce vegetation risk, outages, and wildfire exposure; the role is a platform / infrastructure leadership seat with SRE and MLOps depth. | Stability & Governance | Country eligibility is the first gate; the posting does not show salary, so relocation economics need a follow-up. | `analyses/2026-06-11-overstory-director-of-platform-engineering-analysis.md` |
 | Revolut | Large fintech super-app with a product-team Applied AI Engineer role centered on AI-powered customer features, LLMs, and roadmap ownership. | AI Transformation | Cyprus is a real family relocation question; the role is more hands-on product-AI than broader engineering leadership. | `analyses/2026-06-11-revolut-applied-ai-engineer-analysis.md` |
+| АльфаСтрахование | Large Russian insurance group with a platform engineering leadership seat focused on Kubernetes, cloud, DevOps, Linux, and internal platform design. | Stability & Governance / Heavy Enterprise | Moscow hybrid from Novosibirsk is a real family-logistics question; salary is missing, so the economics are still unverified. | `analyses/2026-06-11-alpha-strahovanie-platform-development-lead-analysis.md` |
 | Castle | AI-native consumer financial wellness product with an agentic coach, memory, dashboard integration, gamification, and community loops. Feels like a strong AI Transformation lane with some startup/product pressure. | AI Transformation | Need to clarify compensation, contractor setup, privacy/financial advice boundaries, and how much product growth ownership is expected versus pure architecture. | `analyses/2026-06-09-castle-agentic-ai-architect-financial-coach-gamified-wealth-platform-analysis.md` |
 | Азиатско-Тихоокеанский банк | Bank role around middle-office development; potentially useful financial-sector signal, but role may be narrower/lower than profile. | Business Unit / Product Engineering | Scope and salary may not justify senior profile; clarify before investing. | `analyses/2026-06-01-atb-head-of-middle-office-development-center-analysis.md` |
 | CROC | Strategic integrator route; strong fit if framed as Business Unit / Integration plus AI platform leadership. | Business Unit / Integration + AI | Needs tailored positioning; avoid generic CTO CV if role is client/practice-heavy. | `analyses/2026-06-01-croc-technical-leader-business-unit-llm-ai-platform-analysis.md` |
