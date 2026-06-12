@@ -8,7 +8,7 @@
 - Role title: Technical Lead, Development Platform
 - Location / format: Moscow hybrid, 5/2
 - Status: analyzed from HH chat invitation text
-- Application status: not applied
+- Application status: screening in progress
 - Archive file: `../jd-archive/2026-06-11-alpha-strahovanie-platform-development-lead.md`
 
 ## Verdict
@@ -86,3 +86,9 @@ I would like to understand the salary band and the hybrid expectations before ta
 - Best track: Stability & Governance
 - Alternate track: Heavy Enterprise
 - Main caution: Moscow hybrid and salary unverified
+
+## Screening Log
+
+- 2026-06-12: HH assistant asked about Kubernetes experience and scale.
+- 2026-06-12: User answered `6 years` for Kubernetes and described a delivery platform with `130k+` daily orders and more than `1M` financial transactions/day.
+- 2026-06-12: HH assistant asked about Linux administration experience and typical tasks.

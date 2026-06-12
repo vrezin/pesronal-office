@@ -1,7 +1,7 @@
 # Review Secretar Bot After Yandex Drops Signal
 
 - Created: 2026-06-09
-- Status: active
+- Status: done
 - Area: personal-projects / experiments
 - Related signal: `personal-projects/experiments/2026-06-09-yandex-drops-secretar-bot-market-signal.md`
 - Related project entity: `memory/entities/projects/secretar-bot.md`

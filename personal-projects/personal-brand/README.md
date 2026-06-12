@@ -34,4 +34,4 @@ Completed handling:
 
 ## Active Task
 
-See `../../tasks/active/2026-06-09-migrate-non-aistudio-assets.md`.
+See `../../tasks/done/2026-06-09-migrate-non-aistudio-assets.md`.

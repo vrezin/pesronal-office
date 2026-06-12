@@ -1,7 +1,7 @@
 # Unknown Hedge Fund CTO / Trading AI - screening follow-up
 
 - Created: 2026-06-10
-- Status: applied / screening open
+- Status: waiting
 - Priority: high
 - Area: personal brand / job search
 - Related analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-unknown-hedge-fund-cto-trading-ai-analysis.md`

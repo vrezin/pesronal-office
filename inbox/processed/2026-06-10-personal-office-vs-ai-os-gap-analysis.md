@@ -13,7 +13,7 @@
 
 | Область | У нас есть | У нас нет / слабее | Где мы лучше | Где недотягиваем |
 |---|---|---|---|---|
-| Входящий поток | `inbox/raw/`, `inbox/processed/`, rules of routing, clarification notes | Нет единого “inbox cockpit”, где пользователь сразу видит, что делать с каждым входом | Реальный ingress с дисциплиной маршрутизации и следом обработки | Пока это скорее файловый intake pipeline, чем живой пользовательский inbox |
+| Входящий поток | `inbox/raw/`, `inbox/processed/`, rules of routing, clarification notes | Нет единого inbox cockpit с явной action queue, который сразу показывает каждый новый вход, его статус, владельца, next step и блокеры | Реальный ingress pipeline с маршрутизацией, traceability и сохранением обработки в артефактах | Пока это больше backend intake pipeline, чем пользовательский inbox, который каждый день отвечает: что делать сейчас |
 | Задачи и follow-ups | `tasks/active/`, `tasks/waiting/`, `tasks/someday/`, `tasks/done/` | Нет единой orchestration-надстройки, которая сама собирает и закрывает next steps | Хорошая база для обязательств, зависимостей и ownership | Не хватает авто-приоритизатора, статуса по каждой задаче и “one place to act” |
 | Календарь и время | `calendar/daily/`, `weekly/`, `monthly/`, `meetings/`, rules for meetings | Нет time cockpit, который сводит задачи, встречи и свободные окна в один план | Сильная структуризация временных обязательств и встреч | Не хватает briefing/scheduling слоя и явного автоплана на день/неделю |
 | Память | `memory/short-term/`, `episodic/`, `semantic/`, `entities/`, `knowledge-graph/`, retrieval rules | Нет зрелого semantic retrieval как обязательного product layer | Сильнее большинства “чат-ботов” за счет долговременной памяти и связей | Не хватает надежной автоматической консолидации и очевидного recall UX |
@@ -45,6 +45,37 @@
 - scheduled automation -> recheck -> close the loop.
 
 То есть chat - это один из режимов intake, а не центр продукта.
+
+### Why The Action Queue Matters
+
+The missing piece is not a prettier inbox. It is a living action queue.
+
+Without it, the system can store everything correctly and still feel тупое because the user must manually reconstruct:
+
+- what needs attention now;
+- what is waiting on someone else;
+- what is blocked;
+- what is stale;
+- what can be ignored.
+
+The action queue is the layer that turns stored context into daily operating clarity.
+
+The concrete follow-up for this gap is tracked in:
+
+- `tasks/active/2026-06-10-design-action-queue-for-personal-office.md`
+
+## Surface Strategy
+
+The likely best default is not to replace Google/Yandex surfaces up front.
+
+Instead:
+
+- use existing ecosystems for input and notification surfaces where they are already strong;
+- keep Personal Office as the workflow brain, state machine, and traceable source of truth;
+- only build a custom UI where it creates a materially better action cockpit, not just a prettier shell;
+- add a thin unified dashboard later if the product needs one screen for status, risk, and next step.
+
+So the question is not “do we build a new face?”, but “where does a new face create a workflow advantage that existing surfaces cannot provide?”
 
 ## Практический смысл
 

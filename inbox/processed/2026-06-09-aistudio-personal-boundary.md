@@ -47,4 +47,4 @@ Tombstone README files were left at the old AI Studio paths.
 
 Created migration task:
 
-- `tasks/active/2026-06-09-migrate-non-aistudio-assets.md`
+- `tasks/done/2026-06-09-migrate-non-aistudio-assets.md`

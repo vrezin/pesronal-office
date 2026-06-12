@@ -8,6 +8,7 @@ This is the active shortlist of countries that keep appearing in job intake and 
 |---|---|---|---|---|---|---|---|---|---|---|
 | Portugal | active | TBD | TBD | TBD | TBD | TBD | TBD | TBD | 2026-06-10 | MineHub is Portugal-first; also relevant for other EU/remote roles. |
 | Cyprus | active | TBD | TBD | TBD | TBD | TBD | TBD | TBD | 2026-06-10 | Relevant for Pepperstone and any Cyprus-based relocation. |
+| UK | active | TBD | TBD | TBD | TBD | TBD | TBD | TBD | 2026-06-12 | Relevant for UK-based remote roles and recruiter-led founding AI/platform seats. |
 | Hungary | active | TBD | TBD | TBD | TBD | TBD | TBD | TBD | 2026-06-10 | Relevant for Budapest roles and EU relocation alternatives. |
 | Netherlands | active | TBD | TBD | TBD | TBD | TBD | TBD | TBD | 2026-06-10 | Relevant for EU relocation and remote-first senior leadership roles. |
 

@@ -7,6 +7,6 @@
 
 ## Links
 
-- Migration task: `../../tasks/active/2026-06-09-migrate-non-aistudio-assets.md`
+- Migration task: `../../tasks/done/2026-06-09-migrate-non-aistudio-assets.md`
 - Signal intake orchestration task: `../../tasks/active/2026-06-09-design-company-signal-intake-orchestration.md`
 - Boundary decision: `../../inbox/processed/2026-06-09-aistudio-personal-boundary.md`

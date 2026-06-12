@@ -142,7 +142,11 @@
 
 ## Decision
 
-- Apply: maybe / yes if Moscow onsite and compensation are acceptable.
-- Priority: medium-high. Strong role by scope, but with real risks around direct holding CIO/ERP migration profile and onsite Moscow.
+- Apply: rejected on 2026-06-12 after employer response.
+- Priority: closed
 - Best CV: `Digital - Technology Transformation Director.pdf`.
-- Next action: ask salary/onsite and ERP depth first; if acceptable, tailor CV headline and first screen toward CIO holding transformation.
+- Next action: no further follow-up needed unless a new direct contact or fresh role appears.
+
+## Application / Screening Log
+
+- 2026-06-12: Employer rejected the application.

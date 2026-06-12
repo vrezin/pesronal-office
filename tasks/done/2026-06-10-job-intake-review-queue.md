@@ -1,10 +1,10 @@
 # Job Intake Review Queue
 
 Deprecated: per-vacancy tasks are now the primary working surface.
-Keep this file only as a breadcrumb for older references.
+Keep this file only as a breadcrumb for older references and automation compatibility.
 
 - Created: 2026-06-10
-- Status: active
+- Status: deprecated breadcrumb
 - Area: personal-projects / personal-brand / job-search process
 - Related workspace: `personal-projects/personal-brand/workspace/`
 
@@ -16,6 +16,11 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
 ## Queue Buckets
 
 ### Needs Decision Now
+
+- KDR Talent Solutions — Head of Engineering (Machine Learning & AI Platform)
+  - State: maybe / interesting if UK-based eligibility is workable
+  - Next: review the analysis, then clarify UK eligibility, relocation, full compensation, and family economics
+  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-12-kdr-talent-solutions-head-of-engineering-ai-platform-analysis.md`
 
 - Overstory — Director of Platform Engineering
   - State: maybe / interesting if eligible-country relocation is workable

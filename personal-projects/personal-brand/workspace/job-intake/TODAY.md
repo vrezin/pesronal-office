@@ -16,17 +16,29 @@ Open this file first, then jump to the per-vacancy tasks.
 
 Current tasks:
 
+- `tasks/active/2026-06-12-volt-ai-agent-engineer.md`
+- `tasks/active/2026-06-11-job-search-open-questions.md`
 - `tasks/active/2026-06-11-overstory-director-of-platform-engineering.md`
 - `tasks/active/2026-06-11-revolut-applied-ai-engineer.md`
-- `tasks/active/2026-06-11-alpha-strahovanie-platform-development-lead.md`
 - `tasks/active/2026-06-10-jobgether-director-of-engineering.md`
-- `tasks/active/2026-06-10-unknown-hedge-fund-cto-trading-ai-screening.md`
 
 Waiting for reply:
 
+- `tasks/waiting/2026-06-12-raketnaya-firma-ai-engineer-ai-solutions-engineer-employer-response.md`
+- `tasks/waiting/2026-06-12-miratorg-director-of-project-ai-implementation-employer-response.md`
+- `tasks/waiting/2026-06-12-alpha-strahovanie-platform-development-lead-employer-response.md`
+- `tasks/waiting/2026-06-10-unknown-hedge-fund-cto-trading-ai-screening.md`
 - `tasks/waiting/2026-06-10-minehub-vp-of-engineering-employer-response.md`
 - `tasks/waiting/2026-06-10-selby-jennings-head-of-engineering-employer-response.md`
 - `tasks/waiting/2026-06-10-shaw-daniels-head-of-engineering-employer-response.md`
+- `tasks/waiting/2026-06-09-moex-delivery-lead-employer-response.md`
+- `tasks/waiting/2026-06-08-alfa-bank-enterprise-vibe-coding-team-lead-employer-response.md`
+- `tasks/waiting/2026-06-08-rshb-factoring-ai-agents-lead-employer-response.md`
+- `tasks/waiting/2026-06-09-positive-technologies-ai-lead-employer-response.md`
+- `tasks/waiting/2026-06-09-lofty-ai-architect-employer-response.md`
+- `tasks/waiting/2026-06-09-gku-infogorod-technical-leader-employer-response.md`
+- `tasks/waiting/2026-06-09-skl-vc-ai-solutions-architect-employer-response.md`
+- `tasks/waiting/2026-06-09-ai-lead-585-holding-employer-response.md`
 
 Recently closed:
 
@@ -44,7 +56,7 @@ Recently reviewed:
 
 Deprecated queue note:
 
-- `tasks/active/2026-06-10-job-intake-review-queue.md`
+- `tasks/done/2026-06-10-job-intake-review-queue.md`
 
 ## Operating Rule
 

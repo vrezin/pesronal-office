@@ -7,15 +7,22 @@
 - `AI Transformation Lead - AI Automation Architect.docx`
 - `AI Transformation Lead - AI Automation Architect.pdf`
 
+RU catalog:
+
+- `ru/AI Transformation Lead - AI Automation Architect.docx`
+- `ru/AI Transformation Lead - AI Automation Architect.pdf`
+
 Назначение:
 
 - HH / ATS-friendly версия под AI Transformation Lead, AI Automation Architect, Head of AI Implementation.
 - Англоязычная версия, собранная по структуре шаблона `CTO Vladimir Rezin (Heavy Enterprise) .docx`.
+- Включает GitHub, personal site, hands-on AI-assisted development, selected AI work и стек Python/Java/Spring Boot, PostgreSQL, Redis, OpenAI/Ollama/GigaAM/Yandex.
 - Без полного раннего опыта и без RTK.
 - Опыт в HH сокращен до 11 лет 10 месяцев.
 - Позиционирование AI/automation встроено в первый блок опыта, потому что HH размещает “Обо мне” ниже опыта.
+- Русскоязычная версия лежит в отдельном каталоге `ru/`, чтобы не плодить суффиксы в имени сущности и держать языки раздельно.
 
-Дата сохранения: 2026-06-09.
+Дата сохранения: 2026-06-10.
 
 ## CTO / VP Engineering / Director of Engineering - ENG working copy
 

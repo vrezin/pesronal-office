@@ -78,4 +78,8 @@ Position for further answers:
 
 - Apply: already applied
 - Priority: medium
-- Next action: answer screening questions concisely, emphasizing requirements artifacts and AI delivery governance while defusing overqualification.
+- Next action: employer rejected the application; no further follow-up needed unless a new direct contact or fresh role appears.
+
+## Application / Screening Log
+
+- 2026-06-12: Employer rejected the application.
