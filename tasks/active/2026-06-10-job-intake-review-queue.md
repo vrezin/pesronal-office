@@ -22,6 +22,11 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
   - Next: review the analysis and decide whether the country filter and family economics justify a reply
   - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-11-overstory-director-of-platform-engineering-analysis.md`
 
+- HH digest received on 2026-06-12 08:29
+  - State: thin digest with six vacancy leads, no JD text yet
+  - Next: wait for a full JD or open one selected vacancy on demand
+  - Note: `inbox/processed/2026-06-12-hh-vacancy-digest-thin-links.md`
+
 - Revolut — Applied AI Engineer
   - State: maybe / lower priority until the Cyprus economics are clear
   - Next: review the analysis and decide whether Cyprus relocation and the hands-on AI/product mix are worth a reply
