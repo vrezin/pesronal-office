@@ -11,6 +11,13 @@
 - Link: `https://www.linkedin.com/jobs/view/4422285343/`
 - Archive file: `../jd-archive/2026-06-10-shaw-daniels-solutions-head-of-engineering.md`
 
+## Status
+
+- Application state: rejected
+- Status source: LinkedIn rejection email, Gmail message id `19ec02d1e17a3e66`
+- Status date: 2026-06-13
+- Follow-up: no action unless Shaw Daniels or the end client reopens contact through a new role.
+
 ## Raw JD Summary
 
 This is a real senior engineering leadership role, not just a generic recruiter alert. The JD asks for ownership of architecture, delivery, operational excellence, and organizational leadership across software, hardware, data, and AI. It points to a multidisciplinary team of about 25 engineers and explicitly mentions pace, predictability, quality, and commercial impact.
@@ -93,6 +100,6 @@ I lead engineering organizations in product and platform environments where arch
 
 ## Decision
 
-- Apply: maybe
+- Apply: already applied; rejected on 2026-06-13
 - Priority: medium-high
-- Next action: keep warm; clarify employer, salary band, and UK-remote legality before spending more tailoring effort
+- Next action: closed; no further follow-up unless a new direct contact appears

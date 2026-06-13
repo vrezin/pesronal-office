@@ -12,7 +12,9 @@
 
 LinkedIn delivered a full Revolut Applied AI Engineer posting after enrichment with the local LinkedIn job id. This is a real AI-product role, not a thin teaser anymore.
 
+On 2026-06-12, the user pasted the full LinkedIn page. The page keeps the visible title as Applied AI Engineer, but the body copy says Lead Applied AI Engineer and emphasizes product roadmap, project execution, and risk ownership. LinkedIn also shows 100+ people clicked apply, and Revolut warns candidates to use only official Revolut channels and official `@revolut.com` communications.
+
 ## Next Step
 
-- Review the analysis and decide whether Cyprus relocation and the hands-on AI/product mix are worth a reply.
-- If yes, draft a concise recruiter reply asking about salary, relocation support, and how the role splits between product leadership and implementation.
+- Decide whether Cyprus relocation and the hands-on AI/product mix are worth an application.
+- If yes, apply only through the official Revolut channel and ask about salary, relocation support, and how the role splits between lead roadmap ownership and implementation.

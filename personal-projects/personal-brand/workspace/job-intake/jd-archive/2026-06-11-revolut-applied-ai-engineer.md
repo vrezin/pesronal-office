@@ -3,20 +3,25 @@
 ## Metadata
 
 - Date: 2026-06-11
-- Source: LinkedIn email + LinkedIn MCP server job details
+- Last updated: 2026-06-12
+- Source: LinkedIn email + LinkedIn MCP server job details + user-pasted LinkedIn posting
 - Company: Revolut
-- Role title: Applied AI Engineer
+- Role title: Applied AI Engineer / Lead Applied AI Engineer in body copy
 - Location / format: Cyprus; remote full-time
 - Status: analyzed from LinkedIn email and MCP job details
 - Application status: not applied
 - LinkedIn job id: `4407473235`
 - Archive note: the LinkedIn digest was initially thin, but the job id exposed a full posting
+- LinkedIn posting freshness: reposted 2 days before the 2026-06-12 paste
+- Applicant pressure: LinkedIn shows 100+ people clicked apply
 
 ## Raw JD Summary
 
 Revolut is looking for a lead-level applied AI engineer in its Product team. The job is centered on building AI-powered customer features and running the roadmap around them. It mixes product ownership, technical delivery, and stakeholder communication rather than pure research or pure infrastructure.
 
 The posting emphasizes AI products, LLMs, machine learning, NLP, and measurable outcomes in a fast-moving product environment. It also wants someone who can manage day-to-day execution, risk, and roadmap delivery while working cross-functionally with data scientists and software engineers.
+
+The 2026-06-12 LinkedIn paste adds a stronger seniority signal than the title alone: the role copy says Revolut is looking for a Lead Applied AI Engineer who can manage product roadmap, day-to-day operations, project execution, and risk assessment. The application appears to be managed outside LinkedIn, and Revolut warns candidates to apply only through official Revolut channels and official `@revolut.com` communications.
 
 ## Classification
 
@@ -25,6 +30,7 @@ The posting emphasizes AI products, LLMs, machine learning, NLP, and measurable 
 - Seniority: lead / senior IC with roadmap ownership
 - Role shape: applied AI product engineering
 - Business context: large fintech super-app with a product team that ships AI-powered customer features
+- Channel note: apply only through official Revolut channels; do not treat third-party recruiter/payment requests as legitimate
 
 ## Match Score
 
@@ -79,6 +85,7 @@ The posting emphasizes AI products, LLMs, machine learning, NLP, and measurable 
 - Mitigation 1: ask whether Cyprus is mandatory or only one allowed country among several options
 - Mitigation 2: ask for the salary band and relocation support before any deeper screening
 - Mitigation 3: confirm how much of the role is roadmap ownership versus hands-on AI implementation
+- Mitigation 4: use official Revolut application channels only
 
 ## Cover Letter
 
@@ -91,6 +98,7 @@ I build AI-enabled products with a focus on practical delivery, roadmap executio
 - Question 1: Is Cyprus mandatory, and what relocation support is available?
 - Question 2: How much of the role is product ownership versus hands-on implementation?
 - Question 3: What is the salary band and how is success measured in the first 6-12 months?
+- Question 4: Is the role scoped as Lead Applied AI Engineer in practice, despite the shorter LinkedIn title?
 
 ## Decision
 
@@ -105,3 +113,19 @@ I build AI-enabled products with a focus on practical delivery, roadmap executio
 - The role is described as lead-level, with roadmap, risk, and execution ownership.
 - The posting explicitly mentions LLMs, AI assistants, AI automation platforms, NLP, and machine-learning delivery.
 - Revolut says the team is global and fast-moving, with work in product, data, and engineering.
+
+## 2026-06-12 User-Pasted LinkedIn Details
+
+- Posting page title: Applied AI Engineer.
+- Body copy seniority: Lead Applied AI Engineer.
+- Location: Cyprus, remote.
+- Employment type: full-time.
+- Posting signal: reposted 2 days before 2026-06-12.
+- Applicant pressure: 100+ people clicked apply.
+- Application channel: responses are managed outside LinkedIn.
+- Revolut profile in posting: 75+ million customers and 13,000+ people.
+- Core scope: own product vision, strategy, and roadmap for AI-powered solutions using LLMs and other ML technologies.
+- Collaboration: Data Scientists and Software Engineers.
+- Delivery examples: NLP and AI solutions, AI assistants, AI automation platforms.
+- Requirements: AI products/features from scratch, ML/data science experience, Python/SQL or other programming, deep learning libraries, version control, model deployment, developer environments, math/statistics.
+- Candidate notice: apply only through official Revolut channels; verify `@revolut.com` email domain; do not provide payment or personal financial information.

@@ -1,13 +1,14 @@
-# Waiting For Shaw Daniels Head Of Engineering Employer Response
+# Shaw Daniels Head Of Engineering Rejected
 
 - Created: 2026-06-10
-- Status: waiting
+- Closed: 2026-06-13
+- Status: rejected
 - Area: personal-projects / personal-brand / job-search process
 - Related workspace: `personal-projects/personal-brand/workspace/`
 
 ## Purpose
 
-Track the Shaw Daniels Solutions — Head of Engineering application while waiting for reply.
+Record the closed Shaw Daniels Solutions — Head of Engineering application.
 
 ## Current Facts
 
@@ -15,8 +16,9 @@ Track the Shaw Daniels Solutions — Head of Engineering application while waiti
 - Role: Head of Engineering
 - Location signal: UK remote
 - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md`
+- LinkedIn message id: `19ec02d1e17a3e66`
+- Outcome: LinkedIn rejection email received on 2026-06-13.
 
-## Next Step
+## Closeout
 
-- Clarify actual client, salary band, and whether the role is truly UK-remote if they reply.
-- Keep the application as a warm maybe until more facts arrive.
+- No follow-up. Keep the company as a prior recruiter-mediated signal only.

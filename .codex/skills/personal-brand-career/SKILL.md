@@ -20,4 +20,5 @@ Use for vacancies, recruiter messages, HH/Gmail job mail, CV choice, cover lette
 - Archive/analyze real JDs in `personal-projects/personal-brand/workspace/job-intake/`.
 - Update `INDEX.md` and `COMPANY_NOTES.md` after material changes.
 - Include relocation, family logistics, market salary, and target income when evaluating roles.
+- For high-priority HH roles, use `wiki/playbooks/hh-targeted-resume-block-library.md` and create targeted HH resume packages in `job-intake/targeted-resumes/`.
 - Keep job search out of `work/employment-search/`.

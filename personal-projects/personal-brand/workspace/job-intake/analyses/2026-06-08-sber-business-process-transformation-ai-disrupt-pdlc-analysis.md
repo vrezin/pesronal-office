@@ -100,6 +100,7 @@
 ## Application / Screening Log
 
 - 2026-06-11: HH email said the employer is not ready to invite to the next stage for `Руководитель по трансформации бизнес-процессов`.
+- 2026-06-12: Gmail message `19eb4ce14927e1ca` rechecked and moved to Trash after confirming this rejection is already represented in the analysis and INDEX.
 - 2026-06-11: Status updated from active pursuit to rejected / closed.
 
 ## Decision

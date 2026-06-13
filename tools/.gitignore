@@ -5,3 +5,12 @@
 !*/README.md
 !*/scripts/start-local.sh
 !*/scripts/start-daemon.sh
+
+!headhunter-web-mcp/.gitignore
+!headhunter-web-mcp/pyproject.toml
+!headhunter-web-mcp/server.py
+!headhunter-web-mcp/uv.lock
+!headhunter-web-mcp/hh_web/
+!headhunter-web-mcp/hh_web/*.py
+!headhunter-web-mcp/scripts/
+!headhunter-web-mcp/scripts/*.sh
