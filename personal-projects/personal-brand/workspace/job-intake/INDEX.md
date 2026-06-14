@@ -1,6 +1,6 @@
 # Vacancy Review Index
 
-Updated: 2026-06-12
+Updated: 2026-06-14
 
 This is the operating index of reviewed vacancies. It summarizes the detailed artifacts in `analyses/` and links each row back to the full analysis.
 
@@ -21,6 +21,10 @@ This is the operating index of reviewed vacancies. It summarizes the detailed ar
 
 | Date | Company | Role | Track | CV | Decision | Priority | Next | Analysis |
 |---|---|---|---|---|---|---|---|---|
+| 2026-06-14 | Oyster | Senior Director, Data Platform and AI | AI Transformation / Platform Engineering | `AI Transformation Lead - AI Automation Architect.pdf` | interesting, subject to legal setup and compensation | high | Ask remote/legal eligibility, salary/equity band, and hands-on MLOps/data-platform screening depth before applying. | `analyses/2026-06-14-oyster-senior-director-data-platform-ai-analysis.md` |
+| 2026-06-14 | EY | FS Technology Consulting - Engineering Lead, Features Team - Director - Dublin | Stability & Governance / Digital Transformation | `CTO - Head of Engineering - Stability and Governance.pdf` | maybe, only after salary/relocation/hybrid check | medium | Ask salary band, relocation support, hybrid cadence, and hands-on technical-screening depth before applying. | `analyses/2026-06-14-ey-engineering-lead-director-dublin-analysis.md` |
+| 2026-06-14 | Unisys | Senior Director, Global Head of Solution Development & AI Platforms | AI Transformation / Stability & Governance | `AI Transformation Lead - AI Automation Architect.pdf` | maybe / interesting with calibrated screening | high content fit, medium practical | Ask UK remote eligibility, salary band, coding assessment depth, and Azure AI/MLOps filter strictness before applying. | `analyses/2026-06-14-unisys-senior-director-ai-platforms-analysis.md` |
+| 2026-06-14 | Totalmobile Ltd | Platform Software Engineering Director | Stability & Governance / Heavy Enterprise | `CTO - Head of Engineering - Stability and Governance.pdf` | maybe / interesting if cross-border remote works | medium-high | Ask country eligibility, salary band, legal setup, engineering org size, and first platform priorities before applying. | `analyses/2026-06-14-totalmobile-platform-software-engineering-director-analysis.md` |
 | 2026-06-12 | БКС IT & Digital | IT-партнер AI-департамента | AI Transformation / Stability & Governance | `AI Transformation Lead - AI Automation Architect.pdf` | yes | high | Apply; clarify salary, remote cadence, success metrics and whether role is senior enough versus coordinator/business-partner shape. | `analyses/2026-06-12-bks-it-partner-ai-department-analysis.md` |
 | 2026-06-12 | Millennium | Lead AI Engineer / AI Platform Architect | AI Transformation / Startup Product Engineering | `AI Transformation Lead - AI Automation Architect.pdf` | yes | high | Apply or prepare targeted HH block; clarify salary, hands-on coding ratio, team, first AI scenarios and fully-remote reality. | `analyses/2026-06-12-millennium-lead-ai-engineer-ai-platform-architect-analysis.md` |
 | 2026-06-12 | Ultimate Education | Head of IT | Stability & Governance / Business Unit | `CTO - Head of Engineering - Stability and Governance.pdf` | yes | high | Apply; clarify salary, fully remote from Novosibirsk, team structure, hands-on expectation and first 3-6 month problems. | `analyses/2026-06-12-ultimate-education-head-of-it-analysis.md` |
