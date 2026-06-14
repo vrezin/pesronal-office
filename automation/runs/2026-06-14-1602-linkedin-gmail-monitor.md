@@ -15,7 +15,7 @@ Seven LinkedIn message ids were returned by the overlap search. Three messages w
 |---|---:|---|---|---|
 | `19ec543614d183c0` | 2026-06-14T08:33:05 | `Senior Director, Data Platform and AI в компании Oyster®` | `new_vacancy` | Processed. LinkedIn MCP enrichment returned a full JD; promoted into job intake and active review task. |
 | `19ec4d37face4463` | 2026-06-14T06:30:55 | `FS Technology Consulting - Engineering Lead, Features Team- Director - Dublin в компании EY` | `new_vacancy` | Processed. LinkedIn MCP enrichment returned a full JD; promoted into job intake and active review task. |
-| `19ec465a43721708` | 2026-06-14T04:30:55 | `Новые вакансии, похожие на вакансию «Director of Platform Engineering» в компании Overstory` | `new_vacancy` | Already processed by `automation/runs/2026-06-14-1201-linkedin-gmail-monitor.md`; artifacts are still uncommitted because that run could not create a git index lock. |
+| `19ec465a43721708` | 2026-06-14T04:30:55 | `Новые вакансии, похожие на вакансию «Director of Platform Engineering» в компании Overstory` | `new_vacancy` | Already processed by `automation/runs/2026-06-14-1201-linkedin-gmail-monitor.md`; this run included those pending artifacts in the successful commit. |
 | `19ec088e45b23621` | 2026-06-13T10:30:55 | `Head of Engineering в компании Vyking` | overlap/new_vacancy | Older than saved marker; already captured previously. |
 | `19ec02d1e17a3e66` | 2026-06-13T08:50:42 | `Ваша заявка на вакансию «Head of Engineering» в компании Shaw Daniels Solutions` | overlap/status_update | Older than saved marker; Shaw Daniels rejection already reflected in prior artifacts. |
 | `19ec01c84fd1f9a8` | 2026-06-13T08:32:32 | `Head of Engineering в компании Vyking` | overlap/new_vacancy | Older than saved marker; duplicate Vyking digest already captured. |
@@ -38,7 +38,7 @@ Updated in this run:
 - `personal-projects/personal-brand/workspace/job-intake/INDEX.md`
 - `personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md`
 
-Existing uncommitted LinkedIn monitor artifacts from the 12:01 failed-commit run were left in place and should be committed together with this run if git becomes available:
+Pending LinkedIn monitor artifacts from the 12:01 failed-commit run were included in this run's successful artifact commit:
 
 - `inbox/processed/2026-06-14-linkedin-overstory-similar-jobs-digest.md`
 - `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-14-totalmobile-platform-software-engineering-director.md`
