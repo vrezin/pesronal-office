@@ -1,6 +1,6 @@
 # LinkedIn Gmail Monitor Run - 2026-06-14 16:02 +07
 
-- Status: processing_complete_commit_pending
+- Status: success
 - Mode: unattended cron
 - Gmail query: `from:linkedin.com after:2026/6/13 -in:trash -in:spam`
 - Previous successful scan: 2026-06-14 08:01:30 +07
@@ -69,6 +69,10 @@ The registered `mcp__linkedin` server was available and returned full job detail
 
 ## Commit / State
 
-Commit has not yet been attempted at the time this log was first written.
+Artifact commit succeeded:
 
-The successful scan marker must be advanced to Gmail id `19ec543614d183c0` / timestamp `2026-06-14T08:33:05` only after the repository commit succeeds.
+```text
+61f18c8 Process LinkedIn vacancy digests
+```
+
+The successful scan marker was advanced to Gmail id `19ec543614d183c0` / timestamp `2026-06-14T08:33:05` after the artifact commit succeeded.
