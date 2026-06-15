@@ -26,11 +26,12 @@ Build an unattended 4-hour LinkedIn Gmail monitor that scans `from:linkedin.com`
 
 ## Next Action
 
-Hook the new monitor into cron and verify one dry run against the current LinkedIn mailbox.
+Investigate missed cron runs on 2026-06-15 before considering the monitor fully unattended-stable. See `tasks/active/2026-06-15-investigate-hh-linkedin-cron-missed-runs.md`.
 
 ## Implementation Note
 
 - The cron entry has been added.
 - The LinkedIn MCP client helper is in place.
 - The repo now registers a local LinkedIn MCP server named `linkedin` in `.codex/config.toml` and points it to `http://127.0.0.1:8019/mcp`; the monitor should prefer that registered server and only fall back to `tools/linkedin-mcp/scripts/start-daemon.sh` if the daemon is unavailable inside the run.
-- The remaining check is a first live dry run, which depends on the local runtime binding cleanly on the host outside this editing sandbox.
+- Live manual runs succeeded on 2026-06-15 at 09:07 for both LinkedIn and HH. Gmail access worked and no new post-marker messages required routing.
+- The remaining reliability issue is scheduler-level: cron fired the 00:00 jobs but did not appear to fire the expected 04:00 and 08:00 jobs on 2026-06-15.
