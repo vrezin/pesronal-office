@@ -33,6 +33,10 @@ Secondary supporting lane:
 
 - `Stability & Governance / Platform Reliability`
 
+Third supporting lane, only for mature companies:
+
+- `Fractional / Interim CTO for AI-first transformation`
+
 What this means in market terms:
 
 - hands-on AI implementation and productization;
@@ -42,6 +46,7 @@ What this means in market terms:
 - solution architecture that links business use cases to delivery;
 - production AI / automation / workflow design;
 - platform reliability and governance where needed;
+- fractional / interim leadership for stable companies that want AI-first adoption, not greenfield chaos;
 - smaller teams, direct ownership, faster hiring loops.
 
 ## What To De-emphasize
@@ -51,6 +56,7 @@ What this means in market terms:
 - broad “scaling high-load platforms” as the only value proposition
 - too much “CTO large-scale” framing for roles that are actually lead / architect / implementation heavy
 - people-management and org-size as the core market promise
+- startup-first language when the target is a stable company adopting AI-first methods
 
 ## What To Emphasize Instead
 
@@ -75,6 +81,10 @@ What this means in market terms:
 
 `AI Product / Solution Architect | Production AI, Delivery Governance, Platform Reliability`
 
+### Option D - Fractional / Interim CTO
+
+`Fractional CTO | AI Product & Solution Architecture | AI-First Transformation for Stable Companies`
+
 ## About Section Direction
 
 The first 2-3 lines should say:
@@ -83,6 +93,7 @@ The first 2-3 lines should say:
 - you are comfortable in hands-on architect / builder format;
 - you can design AI workflows, product flows and implementation plans;
 - you can build standards, not just strategies;
+- you can step in as a fractional/interim CTO when a stable company wants an AI-first shift without startup chaos;
 - you work well where delivery, quality and business results all matter.
 
 The summary should not start with:
@@ -107,7 +118,8 @@ Decide whether the new public LinkedIn focus should be:
 
 1. `AI Product Engineering first`
 2. `AI Solution Architecture first`
-3. `AI Transformation + Stability & Governance balanced`
+3. `Fractional / Interim CTO for AI-first companies`
+4. `AI Transformation + Stability & Governance balanced`
 
 Then rewrite:
 

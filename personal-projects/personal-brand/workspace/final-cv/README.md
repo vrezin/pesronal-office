@@ -14,7 +14,8 @@ RU catalog:
 
 Назначение:
 
-- HH / ATS-friendly версия под AI Transformation Lead, AI Automation Architect, Head of AI Implementation.
+- HH / ATS-friendly версия под AI Transformation Lead, AI Automation Architect, Head of AI Implementation, AI Product Engineer и AI Solution Architect.
+- Также может служить базой для Fractional / Interim CTO в зрелых AI-first компаниях, если роль требует hands-on внедрения, архитектуры и rollout discipline.
 - Англоязычная версия, собранная по структуре шаблона `CTO Vladimir Rezin (Heavy Enterprise) .docx`.
 - Включает GitHub, personal site, hands-on AI-assisted development, selected AI work и стек Python/Java/Spring Boot, PostgreSQL, Redis, OpenAI/Ollama/GigaAM/Yandex.
 - Без полного раннего опыта и без RTK.

@@ -2,11 +2,12 @@
 
 ## Master Positioning
 
-Владимир Резин - технологический лидер уровня CTO / Director of Engineering, который умеет вести путь от неопределенной бизнес-задачи до работающей платформы, команды, процесса и измеримого результата.
+Владимир Резин - AI Product / Solution Architect и технологический лидер уровня CTO / Director of Engineering, который умеет вести путь от неопределенной бизнес-задачи до работающего AI-контурa, платформы, команды, процесса и измеримого результата.
 
 Сильная комбинация:
 
 - AI-first мышление и практические AI/automation кейсы;
+- AI product engineering, AI solution architecture и практические AI/automation кейсы;
 - опыт CTO / co-founder в ранней стадии;
 - управление engineering-организациями 200+ человек;
 - enterprise-внедрения, high-load, финтех, логистика, e-commerce;
@@ -32,6 +33,8 @@
 
 ### Роли / Названия
 
+- AI Product Engineer
+- AI Solution Architect
 - AI Transformation Lead
 - AI Automation Architect
 - AI Product / Platform Architect
@@ -52,6 +55,7 @@
 - AI не как "prompting", а как контур: данные, workflow, интеграции, качество, human-in-the-loop, логирование.
 - Первое предложение должно быть про AI-аудит, пилот, внедрение и контроль результата.
 - Старые enterprise-достижения использовать как доказательство зрелости: умею внедрять AI не в песочнице, а в реальном бизнесе.
+- Для зрелых компаний можно добавить fractional / interim CTO framing, но только если задача - AI-first переход без startup-chaos.
 
 ### Риски
 

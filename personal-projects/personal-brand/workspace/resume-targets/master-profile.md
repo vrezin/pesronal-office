@@ -20,7 +20,7 @@
 
 ## Core Brand
 
-Технологический лидер уровня CTO / Director of Engineering / AI-first Technology Leader. Соединяет бизнес-цели, архитектуру, команды, AI/automation и операционную дисциплину в работающие продукты, платформы и управляемые изменения.
+AI Product / Solution Architect и технологический лидер уровня CTO / Director of Engineering, который соединяет бизнес-цели, архитектуру, AI/automation и операционную дисциплину в работающие продукты, платформы и управляемые изменения. Для зрелых компаний может работать как fractional / interim CTO в AI-first трансформации, если нужен hands-on лидер, а не стартап-шумиха.
 
 Главная формула:
 
@@ -32,24 +32,50 @@
 
 Целевая роль:
 
+- AI Product Engineer
+- AI Solution Architect
 - AI Transformation Lead
 - AI Automation Architect
-- CTO (AI & Platforms)
 - Head of AI Implementation
 - Director of AI / GenAI Direction
+- Fractional / Interim CTO for AI-first companies
 
 Смысл:
 
-> Нахожу практичные AI-сценарии, довожу их до пилота и встраиваю в бизнес-процесс так, чтобы AI давал пользу, а не создавал хаос.
+> Нахожу практичные AI-сценарии, довожу их до пилота и встраиваю в бизнес-процесс так, чтобы AI давал пользу, а не создавал хаос. В публичном рынке это можно продавать как AI Product / Solution Architect: человек, который превращает AI-идею в product flow, workflow, integrations, quality gates и измеримый эффект.
 
 Что доказывать:
 
 - GenAI/LLM в production customer support;
 - AI-native SDLC;
+- Setronica: advisory work on AI-native SDLC adoption and spec/handoff discipline;
 - MedVoice / AI assistant for doctor;
+- AI Studio: founder-led AI-native medtech startup with core AI architecture ownership;
 - CRM, voice bots, AI agents для sales-процесса;
 - human-in-the-loop, traceability, quality gates;
+- AI productization, AI-first workflows, strategy-to-implementation;
 - enterprise background как гарантия внедряемости.
+
+### Fractional / Interim CTO for AI-First Companies
+
+Целевая роль:
+
+- Fractional CTO
+- Interim CTO
+- AI Platform Advisor
+- AI Product / Solution Lead
+
+Смысл:
+
+> Вхожу в зрелую компанию, которая уже решила внедрять AI-first подход, и помогаю ей не “придумать стартап”, а безопасно перестроить продукт, процессы и инженерный контур под AI с измеримым эффектом.
+
+Что доказывать:
+
+- умение быстро диагностировать текущий контур и выделять реальные AI use cases;
+- hands-on план внедрения: discovery -> pilot -> integration -> rollout -> measurement;
+- продуктовые и архитектурные решения, которые можно выдержать в production;
+- практический AI-first SDLC и AI-assisted delivery;
+- способность работать как советник, архитектор и при необходимости playing coach без ухода в чистый people-management.
 
 ### Startup CTO
 
@@ -64,6 +90,11 @@
 Смысл:
 
 > Быстро прохожу путь от идеи к первой рабочей версии, первым клиентам и проверяемой продуктовой гипотезе.
+
+Примечание:
+
+- для текущего публичного фокуса это не главный рынок;
+- зеленые стартапы без стабильного процесса, бюджета и ясного продукта ниже приоритета, чем зрелые компании, которым нужен AI-first переход.
 
 Что доказывать:
 
@@ -134,7 +165,9 @@
 - Banking enterprise: проекты для Сбербанка, Газпромбанка, 10+ банков.
 - P&L / revenue responsibility: KPI направления около $10m/year с ежегодным ростом 20%.
 - GenAI support automation: до 90% обращений закрывается AI, публичная формулировка эффекта - “six-figure quarterly savings” / “сотни тысяч долларов в квартал”.
+- Setronica: advisor on AI-native SDLC adoption and spec/handoff discipline for AI-assisted development.
 - MedVoice: AI-assistant for doctor, clinical workflow, human verification, traceability.
+- AI Studio: founder-led AI-native medtech startup with full product and architecture ownership.
 
 ## Experience
 
