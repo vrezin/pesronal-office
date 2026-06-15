@@ -12,6 +12,7 @@ Manual checks on 2026-06-15 showed:
 - `crontab -l` contains both Personal Office monitors:
   - HH Gmail monitor: `0 */4 * * *`
   - LinkedIn Gmail monitor: `0 */4 * * *`
+- On 2026-06-15 the desired schedule was changed from every 4 hours to three local-time windows: 08:00, 14:00, 22:00.
 - `cron.service` is active and running.
 - Cron journal confirms both monitors ran at `2026-06-15 00:00:01 +07`.
 - Expected 04:00 and 08:00 runs did not appear in `automation/runs/` or in the cron journal.
@@ -26,5 +27,4 @@ Manual checks on 2026-06-15 showed:
 
 ## Next Step
 
-Find why cron did not fire the 04:00 and 08:00 user jobs despite the crontab being installed and `cron.service` running. Check host sleep/suspend, cron logs around 04:00/08:00, environment assumptions, and whether a more reliable systemd timer should replace or supplement cron.
-
+Verify the next scheduled local-time run at 14:00 or 22:00. If it does not fire, check host sleep/suspend, cron logs around the expected time, environment assumptions, and whether a more reliable systemd timer should replace or supplement cron.

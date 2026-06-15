@@ -1,1 +1,2 @@
-0 */4 * * * cd <repo-root> && <repo-root>/automation/scripts/run-linkedin-gmail-monitor.sh >> <repo-root>/automation/runs/linkedin-gmail-monitor.cron.log 2>&1
+# Run LinkedIn Gmail monitor three times daily in local host time: 08:00, 14:00, 22:00.
+0 8,14,22 * * * cd <repo-root> && <repo-root>/automation/scripts/run-linkedin-gmail-monitor.sh >> <repo-root>/automation/runs/linkedin-gmail-monitor.cron.log 2>&1
