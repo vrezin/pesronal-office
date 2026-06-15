@@ -40,9 +40,12 @@ Created:
 
 - `automation/runs/2026-06-15-2201-linkedin-gmail-monitor.md`
 
+Updated:
+
+- `automation/state/linkedin-gmail-monitor-state.md` after the earlier staged LinkedIn batch and this no-op scan were successfully committed.
+
 Not updated:
 
-- `automation/state/linkedin-gmail-monitor-state.md` was left unchanged until a successful commit can be made.
 - Job-intake, task, inbox, and company-note artifacts were not changed by this run.
 
 ## Gmail Cleanup
@@ -51,4 +54,6 @@ No Gmail labels, stars, importance markers, or archive state were changed.
 
 ## Commit
 
-Pending at log creation time. If git commit fails in this cron/sandbox context, leave this log and existing repository changes in place and keep the successful scan marker unchanged.
+- First commit: `0189a69 Run LinkedIn Gmail monitor`.
+- The first commit also included the earlier staged 2026-06-15 14:02 LinkedIn monitor artifacts, resolving the previous commit failure recorded in that run log.
+- State/log correction commit: this commit, `Advance LinkedIn Gmail monitor state`.
