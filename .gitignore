@@ -1,4 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
 .idea/
-automation/runs/*.log
-**/__pycache__/
-*.pyc
+
+# Runtime logs can be regenerated and grow quickly.
+*.cron.log
+
+# Embedded/local tool checkouts should be committed intentionally, not by accident.
+tools/headhunter-mcp-server/
+tools/*/.git/
+tools/*/.venv/
+tools/*/__pycache__/

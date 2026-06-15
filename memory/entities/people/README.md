@@ -19,6 +19,7 @@ Source-of-truth people notes remain in `people/`.
 | Павел Резин | son | `people/contacts/pavel-rezin.md` |
 | Виктория Резина | daughter | `people/contacts/viktoria-rezina.md` |
 | Серафима Резина | daughter | `people/contacts/serafima-rezina.md` |
+| Артем | Fincom SCADA/СКАДА specialist | `people/contacts/artem-fincom-scada.md` |
 | Виктор Геронимус | Fincom partner | `people/contacts/viktor-geronimus.md` |
 | Барильник Станислав | AI Studio CTO / Solution Architect | `people/contacts/stanislav-barilnik.md` |
 | Барильник Лилия | AI Studio Lead Developer | `people/contacts/lilia-barilnik.md` |

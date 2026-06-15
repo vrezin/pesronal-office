@@ -24,6 +24,7 @@
 
 ### Business / Projects
 
+- `contacts/artem-fincom-scada.md` - Артем, ведущий специалист Fincom по SCADA/СКАДА системам.
 - `contacts/viktor-geronimus.md` - Виктор Геронимус, партнер по Fincom.
 - `contacts/stanislav-barilnik.md` - Барильник Станислав, AI Studio CTO / Solution Architect.
 - `contacts/lilia-barilnik.md` - Барильник Лилия, AI Studio Lead Developer.

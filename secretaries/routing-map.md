@@ -43,6 +43,8 @@
 | Country house / home construction / family house documents | `life/home-family-rest/country-house/` |
 | AI Studio official project, company, portfolio, process, and product truth | `<aistudio-root>` with management index in `companies/ai-studio/` |
 | Fincom / FinSOK company truth | `<fincom-root>` with management index in `companies/fincom/` |
+| Fincom customer ТЗ assessment / presale architecture / estimate / commercial-technical position | `companies/fincom/` first for management trace, then `<fincom-root>` for working artifacts |
+| Артем mentioned with DCIM / ITAM / SCADA / СКАДА / Fincom technical feasibility | Treat as internal Fincom SCADA expert; route the work as Fincom unless another owner is explicitly stated |
 
 ## Naming
 

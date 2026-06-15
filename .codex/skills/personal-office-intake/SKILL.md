@@ -13,7 +13,7 @@ Use for any raw intake that may contain decisions, promises, dates, people, mone
 
 1. Read `wiki/README.md`.
 2. Read `secretaries/routing-map.md`.
-3. If needed, read `wiki/playbooks/personal-office-intake.md`.
+3. Read `wiki/playbooks/personal-office-intake.md`.
 
 ## Output Contract
 

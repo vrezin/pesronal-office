@@ -2,6 +2,7 @@
 !.gitignore
 !README.md
 !*/
+headhunter-mcp-server/
 !*/README.md
 !*/scripts/start-local.sh
 !*/scripts/start-daemon.sh
