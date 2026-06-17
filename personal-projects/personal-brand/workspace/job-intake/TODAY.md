@@ -16,6 +16,8 @@ Open this file first, then jump to the per-vacancy tasks.
 
 Current tasks:
 
+- `tasks/active/2026-06-17-prepare-logrocon-vladimir-turovtsev-outreach.md`
+- `tasks/active/2026-06-17-build-rf-it-company-direct-apply-list.md`
 - `tasks/active/2026-06-12-apply-bks-it-partner-ai-department.md`
 - `tasks/active/2026-06-12-apply-millennium-lead-ai-engineer-ai-platform-architect.md`
 - `tasks/active/2026-06-12-apply-ultimate-education-head-of-it.md`

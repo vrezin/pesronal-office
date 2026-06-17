@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//personal-office//friday-reentry//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Asia/Novosibirsk
+BEGIN:STANDARD
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:+07
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20260619T100000-friday-vacancy-reentry@personal-office
+DTSTAMP:20260617T000000Z
+DTSTART;TZID=Asia/Novosibirsk:20260619T100000
+DTEND;TZID=Asia/Novosibirsk:20260619T120000
+SUMMARY:Обязательно: обработать зависшие вакансии
+DESCRIPTION:Пятничный рабочий вход после двухдневного таймаута. Сначала разобрать все вакансии и карьерные хвосты\, которые повиснут к этому моменту. После этого переходить к заходу к Владимиру Туровцеву / Logrocon.
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Обработать зависшие вакансии
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20260619T160000-logrocon-turovtsev-outreach@personal-office
+DTSTAMP:20260617T000000Z
+DTSTART;TZID=Asia/Novosibirsk:20260619T160000
+DTEND;TZID=Asia/Novosibirsk:20260619T173000
+SUMMARY:Обязательно: правильный заход к Володе / Logrocon
+DESCRIPTION:После 12:00 Мск подготовить правильный заход к Владимиру Туровцеву / Logrocon: теплое сообщение\, позиционирование AI automation + engineering leadership + business transformation\, решение по CV/созвону.
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Правильный заход к Володе / Logrocon
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

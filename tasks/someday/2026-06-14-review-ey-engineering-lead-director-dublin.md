@@ -1,7 +1,7 @@
 # Review EY Engineering Lead Director Dublin
 
 - Created: 2026-06-14
-- Status: needs decision
+- Status: parked / skip
 - Priority: medium
 - Area: personal-projects / personal-brand / job-search
 - Related inbox note: `inbox/processed/2026-06-14-linkedin-oyster-ey-vacancy-digests.md`
@@ -14,5 +14,5 @@ LinkedIn delivered the role through a job-alert digest. LinkedIn MCP enrichment 
 
 ## Next Step
 
-- Decide whether Dublin hybrid consulting roles are worth active pursuit.
-- If yes, ask EY about salary band, visa/relocation support, office cadence, client travel, and hands-on technical assessment depth.
+- Parked: Dublin hybrid consulting is not a target for this search.
+- Keep only as market signal; do not spend more active time unless the location or employer shape changes materially.

@@ -1,7 +1,7 @@
 # Review HH Digest CTO Product Engineering Vacancies
 
 - Created: 2026-06-12
-- Status: Active
+- Status: done
 - Source: HH email digest for `CTO / Co-founder CTO / Head of Product Engineering`
 - Gmail message id: `19ebaf3c69f4503f`
 - Processed note: `inbox/processed/2026-06-12-hh-vacancy-digest-thin-links.md`
@@ -45,4 +45,4 @@ Full JD text for the digest was pasted by the user on 2026-06-12 and routed into
 
 ## Next Step
 
-Work the two response tasks first, then decide whether to touch Sber / Karatov / R7.
+Digest review is complete. Follow-up actions live in separate tasks for Future Technologies, Topassistant, Sber, and existing waiting items.

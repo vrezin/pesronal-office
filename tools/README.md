@@ -12,8 +12,8 @@ Do not put personal finance, calendar, inbox, or life-management tools into comp
 
 - `zenmoney-mcp/` - MCP server for ZenMoney, the source of personal finance transaction history, accounts, categories, and budgets.
 - `linkedin-mcp/` - local LinkedIn MCP runtime with copied authenticated browser profile and helper scripts for job/profile lookup; registered in `.codex/config.toml` as the `linkedin` MCP server.
-- `headhunter-mcp-server/` - applicant-first HeadHunter MCP fork for vacancy search, resume lookup, applications, and negotiation history.
-- `headhunter-web-mcp/` - browser/session-based HeadHunter applicant MCP for reading HH vacancy pages through the logged-in web UI; registered in `.codex/config.toml` as `headhunter_web`.
+- `headhunter-mcp-server/` - disabled HeadHunter API MCP experiment. HH rejected the app registration for this workflow on 2026-06-17, so this is kept only as historical reference and is not registered in `.codex/config.toml`.
+- `headhunter-web-mcp/` - browser/session-based HeadHunter applicant MCP for reading HH vacancy pages, applications and statuses through the logged-in web UI; registered in `.codex/config.toml` as the only active HH MCP server, `headhunter_web`.
 - `../wiki/playbooks/headhunter-web-mcp-implementation-brief.md` - implementation brief for a browser/session-based HeadHunter applicant MCP fallback.
 
 ## Safety

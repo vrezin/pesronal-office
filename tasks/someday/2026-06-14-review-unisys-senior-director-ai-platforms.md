@@ -1,7 +1,7 @@
 # Review Unisys Senior Director AI Platforms
 
 - Created: 2026-06-14
-- Status: needs decision
+- Status: parked / skip
 - Priority: high content fit / medium practical priority
 - Area: personal-projects / personal-brand / job-search
 - Related inbox note: `inbox/processed/2026-06-14-linkedin-overstory-similar-jobs-digest.md`
@@ -14,5 +14,5 @@ LinkedIn delivered the role through an Overstory similar-jobs digest. LinkedIn M
 
 ## Next Step
 
-- Decide whether to pursue despite high technical-screening risk.
-- If yes, ask about cross-border remote eligibility, salary band, coding assessment depth, and whether Azure AI / MLOps requirements are hard filters.
+- Parked: UK remote AI-platform roles are not a target for this search.
+- Keep only as market signal; do not spend more active time unless the location or employer shape changes materially.

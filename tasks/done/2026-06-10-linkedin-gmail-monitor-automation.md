@@ -2,7 +2,7 @@
 
 - Area: personal-projects / personal-brand / automation
 - Related workspace: `automation/`, `tools/linkedin-mcp/`, `personal-projects/personal-brand/workspace/job-intake/`
-- Status: active
+- Status: done
 
 ## Objective
 
@@ -26,7 +26,7 @@ Build an unattended 4-hour LinkedIn Gmail monitor that scans `from:linkedin.com`
 
 ## Next Action
 
-Investigate missed cron runs on 2026-06-15 before considering the monitor fully unattended-stable. See `tasks/active/2026-06-15-investigate-hh-linkedin-cron-missed-runs.md`.
+Implementation is complete. Scheduler / unattended commit reliability is tracked separately in `tasks/active/2026-06-15-investigate-hh-linkedin-cron-missed-runs.md`.
 
 ## Implementation Note
 

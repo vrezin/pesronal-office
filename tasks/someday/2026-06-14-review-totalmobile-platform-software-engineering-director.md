@@ -1,7 +1,7 @@
 # Review Totalmobile Platform Software Engineering Director
 
 - Created: 2026-06-14
-- Status: needs decision
+- Status: parked / skip
 - Priority: medium-high
 - Area: personal-projects / personal-brand / job-search
 - Related inbox note: `inbox/processed/2026-06-14-linkedin-overstory-similar-jobs-digest.md`
@@ -14,5 +14,5 @@ LinkedIn delivered the role through an Overstory similar-jobs digest. LinkedIn M
 
 ## Next Step
 
-- Decide whether UK remote platform-director roles are worth active pursuit.
-- If yes, ask Totalmobile or the recruiter about country eligibility, salary band, legal setup, engineering org size, and first 6-12 month priorities before applying.
+- Parked: UK remote platform-director roles are not a target for this search.
+- Keep only as market signal; do not spend more active time unless the employer/country shape changes materially.

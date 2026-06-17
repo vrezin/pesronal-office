@@ -8,8 +8,8 @@
 - Role title: Head of Engineering
 - Location / format: Remote, UK-based; full-time
 - Salary: GBP 110k-130k
-- Status: analyzed from LinkedIn email and MCP job details
-- Application status: not applied
+- Status: rejected / closed
+- Application status: applied on LinkedIn on 2026-06-12; rejection email received on 2026-06-15
 - Archive file: `../jd-archive/2026-06-12-kdr-talent-solutions-head-of-engineering-ai-platform.md`
 
 ## Verdict
@@ -89,6 +89,10 @@ I lead engineering organizations where AI delivery, platform discipline, and pro
 
 ## Decision
 
-- Apply: maybe
-- Priority: medium-high if UK eligibility is workable
-- Next action: clarify UK eligibility, relocation, and full package before spending more time
+- Apply: no further action
+- Priority: closed
+- Next action: none; keep as a prior UK-based AI platform market signal only
+
+## Outcome
+
+- 2026-06-15: LinkedIn rejection email received for the application submitted on 2026-06-12.

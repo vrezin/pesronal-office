@@ -1,7 +1,7 @@
 # Review EPAM Technical Delivery Management Director
 
 - Created: 2026-06-15
-- Status: needs decision
+- Status: parked / skip
 - Priority: medium
 - Area: personal-projects / personal-brand / job-search
 - Related inbox note: `inbox/processed/2026-06-15-linkedin-epam-marsh-vacancy-digest.md`
@@ -14,5 +14,5 @@ LinkedIn delivered the role through a job-alert digest. The registered LinkedIn 
 
 ## Next Step
 
-- Decide whether Dublin technical-delivery consulting roles are worth active pursuit.
-- If yes, ask EPAM about salary band, visa / relocation support, office and client-site cadence, and hard-filter depth around open banking, payments, mobile wallets, PSD2, GDPR and PCI-DSS.
+- Parked: EPAM is not a target company for this search, and the Dublin/consulting setup is not worth active pursuit.
+- Keep as a market signal only; do not spend more active time unless the location and employer shape change materially.

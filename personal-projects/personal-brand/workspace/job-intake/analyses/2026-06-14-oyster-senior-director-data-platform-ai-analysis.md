@@ -10,7 +10,7 @@
 - Salary: not stated
 - Link: `https://www.linkedin.com/jobs/view/4424899985/`
 - Archive file: `jd-archive/2026-06-14-oyster-senior-director-data-platform-ai.md`
-- Status: analyzed; not applied
+- Status: applied on 2026-06-15; waiting for reply
 
 ## Raw JD Summary
 
@@ -95,6 +95,6 @@ Before applying formally, I would like to clarify whether Oyster can support a r
 
 ## Decision
 
-- Apply: interesting, subject to legal setup and compensation
+- Apply: applied on 2026-06-15
 - Priority: high
-- Next action: ask remote/legal eligibility, salary/equity band, and hands-on MLOps/data-platform screening depth before applying.
+- Next action: wait for Oyster response; if they reply, ask remote/legal eligibility, salary/equity band, and hands-on MLOps/data-platform screening depth.

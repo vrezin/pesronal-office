@@ -1,7 +1,7 @@
 # Review Marsh Senior IT Director Global Value Streams
 
 - Created: 2026-06-15
-- Status: needs decision
+- Status: parked / skip
 - Priority: medium-low
 - Area: personal-projects / personal-brand / job-search
 - Related inbox note: `inbox/processed/2026-06-15-linkedin-epam-marsh-vacancy-digest.md`
@@ -14,5 +14,5 @@ LinkedIn delivered the role through a job-alert digest. The registered LinkedIn 
 
 ## Next Step
 
-- Decide whether global insurance-broker technology portfolio roles are worth active pursuit.
-- If yes, ask Marsh about salary band, visa / relocation support, target office location, hybrid strictness, and whether adjacent regulated-finance / enterprise-platform experience can offset lack of direct insurance brokerage depth.
+- Parked: Dublin relocation is not realistic enough for active pursuit even though the role is interesting.
+- Keep as a market signal only; do not spend more active time unless the location / setup changes materially.

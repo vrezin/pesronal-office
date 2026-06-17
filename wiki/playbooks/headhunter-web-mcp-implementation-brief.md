@@ -9,12 +9,12 @@
 
 ## Problem
 
-The official HeadHunter API route is currently unreliable for applicant workflow:
+The official HeadHunter API route is not a viable applicant-workflow path for this workspace:
 
 - developer app registration is employer-oriented;
 - applicant API support appears constrained/deprecated;
 - public API reference endpoints work, but vacancy search/detail calls can return `403 Forbidden`;
-- OAuth approval is pending and should not block the job-search workflow.
+- HH rejected application `#23262` on 2026-06-17, stating that the described capabilities are not realizable through the HH API.
 
 We need a web-based MCP server that uses the normal hh.ru applicant web UI through an authenticated browser session and exposes a stable MCP interface for discovery, JD extraction, status checks, and controlled apply workflows.
 

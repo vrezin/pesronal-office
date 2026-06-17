@@ -5,15 +5,20 @@ args = ["run", "--directory", "/home/adre/personal-office/tools/zenmoney-mcp", "
 [mcp_servers.zenmoney.env]
 ZENMONEY_READ_ONLY = "1"
 
+[mcp_servers.zenmoney.tools.get_accounts]
+approval_mode = "approve"
+
+[mcp_servers.zenmoney.tools.get_categories]
+approval_mode = "approve"
+
+[mcp_servers.zenmoney.tools.get_budgets]
+approval_mode = "approve"
+
+[mcp_servers.zenmoney.tools.get_transactions]
+approval_mode = "approve"
+
 [mcp_servers.linkedin]
 url = "http://127.0.0.1:8019/mcp"
-
-[mcp_servers.headhunter]
-command = "/home/adre/.local/bin/uv"
-args = ["run", "--directory", "/home/adre/personal-office/tools/headhunter-mcp-server", "headhunter-mcp"]
-
-[mcp_servers.headhunter.env]
-UV_CACHE_DIR = "/home/adre/personal-office/.cache/uv"
 
 [mcp_servers.headhunter_web]
 command = "/home/adre/.local/bin/uv"
@@ -35,8 +40,8 @@ approval_mode = "approve"
 [mcp_servers.headhunter_web.tools.hh_web_get_applications]
 approval_mode = "approve"
 
-[mcp_servers.headhunter.tools.hh_get_vacancy]
+[mcp_servers.headhunter_web.tools.hh_web_search_vacancies]
 approval_mode = "approve"
 
-[mcp_servers.headhunter.tools.hh_search_vacancies]
+[mcp_servers.headhunter_web.tools.hh_web_get_suitable_vacancies]
 approval_mode = "approve"
