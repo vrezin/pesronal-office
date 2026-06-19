@@ -21,3 +21,7 @@ Scheduled automation must not require Git commits. Run logs and state markers ar
 
 - `hh-gmail-monitor`
 - `linkedin-gmail-monitor` - uses the registered local LinkedIn MCP server from `.codex/config.toml`, with a loopback wrapper fallback if needed.
+
+## Planned Monitors
+
+- `yc-workatastartup-monitor` - planned for the week of 2026-06-22 as a basic Playwright/MCP-assisted monitor for new Work at a Startup roles. Until it exists, use the daily manual reminder in `tasks/active/2026-06-19-daily-check-yc-work-at-a-startup.md`.

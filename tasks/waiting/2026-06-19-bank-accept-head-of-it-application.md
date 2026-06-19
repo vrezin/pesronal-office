@@ -7,6 +7,7 @@
 - Vacancy analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-bank-accept-head-of-it-analysis.md`
 - JD archive: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-19-bank-accept-head-of-it.md`
 - Applied trace: `inbox/processed/2026-06-19-bank-accept-head-of-it-applied.md`
+- Phone follow-up trace: `inbox/processed/2026-06-19-bank-accept-phone-follow-up-two-week-wait.md`
 
 ## Goal
 
@@ -16,6 +17,7 @@ Wait for employer response to HH vacancy `134311893` for `Начальник у�
 
 - Applied: 2026-06-19
 - Status: waiting for employer response
+- Phone follow-up: user called on 2026-06-19; Банк Акцепт said response will be no earlier than in two weeks.
 
 CV context:
 
@@ -40,3 +42,7 @@ Clarify:
 - Digital Ruble project scope;
 - first 3-6 month priorities;
 - office/hybrid expectations.
+
+## Follow-Up Timing
+
+Do not chase before approximately 2026-07-03 unless the employer contacts the user first.

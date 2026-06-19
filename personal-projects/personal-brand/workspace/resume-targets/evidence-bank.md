@@ -9,6 +9,7 @@
 | Управление инженерной организацией 200+ человек | масштаб лидерства | Heavy Enterprise, Transformation |
 | 14 тимлидов / руководителей направлений | управление через лидеров, не ручное микроменеджмент-управление | Heavy Enterprise |
 | High-load delivery/e-commerce платформа: 100k+ delivery orders/day, peak 130k/day | критичная эксплуатация и масштаб | Heavy Enterprise |
+| Leem public e-commerce product built by team under Arameem/ToYou org | parallel product-team ownership and shipped customer-facing product | Use carefully: team under user's leadership built IT product; do not imply founder/brand ownership |
 | 5+ financial orders per delivery order, 1M+ financial transactions/day | транзакционный масштаб, fintech/platform complexity | Heavy Enterprise, AI-first enterprise |
 | Рост аудитории с 3k до 300k DAU | способность поддерживать рост бизнеса, 100x scale-up | Heavy Enterprise, Transformation |
 | Снижение инфраструктурных расходов более чем в 2 раза | архитектура + экономика | Heavy Enterprise, Transformation |
@@ -29,6 +30,8 @@
 | Virtual CFO / investor financial model | AI в управленческом и финансовом контуре | Нужна аккуратная формулировка high-stakes decision support |
 | Multi-agent board | AI как инструмент мышления и стратегического анализа | Использовать как thought-leadership / portfolio proof |
 | MedTech AI pilot | AI в regulated/sensitive domain | Только с human-in-the-loop и без обещаний медицинской автономии |
+| MedVoice as builder-first proof | hands-on product/architecture/building in sensitive AI workflow | Не продавать как успешный запущенный продукт; использовать как evidence of builder-first approach, clinical workflow thinking, traceability and human verification |
+| Mind & Muscle post-checkup assistant | health-context product architecture, document understanding, action planning | Хорошо для HealthTech/Responsible AI ролей: long medical docs, facts/findings/recommendations/action items, personal context, reminders, Q&A |
 
 ## Startup / Founder Proofs
 
@@ -38,6 +41,7 @@
 | Формирование продуктового видения и первой инженерной команды | 0 to 1 leadership | Startup CTO |
 | Работа с первыми заказчиками и product-market fit | коммерческая зрелость | Startup CTO |
 | Доведение продукта до пилотных внедрений | delivery до результата | Startup CTO, AI-first |
+| MedVoice / Mind & Muscle: собственные AI health product contours | builder-first mindset in AI/HealthTech | HealthTech CTO, AI-first builder roles |
 | Собит: стабилизация бизнеса после потери ключевого клиента | resilience, crisis leadership | Startup CTO, Transformation |
 
 ## Transformation Proofs

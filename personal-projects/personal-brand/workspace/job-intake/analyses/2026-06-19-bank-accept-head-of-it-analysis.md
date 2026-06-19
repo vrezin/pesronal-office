@@ -86,4 +86,5 @@ Regional commercial bank hiring a Head of IT Department for IT strategy, key IT 
 
 - Apply / proceed: applied on 2026-06-19.
 - Priority: medium-high practical, medium-low strategic AI fit.
-- Next action: wait for employer response; if they reply, clarify salary, team/scope, `ЦФТ-Банк` ownership, Digital Ruble project and office/hybrid expectations.
+- Phone follow-up: user called on 2026-06-19; Банк Акцепт said the response will be no earlier than in two weeks.
+- Next action: wait until approximately 2026-07-03 before chasing; if they reply, clarify salary, team/scope, `ЦФТ-Банк` ownership, Digital Ruble project and office/hybrid expectations.
