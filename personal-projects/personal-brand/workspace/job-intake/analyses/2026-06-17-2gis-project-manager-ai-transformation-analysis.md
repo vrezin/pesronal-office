@@ -6,7 +6,7 @@
 - Link: `https://hh.ru/vacancy/134215198`
 - Company: 2ГИС.RnD
 - Role: Project Manager AI-трансформации
-- Current status: not applied
+- Current status: closed / vacancy unavailable
 - JD archive: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-17-2gis-project-manager-ai-transformation.md`
 
 ## Verdict
@@ -14,6 +14,12 @@
 High content fit, but title may be down-leveled.
 
 This is very close to the `AI Enabler` service narrative and AI adoption operating model: intake, challenge, pilots, implementation, effect tracking, governance and cross-functional adoption. The practical issue is that the title is Project Manager, not AI Product Engineer / Solution Architect.
+
+## Availability Check
+
+- 2026-06-19: HH web direct check for vacancy `134215198` returned `ACCESS_DENIED` / `Vacancy is not available to this user`.
+- 2026-06-19: HH search for exact title `2ГИС Project Manager AI-трансформации` returned no vacancies.
+- Interpretation: treat the vacancy as closed, removed, or otherwise unavailable. Do not keep it in the active application queue unless a new 2ГИС posting appears.
 
 ## Best CV
 
@@ -34,4 +40,4 @@ This is very close to the `AI Enabler` service narrative and AI adoption operati
 
 ## Recommended Next Action
 
-Worth reviewing for application if the user is open to a slightly PM-labeled AI transformation role. Ask early whether the role has solution-design authority or is mostly coordination/reporting.
+Closed for now. If a similar 2ГИС AI transformation role appears again, it remains a good content fit, but this specific HH vacancy should not consume more attention.

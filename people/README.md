@@ -25,6 +25,8 @@
 ### Business / Projects
 
 - `contacts/vladimir-turovtsev-logrocon.md` - Владимир Туровцев, генеральный директор Logrocon / Логрокон, verified on official company site.
+- `contacts/andrey-aleksandrovich-cft-openway.md` - Андрей Александрович, warm ЦФТ/OpenWay contact; surname is Александрович.
+- `contacts/anton-polonovsky-openway-bank-systems.md` - Антон Полоновский, possible banking-systems audit/development opportunity via Андрей Александрович.
 - `contacts/artem-fincom-scada.md` - Артем, ведущий специалист Fincom по SCADA/СКАДА системам.
 - `contacts/viktor-geronimus.md` - Виктор Геронимус, партнер по Fincom.
 - `contacts/stanislav-barilnik.md` - Барильник Станислав, AI Studio CTO / Solution Architect.
@@ -38,3 +40,4 @@
 ### Team Role Notes
 
 - `relationship-notes/medvoice-grant-team-roles.md` - ролевой состав команды MedVoice из грантовых документов.
+- `relationship-notes/2026-06-19-andrey-aleksandrovich-anton-polonovsky-nspk-history.md` - successful 2014-2015 NSPK Java clearing-report delivery via Андрей Александрович / OpenWay; explains warm Антон Полоновский memory.

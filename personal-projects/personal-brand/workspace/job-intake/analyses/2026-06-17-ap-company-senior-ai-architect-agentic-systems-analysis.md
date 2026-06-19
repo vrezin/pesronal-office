@@ -6,7 +6,7 @@
 - Link: `https://hh.ru/vacancy/134126614`
 - Company: AP Company / Mosco.ai
 - Role: Senior AI Architect / Архитектор ИИ-агентных систем
-- Current status: not applied
+- Current status: applied / waiting
 - JD archive: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-17-ap-company-senior-ai-architect-agentic-systems.md`
 
 ## Verdict
@@ -36,4 +36,10 @@ Potentially tailor the top block toward AI solution architecture, agentic workfl
 
 ## Recommended Next Action
 
-Worth a targeted review/application if we want one hands-on AI Architect bet. Do not use generic management-heavy CV text; lead with AI agent architecture, production readiness, evals, integration safety and SDLC automation.
+Application sent on 2026-06-19.
+
+If the employer replies, clarify how much of the role is architecture/design review versus hands-on backend implementation, expected Python / TypeScript depth, agent stack, eval/observability expectations, salary/contract setup and remote/timezone requirements.
+
+## Application Log
+
+- 2026-06-19: user applied on HH.

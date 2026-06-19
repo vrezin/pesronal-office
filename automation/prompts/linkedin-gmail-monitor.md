@@ -48,9 +48,12 @@ The monitor must also remain useful for future LinkedIn vacancy mail, connection
    - if the email includes a LinkedIn job id or job URL, enrich it with the registered local MCP server `linkedin` from `.codex/config.toml`; if the registered server is unavailable, run `tools/linkedin-mcp/scripts/start-daemon.sh` once and then call `automation/scripts/linkedin-mcp-client.py job-details <JOB_ID>` against `http://127.0.0.1:${LINKEDIN_MCP_PORT:-8019}/mcp` before writing the analysis. Do not launch a second copy if one is already running.
 7. Save a run log to `automation/runs/YYYY-MM-DD-HHMM-linkedin-gmail-monitor.md`.
 8. Update `automation/state/linkedin-gmail-monitor-state.md` only after the run succeeds.
-9. Commit resulting repository changes with a concise message.
 
-If the commit fails in cron, leave the repository changes in place, record the failure in the run log, and do not update the successful scan marker.
+## Git Policy
+
+Do not run `git add`, `git commit`, `git reset`, or any other Git command whose failure can block the monitor. Scheduled automation is allowed to leave uncommitted repository changes. The durability contract is the run log plus updated state marker, not a Git commit.
+
+If repository writes succeed but Git is unavailable, still mark the run successful and advance `automation/state/linkedin-gmail-monitor-state.md`. Mention in the run log that no commit was attempted by policy.
 
 ## Gmail Cleanup Policy
 

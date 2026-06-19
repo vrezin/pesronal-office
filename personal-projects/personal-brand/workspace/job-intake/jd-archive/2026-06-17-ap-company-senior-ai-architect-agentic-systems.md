@@ -8,7 +8,7 @@
 - Role: Senior AI Architect / Архитектор ИИ-агентных систем (Python, AI/LLM)
 - Location: Москва; JD says remote
 - Salary: 3 000-3 500 USD net
-- Application status: not applied / suitable vacancy scan
+- Application status: applied on 2026-06-19 / waiting
 
 ## JD Summary
 

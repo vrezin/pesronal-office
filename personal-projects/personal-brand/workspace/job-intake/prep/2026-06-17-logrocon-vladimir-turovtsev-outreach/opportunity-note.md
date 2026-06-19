@@ -4,7 +4,7 @@
 - Status: Draft outreach opportunity
 - Type: direct relationship-based career approach
 - Person: `people/contacts/vladimir-turovtsev-logrocon.md`
-- Relationship: net positive with old delivery baggage
+- Relationship: net positive with old delivery baggage; do not mention old history in the opening message unless Vladimir brings it up
 - Best CV track: `AI Transformation Lead - AI Automation Architect.pdf`
 - Secondary CV track: `Director of Development - Business Unit Technical Leader.pdf`
 
@@ -29,20 +29,22 @@ The user's positioning can match this through:
 - engineering leadership and delivery systems;
 - turning management ideas into working products, bots, workflows, and internal tools;
 - operating between business, engineering, and transformation;
-- credible prior relationship and the previous Aramim introduction.
+- credible prior relationship, but the first message should stand on the current AI / management-tools fit rather than old shared history.
 
 ## Relationship Context To Use Carefully
 
-Useful:
+Useful internally:
 
 - There is prior history since around 2017.
 - User gave Logrocon / Vladimir's team an introduction into Aramim for outsourced testing; this is a meaningful positive access contribution.
 
-Use lightly:
+Do not use in the opening message:
 
-- VTB tender history can be mentioned only as "we crossed paths earlier around VTB".
-- Do not lead with the tender failure.
-- Do not assign blame in outreach.
+- VTB tender history;
+- Aramim testing-outsourcing introduction;
+- explanations of why the relationship is not cold.
+
+Rationale: if Vladimir remembers the history, he can retrieve it himself. If he does not, those details make the message heavier without improving the ask.
 
 ## Suggested Outreach Angle
 
@@ -64,28 +66,30 @@ Avoid:
 
 I can help Logrocon turn the current AI / digital-avatar / management-tools direction into concrete products and client-facing capabilities: AI assistants, agentic workflows, management dashboards, RAG over company/process knowledge, and practical automation around delivery, testing, consulting, and change management.
 
-## Message Skeleton
+## Sent Message
 
 Володя, привет.
 
-Увидел, что ты сейчас много пишешь про ИИ, цифрового дубля, управленческие инструменты и снижение хаоса в командах. Мне это очень близко: последние годы я как раз занимаюсь тем, как превращать ИИ не в игрушку, а в рабочие системы для управления, разработки, консалтинга и внутренних процессов.
+Вижу, что ты сейчас много пишешь про ИИ, цифрового дубля, управленческие инструменты и снижение хаоса в командах. Мне это очень близко: я как раз сейчас занимаюсь практическим внедрением AI/LLM в управление, разработку, консалтинг и внутренние процессы.
 
-Мы с тобой пересекались еще вокруг ВТБ, а позже я помогал вам с заходом в Aramim по тестированию. История была разная, но контакт точно не холодный.
+Хотел спросить: может ли тебе / Logrocon быть интересен человек на стыке AI automation, engineering leadership и business transformation?
 
-Хотел спросить прямо: может ли тебе / Logrocon сейчас быть интересен человек на стыке AI automation, engineering leadership и business transformation? Я бы мог быть полезен в направлении цифровых помощников, LLM/agentic workflows, AI-инструментов для управленческого консалтинга и продуктовой упаковки этой темы для клиентов.
+Могу быть полезен с цифровыми помощниками, LLM/agentic workflows, AI-native SDLC, автоматизацией delivery и упаковкой AI-направления в клиентские продукты/услуги.
 
-Если звучит релевантно, давай созвонимся на 30 минут и посмотрим, есть ли точка входа - роль, проект или пилот.
+Если звучит релевантно, давай созвонимся на 30 минут и посмотрим, есть ли точка входа: роль, проект или пилот.
 
-## Open Questions Before Sending
+## Send Record
 
-- Which channel is best: personal message, Telegram bot/channel route, email, or mutual contact?
-- Should the message be warmer and shorter, or more business-like?
-- Should attach CV immediately or first ask for a call?
-- Does user want an employment role, project/advisory entry, or either?
+- Sent: 2026-06-19
+- CV attachment: none in the first message
+- Opening-history references: omitted intentionally
+
+## Reply Record
+
+- Reply received: 2026-06-19 11:10
+- Reply trace: `inbox/processed/2026-06-19-logrocon-vladimir-turovtsev-positive-reply.md`
+- Vladimir replied positively enough to continue and asked the user to write on Monday morning to find a call time next week.
 
 ## Recommended Next Step
 
-Draft two versions:
-
-1. short warm Telegram message;
-2. slightly fuller email / LinkedIn style message with CV attachment.
+Write on Monday morning, 2026-06-22, to schedule a 30-minute exploratory call. Decide whether to share `AI Transformation Lead - AI Automation Architect.pdf` only after the first call or if Vladimir explicitly asks before it.

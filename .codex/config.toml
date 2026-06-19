@@ -20,6 +20,9 @@ approval_mode = "approve"
 [mcp_servers.linkedin]
 url = "http://127.0.0.1:8019/mcp"
 
+[mcp_servers.linkedin.tools.send_message]
+approval_mode = "approve"
+
 [mcp_servers.headhunter_web]
 command = "/home/adre/.local/bin/uv"
 args = ["run", "--directory", "/home/adre/personal-office/tools/headhunter-web-mcp", "headhunter-web-mcp"]

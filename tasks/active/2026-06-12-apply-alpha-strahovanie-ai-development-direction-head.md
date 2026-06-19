@@ -25,3 +25,7 @@ Very strong content fit: AI adoption in IT development, AI Operating Model, SDLC
 ## Next Action
 
 Apply with AI Transformation CV and ask whether this is a separate track from the platform-lead role.
+
+## Status Validation - 2026-06-19
+
+HH vacancy `132736162` is still retrievable. HH tool did not expose application status, and no local trace confirms application sent. Keep in `active`.

@@ -20,11 +20,11 @@ The email contains links and short titles only. Full JD text must be retrieved m
 | Priority | Vacancy ID | Company | Role | First-pass action |
 |---|---:|---|---|---|
 | High | 132091890 | RWB (Wildberries & Russ) | Руководитель группы разработки в Know Your Employee & Partner | Retrieve full JD; check engineering ownership, fintech/KYE domain, salary, seniority, and remote/hybrid constraints. |
-| Medium | 134108980 | Lenkep recruitment | Head of Mobile Development (iGaming) | Retrieve full JD if easy; check whether this is real engineering leadership and whether iGaming/domain risk is acceptable. |
+| Closed | 134108980 | Lenkep recruitment | Head of Mobile Development (iGaming) | Rejected on 2026-06-18; no further JD retrieval needed. |
 | Medium | 134069614 | Рекрутинговое агентство Натальи Егоровой | Директор по развитию | Retrieve full JD only if the role shows product, technology, or AI/transformation ownership beyond business development; visible salary is `from 400000 RUB/month`. |
 | Medium-low | 133804143 | FIX | Product Delivery Manager (B2G) | Review only if easy; check whether the scope includes product/engineering authority rather than delivery coordination. |
 | Low | 133952093 | Первый Бит | Руководитель отдела по предоставлению IT-сервисов / Service Delivery Manager | Skip unless full JD shows unusual automation/product ownership and target-income fit. |
-| Low | 133124220 | ГК Компьютеры и сети | Руководитель проектного офиса (ИТ-проекты, г. Новосибирск) | Skip unless full JD shows AI/product/engineering leverage and compensation upside. |
+| Closed | 133124220 | ГК Компьютеры и сети | Руководитель проектного офиса (ИТ-проекты, г. Новосибирск) | Rejected on 2026-06-17; no further JD retrieval needed. |
 
 ## Next Step
 

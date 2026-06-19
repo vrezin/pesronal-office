@@ -95,3 +95,20 @@ The first thing I would want to understand is where WHMCS is currently most deep
 - Apply: Maybe / apply if the user wants fractional remote work and is ready for a hands-on technical interview
 - Priority: Medium
 - Next action: Apply with Startup / Product Engineering CV and the tailored English cover letter; ask compensation and first-90-day expectations early.
+
+## Status Update - 2026-06-18
+
+- HH status: `interview`.
+- Employer next step: complete Google Form screening at `https://forms.gle/y11euLeffKEj9bKF7`.
+- Important nuance: this is not a scheduled interview yet; it is a screening form and the employer says only full submissions are considered.
+- Current recommendation: complete only if the fractional / playing CTO format is still attractive enough. Before spending deeper effort, keep four filters explicit: compensation, 4h/day expectations, tiny-team hands-on load, and PHP/WHMCS legacy depth.
+
+## Submission Update - 2026-06-18
+
+- Screening form submitted.
+- Requested video was intentionally not provided because the employer/form is not trusted enough at this stage for personal video material.
+- Current state: waiting for employer response; keep low-trust posture until a normal hiring conversation starts.
+
+## Company Remark - Hiring Signal
+
+For a CTO-level role, requesting a unilateral candidate video before even a short intro call is an asymmetric screening process. It asks the candidate to invest personal/reputational effort before the employer has confirmed context, budget, legal setup, decision-maker access, or basic mutual fit. Treat this as a negative hiring signal and reduce confidence in the employer unless they later move to a normal conversation.

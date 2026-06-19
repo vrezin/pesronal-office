@@ -94,6 +94,10 @@
 
 ## Decision
 
-- Apply: maybe / apply if Moscow on-site and role level are acceptable
+- Apply: applied / waiting after HH employer acknowledgement on 2026-06-18
 - Priority: medium
-- Next action: send Digital Transformation CV or Business Unit CV depending on desired emphasis; use cover letter to defuse overqualification and domain gap
+- Next action: wait for employer review; if they continue, clarify salary, permanent Moscow on-site requirement, product leadership vs analyst-documentation balance, team structure, decision rights, and first 3-6 month KPI.
+
+## Status History
+
+- 2026-06-18: HH message from employer contact Александр Тихомиров: "Благодарим Вас за отклик! Мы рассмотрим Ваше резюме и вернемся с ответом позже." Classified as status update / acknowledgement, not an invitation.

@@ -26,3 +26,7 @@ Clarify:
 - team structure;
 - hands-on code/architecture expectation;
 - first 3-6 month problems.
+
+## Status Validation - 2026-06-19
+
+HH direct retrieval for vacancy `134026419` returned a captcha/challenge. No local trace confirms application sent. Keep in `active` until checked manually or through a later successful HH pull.

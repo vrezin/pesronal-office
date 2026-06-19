@@ -15,6 +15,8 @@ Scheduled Personal Office jobs live here.
 
 Automation must leave a trace in `runs/` and update `state/` only after successful processing.
 
+Scheduled automation must not require Git commits. Run logs and state markers are enough for unattended durability; committing is a manual/operator action.
+
 ## Active Monitors
 
 - `hh-gmail-monitor`

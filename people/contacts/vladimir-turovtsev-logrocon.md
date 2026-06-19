@@ -70,6 +70,7 @@ Queries checked:
 - Company spelling is now confirmed as `Logrocon` / `Логрокон`.
 - Do not assume this is the same person as unrelated public search hits for other people named Туровцев.
 - Relationship tone is net positive: the Aramim introduction outweighs the old VTB tender failure, while the VTB story remains a caution around delivery discipline.
+- On 2026-06-19, Vladimir replied positively to the AI automation / engineering leadership / business transformation outreach and asked the user to write on Monday morning to find time for a call next week.
 
 ## Relationship History
 
@@ -77,4 +78,6 @@ Queries checked:
 
 ## Next Step
 
-If follow-up research is needed, search for public interviews / publications and external company registry records. Treat the official site as the current main source.
+Write Vladimir on Monday morning, 2026-06-22, to schedule a 30-minute exploratory call.
+
+Related task: `tasks/active/2026-06-22-write-vladimir-turovtsev-logrocon-scheduling.md`

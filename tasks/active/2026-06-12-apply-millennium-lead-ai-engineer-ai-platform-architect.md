@@ -33,3 +33,7 @@ Prepare/apply with AI Transformation CV and, if useful, a targeted HH block emph
 - Whether the AI team already exists.
 - First 2-3 AI scenarios for the first 6 months.
 - Whether fully remote includes Novosibirsk.
+
+## Status Validation - 2026-06-19
+
+HH vacancy `133955311` is still retrievable. HH tool did not expose application status, and no local trace confirms application sent. Keep in `active`.
