@@ -20,12 +20,23 @@ Process the HH filtered list gradually, preserving triage decisions and only doi
 - Защищенные Телекоммуникации / `133760487`: analyzed; low-effort only because of Golang/Kafka/K8s hard-filter risk.
 - Технологии Будущего / `134077560`: duplicate; already analyzed.
 
+## HH Email Digest - 2026-06-19
+
+Processed note: `inbox/processed/2026-06-19-hh-business-unit-digest-thin-links.md`
+
+- Digest duplicated already-analyzed Yandex Infrastructure `134108251`, ProSpace `134258886`, and Bazon `134253795`.
+- New thin-only second-wave candidates: AADS `134301877` and МАФО `134184672`; retrieve full JD before analysis.
+- Samruk Business Academy `134314665` is not interesting for this search because the digest shows a downleveled Middle developer/support role.
+
 ## Next Batch Candidates
 
-- STAX or parsed employer unclear / `134188752`
 - Иридиум / `133213888`
 - Directum / `133274511`
 - HR ME / `134247965`
+
+## Closed From Later HH Mail
+
+- STAX / `134188752`: HH Gmail rejection received on 2026-06-22; closed without full analysis because no JD archive exists and the email only carried rejection status.
 
 ## Operating Rule
 

@@ -23,7 +23,7 @@ Design a practical money-management system in Personal Office that uses ZenMoney
    - Add Personal Office buckets for decision-making: baseline family spend, obligations, housing/property, children, health, transport, debt service, business/project, investment/capital, discretionary, taxes.
 
 3. Check data freshness.
-   - Verify whether no transactions after 2026-06-10 is expected or a sync/API issue.
+   - Done on 2026-06-22: ZenMoney returned transactions through 2026-06-21, so the earlier freshness issue is currently resolved.
 
 4. Create a monthly close template.
    - Income received.
@@ -86,8 +86,10 @@ To switch from inventory to financial control, build these artifacts next:
 - `finance/family-assets/tyumen-studio-cashflow.md`
 - `finance/obligations/credit-obligations-register.md`
 - `finance/personal-budget/2026-06-15-zenmoney-initial-snapshot.md`
+- `finance/personal-budget/2026-06-22-zenmoney-refresh.md`
 - `finance/personal-budget/account-role-register.md`
 - `inbox/processed/2026-06-15-zenmoney-money-system-intake.md`
+- `inbox/processed/2026-06-22-zenmoney-finance-refresh.md`
 
 ## Open Questions
 
@@ -99,4 +101,5 @@ To switch from inventory to financial control, build these artifacts next:
 - What is the remaining cost-to-finish for the Berdsk country house?
 - What are the mileage, configuration, condition, annual costs, and market valuation for the 2013 Volkswagen Tiguan?
 - Credit-card evidence is restored enough for control: Gmail Trash contained the T-Bank statement; user provided current Sber bank-app values, though Sber amount may change with today's/future operations.
+- 2026-06-22 refresh: Sber ZenMoney balance is now about -178K RUB, so bank-app grace-payment amount must be rechecked before the 2026-07-13 due date.
 - What are the exact terms, due dates, grace-period status, and payoff priorities for all credit obligations?

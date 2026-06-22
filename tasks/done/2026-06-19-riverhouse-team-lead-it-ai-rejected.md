@@ -1,7 +1,8 @@
 # Apply Риверхаус Team Lead / Руководитель группы разработки (IT/AI)
 
 - Created: 2026-06-19
-- Status: Active
+- Completed: 2026-06-19
+- Status: Done / rejected by employer
 - Priority: Medium-high
 - Vacancy id: `133929383`
 - URL: `https://hh.ru/vacancy/133929383`
@@ -10,9 +11,9 @@
 - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-riverhouse-team-lead-it-ai-analysis.md`
 - Recommended CV: `AI Transformation Lead - AI Automation Architect.pdf`
 
-## Decision
+## Original Decision
 
-Likely apply, unless HH shows a duplicate/conflicting active process with Риверхаус.
+Before the employer response, this was a likely-apply candidate unless HH showed a duplicate/conflicting active process with Риверхаус.
 
 ## Why
 
@@ -28,8 +29,14 @@ This is meaningfully better than the earlier Риверхаус PMO/Asana vacanc
 
 ## Next Action
 
-Apply with AI Transformation CV and cover note from the analysis, or ask salary/remote/scope first if HH question flow allows.
+No next action. The employer rejected this process later on 2026-06-19.
 
 ## Status Validation - 2026-06-19
 
-HH vacancy `133929383` is still retrievable. HH tool did not expose application status, and no local trace confirms application sent. Keep in `active`.
+Earlier on 2026-06-19, HH vacancy `133929383` was still retrievable. HH tool did not expose application status, and no local trace confirmed application sent at that time.
+
+## Employer Status Update - 2026-06-19
+
+HH email `19edfa8b04e54987` at `2026-06-19T11:33:54` says the employer is not ready to invite the candidate.
+
+Outcome: rejected / closed. No next action unless a direct employer contact appears or a materially different Риверхаус role opens.

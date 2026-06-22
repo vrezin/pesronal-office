@@ -114,6 +114,13 @@
 
 ## Decision
 
-- Apply: yes / likely worth applying if no duplicate process issue.
-- Priority: medium-high.
-- Next action: apply with AI Transformation CV or ask salary/remote/scope first if a direct question channel is available.
+- Status: rejected by employer on 2026-06-19 via HH email `19edfa8b04e54987`.
+- Apply: closed.
+- Priority: closed.
+- Next action: no follow-up unless a direct employer contact appears or a materially different Риверхаус role opens.
+
+## Status Update - 2026-06-19
+
+HH sent a status update for vacancy `133929383`: `Работодатель не готов пригласить вас`.
+
+Previous assessment remains useful as market signal for AI/product-engineering roles in real-estate / commercial-property operations, but this specific process is closed.

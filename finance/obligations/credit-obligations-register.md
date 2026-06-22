@@ -12,20 +12,20 @@ This file is the debt side of the Personal Office money model. It must be read t
 
 ## Last Read
 
-- Date: 2026-06-15
+- Date: 2026-06-22
 - Source: ZenMoney MCP read-only calls:
   - accounts;
-  - `Гашение кредита` transactions;
-  - parent `Студия` transactions.
+  - June 2026 budgets;
+  - 2026-06-01..2026-06-22 transactions.
 - Sensitive handling: ZenMoney account ids are intentionally not stored here.
 
 ## Obligations
 
 | Obligation | Visible ZenMoney account / evidence | Current balance / payment | Status | Treatment | Missing facts |
 |---|---|---:|---|---|---|
-| Cash loan / consumer credit | `Кредит наличными` account; `Гашение кредита` payments | balance about -3.315M RUB; annuity payment about 70.45K RUB/month; annual rate 16.2%; payment day is the 4th day of each month | active, high priority, confirmed by user | Include in liabilities and monthly debt-service burden. | Bank/lender, maturity, remaining term, early repayment rules, whether payment can be reduced/refinanced. |
-| Sber credit card | `Sber. Кредитка` account; user-provided current bank-app values | due by 2026-07-13; minimum payment 4,528.03 RUB; payment for interest-free period 46,038.39 RUB; total debt 159,673.56 RUB including today's operations; grace period is 120 days | active, control data confirmed by user | Include in short-term liabilities; for control, pay 46,038.39 RUB by 2026-07-13 if preserving interest-free period. | Confirm whether later operations change the payment required before due date. |
-| Tinkoff / T-Bank credit card | `Tinkoff. Кредитка` account; Gmail statement in Trash | statement period 2026-05-08..2026-06-07; due 2026-07-01; minimum payment 1,700 RUB; payment for interest-free period 96,237 RUB; debt on 2026-06-07 was 96,237 RUB | active, statement found | Include in short-term liabilities; for control, pay 96,237 RUB by 2026-07-01 if preserving interest-free period. | Confirm whether this maps exactly to ZenMoney `Tinkoff. Кредитка` balance and whether later transactions changed the amount. |
+| Cash loan / consumer credit | `Кредит наличными` account; `Гашение кредита` payments | ZenMoney balance about -3.315M RUB on 2026-06-22; annuity payment about 70.45K RUB/month; annual rate 16.2%; payment day is the 4th day of each month | active, high priority, confirmed by user | Include in liabilities and monthly debt-service burden. | Bank/lender, maturity, remaining term, early repayment rules, whether payment can be reduced/refinanced. |
+| Sber credit card | `Sber. Кредитка` account; user-provided current bank-app values from 2026-06-15 | ZenMoney balance about -178.0K RUB on 2026-06-22; previous bank-app due date 2026-07-13; previous minimum payment 4,528.03 RUB; previous interest-free-period payment 46,038.39 RUB; previous total debt 159,673.56 RUB | active, requires bank-app recheck | Include in short-term liabilities; do not rely on the old grace-payment amount without current bank-app confirmation. | Confirm current Sber grace-preserving amount before 2026-07-13; later operations likely changed the balance. |
+| Tinkoff / T-Bank credit card | `Tinkoff. Кредитка` account; Gmail statement in Trash | ZenMoney balance about -97.1K RUB on 2026-06-22; statement period 2026-05-08..2026-06-07; due 2026-07-01; minimum payment 1,700 RUB; payment for interest-free period 96,237 RUB; debt on 2026-06-07 was 96,237 RUB | active, statement found, amount still close to ZenMoney balance | Include in short-term liabilities; for control, pay 96,237 RUB by 2026-07-01 if preserving interest-free period unless bank app shows a newer corrected amount. | Confirm whether later transactions changed the exact required payment. |
 | Generic debt account | `Долги` account | about -30K RUB | stale/accounting artifact | Exclude from real liabilities. | User says there is no such real debt; likely forgotten stale tracking item. |
 | Tyumen studio mortgage | `Ипотека студия` account and parent `Студия` transactions | observed payments about 17-17.5K RUB/month; user recalls rate about 6%; payment date can be inferred from transaction history; ZenMoney account shows positive balance about 104.6K RUB | active but account semantics unclear | Treat as preferential/subsidized mortgage tied to the Tyumen studio; include monthly payment in obligations; do not infer principal from ZenMoney balance yet. | Outstanding principal, exact rate, maturity, lender, exact payment schedule, why ZenMoney account balance is positive. |
 | Negative RUB cash account | `Наличные Рубли` account | about -376K RUB | accounting/input error | Exclude from available cash and real liabilities. | User says this is likely an input/accounting error. |
@@ -47,6 +47,7 @@ Working rule:
 
 - Treat the cash loan as approximately 70.45K RUB/month recurring debt service due on the 4th day of each month.
 - User confirmed this is an annuity loan with annual rate 16.2%.
+- On 2026-06-22, ZenMoney account balance was about -3.315M RUB.
 
 ### Tyumen Studio Mortgage
 
@@ -102,6 +103,11 @@ Interpretation:
 - To preserve the interest-free period, plan 46,038.39 RUB by 2026-07-13 unless the bank app shows an updated amount before due date.
 - Minimum payment protects against formal delinquency but does not satisfy the interest-free-period goal.
 
+2026-06-22 ZenMoney refresh:
+
+- ZenMoney `Sber. Кредитка` balance: about -178.0K RUB.
+- This is higher than the previous user-provided total debt value, so current bank-app confirmation is required before deciding the July payment.
+
 ## Gmail Evidence Search Summary
 
 On 2026-06-15, Gmail was searched read-only for Sber/Tinkoff/T-Bank credit-card statements, minimum payment wording, debt wording, and sender-domain variants.
@@ -141,8 +147,8 @@ This excludes one-off/current credit-card grace payments:
 - Separate strategic mortgage debt from consumer debt.
 - Do not count the Tyumen studio mortgage as a pure negative without the asset and rent offset.
 - Treat credit-card balances as risky/high-priority until grace-period status is known.
-- For Sber credit card, preserving grace period currently requires 46,038.39 RUB by 2026-07-13 according to user-provided current bank-app values; total debt is 159,673.56 RUB and can differ from ZenMoney because it includes today's operations.
-- For T-Bank credit card, preserving grace period requires 96,237 RUB by 2026-07-01 according to the statement found in Gmail Trash.
+- For Sber credit card, the previous grace-period control value was 46,038.39 RUB by 2026-07-13, but the 2026-06-22 ZenMoney balance is now about -178.0K RUB. Recheck bank app before payment.
+- For T-Bank credit card, preserving grace period requires 96,237 RUB by 2026-07-01 according to the statement found in Gmail Trash; 2026-06-22 ZenMoney balance is about -97.1K RUB, close to the statement amount.
 - Exclude `Долги` and `Наличные Рубли` from real liabilities unless new evidence appears; they are currently classified as stale/accounting artifacts.
 - Do not include other ambiguous negative accounts in a headline liability total until explained.
 - Monthly close must show:
@@ -156,7 +162,7 @@ This excludes one-off/current credit-card grace payments:
 
 - What are the exact terms of the cash loan: bank, rate, maturity, remaining principal, monthly payment, early repayment conditions?
 - Are the Sber and Tinkoff credit-card balances inside grace period or already interest-bearing?
-- Does the Sber grace-preserving amount change before 2026-07-13 because of today's/future operations?
+- What is the current Sber grace-preserving amount after the 2026-06-22 ZenMoney balance increased to about -178.0K RUB?
 - Has the T-Bank statement amount changed after 2026-06-07, or is 96,237 RUB still the correct interest-free-period payment by 2026-07-01?
 - What are the exact Tyumen studio mortgage terms and why does the ZenMoney account show a positive balance?
 - Are the negative closed/deposit/investment-like accounts real obligations or stale accounting artifacts?

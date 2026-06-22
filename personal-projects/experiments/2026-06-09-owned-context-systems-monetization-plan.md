@@ -272,3 +272,85 @@ The sequence should be:
 Not:
 
 > big idea -> investor deck -> rejection -> despair.
+
+## Premium Private-Cloud Extension
+
+Added 2026-06-21.
+
+There is a higher-level product direction above the first paid-pilot wedges:
+
+> a premium private AI office / personal AI cloud for people or small teams who want their own controlled environment instead of dependence on fragmented SaaS tools.
+
+This direction is connected to the agentic-software shift:
+
+- static code and small software products become easier to regenerate;
+- agents increasingly create and discard task-specific scripts and tools;
+- the durable value moves to private context, data, compute, verification, security, and managed operation;
+- the product becomes less "one SaaS app" and more "your own operating environment with agents and services."
+
+Possible bundle:
+
+- controlled cloud environment;
+- GPU / NLU stack;
+- multi-model AI routing;
+- Personal Office style task, document, memory, and decision layer;
+- mail, website, document storage, and personal services;
+- managed backups, logs, updates, and support.
+
+RTCloud / РТКлоуд may be relevant as an infrastructure partner or reference provider, but this is not confirmed.
+
+Current judgment:
+
+> promising strategic tier, but not the first thing to build.
+
+Use it as a premium extension while validating the immediate buyer promise through a narrow offer.
+
+Discussion update from 2026-06-21:
+
+The private-cloud extension should absorb the strongest counterpoints from the agentic-software discussion.
+
+Do not pitch the category as "AI can generate apps quickly." That advantage will commoditize.
+
+Pitch the category as:
+
+> a managed private context where agents can use a client's own data and domain model while verification, responsibility, compatibility, and support stay explicit.
+
+Validation must test where buyers see value:
+
+- replacing generic SaaS workflows with exact personal/business workflows;
+- owning private context and memory;
+- maintaining a domain model that agents can act against;
+- reducing the human-review bottleneck through boundaries, tests, logs, and approval surfaces;
+- having someone responsible for support and explanation;
+- avoiding a faster, cheaper Big Ball of Mud.
+
+Important caution:
+
+> full regeneration is mostly a greenfield fantasy unless the offer handles accumulated data, integrations, users, and compatibility.
+
+Core product clarification from 2026-06-21:
+
+The premium extension is not only a software offer. It is:
+
+> protected private contour + correctly organized infrastructure + hardware/software tools + routine automation + workflows + AI as orchestrator, validator/assistant/secretary, and software developer.
+
+The first validation should test which AI role is most sellable:
+
+- orchestrator: coordinates tools, models, workflows, and context;
+- validator / assistant / secretary: checks, summarizes, reminds, extracts tasks and decisions, keeps audit trails;
+- software developer: creates task-specific scripts, integrations, and small applications inside the private contour.
+
+Security wording must be made concrete before selling:
+
+- access control;
+- encryption and key management;
+- audit logs;
+- backup and recovery;
+- network isolation;
+- approval and rollback workflow;
+- secure execution boundaries for agent-generated tools.
+
+Related artifacts:
+
+- `companies/future-companies/2026-06-21-premium-personal-ai-cloud-rtcloud-opportunity.md`
+- `tasks/active/2026-06-21-validate-premium-personal-ai-cloud-offer.md`

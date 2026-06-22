@@ -1,4 +1,4 @@
-# Pending Meeting: Sibedge / NL International Recruiter Call
+# Meeting: Sibedge / NL International Recruiter Call
 
 Date: 2026-06-22
 
@@ -6,7 +6,7 @@ Time: 18:00-18:30 Novosibirsk / 14:00-14:30 Moscow
 
 Timezone: Asia/Novosibirsk
 
-Status: scheduled locally / Google Calendar creation failed due connector error
+Status: held / local notes updated
 
 Meeting link: Microsoft Teams link received from Юля on 2026-06-19 17:18.
 
@@ -52,6 +52,28 @@ Review before call:
 - Understand the actual NL/Sibedge delivery model.
 - Understand role authority over architecture, teams, standards and technical debt.
 - Learn expected first 90 days outcome.
+
+## Notes From Call
+
+- IT department formed historically and grew organically.
+- Company intends a major transformation: separate IT into its own structure, build a fuller digital transformation contour, and move toward a product model.
+- Approximate transformation/team scale: 50-70 people.
+- Practical role focus: 1C and fintech.
+- First task: create an integration bus.
+- Role sounds more leadership/management-oriented than pure hands-on architecture.
+
+## Updated Read
+
+This is stronger than a narrow 1C architect screen if the leadership mandate is real. The first integration-bus task should be framed as a managed platform/product initiative around 1C and fintech: owners, contracts, monitoring, security, reliability, roadmap, team coordination and delivery governance.
+
+Key remaining checks:
+
+- compensation band;
+- office/hybrid expectations;
+- who owns the transformation sponsor role;
+- exact fintech scope and first integration-bus contour;
+- whether the role manages teams/delivery directly or only influences through architecture;
+- whether there are strong 1C/domain experts available.
 
 ## Calendar Note
 

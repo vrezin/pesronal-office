@@ -8,10 +8,17 @@ ZenMoney remains the source of account balances and transactions. This file defi
 
 ## Last Read
 
-- Date: 2026-06-15
+- Date: 2026-06-22
 - Source: ZenMoney MCP `get_accounts`
 - Mode: read-only
 - Sensitive handling: ZenMoney account ids are intentionally not stored here.
+
+## Latest Refresh Notes
+
+- Refresh artifact: `finance/personal-budget/2026-06-22-zenmoney-refresh.md`.
+- ZenMoney balances were readable on 2026-06-22.
+- Transactions are visible through 2026-06-21, so the earlier 2026-06-15 freshness concern about no transactions after 2026-06-10 is currently resolved.
+- Do not treat this register as a single net-worth report; it is still a role/classification layer.
 
 ## Status Values
 
@@ -85,7 +92,7 @@ ZenMoney remains the source of account balances and transactions. This file defi
 | Наличные Рубли | RUB | technical/placeholder | accounting/input error | exclude from available cash and real liabilities | User says this is likely an input/accounting error. See `finance/obligations/credit-obligations-register.md`. |
 | Ипотека студия | RUB | property/studio debt/mortgage | needs clarification | exclude from net view until loan semantics confirmed; include recurring payment in obligations once terms are captured | Likely mortgage account for Tyumen studio. Cross-check with `finance/family-assets/real-estate-register.md` and `finance/family-assets/tyumen-studio-cashflow.md`. |
 | Sber. Дебит | RUB | personal operating cash | stale/zero | exclude until confirmed | Zero balance. |
-| МИР Сберкарта | RUB | personal operating cash | stale/zero | exclude until confirmed | Zero balance. |
+| МИР Сберкарта | RUB | personal operating cash | needs clarification | include only in detailed operating cash until confirmed | Small active-looking balance appeared after a 2026-06-17 subsidy transaction; confirm whether this account should be reactivated in reports. |
 | Cashback Card MIR | RUB | personal operating cash | stale/zero | exclude until confirmed | Zero balance. |
 | AIR MasterCard! | RUB | personal operating cash | stale/zero | exclude until confirmed | Zero balance. |
 | Visa Platinum PREMIER Катя | RUB | family operating cash | ignore unless needed | exclude from high-level reports | Near-zero negative balance. |
@@ -117,6 +124,7 @@ Until this register is confirmed:
 
 High-priority confirmations:
 
+- Confirm whether `МИР Сберкарта` should move back from stale/zero into active personal operating cash.
 - What are the exact terms and account semantics for `Ипотека студия`: outstanding principal, monthly payment, rate, maturity date, and why the ZenMoney account currently shows a positive balance?
 - What are the exact terms and due dates for all credit obligations in `finance/obligations/credit-obligations-register.md`?
 - Which Tochka accounts are active business/project accounts, and what should each be named?

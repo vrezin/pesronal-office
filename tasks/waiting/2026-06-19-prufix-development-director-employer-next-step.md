@@ -30,6 +30,7 @@ The role strongly matches founder-facing development management, predictable del
 - 2026-06-19: application sent on HH; screening completed by user.
 - 2026-06-19 13:01 +07: HH email reported employer interest and invited the user to a short online interview with the Proofix AI recruiter `Фёдор`; employer asked to complete it preferably within 24 hours.
 - 2026-06-19: user completed the Proofix AI recruiter interview.
+- 2026-06-22 HH status sweep: HH still shows `Собеседование` for vacancy `133680195`; no new next-step message seen in this sweep.
 
 ## Next Action
 

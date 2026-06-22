@@ -15,6 +15,7 @@
 - Applied: 2026-06-19
 - Acknowledged by employer: 2026-06-19 14:52
 - Status: waiting for substantive result / interview decision
+- 2026-06-22 HH status sweep: HH shows `Просмотрен` for vacancy `134218543`.
 - This is one of the strongest current title/content fits for the AI Solution Architect / AI Product Engineer direction.
 
 ## Employer Acknowledgement

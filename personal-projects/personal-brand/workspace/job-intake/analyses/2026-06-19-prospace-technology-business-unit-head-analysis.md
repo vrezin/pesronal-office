@@ -12,6 +12,14 @@
 - Link: `https://hh.ru/vacancy/134258886`
 - Archive file: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-19-prospace-technology-business-unit-head.md`
 
+## 2026-06-20 Correction
+
+The user later provided prior interview history for the same vacancy id `134258886`.
+
+This was not a fresh apply target. The user had already interviewed with Юлия Баранова / HR ProSpace on 2026-05-22 and received a rejection / market-feedback message on 2026-05-29.
+
+Current decision: do not cold-apply again. Keep the role as a strong Business Unit / Integration market-pattern signal and keep Юлия as a warm HR contact for future suitable roles.
+
 ## Classification
 
 - Primary track: Business Unit / Integration
@@ -91,8 +99,15 @@
 - Удаленный формат полностью постоянный или ожидаются регулярные поездки/офис?
 - Что для CEO будет главным результатом через первые 90 дней?
 
-## Decision
+## Original Decision
 
 - Apply: likely yes.
 - Priority: high.
 - Next action: apply with `Director of Development - Business Unit Technical Leader.pdf`, unless compensation/location are found to be weak before applying.
+
+## Updated Decision
+
+- Apply: no repeat cold application.
+- Status: prior interview / rejected for this role / warm contact kept.
+- Priority: high as market signal, closed as active application target.
+- Next action: use the ProSpace feedback to guide integrator / business-unit search; respond to Юлия if she brings a better-fit role.

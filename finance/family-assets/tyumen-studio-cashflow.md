@@ -45,8 +45,9 @@ Observed receipts:
 - 2026-03: 23,976 RUB.
 - 2026-04: 22,000 RUB.
 - 2026-05: 18,778 RUB.
+- 2026-06: 22,000 RUB visible on 2026-06-16.
 
-Observed average for 2026-02..2026-05: about 20.9K RUB/month.
+Observed average for 2026-02..2026-06: about 21.1K RUB/month.
 
 Interpretation:
 
@@ -65,12 +66,14 @@ Observed mortgage-like payments:
 - 2026-03: 17,500 RUB.
 - 2026-04: 17,500 RUB.
 - 2026-05: 17,500 RUB transfer line visible under `Студия`.
+- 2026-06: 17,000 RUB transfer line visible on 2026-06-03.
 
 Interpretation:
 
 - Treat the mortgage as a recurring obligation of about 17-17.5K RUB/month until exact loan terms are captured.
 - User recalls the rate is about 6%.
 - The mortgage account/loan terms should be confirmed from account data or loan documents.
+- On 2026-06-22, ZenMoney account `Ипотека студия` still showed a positive balance of about 104.6K RUB; do not infer principal from this account yet.
 
 ### Communal / Owner Expenses
 
@@ -86,6 +89,7 @@ Observed owner-side communal or utility-like expenses:
 - 2026-04: 62.70 RUB to `AO "Gazprom energosbyt"`.
 - 2026-05: 3,244.54 RUB to `АО "ТРИЦ"`.
 - 2026-05: 921.81 RUB to `ООО УК Правый берег`.
+- 2026-06: 932.19 RUB to `ООО УК Правый берег` visible on 2026-06-03.
 
 Interpretation:
 
@@ -131,7 +135,7 @@ Interpretation:
 Preliminary recurring model:
 
 - Contractual rent: 22K RUB/month.
-- Observed receipt average: about 20.9K RUB/month for 2026-02..2026-05.
+- Observed receipt average: about 21.1K RUB/month for 2026-02..2026-06.
 - Mortgage obligation: about 17-17.5K RUB/month observed.
 - Owner-side communal expenses: variable; observed April-May owner-side коммуналка/utilities about 4.2-5.3K RUB/month before classification cleanup.
 - Realtor коммуналка reimbursement: working rule 2-2.5K RUB/month.

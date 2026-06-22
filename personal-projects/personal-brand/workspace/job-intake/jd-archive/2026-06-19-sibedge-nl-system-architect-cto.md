@@ -2,13 +2,15 @@
 
 Date captured: 2026-06-19
 
-Source: https://hh.ru/vacancy/134364162
+Primary source: https://hh.ru/vacancy/134364162
+
+Alternate direct employer source found later: https://novosibirsk.hh.ru/vacancy/133500815
 
 Company shown on HH: Sibedge
 
-End company in JD: NL International
+End company in JD: NL International / ООО НЛ Континент
 
-Role: System Architect / CTO
+Role: System Architect / CTO / СТО / System Architect
 
 Location: Новосибирск, office near metro `Маршала Покрышкина`; HH location card also shows central Novosibirsk metro references.
 
@@ -19,6 +21,8 @@ Salary: not disclosed. HH extraction surfaced `5 000 руб`, but this is the mo
 Sibedge is hiring a System Architect / CTO for NL International as part of a technology partnership.
 
 NL International is described as an international company with a strong brand and stable business, currently in transformation. The company is rebuilding management approach and developing technology as an integral business function, moving toward product and engineering thinking, transparent processes, and managed teams embedded into the overall business contour.
+
+The alternate direct HH posting from `ООО НЛ Континент` uses the same role contour and gives a more direct description: lead architectural evolution from monolith to modularity, from chaotic integrations to managed bus, and from knowledge-in-heads to platform data layer. It explicitly mentions decomposing the 1C monolith and similar platforms, building platform data-layer, and designing a managed integration bus.
 
 ## Role
 
@@ -72,4 +76,3 @@ Unpack / decouple the 1C monolith, create a platform data layer, and build a man
 - DMS after probation.
 - Monthly product bonus of any company products for 5,000 rubles after probation.
 - Company-paid meals.
-

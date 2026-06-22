@@ -18,6 +18,7 @@ Wait for employer response to HH vacancy `134311893` for `Начальник у�
 - Applied: 2026-06-19
 - Status: waiting for employer response
 - Phone follow-up: user called on 2026-06-19; Банк Акцепт said response will be no earlier than in two weeks.
+- 2026-06-22 HH status sweep: HH shows `Просмотрен` for vacancy `134311893`.
 
 CV context:
 

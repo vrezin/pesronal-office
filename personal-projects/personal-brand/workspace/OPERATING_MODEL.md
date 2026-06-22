@@ -33,6 +33,7 @@
 - `source/` - raw HH/exported source text.
 - `cv-originals/` - old resumes, cover letters, certificates, exports; donors only.
 - `positioning/` - strategic market framing and feedback.
+- `content/` - personal public-content drafts: LinkedIn posts, blog drafts, thought-leadership notes, and publication-ready copy.
 - `resume-targets/` - master profile, experience strategy, outlines, evidence bank.
 - `final-cv/` - current final PDFs and registry.
 - `job-intake/` - JD archive, analyses, matching rules, templates.

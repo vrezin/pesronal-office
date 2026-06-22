@@ -1,21 +1,36 @@
-# Complete RapidSeedbox Fractional CTO Screening Form
+# Schedule RapidSeedbox Interview
 
 - Created: 2026-06-18
-- Status: Waiting for employer response
+- Updated: 2026-06-22
+- Status: Active - prepare for scheduled interview
 - Priority: Medium
-- Source: HH employer message / interview status
+- Source: HH employer message / interview status; Gmail reply from Ana Bundalo Milkovic
 - Vacancy ID: `133919188`
 - Company: RapidSeedbox ltd
-- Role: Fractional CTO
+- Role: Fractional CTO in original intake; 2026-06-22 email says Engineering Team Lead
 - Screening form: `https://forms.gle/y11euLeffKEj9bKF7`
+- Scheduling link: `https://calendly.com/ana-rapidseedbox/30min`
+- Scheduled call: 2026-06-26 17:00-17:30 Novosibirsk Time
+- Meeting note: `calendar/meetings/2026-06-26-rapidseedbox-ana-bundalo-milkovic-interview.md`
 
 ## Goal
 
-Decide whether to complete the RapidSeedbox screening form and, if yes, answer it with calibrated `playing CTO` positioning.
+Prepare for the scheduled 1 on 1 call and use it to clarify whether this process is worth further investment.
 
 ## Context
 
-The employer moved the HH response to `interview`, but the actual next step is a Google Form screening. They estimate about 10 minutes and say only full submissions are considered.
+The employer moved the HH response to `interview`, but the first next step was a Google Form screening. They estimated about 10 minutes and said only full submissions are considered.
+
+On 2026-06-22, Ana Bundalo Milkovic from RapidSeedbox wrote that the application caught their eye and invited scheduling a 30-minute interview via Calendly.
+
+The user scheduled the call for Friday, 2026-06-26, 17:00-17:30 Novosibirsk Time. Web conferencing details are expected to follow through the calendar invitation.
+
+Important discrepancy:
+
+- Original archived vacancy and HH context: `Fractional CTO`.
+- New email wording: `Engineering Team Lead`.
+
+Clarify this before investing deeply in the process.
 
 ## Positioning
 
@@ -32,7 +47,13 @@ The employer moved the HH response to `interview`, but the actual next step is a
 
 ## Next Step
 
-Wait for employer response. Do not reopen the form unless the employer explicitly asks for missing information.
+Prepare a concise call plan and clarify at the beginning of the call:
+
+- whether the role is Fractional CTO, Engineering Team Lead, or a renamed/hybrid version;
+- compensation for 4h/day fractional format or full-time team-lead format;
+- first 30/90-day success expectations;
+- actual coding ratio and PHP/WHMCS depth;
+- timezone/legal setup from Novosibirsk.
 
 ## Form Draft - 2026-06-18
 
@@ -131,4 +152,7 @@ For a part-time 20 hrs/week engagement: USD 5,500-6,500 gross per month.
 - Status: submitted.
 - Video: intentionally not provided.
 - Reason: user does not want to send a personal video to an insufficiently verified employer/form at this stage.
-- Current posture: wait for employer response; treat as low-trust screening until they engage through a normal hiring conversation.
+- 2026-06-22: employer replied with interview scheduling link.
+- 2026-06-22: user scheduled 1 on 1 call with Ana Bundalo Milkovic for 2026-06-26 17:00-17:30 Novosibirsk Time.
+- 2026-06-22 HH status sweep: HH still shows `Собеседование` for vacancy `133919189`.
+- Current posture: normal hiring conversation started, but keep low-trust caveats visible until role title, compensation, and expectations are clear.
