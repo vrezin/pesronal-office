@@ -12,14 +12,19 @@ Prepare Vladimir to join Yuliya, Andrei, and Nadya for a 2026-06-23 sync about a
 
 ## Current Understanding
 
-The client appears to have:
+The client / activity is Remote Landlord.
 
-- legacy Visual Basic / .NET / web forms / old framework code;
-- long business-logic procedures;
-- two systems after acquiring a competitor;
-- no obvious clean base system to migrate to;
+Current understanding from the chat:
+
+- legacy monolith on ASP.NET/VB.NET + SQL Server;
+- desired rewrite stack: Python + PostgreSQL + React;
+- goal to preserve all existing features;
+- no complete documentation or definitive feature/needs inventory yet;
 - business-critical payment-related scope;
-- a competing Israeli vendor/product with potential IP/license lock-in risk.
+- codebase inventory mentioned by Nadezhda / Andrey: 25 modules, 604 screens, 480 tables, 700 stored procedures;
+- human-only migration estimate: 270-400 person-months;
+- AI-assisted migration estimate: about 140-205 person-months;
+- separate AI-chat integration estimate: about 0.7-1.1 person-months.
 
 Yuliya's desired direction may be:
 
@@ -52,6 +57,6 @@ Yuliya's desired direction may be:
 
 ## Blocked On
 
-- Actual code/files/findings from Andrei.
-- Confirmed call time / chat from Yuliya.
-
+- Drive access for Vladimir.
+- Confirmed call time.
+- Review of the shared Drive documents after access is granted.

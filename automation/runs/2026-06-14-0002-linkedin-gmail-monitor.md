@@ -29,7 +29,7 @@ Seven LinkedIn messages were returned by the overlap search. Two were older than
 
 ## Existing Artifact Checks
 
-- Shaw Daniels Solutions: no new edit was needed in this run because the rejection email had already been reflected in `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md`, `personal-projects/personal-brand/workspace/job-intake/INDEX.md`, `personal-projects/personal-brand/workspace/job-intake/TODAY.md`, and `tasks/done/2026-06-13-shaw-daniels-head-of-engineering-rejected.md`.
+- Shaw Daniels Solutions: no new edit was needed in this run because the rejection email had already been reflected in `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md`, `personal-projects/personal-brand/workspace/job-intake/INDEX.md`, `personal-projects/personal-brand/workspace/job-intake/TODAY.md`, and `tasks/done/2026-06-13-shaw-daniels-head-of-engineering-rejected.md`.
 - Vyking: no full JD was available in Gmail. The existing thin trace remains the correct artifact; no job-intake analysis, index row, or company-notes entry was created.
 
 ## Gmail Cleanup

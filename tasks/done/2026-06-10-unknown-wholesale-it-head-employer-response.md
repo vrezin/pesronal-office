@@ -14,7 +14,7 @@ Track the wholesale IT head application until the employer responded.
 - Company: unknown wholesale company
 - Role: Руководитель ИТ-отдела
 - Status: rejected on 2026-06-10
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-unknown-wholesale-it-head-1c-migration-analysis.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-09-unknown-wholesale-it-head-1c-migration-analysis.md`
 
 ## Next Step
 

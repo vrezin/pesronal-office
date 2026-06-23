@@ -29,8 +29,8 @@ Created in this run:
 - `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-14-oyster-senior-director-data-platform-ai.md`
 - `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-14-oyster-senior-director-data-platform-ai-analysis.md`
 - `tasks/active/2026-06-14-review-oyster-senior-director-data-platform-ai.md`
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-14-ey-engineering-lead-director-dublin.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-14-ey-engineering-lead-director-dublin-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-14-ey-engineering-lead-director-dublin.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-14-ey-engineering-lead-director-dublin-analysis.md`
 - `tasks/active/2026-06-14-review-ey-engineering-lead-director-dublin.md`
 
 Updated in this run:
@@ -41,11 +41,11 @@ Updated in this run:
 Pending LinkedIn monitor artifacts from the 12:01 failed-commit run were included in this run's successful artifact commit:
 
 - `inbox/processed/2026-06-14-linkedin-overstory-similar-jobs-digest.md`
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-14-totalmobile-platform-software-engineering-director.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-14-totalmobile-platform-software-engineering-director-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-14-totalmobile-platform-software-engineering-director.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-14-totalmobile-platform-software-engineering-director-analysis.md`
 - `tasks/active/2026-06-14-review-totalmobile-platform-software-engineering-director.md`
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-14-unisys-senior-director-ai-platforms.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-14-unisys-senior-director-ai-platforms-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-14-unisys-senior-director-ai-platforms.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-14-unisys-senior-director-ai-platforms-analysis.md`
 - `tasks/active/2026-06-14-review-unisys-senior-director-ai-platforms.md`
 
 ## Ranking

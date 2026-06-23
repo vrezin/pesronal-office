@@ -6,6 +6,8 @@ Due: 2026-06-22 18:00 Asia/Novosibirsk / 14:00 Moscow
 
 Status: active - post-call follow-up / LinkedIn recruiter invite pending
 
+Effort class: A-class
+
 ## Context
 
 Юля Лёва, recruiter at Сибэдж, replied quickly after the application to the `System Architect / CTO` vacancy for NL International and asked whether a Monday call is convenient.

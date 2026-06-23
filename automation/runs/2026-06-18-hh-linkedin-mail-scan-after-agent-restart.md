@@ -39,7 +39,7 @@ Gmail MCP access recovered after restarting the agent. The previous `token_expir
 - `personal-projects/personal-brand/workspace/job-intake/INDEX.md`
 - `personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md`
 - `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-08-rapidseedbox-fractional-cto-analysis.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-01-sber-product-owner-ml-ai-nlp-llm-agents-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-01-sber-product-owner-ml-ai-nlp-llm-agents-analysis.md`
 - `tasks/active/2026-06-18-complete-rapidseedbox-fractional-cto-screening-form.md`
 - `tasks/done/2026-06-18-hh-batch-rejections.md`
 

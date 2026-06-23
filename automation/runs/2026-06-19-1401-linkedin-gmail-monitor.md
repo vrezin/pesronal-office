@@ -48,14 +48,14 @@ Enriched job IDs:
 
 - Created `inbox/processed/2026-06-19-linkedin-technical-director-digest.md`
 - Created `tasks/active/2026-06-19-review-linkedin-technical-director-digest.md`
-- Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-19-vialytics-vp-of-engineering.md`
-- Created `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-vialytics-vp-of-engineering-analysis.md`
+- Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/parked/2026-06-19-vialytics-vp-of-engineering.md`
+- Created `personal-projects/personal-brand/workspace/job-intake/analyses/parked/2026-06-19-vialytics-vp-of-engineering-analysis.md`
 - Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-19-opticomm-ai-head-of-artificial-intelligence.md`
 - Created `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-opticomm-ai-head-of-artificial-intelligence-analysis.md`
-- Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-19-lego-director-engineering-customer-data-foundation.md`
-- Created `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-lego-director-engineering-customer-data-foundation-analysis.md`
-- Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-19-lovol-global-senior-director-engineering.md`
-- Created `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-lovol-global-senior-director-engineering-analysis.md`
+- Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/parked/2026-06-19-lego-director-engineering-customer-data-foundation.md`
+- Created `personal-projects/personal-brand/workspace/job-intake/analyses/parked/2026-06-19-lego-director-engineering-customer-data-foundation-analysis.md`
+- Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-19-lovol-global-senior-director-engineering.md`
+- Created `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-19-lovol-global-senior-director-engineering-analysis.md`
 - Updated `personal-projects/personal-brand/workspace/job-intake/INDEX.md`
 - Updated `personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md`
 

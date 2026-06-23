@@ -15,7 +15,7 @@ Track the Pepperstone application while the hiring team responds.
 - Role: Head of Product Engineering
 - Location: Cyprus or Budapest
 - Status: rejected on 2026-06-10
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-pepperstone-head-of-product-engineering-analysis.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-09-pepperstone-head-of-product-engineering-analysis.md`
 
 ## Next Step
 

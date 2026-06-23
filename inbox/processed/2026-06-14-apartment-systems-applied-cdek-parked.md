@@ -18,4 +18,4 @@
 
 - `personal-projects/personal-brand/workspace/job-intake/INDEX.md`
 - `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-13-apartment-systems-development-team-lead-tech-lead-analysis.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-14-cdek-customer-journey-crm-head-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-14-cdek-customer-journey-crm-head-analysis.md`

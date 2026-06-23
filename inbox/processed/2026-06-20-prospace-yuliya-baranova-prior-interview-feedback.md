@@ -47,3 +47,5 @@ Market advice from Юлия:
 Do not treat `134258886` as a new cold-apply target. It is the same ProSpace vacancy with prior interview/rejection context.
 
 Keep Юлия as a warm HR contact for future suitable vacancies.
+
+2026-06-23 update: the user reports that Юлия is not responding in Telegram. Treat the contact as useful context / future optional channel, but not as an active opportunity or reliable near-term route.

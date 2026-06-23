@@ -12,6 +12,10 @@
 
 2026-06-20 update: user sent a warm re-open message because the same vacancy still appears open. Status remains waiting for Юлия's reply.
 
+2026-06-23 update: Юлия is not responding in Telegram. Treat this as a passive / degraded warm contact, not an active near-term opportunity. Do not rely on this channel for the current ProSpace vacancy.
+
+2026-06-23 LinkedIn update: user found Юлия on LinkedIn and sent a connection request. Status: waiting for LinkedIn acceptance / response.
+
 ## What To Watch For
 
 Suitable roles:
@@ -42,4 +46,8 @@ Sent on 2026-06-20:
 моэет это повод вернуться к моей кандидатуре?
 ```
 
-If follow-up is needed, do not mention the current manager's pregnancy as an argument. Keep the framing around the role still being open, possible search recalibration, and the user's willingness to work in a playing-coach delivery format if authority and scope are real.
+If follow-up is needed later, keep it low-pressure and do not mention the current manager's pregnancy as an argument. Keep the framing around the role still being open, possible search recalibration, and the user's willingness to work in a playing-coach delivery format if authority and scope are real.
+
+No further Telegram chasing is recommended now unless new information appears.
+
+LinkedIn next step: wait for acceptance or reply. If accepted, send one short context message tying back to the prior ProSpace interview and her market feedback; do not pitch the same vacancy aggressively.

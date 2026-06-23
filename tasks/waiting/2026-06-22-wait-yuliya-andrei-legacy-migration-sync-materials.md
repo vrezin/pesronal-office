@@ -1,20 +1,25 @@
-# Waiting: Yuliya / Andrei Legacy Migration Sync Materials
+# Waiting: Remote Landlord Migration Access And Sync
 
 - Created: 2026-06-22
 - Status: waiting
-- Owner: Yuliya Malinina / Andrei
+- Owner: Yuliya Malinina / Nadezhda Loshchina / Andrey Kolpakov
 - Related meeting: `../../calendar/meetings/2026-06-22-yuliya-malinina-multi-topic-call.md`
 - Related active task: `../active/2026-06-22-prepare-setronica-legacy-migration-sync.md`
+- Related project: `../../companies/setronica/projects/2026-06-23-legacy-migration-modernization.md`
 
 ## Waiting For
 
-- Yuliya to create the chat.
-- Yuliya to schedule the 2026-06-23 sync with Vladimir, Andrei, and Nadya.
-- Andrei to share files/code findings for Vladimir to review before the sync.
+- Drive access for Vladimir to the Remote Landlord folder shared by Nadezhda.
+- Confirmed sync time with Yuliya, Andrey, Nadezhda, and Vladimir.
+- Source documents/code findings to be readable before the sync.
 
 ## Context
 
-Yuliya wants Vladimir to join a preparation discussion around a client legacy migration opportunity involving old Microsoft-stack systems, possible third-system strategy, and competitor/vendor pressure.
+Yuliya added Vladimir to the Remote Landlord migration chat. Nadezhda shared the current Drive folder and summarized the known analysis documents, but Vladimir currently cannot open the documents due to missing access rights.
+
+Drive folder:
+
+- `https://drive.google.com/drive/folders/1p4odaAMBfMgMtkneWktxzz_FLtnjzxZJ`
 
 ## Next
 
@@ -23,4 +28,3 @@ When materials arrive:
 - review them before the sync;
 - update the active preparation task with concrete findings;
 - avoid copying sensitive client/project internals into Personal Office beyond owner-level notes.
-

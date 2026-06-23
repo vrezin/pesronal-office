@@ -4,6 +4,14 @@ Date: 2026-06-15
 
 Source basis: real LinkedIn snapshot + current positioning pivot.
 
+## 2026-06-23 Note
+
+Superseded for the AI/agentic enterprise lane by:
+
+`2026-06-23-linkedin-enterprise-agent-rollout-profile-ready-copy.md`
+
+Keep this file as the earlier AI Product / Solution Architect baseline, but use the 2026-06-23 draft for the sharper `enterprise agent rollout / forward-deployed AI implementation` positioning.
+
 ## Recommended Headline
 
 `AI Product Engineer | AI Solution Architect | Fractional CTO for AI-First Companies`

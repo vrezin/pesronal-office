@@ -48,3 +48,6 @@ approval_mode = "approve"
 
 [mcp_servers.headhunter_web.tools.hh_web_get_suitable_vacancies]
 approval_mode = "approve"
+
+[mcp_servers.headhunter_web.tools.hh_web_open_chat_by_chat_id]
+approval_mode = "approve"

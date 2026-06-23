@@ -10,8 +10,8 @@ A new LinkedIn job alert arrived for `Shaw Daniels Solutions` with a `Head of En
 
 ## Intake Artifacts
 
-- [Archive](../../personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-10-shaw-daniels-solutions-head-of-engineering.md)
-- [Analysis](../../personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md)
+- [Archive](../../personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-10-shaw-daniels-solutions-head-of-engineering.md)
+- [Analysis](../../personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md)
 
 ## Notes
 

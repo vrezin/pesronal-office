@@ -25,12 +25,12 @@ Update on 2026-06-12: all six digest links were retrieved through `headhunter_we
 
 Created full job-intake artifacts:
 
-- `analyses/2026-06-12-faw-east-europe-it-head-analysis.md`
+- `analyses/closed/2026-06-12-faw-east-europe-it-head-analysis.md`
 - `analyses/2026-06-12-ultimate-education-head-of-it-analysis.md`
 - `analyses/2026-06-12-videoglaz-it-director-ecommerce-1c-analysis.md`
-- `analyses/2026-06-12-azimut-ai-project-lead-analysis.md`
+- `analyses/parked/2026-06-12-azimut-ai-project-lead-analysis.md`
 - `analyses/2026-06-12-pkr-chief-transformation-officer-analysis.md`
-- `analyses/2026-06-12-riverhouse-pmo-lead-asana-analysis.md`
+- `analyses/closed/2026-06-12-riverhouse-pmo-lead-asana-analysis.md`
 
 Active follow-ups created:
 

@@ -1,93 +1,94 @@
 # Job Intake Today
 
-Updated: 2026-06-12
+Updated: 2026-06-23
 
-This is the lightweight entrance to the active job-search tasks.
-Open this file first, then jump to the per-vacancy tasks.
+This is the first screen for job-search decisions. It intentionally hides the long tail: only `A-class` and selected `B-class` items deserve attention before a human response.
 
-## How To Use
+## Effort Rule
 
-- `Needs decision now`: vacancies that need a clear yes/no/action before the next workflow step.
-- `Waiting for reply`: applied roles where we are waiting for recruiter/employer feedback.
-- `Parked`: roles we reviewed and do not want to pursue unless new facts change the picture.
-- `Recently reviewed`: fresh analyses from today and the last few days.
+- `A-class`: rare strong fit or live human process. Careful thinking is allowed.
+- `B-class`: plausible role. Fast check or template response only; no resume/ATS polishing before a human reply.
+- `C-class`: maybe / market signal / location-gated / weak practical path. Park it unless explicitly reopened.
 
-## Active Queue
+Default: if a task is not listed under `A-class` or `B-class`, do not spend attention on it today.
 
-Current tasks:
+## A-Class: Worth Real Attention
 
-- `tasks/active/2026-06-17-prepare-logrocon-vladimir-turovtsev-outreach.md`
-- `tasks/active/2026-06-17-build-rf-it-company-direct-apply-list.md`
-- `tasks/active/2026-06-12-apply-bks-it-partner-ai-department.md`
-- `tasks/active/2026-06-12-apply-millennium-lead-ai-engineer-ai-platform-architect.md`
-- `tasks/active/2026-06-12-apply-ultimate-education-head-of-it.md`
-- `tasks/active/2026-06-12-decide-pkr-chief-transformation-officer.md`
-- `tasks/active/2026-06-12-apply-alpha-strahovanie-ai-development-direction-head.md`
-- `tasks/active/2026-06-12-decide-at-prof-development-group-lead-technical-partner.md`
-- `tasks/active/2026-06-12-review-hh-digest-cto-product-engineering-vacancies.md`
-- `tasks/active/2026-06-12-respond-future-technologies-founding-engineer-ai-hr-tech.md`
-- `tasks/active/2026-06-12-respond-topassistant-senior-project-manager-ai-voice.md`
-- `tasks/active/2026-06-12-decide-sber-ai-agents-developer.md`
-- `tasks/waiting/2026-06-12-volt-ai-agent-engineer-employer-response.md`
-- `tasks/active/2026-06-11-job-search-open-questions.md`
-- `tasks/active/2026-06-11-overstory-director-of-platform-engineering.md`
-- `tasks/active/2026-06-11-revolut-applied-ai-engineer.md`
-- `tasks/active/2026-06-10-jobgether-director-of-engineering.md`
+| Task | Why It Stays Active | Next Action |
+|---|---|---|
+| `tasks/active/2026-06-22-schedule-rapidseedbox-interview.md` | Live interview scheduled for 2026-06-26; human process exists. | Prepare concise call plan; clarify title mismatch, compensation, 4h/day vs full-time, PHP/WHMCS depth, legal/timezone setup. |
+| `tasks/active/2026-06-22-sibedge-nl-system-architect-cto-recruiter-call.md` | Live recruiter process; role is close to IT transformation / architecture leadership. | Keep as live process. Decide on Julia LinkedIn connection only if continuing the process is useful. |
 
-Waiting for reply:
+## B-Class: Fast Check Only
 
-- `tasks/waiting/2026-06-12-hrscan-head-of-development-cto-employer-response.md`
-- `tasks/waiting/2026-06-12-raketnaya-firma-ai-engineer-ai-solutions-engineer-employer-response.md`
-- `tasks/waiting/2026-06-12-miratorg-director-of-project-ai-implementation-employer-response.md`
-- `tasks/waiting/2026-06-12-alpha-strahovanie-platform-development-lead-employer-response.md`
-- `tasks/waiting/2026-06-10-unknown-hedge-fund-cto-trading-ai-screening.md`
-- `tasks/waiting/2026-06-10-minehub-vp-of-engineering-employer-response.md`
-- `tasks/waiting/2026-06-10-selby-jennings-head-of-engineering-employer-response.md`
-- `tasks/waiting/2026-06-09-moex-delivery-lead-employer-response.md`
-- `tasks/waiting/2026-06-08-alfa-bank-enterprise-vibe-coding-team-lead-employer-response.md`
-- `tasks/waiting/2026-06-08-rshb-factoring-ai-agents-lead-employer-response.md`
-- `tasks/waiting/2026-06-09-positive-technologies-ai-lead-employer-response.md`
-- `tasks/waiting/2026-06-09-lofty-ai-architect-employer-response.md`
-- `tasks/waiting/2026-06-09-gku-infogorod-technical-leader-employer-response.md`
-- `tasks/waiting/2026-06-09-skl-vc-ai-solutions-architect-employer-response.md`
-- `tasks/waiting/2026-06-09-ai-lead-585-holding-employer-response.md`
+These can be checked quickly if there is energy. Use an existing CV and short template. No targeted resume before a human response.
 
-Recently closed:
+| Task | Gate | Allowed Work |
+|---|---|---|
+| `tasks/active/2026-06-23-review-gen-ai-architect.md` | Prague / relocation / legal setup. | Clarify location and comp; otherwise park. |
+| `tasks/active/2026-06-23-review-team-blue-head-ai-saas.md` | Remote/legal setup outside EU/Netherlands. | Clarify eligibility; otherwise park. |
+| `tasks/active/2026-06-22-servicenow-director-impact-engineering.md` | Ireland residence / sponsorship / ServiceNow-platform filter. | Clarify only; no tailoring. |
+| `tasks/active/2026-06-21-valtech-technical-director-ai.md` | UK residence/client-site/B2B eligibility. | Clarify only; no tailoring. |
+| `tasks/active/2026-06-22-relativity-senior-director-engineering.md` | Poland residence / site leadership requirement. | Clarify only; no tailoring. |
+| `tasks/active/2026-06-19-apply-yandex-infrastructure-ai-tpm.md` | Good local brand signal, but title may be TPM/downlevel. | Fast apply/check only if still relevant; no custom package. |
+| `tasks/active/2026-06-19-decide-bazon-tech-lead-infrastructure.md` | Infrastructure/SRE fit, but likely narrower than target. | Fast yes/no; no deep customization. |
+| YC Work at a Startup shortlist | Better source quality than HH, but profile cleanup is the gate. | Authologic and Datafold are the strongest current YC tests. Dataleap and Parsewise are downgraded to long-shot / market signal because of hard filters. No mass-apply. |
 
-- Pepperstone - `Head of Product Engineering` - rejected on 2026-06-10
-- Shaw Daniels Solutions - `Head of Engineering` - rejected on 2026-06-13
-- `tasks/done/2026-06-10-unknown-wholesale-it-head-employer-response.md`
-- Sberbank / Сбер IT - `Руководитель по трансформации бизнес-процессов` - rejected on 2026-06-11
-- Инфинити - `Tech Lead / AI Engineer` - rejected on 2026-06-10
+## C-Class / Parked
 
-Recently reviewed:
+Do not process these unless explicitly reopened. They are market signals, weak practical matches, old digest queues, or location/domain gated roles.
 
-- `2026-06-12-bks-it-partner-ai-department-analysis.md`
-- `2026-06-12-millennium-lead-ai-engineer-ai-platform-architect-analysis.md`
-- `2026-06-12-ultimate-education-head-of-it-analysis.md`
-- `2026-06-12-pkr-chief-transformation-officer-analysis.md`
-- `2026-06-12-faw-east-europe-it-head-analysis.md`
-- `2026-06-12-videoglaz-it-director-ecommerce-1c-analysis.md`
-- `2026-06-12-azimut-ai-project-lead-analysis.md`
-- `2026-06-12-riverhouse-pmo-lead-asana-analysis.md`
-- `2026-06-12-magnit-product-team-lead-analysis.md`
-- `2026-06-12-sber-ai-project-manager-analysis.md`
-- `2026-06-12-alpha-strahovanie-ai-development-direction-head-analysis.md`
-- `2026-06-12-at-prof-development-group-lead-technical-partner-analysis.md`
-- `2026-06-12-greenmoney-cto-technical-leader-mfo-startup-analysis.md`
-- `2026-06-12-russian-post-ai-project-manager-analysis.md`
-- `2026-06-12-hrscan-head-of-development-cto-analysis.md`
-- `2026-06-11-alpha-strahovanie-platform-development-lead-analysis.md`
-- `2026-06-11-overstory-director-of-platform-engineering-analysis.md`
-- `2026-06-11-revolut-applied-ai-engineer-analysis.md`
-- `2026-06-10-jobgether-director-of-engineering-analysis.md`
+The obvious long-tail active tasks were archived on 2026-06-23; see `inbox/processed/2026-06-23-job-intake-active-queue-cleanup.md`.
 
-Deprecated queue note:
+Still-active sourcing/process items are intentionally not normal vacancy actions:
 
-- `tasks/done/2026-06-10-job-intake-review-queue.md`
+- `tasks/active/2026-06-19-review-yc-work-at-a-startup-ai-roles.md`
+- `tasks/active/2026-06-19-daily-check-yc-work-at-a-startup.md`
+- `tasks/active/2026-06-22-build-yc-work-at-a-startup-playwright-mcp-monitor.md`
+- HH batch 2026-06-23 parked links:
+  - ТРТ `134383432` - GCP/timezone/live-coding gates despite salary.
+  - РУСАЛ `133493204` - IC/downlevel and hard LLM platform-ops requirements.
+  - ИТ-Элемент29 `133259823` - analyst-teamlead contour, weak strategic fit.
+  - ProSpace `134258886` - prior process/rejection; warm contact only.
+- HH digest/filter queues: archived from active on 2026-06-23 unless a concrete vacancy was already promoted to A/B or waiting.
+
+## Waiting: No Decision Needed
+
+Waiting tasks do not require attention unless a new employer/recruiter message arrives. The canonical queue is `tasks/waiting/`.
+
+Notable live waiting items:
+
+- `tasks/waiting/2026-06-24-vladimir-turovtsev-logrocon-call-time-confirmation.md`
+- `tasks/waiting/2026-06-23-cifra-enterprise-corporate-architect-employer-response.md`
+- `tasks/waiting/2026-06-23-datafold-forward-deployed-data-engineer-employer-response.md`
+- `tasks/waiting/2026-06-23-korus-corporate-architect-employer-response.md`
+- `tasks/waiting/2026-06-23-cifra-corporate-architect-employer-response.md`
+- `tasks/waiting/2026-06-23-infatica-head-architecture-engineering-delivery-employer-response.md`
+- `tasks/waiting/2026-06-19-sibedge-nl-system-architect-cto-employer-response.md`
+- `tasks/waiting/2026-06-16-bks-ai-implementation-center-employer-response.md`
+- `tasks/waiting/2026-06-16-bks-it-partner-ai-department-employer-response.md`
+- `tasks/waiting/2026-06-20-gomining-ai-transformation-lead-employer-response.md`
+- `tasks/waiting/2026-06-19-vgk-technology-leadership-cluster-employer-response.md`
+- `tasks/waiting/2026-06-19-prufix-development-director-employer-next-step.md`
+- `tasks/waiting/2026-06-19-rubius-ai-solutions-engineer-application.md`
+- `tasks/waiting/2026-06-14-oyster-senior-director-data-platform-ai-employer-response.md`
+
+## Process Tasks
+
+These are not vacancy decisions. Keep them separate from job-application pressure:
+
+- `tasks/done/2026-06-23-formalize-job-search-decision-rules.md` - closed by the new A/B/C effort-class policy.
+- `tasks/active/2026-06-11-job-search-open-questions.md` - superseded in part by the effort-class rule; keep only for unresolved policy questions.
+- `tasks/active/2026-06-19-run-cashflow-first-job-search-sprint.md` - strategy/process, not a vacancy.
+- `tasks/active/2026-06-20-income-pressure-decision-hygiene.md` - process hygiene, not a vacancy.
+- `tasks/active/2026-06-17-build-rf-it-company-direct-apply-list.md` - sourcing lane; use only when choosing direct outreach over more HH/LinkedIn digging.
+
+## Recently Closed / Resolved
+
+- `tasks/done/2026-06-23-moex-delivery-lead-rejected.md` - Московская Биржа / Delivery Lead closed because vacancy is archived.
+- STAX and Spinbetter are already closed as thin rejection records.
+- Альфа-Банк Беларусь / Solution Architect `134058290` rejected on 2026-06-23 and closed.
 
 ## Operating Rule
 
-If a vacancy is not in one of the per-vacancy tasks, it should be intentionally routed there before any further work.
-
-The old queue file is only kept as a breadcrumb for now.
+Do not open the long tail unless the user explicitly asks. The default working set is the A-class items plus, at most, one B-class clarification.

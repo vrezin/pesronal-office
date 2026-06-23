@@ -7,6 +7,7 @@ Skills should stay short domain routers. When a skill triggers, it points here f
 ## Current Playbooks
 
 - `personal-office-intake.md`
+- `project-bootstrap-control-center.md`
 - `memory-system.md`
 - `personal-brand-career.md`
 - `life-planning.md`

@@ -8,7 +8,7 @@
 - Role: Технический лидер / Head of Engineering (платформа управляемого доступа для кибериспытаний)
 - Vacancy id: `133953267`
 - Vacancy URL: `https://hh.ru/vacancy/133953267`
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-15-positive-technologies-head-of-engineering-cybertesting-access-platform-analysis.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-15-positive-technologies-head-of-engineering-cybertesting-access-platform-analysis.md`
 - Processed note: `inbox/processed/2026-06-15-positive-technologies-head-of-engineering-rejected.md`
 
 ## Current Facts

@@ -23,6 +23,14 @@ do_not_read_by_default:
 
 Use for local MCP servers, helper services, personal automation, and tool routing.
 
+## Project Bootstrapper
+
+Personal Office project-space generation lives under:
+
+- `tools/project-bootstrapper/`
+
+Use it when a Personal Office intake should become a generated project/activity space with local `AGENTS.md`, task lifecycle, wiki route map, bootstrap manifest, and Setronica-style Task-to-Handoff discipline.
+
 ## Automation
 
 Scheduled prompts, wrappers, state markers, and run logs live in `automation/`.

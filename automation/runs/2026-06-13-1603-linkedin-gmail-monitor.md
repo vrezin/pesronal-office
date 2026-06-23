@@ -22,7 +22,7 @@ Six LinkedIn messages were returned by the overlap search. Three were older/alre
 ## Artifact Updates
 
 - Moved `tasks/waiting/2026-06-10-shaw-daniels-head-of-engineering-employer-response.md` to `tasks/done/2026-06-13-shaw-daniels-head-of-engineering-rejected.md`.
-- Updated `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md` with the rejection status.
+- Updated `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md` with the rejection status.
 - Updated `personal-projects/personal-brand/workspace/job-intake/INDEX.md` for Shaw Daniels from `applied / waiting for reply` to `rejected`.
 - Created `inbox/processed/2026-06-13-linkedin-vyking-digest-thin-links.md`.
 

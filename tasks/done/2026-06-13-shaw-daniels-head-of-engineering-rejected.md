@@ -15,7 +15,7 @@ Record the closed Shaw Daniels Solutions — Head of Engineering application.
 - Company: Shaw Daniels Solutions
 - Role: Head of Engineering
 - Location signal: UK remote
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md`
 - LinkedIn message id: `19ec02d1e17a3e66`
 - Outcome: LinkedIn rejection email received on 2026-06-13.
 

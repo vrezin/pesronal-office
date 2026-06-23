@@ -2,6 +2,7 @@
 
 - Created: 2026-06-19
 - Status: Ready
+- Effort class: B-class
 - Priority: High Content / Medium Practical
 - Vacancy id: `134108251`
 - Duplicate card: `134108252`

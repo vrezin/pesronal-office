@@ -2,6 +2,7 @@
 
 - Created: 2026-06-19
 - Status: Ready
+- Effort class: B-class
 - Priority: Medium-High
 - Vacancy id: `134253795`
 - URL: `https://hh.ru/vacancy/134253795`

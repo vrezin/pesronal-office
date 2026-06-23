@@ -5,8 +5,8 @@
 - Priority: medium
 - Area: personal-projects / personal-brand / job-search
 - Related inbox note: `inbox/processed/2026-06-14-linkedin-oyster-ey-vacancy-digests.md`
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-14-ey-engineering-lead-director-dublin-analysis.md`
-- Archive: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-14-ey-engineering-lead-director-dublin.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-14-ey-engineering-lead-director-dublin-analysis.md`
+- Archive: `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-14-ey-engineering-lead-director-dublin.md`
 
 ## Current State
 

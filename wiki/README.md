@@ -23,6 +23,7 @@ Agents should start here, choose a domain map, read only the relevant source art
 ## Playbooks
 
 - `playbooks/personal-office-intake.md`
+- `playbooks/project-bootstrap-control-center.md`
 - `playbooks/memory-system.md`
 - `playbooks/personal-brand-career.md`
 - `playbooks/life-planning.md`

@@ -19,7 +19,7 @@ Record the closed KDR Talent Solutions application after the LinkedIn rejection 
 - Application submitted: 2026-06-12
 - Rejection received: 2026-06-15
 - Gmail message id: `19ecabfe6233215a`
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-12-kdr-talent-solutions-head-of-engineering-ai-platform-analysis.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-12-kdr-talent-solutions-head-of-engineering-ai-platform-analysis.md`
 
 ## Closeout
 

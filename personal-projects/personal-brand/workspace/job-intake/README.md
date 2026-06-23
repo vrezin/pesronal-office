@@ -3,6 +3,7 @@
 Цель процесса: каждый новый JD сохранять, разбирать по единой логике и быстро получать практический ответ:
 
 - каким резюме откликаться;
+- какой класс усилий у вакансии: `A-class`, `B-class` или `C-class`;
 - нужно ли делать tailored version;
 - что подчеркнуть в сопроводительном письме;
 - какие риски снять заранее;
@@ -47,6 +48,13 @@ The actual working queue lives in the per-vacancy task files above.
 
 - `analyses/YYYY-MM-DD-company-role-analysis.md`
 
+Archived intake files stay in the same domain, not in tasks:
+
+- `jd-archive/closed/` and `analyses/closed/` - rejected, closed, unavailable, explicit skip, or no further action.
+- `jd-archive/parked/` and `analyses/parked/` - market signal, location-gated, C-class, long-shot, or no active pursuit.
+
+Do not delete archived JD/analysis files. They are source evidence and market memory. When moving files into archive subdirectories, update `INDEX.md`, `COMPANY_NOTES.md`, and any direct task/processed-note references.
+
 Если для роли нужна отдельная подготовка к интервью или заполнению формы, создавай рядом папку:
 
 - `prep/YYYY-MM-DD-company-role/`
@@ -71,14 +79,23 @@ For relocation-heavy roles, compare the vacancy against the relevant country car
 
 Каждый раз выдавать пользователю короткий ответ:
 
-1. `Вердикт`: откликаться / откликаться после адаптации / не приоритет / рискованный матч.
-2. `Лучшее резюме`: одно из финальных CV или рекомендация сделать tailored copy.
-3. `Почему матч`: 5-7 конкретных совпадений с JD.
-4. `Риски`: overqualification, hands-on mismatch, age/years signal, domain gap, tech-stack gap, relocation/format, salary/level ambiguity.
-5. `Уровень жизни / релокация / деньги`: как меняются costs, логистика семьи, school impact, и на какую ЗП ориентироваться.
-6. `Как снять риски`: 2-4 формулировки для сопроводительного или интервью.
-7. `Сопроводительное`: готовый текст.
-8. `Вопросы`: 2-5 вопросов, которые стоит задать.
+1. `Класс усилий`: `A-class`, `B-class` или `C-class`.
+2. `Вердикт`: откликаться / быстрый отклик / не приоритет / рискованный матч.
+3. `Лучшее резюме`: одно из финальных CV или рекомендация сделать tailored copy.
+4. `Почему матч`: 5-7 конкретных совпадений с JD.
+5. `Риски`: overqualification, hands-on mismatch, age/years signal, domain gap, tech-stack gap, relocation/format, salary/level ambiguity.
+6. `Уровень жизни / релокация / деньги`: как меняются costs, логистика семьи, school impact, и на какую ЗП ориентироваться.
+7. `Как снять риски`: 2-4 формулировки для сопроводительного или интервью.
+8. `Сопроводительное`: готовый текст.
+9. `Вопросы`: 2-5 вопросов, которые стоит задать.
+
+## Effort Classes
+
+- `A-class`: редкая роль с прямым сильным попаданием и понятным upside. Можно думать, подбирать формулировки, писать аккуратное сопроводительное и делать targeted resume package.
+- `B-class`: нормальная подходящая роль. Быстрый отклик по шаблону: выбрать лучшее готовое CV, короткое сопроводительное, не больше 10 минут до первого человеческого ответа.
+- `C-class`: "может быть". Не трогать глубоко, не кастомизировать и не создавать активную задачу без энергии или явной команды пользователя. Допустим thin trace / parked.
+
+Правило против выгорания: если вакансия не заслуживает `A-class`, ATS-оптимизация и ручная правка резюме до первого ответа запрещены по умолчанию.
 
 ## Current Final CV Set
 
@@ -104,6 +121,7 @@ For relocation-heavy roles, compare the vacancy against the relevant country car
 
 - когда не откликаться вообще;
 - когда выбирать HH-резюме, а когда делать tailored copy;
+- как уточнять границу между `A-class` и сильным `B-class`;
 - насколько агрессивно скрывать ранний опыт;
 - когда оставлять `23 years`, а когда держать `12-15 years`;
 - как писать про hands-on без дауншифтинга;

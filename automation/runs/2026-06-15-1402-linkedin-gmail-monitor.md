@@ -38,10 +38,10 @@ Fetched job details for:
 Created:
 
 - `inbox/processed/2026-06-15-linkedin-epam-marsh-vacancy-digest.md`
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-15-epam-technical-delivery-management-director.md`
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-15-marsh-senior-it-director-global-value-streams.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-15-epam-technical-delivery-management-director-analysis.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-15-marsh-senior-it-director-global-value-streams-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-15-epam-technical-delivery-management-director.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-15-marsh-senior-it-director-global-value-streams.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-15-epam-technical-delivery-management-director-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-15-marsh-senior-it-director-global-value-streams-analysis.md`
 - `tasks/active/2026-06-15-review-epam-technical-delivery-management-director.md`
 - `tasks/active/2026-06-15-review-marsh-senior-it-director-global-value-streams.md`
 

@@ -20,7 +20,7 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
 - KDR Talent Solutions — Head of Engineering (Machine Learning & AI Platform)
   - State: maybe / interesting if UK-based eligibility is workable
   - Next: review the analysis, then clarify UK eligibility, relocation, full compensation, and family economics
-  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-12-kdr-talent-solutions-head-of-engineering-ai-platform-analysis.md`
+  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-12-kdr-talent-solutions-head-of-engineering-ai-platform-analysis.md`
 
 - Overstory — Director of Platform Engineering
   - State: maybe / interesting if eligible-country relocation is workable
@@ -60,7 +60,7 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
 - Shaw Daniels Solutions — Head of Engineering
   - State: maybe
   - Next: clarify actual client, salary band, and whether the role is truly UK-remote
-  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md`
+  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-10-shaw-daniels-solutions-head-of-engineering-analysis.md`
 
 - Selby Jennings / unknown AI company — Head of Engineering
   - State: applied via LinkedIn on 2026-06-10
@@ -70,7 +70,7 @@ It replaces the need to hunt through `INDEX.md` or `analyses/` first.
 - Pepperstone — Head of Product Engineering
   - State: applied
   - Next: wait for recruiter next step
-  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-pepperstone-head-of-product-engineering-analysis.md`
+  - Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-09-pepperstone-head-of-product-engineering-analysis.md`
 
 ### Waiting For Reply
 

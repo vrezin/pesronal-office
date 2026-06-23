@@ -7,7 +7,7 @@
 - Area: personal-projects / personal-brand / job-search process
 - Related vacancy: К-Скай - Руководитель отдела разработки программного обеспечения
 - Vacancy id: `134078723`
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-15-ksky-software-development-head-analysis.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-15-ksky-software-development-head-analysis.md`
 
 ## Goal
 

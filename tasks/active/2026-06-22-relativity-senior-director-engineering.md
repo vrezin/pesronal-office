@@ -1,6 +1,7 @@
 # Relativity - Senior Director, Engineering
 
 Status: active
+Effort class: B-class
 Priority: medium-high
 Source: LinkedIn job id `4371847609`
 Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-22-relativity-senior-director-engineering-analysis.md`

@@ -23,11 +23,11 @@ Six LinkedIn message ids were returned by the overlap search. One message was ne
 ## Artifact Updates
 
 - Created `inbox/processed/2026-06-14-linkedin-overstory-similar-jobs-digest.md`.
-- Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-14-totalmobile-platform-software-engineering-director.md`.
-- Created `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-14-totalmobile-platform-software-engineering-director-analysis.md`.
+- Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-14-totalmobile-platform-software-engineering-director.md`.
+- Created `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-14-totalmobile-platform-software-engineering-director-analysis.md`.
 - Created `tasks/active/2026-06-14-review-totalmobile-platform-software-engineering-director.md`.
-- Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-14-unisys-senior-director-ai-platforms.md`.
-- Created `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-14-unisys-senior-director-ai-platforms-analysis.md`.
+- Created `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-14-unisys-senior-director-ai-platforms.md`.
+- Created `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-14-unisys-senior-director-ai-platforms-analysis.md`.
 - Created `tasks/active/2026-06-14-review-unisys-senior-director-ai-platforms.md`.
 - Updated `personal-projects/personal-brand/workspace/job-intake/INDEX.md`.
 - Updated `personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md`.

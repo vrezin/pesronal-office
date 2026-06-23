@@ -12,6 +12,16 @@
 
 Stage 2 should be treated as using the specification/handoff standard as the control surface for AI-assisted development, not merely checking whether documentation exists.
 
+## 2026-06-23 Engineering Standard Bootstrapper Signal
+
+- Reviewed `<setronica-root>/engineering-task-to-handoff-standard` baseline and `feature/project-bootstrapper-python-service-profile` read-only.
+- Working understanding is captured in `../../inbox/processed/2026-06-23-setronica-engineering-bootstrapper-map.md`.
+- Durable standards/application notes now start under `standards/`.
+- Current rule-validation proposal: `standards/2026-06-23-current-agent-rules-validation.md`.
+- New project bootstrap framework draft: `standards/2026-06-23-new-project-bootstrap-framework-standard.md`.
+- New legacy modernization activity envelope: `projects/2026-06-23-legacy-migration-modernization.md`.
+- Generated Remote Landlord project space: `<setronica-root>/remote-landlord-migration-discovery/`.
+
 ## 2026-06-22 Yuliya Call Signals
 
 - Yuliya wants Vladimir more involved in implementation push-through, not only advisory framing.

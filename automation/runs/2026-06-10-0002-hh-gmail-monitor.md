@@ -24,7 +24,7 @@
 - `tasks/active/2026-06-10-unknown-hedge-fund-cto-trading-ai-screening.md`
 - `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-unknown-hedge-fund-cto-trading-ai-analysis.md`
 - `personal-projects/personal-brand/workspace/job-intake/INDEX.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-unknown-ai-native-product-technologist-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-09-unknown-ai-native-product-technologist-analysis.md`
 - `inbox/processed/2026-06-09-hh-vacancy-digest-clarification.md`
 
 ## Gmail Actions

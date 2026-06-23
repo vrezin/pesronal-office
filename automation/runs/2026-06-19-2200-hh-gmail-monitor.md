@@ -36,7 +36,7 @@ Success.
 
 - `tasks/done/2026-06-19-riverhouse-team-lead-it-ai-rejected.md`
 - `tasks/active/2026-06-19-process-hh-director-business-unit-filter.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-riverhouse-team-lead-it-ai-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-19-riverhouse-team-lead-it-ai-analysis.md`
 - `personal-projects/personal-brand/workspace/job-intake/INDEX.md`
 - `personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md`
 - `inbox/processed/2026-06-19-hh-business-unit-digest-thin-links.md`

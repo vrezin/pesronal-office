@@ -17,6 +17,7 @@
 
 ## Classification
 
+- Effort class:
 - Primary track:
 - Secondary track:
 - Seniority:
@@ -49,6 +50,7 @@
 - Recommended CV:
 - Use as-is / tailor:
 - Tailoring notes:
+- Pre-response customization budget:
 
 ## Evidence To Use
 

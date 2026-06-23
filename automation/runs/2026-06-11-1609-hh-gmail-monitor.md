@@ -42,8 +42,8 @@ Processed the HH / HeadHunter mail returned by Gmail search and updated the pers
 
 ## Repository Changes
 
-- Updated `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-08-sber-business-process-transformation-ai-disrupt-pdlc-analysis.md`.
-- Updated `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-infiniti-tech-lead-ai-engineer-analysis.md`.
+- Updated `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-08-sber-business-process-transformation-ai-disrupt-pdlc-analysis.md`.
+- Updated `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-09-infiniti-tech-lead-ai-engineer-analysis.md`.
 - Updated `personal-projects/personal-brand/workspace/job-intake/INDEX.md`.
 - Updated `personal-projects/personal-brand/workspace/job-intake/TODAY.md`.
 - Added `inbox/processed/2026-06-11-hh-unmatched-status-update.md`.

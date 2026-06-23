@@ -30,12 +30,12 @@ Update on 2026-06-12: `headhunter_web.hh_web_extract_from_digest_urls` was used 
 
 Created full job-intake artifacts:
 
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-12-magnit-product-team-lead.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-12-magnit-product-team-lead-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/parked/2026-06-12-magnit-product-team-lead.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/parked/2026-06-12-magnit-product-team-lead-analysis.md`
 - `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-12-millennium-lead-ai-engineer-ai-platform-architect.md`
 - `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-12-millennium-lead-ai-engineer-ai-platform-architect-analysis.md`
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-12-sber-ai-project-manager.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-12-sber-ai-project-manager-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/parked/2026-06-12-sber-ai-project-manager.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/parked/2026-06-12-sber-ai-project-manager-analysis.md`
 - `tasks/active/2026-06-12-apply-millennium-lead-ai-engineer-ai-platform-architect.md`
 
 Duplicate / already routed:

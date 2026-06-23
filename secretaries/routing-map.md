@@ -26,6 +26,7 @@
 | Fincom / FinSOK | `companies/fincom/` | company artifact |
 | AI Studio | `companies/ai-studio/` | company artifact |
 | Setronica, agentic-first development, SOW / CSA contract | `companies/setronica/` | company/work artifact |
+| new sustained activity / project from a conversation, company request, or opportunity | company/person/project route first; if tooling is needed, `tools/project-bootstrapper/` | project/activity envelope + task + optional generated project space |
 | новый бизнес | `companies/future-companies/` | opportunity note |
 | человек / контакт / договоренность | `people/` | contact / relationship / follow-up |
 | устойчивый факт, предпочтение, повторяющийся контекст | `memory/` + целевой source-of-truth | memory note + source update |

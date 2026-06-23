@@ -48,8 +48,8 @@ Processed the HH / HeadHunter mail returned by Gmail search and updated the pers
 
 ## Repository Changes
 
-- Updated `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-08-sber-business-process-transformation-ai-disrupt-pdlc-analysis.md`.
-- Updated `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-infiniti-tech-lead-ai-engineer-analysis.md`.
+- Updated `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-08-sber-business-process-transformation-ai-disrupt-pdlc-analysis.md`.
+- Updated `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-09-infiniti-tech-lead-ai-engineer-analysis.md`.
 - Added `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-11-alpha-strahovanie-platform-development-lead-analysis.md`.
 - Added `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-11-alpha-strahovanie-platform-development-lead.md`.
 - Added `personal-projects/personal-brand/workspace/job-intake/INDEX.md` updates.

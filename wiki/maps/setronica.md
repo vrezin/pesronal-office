@@ -2,6 +2,8 @@
 domain: setronica
 source_of_truth:
   - companies/setronica/
+  - companies/setronica/standards/
+  - companies/setronica/projects/
   - <setronica-root>/
   - people/contacts/yuliya-malinina.md
 skills:
@@ -27,3 +29,9 @@ Use for Setronica contract/work context, agentic-first development adoption, Sta
 Personal Office stores contract pointers, owner obligations, people, and current-stage summaries.
 
 Implementation/spec/project truth lives under `<setronica-root>/`.
+
+## Local Structure
+
+- `companies/setronica/active.md` - current owner-level state and open questions.
+- `companies/setronica/standards/` - owner-level interpretation of Setronica standards, bootstrapper strategy, and proposed rule changes.
+- `companies/setronica/projects/` - owner-level envelopes for new Setronica activities before or alongside project-local truth.

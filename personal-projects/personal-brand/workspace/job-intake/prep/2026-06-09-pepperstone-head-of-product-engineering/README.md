@@ -11,7 +11,7 @@ Files:
 
 Source artifacts:
 
-- `../jd-archive/2026-06-09-pepperstone-head-of-product-engineering.md`
-- `../analyses/2026-06-09-pepperstone-head-of-product-engineering-analysis.md`
+- `../jd-archive/closed/2026-06-09-pepperstone-head-of-product-engineering.md`
+- `../analyses/closed/2026-06-09-pepperstone-head-of-product-engineering-analysis.md`
 - `<repo-root>/personal-projects/personal-brand/workspace/final-cv/CTO Vladimir Rezin (Heavy Enterprise) ENG.docx`
 - `<repo-root>/personal-projects/personal-brand/workspace/Candidate_Interview_Pack-_PepperstoneCareers.pdf`

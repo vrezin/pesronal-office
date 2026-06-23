@@ -31,8 +31,8 @@
 
 ## Workspace Updates
 
-- Added `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-12-kdr-talent-solutions-head-of-engineering-ai-platform.md`
-- Added `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-12-kdr-talent-solutions-head-of-engineering-ai-platform-analysis.md`
+- Added `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-12-kdr-talent-solutions-head-of-engineering-ai-platform.md`
+- Added `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-12-kdr-talent-solutions-head-of-engineering-ai-platform-analysis.md`
 - Updated `personal-projects/personal-brand/workspace/job-intake/INDEX.md`
 - Updated `personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md`
 - Updated `personal-projects/personal-brand/workspace/job-intake/relocation/country-index.md`

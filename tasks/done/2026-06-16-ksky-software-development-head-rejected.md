@@ -11,7 +11,7 @@
 - Vacancy id: `134078723`
 - Application sent: 2026-06-15
 - Rejection received: 2026-06-16
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-15-ksky-software-development-head-analysis.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-15-ksky-software-development-head-analysis.md`
 
 ## Outcome
 

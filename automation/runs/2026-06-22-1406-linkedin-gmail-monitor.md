@@ -59,10 +59,10 @@ Checked LinkedIn thread:
 - `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-22-servicenow-director-impact-engineering-analysis.md`
 - `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-22-relativity-senior-director-engineering.md`
 - `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-22-relativity-senior-director-engineering-analysis.md`
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-22-ford-credit-director-engineering-digital-products.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-22-ford-credit-director-engineering-digital-products-analysis.md`
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-22-signify-technology-head-engineering.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-22-signify-technology-head-engineering-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/parked/2026-06-22-ford-credit-director-engineering-digital-products.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/parked/2026-06-22-ford-credit-director-engineering-digital-products-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/parked/2026-06-22-signify-technology-head-engineering.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/parked/2026-06-22-signify-technology-head-engineering-analysis.md`
 - `inbox/processed/2026-06-22-linkedin-software-engineering-director-alert.md`
 - `inbox/processed/2026-06-22-linkedin-kirill-shpak-outreach-noise.md`
 - `tasks/active/2026-06-22-servicenow-director-impact-engineering.md`

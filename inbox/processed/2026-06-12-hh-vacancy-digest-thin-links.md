@@ -42,7 +42,7 @@ Follow-up task: `tasks/active/2026-06-12-review-hh-digest-cto-product-engineerin
 
 ## Created Analyses
 
-- `analyses/2026-06-12-r7-project-manager-analysis.md`
+- `analyses/closed/2026-06-12-r7-project-manager-analysis.md`
 - `analyses/2026-06-12-karatov-cio-analysis.md`
 - `analyses/2026-06-12-sber-ai-agents-developer-analysis.md`
 - `analyses/2026-06-12-topassistant-senior-project-manager-ai-voice-analysis.md`

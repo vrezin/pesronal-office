@@ -8,7 +8,7 @@
 - URL: `https://hh.ru/vacancy/133929383`
 - Company: ООО Специализированный Застройщик Риверхаус
 - Role: Team Lead/Руководитель группы разработки (IT/AI)
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-riverhouse-team-lead-it-ai-analysis.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-19-riverhouse-team-lead-it-ai-analysis.md`
 - Recommended CV: `AI Transformation Lead - AI Automation Architect.pdf`
 
 ## Original Decision

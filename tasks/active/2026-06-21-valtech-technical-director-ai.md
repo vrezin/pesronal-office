@@ -2,6 +2,7 @@
 
 - Created: 2026-06-21
 - Status: Active
+- Effort class: B-class
 - Priority: Medium
 - Source: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-21-valtech-technical-director-ai-analysis.md`
 

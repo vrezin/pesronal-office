@@ -5,8 +5,8 @@
 - Priority: medium-high
 - Area: personal-projects / personal-brand / job-search
 - Related inbox note: `inbox/processed/2026-06-14-linkedin-overstory-similar-jobs-digest.md`
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-14-totalmobile-platform-software-engineering-director-analysis.md`
-- Archive: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-14-totalmobile-platform-software-engineering-director.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-14-totalmobile-platform-software-engineering-director-analysis.md`
+- Archive: `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-14-totalmobile-platform-software-engineering-director.md`
 
 ## Current State
 

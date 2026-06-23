@@ -4,7 +4,7 @@
 - Vacancy id: `134215198`
 - Company: 2ГИС.RnD
 - Role: Project Manager AI-трансформации
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-17-2gis-project-manager-ai-transformation-analysis.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-17-2gis-project-manager-ai-transformation-analysis.md`
 
 ## Check
 

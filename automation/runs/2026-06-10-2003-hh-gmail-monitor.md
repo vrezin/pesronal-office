@@ -22,7 +22,7 @@
 
 ## Files Updated
 
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-09-unknown-wholesale-it-head-1c-migration-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-09-unknown-wholesale-it-head-1c-migration-analysis.md`
 - `personal-projects/personal-brand/workspace/job-intake/INDEX.md`
 - `tasks/active/2026-06-10-job-intake-review-queue.md`
 - `tasks/done/2026-06-10-unknown-wholesale-it-head-employer-response.md`

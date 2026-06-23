@@ -5,8 +5,8 @@
 - Priority: medium
 - Area: personal-projects / personal-brand / job-search
 - Related inbox note: `inbox/processed/2026-06-15-linkedin-epam-marsh-vacancy-digest.md`
-- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-15-epam-technical-delivery-management-director-analysis.md`
-- Archive: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-15-epam-technical-delivery-management-director.md`
+- Analysis: `personal-projects/personal-brand/workspace/job-intake/analyses/closed/2026-06-15-epam-technical-delivery-management-director-analysis.md`
+- Archive: `personal-projects/personal-brand/workspace/job-intake/jd-archive/closed/2026-06-15-epam-technical-delivery-management-director.md`
 
 ## Current State
 

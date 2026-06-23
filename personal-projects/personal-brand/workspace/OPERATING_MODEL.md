@@ -42,12 +42,16 @@
 
 1. Save full JD to `job-intake/jd-archive/YYYY-MM-DD-company-role.md`.
 2. Save analysis to `job-intake/analyses/YYYY-MM-DD-company-role-analysis.md`.
-3. Update `job-intake/INDEX.md` with one row.
-4. Update `job-intake/COMPANY_NOTES.md` if company/bucket memory changed.
-5. Select one primary CV from the current portfolio.
-6. Add `Lifestyle / Relocation / Compensation` using the `personal-brand-career` playbook.
-7. If needed, recommend a tailored copy, but do not fork facts from `master-profile.md`.
-8. Capture next action in the analysis and index.
+3. Assign an `Effort Class` before recommending any resume customization:
+   - `A-class`: rare strong fit with credible upside; thinking, tailored wording, and careful cover letter are allowed.
+   - `B-class`: normal plausible role; fast template application only, no deep tailoring before human response.
+   - `C-class`: "maybe" role; do not touch unless energy is explicitly available or the user reopens it.
+4. Update `job-intake/INDEX.md` with one row and make the class visible in `Priority` or `Next`.
+5. Update `job-intake/COMPANY_NOTES.md` if company/bucket memory changed.
+6. Select one primary CV from the current portfolio.
+7. Add `Lifestyle / Relocation / Compensation` using the `personal-brand-career` playbook.
+8. If needed, recommend a tailored copy, but only for `A-class` roles before first contact. For `B-class`, use an existing CV and short template cover letter. For `C-class`, park or skip.
+9. Capture next action in the analysis and index.
 
 ## Recurring Agent Skills
 

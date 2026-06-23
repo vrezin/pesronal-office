@@ -39,11 +39,11 @@ Enriched job ids:
 Created:
 
 - `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-19-etoro-bizops-squad-lead-agentic-ai.md`
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-19-medallion-director-engineering-ai-platform.md`
-- `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-06-19-wex-sr-director-engineering-agentic-ai-service-applications.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/parked/2026-06-19-medallion-director-engineering-ai-platform.md`
+- `personal-projects/personal-brand/workspace/job-intake/jd-archive/parked/2026-06-19-wex-sr-director-engineering-agentic-ai-service-applications.md`
 - `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-etoro-bizops-squad-lead-agentic-ai-analysis.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-medallion-director-engineering-ai-platform-analysis.md`
-- `personal-projects/personal-brand/workspace/job-intake/analyses/2026-06-19-wex-sr-director-engineering-agentic-ai-service-applications-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/parked/2026-06-19-medallion-director-engineering-ai-platform-analysis.md`
+- `personal-projects/personal-brand/workspace/job-intake/analyses/parked/2026-06-19-wex-sr-director-engineering-agentic-ai-service-applications-analysis.md`
 - `tasks/active/2026-06-19-etoro-bizops-squad-lead-agentic-ai.md`
 - `tasks/active/2026-06-19-medallion-director-engineering-ai-platform.md`
 - `tasks/active/2026-06-19-wex-sr-director-engineering-agentic-ai-service-applications.md`

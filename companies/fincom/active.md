@@ -2,6 +2,20 @@
 
 ## Active Items
 
+### 2026-06-23 - Reksoft / Positive Technologies validation signal
+
+- Status: public research brief drafted; positioning follow-up active.
+- Source: Viktor Geronimus asked whether Reksoft are competitors, whether Fincom can be useful to them, whether they can use Fincom solutions, whether they mostly work on 1C, and what their competencies are.
+- Strategic context: Viktor reports that a Positive Technologies owner may be ready to invest money/name if Reksoft-like ERP/technology experts validate Fincom potential. Treat this as hearsay until direct contact/scope is confirmed.
+- Raw trace: `../../inbox/raw/2026-06-23-viktor-geronimus-reksoft-positive-technologies-signal.md`
+- Processed trace: `../../inbox/processed/2026-06-23-viktor-geronimus-reksoft-positive-technologies-signal.md`
+- Research brief: `2026-06-23-reksoft-public-research-brief.md`
+- Active task: `../../tasks/active/2026-06-23-align-reksoft-positive-technologies-position.md`
+- Handoff envelope: `handoffs/2026-06-23-reksoft-positive-expert-demo-brief.md`
+- Fincom board result: `<fincom-root>/processes/ai-board/meetings/2026-06-23-board-debate-reksoft-positive-expert-demo.md`; decision `<fincom-root>/processes/ai-board/decisions/2026-06-23-reksoft-positive-expert-demo-boundary.md`.
+- Current position: Reksoft is a broad enterprise integrator/consultancy with explicit 1C/ERP competence plus SAP/Oracle migration, industrial automation, MES, data/BI, AI, security, infrastructure, and custom development. They are competitors for broad services, but may be useful validators/channel partners if Fincom presents a narrow product/module/accelerator with clear business effect.
+- AI-board verdict: `accepted_with_conditions` for product demo only. Do not turn first meeting into technical audit, partnership workshop, or implementation deep dive.
+
 ### 2026-06-14 - DCIM/ITAM ТЗ assessment intake
 
 - Status: intake captured; routing clarified as Fincom request.

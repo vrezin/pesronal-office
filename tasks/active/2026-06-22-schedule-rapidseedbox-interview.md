@@ -3,6 +3,7 @@
 - Created: 2026-06-18
 - Updated: 2026-06-22
 - Status: Active - prepare for scheduled interview
+- Effort class: A-class
 - Priority: Medium
 - Source: HH employer message / interview status; Gmail reply from Ana Bundalo Milkovic
 - Vacancy ID: `133919188`
