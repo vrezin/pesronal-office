@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Personal Office Pi job-search Gmail monitor every 4 hours
+
+[Timer]
+OnCalendar=*-*-* 00/4:17:00
+RandomizedDelaySec=10m
+Persistent=true
+Unit=personal-office-pi-job-search-gmail-monitor.service
+
+[Install]
+WantedBy=timers.target

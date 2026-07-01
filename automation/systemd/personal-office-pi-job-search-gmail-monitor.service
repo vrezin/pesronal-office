@@ -1,0 +1,9 @@
+[Unit]
+Description=Personal Office Pi job-search Gmail monitor
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/openclaw/personal-office-agent/personal-office
+Environment=PERSONAL_OFFICE_ROOT=/home/openclaw/personal-office-agent/personal-office
+Environment=OPENCLAW_JOB_SEARCH_TIMEOUT_SECONDS=1200
+ExecStart=/home/openclaw/personal-office-agent/personal-office/automation/scripts/run-pi-job-search-gmail-monitor.sh

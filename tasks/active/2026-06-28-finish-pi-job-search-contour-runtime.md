@@ -53,6 +53,8 @@ Finish the Raspberry Pi job-search contour so the dedicated OpenClaw `job-search
 - Update 2026-07-01: Pi-primary Personal Office working tree created at `/home/openclaw/personal-office-agent/personal-office`. The Pi `openclaw` user pushed branch `main` to `git@github.com:vrezin/pesronal-office.git` using the Pi-side GitHub SSH key. Current pushed commit: `f7f447d` (`Add Pi Personal Office storage foundation`). Note: the GitHub repository name is currently spelled `pesronal-office`.
 - Update 2026-07-01: First Pi-primary scheduled Gmail monitor skeleton added: `automation/prompts/pi-job-search-gmail-monitor.md` and `automation/scripts/run-pi-job-search-gmail-monitor.sh`. The runtime CLI now supports `message-status` and `mark-message`, so every Pi Gmail message can be deduped through SQLite before artifact routing. Local CLI smoke passed with a temporary SQLite DB.
 - Update 2026-07-01: First Pi-primary Gmail monitor smoke succeeded through OpenClaw `job-search` and Pi-local `google_workspace`. It scanned recent HH and LinkedIn Gmail messages, checked every Gmail id through SQLite first, marked 3 HH thin digests and 5 LinkedIn thin alerts/digests as `noise`, wrote `automation/runs/2026-07-01-1822-pi-job-search-gmail-monitor.md`, and advanced legacy HH/LinkedIn state files. A separate 5-second watchdog smoke wrote `automation/runs/2026-07-01-1829-pi-job-search-gmail-monitor.md` with `Status: blocked`, proving the wrapper leaves evidence when OpenClaw does not return before timeout.
+- Update 2026-07-01: Added Pi-primary systemd user timer templates for the monitor: `automation/systemd/personal-office-pi-job-search-gmail-monitor.service` and `automation/systemd/personal-office-pi-job-search-gmail-monitor.timer`.
+- Update 2026-07-01: Installed and enabled the Pi user timer under `openclaw`. `personal-office-pi-job-search-gmail-monitor.timer` is active/waiting and triggers `personal-office-pi-job-search-gmail-monitor.service`; first observed next trigger was `2026-07-01 20:20:40 +07`.
 
 ## Gmail/GCalendar Integration Options
 
@@ -174,7 +176,7 @@ Cons:
 2. Done 2026-07-01: configure private Git remote and push from Pi.
 3. Done 2026-07-01: verify Pi-side GitHub SSH key for push.
 4. Done 2026-07-01 for first monitor slice: adapt/mirror HH and LinkedIn Gmail monitoring into a Pi-local OpenClaw prompt using `google_workspace` and SQLite dedupe.
-5. In progress 2026-07-01: harden conservative polling/backoff and timeout/watchdog behavior before installing unattended cron/systemd timers.
+5. In progress 2026-07-01: harden conservative polling/backoff and timeout/watchdog behavior while installing unattended systemd timer.
 6. Implement Telegram inbound routing for ad-hoc vacancy intake.
 7. Implement Telegram outbound decision packets with verdict, selected CV, cover letter draft, and next action.
 8. Run a non-archived Inbox E2E check when the next fresh HH or LinkedIn message arrives.
