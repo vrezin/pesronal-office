@@ -107,7 +107,9 @@ This is a real business-systems / e-commerce IT leadership role, not an AI-first
 ## Decision
 
 - Apply: sent on 2026-06-19, despite low-priority / skip recommendation.
-- Priority: low / do not chase.
+- Latest status: rejected / closed by employer on 2026-07-01 via HH.
+- Priority: closed.
 - Note: user may have sent the wrong resume, but this is acceptable because the opportunity is not strategic and the primary 1C-heavy filter is likely a mismatch anyway.
 - Reason: the role is 1C-heavy enough that the user is unlikely to pass or enjoy the primary filter without pretending to be a 1C leader. The user can discuss business-system landscapes, integrations, releases, contractors and technical debt without a 1C course, but this market segment often treats platform-specific constraints as central engineering achievements.
-- Next action: wait only. Do not send correction or second resume unless the employer replies and the conversation shows remote/hybrid, strong compensation and team/vendor-level 1C ownership.
+- Outcome note: HH rejection email said the employer is not ready to invite the candidate for `Director / Директор по информационным технологиям (E-commerce, 1С, цифровая трансформация)` at Видеоглаз.
+- Next action: closed. No follow-up unless a materially different direct contact or new role appears.
