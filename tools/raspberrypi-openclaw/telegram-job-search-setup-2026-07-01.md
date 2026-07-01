@@ -26,6 +26,7 @@ Local Pi secrets/config live outside Git:
 
 ```text
 /home/openclaw/.config/personal-office/job-search-telegram.env
+/home/openclaw/.config/personal-office/secrets/telegram-job-search-bot-token.txt
 ```
 
 ## Setup
@@ -37,11 +38,20 @@ Required inputs:
 - `OPENCLAW_TELEGRAM_BOT_TOKEN` or `OPENCLAW_TELEGRAM_BOT_TOKEN_FILE`;
 - `TELEGRAM_JOB_SEARCH_TARGET`, usually your Telegram chat id or allowed target.
 
+Recommended token location:
+
+```bash
+mkdir -p /home/openclaw/.config/personal-office/secrets
+chmod 700 /home/openclaw/.config/personal-office /home/openclaw/.config/personal-office/secrets
+printf '%s\n' '<bot-token-from-botfather>' > /home/openclaw/.config/personal-office/secrets/telegram-job-search-bot-token.txt
+chmod 600 /home/openclaw/.config/personal-office/secrets/telegram-job-search-bot-token.txt
+```
+
 Command:
 
 ```bash
 cd /home/openclaw/personal-office-agent/personal-office
-OPENCLAW_TELEGRAM_BOT_TOKEN_FILE=/path/outside/git/bot-token.txt \
+OPENCLAW_TELEGRAM_BOT_TOKEN_FILE=/home/openclaw/.config/personal-office/secrets/telegram-job-search-bot-token.txt \
 TELEGRAM_JOB_SEARCH_TARGET=<chat-id-or-username> \
 automation/scripts/setup-pi-job-search-telegram-channel.sh
 ```
@@ -49,7 +59,8 @@ automation/scripts/setup-pi-job-search-telegram-channel.sh
 The script runs:
 
 ```bash
-openclaw channels add --channel telegram --account job-search-telegram --token <token>
+openclaw plugins enable telegram
+openclaw channels add --channel telegram --account job-search-telegram --token-file <token-file>
 ```
 
 and writes the non-token wrapper env file.

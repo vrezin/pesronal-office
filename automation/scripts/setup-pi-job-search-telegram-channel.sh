@@ -12,11 +12,12 @@ ACCOUNT="${TELEGRAM_JOB_SEARCH_ACCOUNT:-job-search-telegram}"
 mkdir -p "$CONFIG_DIR"
 chmod 700 "$CONFIG_DIR"
 
-if [[ -z "$TOKEN" && -n "$TOKEN_FILE" ]]; then
-  TOKEN="$(tr -d '\r\n' <"$TOKEN_FILE")"
+if [[ -z "$TOKEN" && -n "$TOKEN_FILE" && ! -r "$TOKEN_FILE" ]]; then
+  printf 'OPENCLAW_TELEGRAM_BOT_TOKEN_FILE is not readable: %s\n' "$TOKEN_FILE" >&2
+  exit 2
 fi
 
-if [[ -z "$TOKEN" ]]; then
+if [[ -z "$TOKEN" && -z "$TOKEN_FILE" ]]; then
   printf 'OPENCLAW_TELEGRAM_BOT_TOKEN or OPENCLAW_TELEGRAM_BOT_TOKEN_FILE is required.\n' >&2
   exit 2
 fi
@@ -26,11 +27,21 @@ if [[ -z "$TARGET" ]]; then
   exit 2
 fi
 
-"$OPENCLAW_BIN" channels add \
-  --channel telegram \
-  --account "$ACCOUNT" \
-  --name "Personal Office Job Search" \
-  --token "$TOKEN"
+"$OPENCLAW_BIN" plugins enable telegram || true
+
+if [[ -n "$TOKEN_FILE" ]]; then
+  "$OPENCLAW_BIN" channels add \
+    --channel telegram \
+    --account "$ACCOUNT" \
+    --name "Personal Office Job Search" \
+    --token-file "$TOKEN_FILE"
+else
+  "$OPENCLAW_BIN" channels add \
+    --channel telegram \
+    --account "$ACCOUNT" \
+    --name "Personal Office Job Search" \
+    --token "$TOKEN"
+fi
 
 umask 077
 cat >"$ENV_FILE" <<EOF
