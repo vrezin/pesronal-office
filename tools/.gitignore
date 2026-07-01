@@ -15,3 +15,15 @@ headhunter-mcp-server/
 !headhunter-web-mcp/hh_web/*.py
 !headhunter-web-mcp/scripts/
 !headhunter-web-mcp/scripts/*.sh
+
+!memory-os/
+!memory-os/**
+
+!personal-office-owner-operator-pack/
+!personal-office-owner-operator-pack/**
+
+!job-search-runtime/
+!job-search-runtime/**
+
+!raspberrypi-openclaw/
+!raspberrypi-openclaw/**

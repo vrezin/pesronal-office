@@ -15,6 +15,8 @@ Do not put personal finance, calendar, inbox, or life-management tools into comp
 - `headhunter-mcp-server/` - disabled HeadHunter API MCP experiment. HH rejected the app registration for this workflow on 2026-06-17, so this is kept only as historical reference and is not registered in `.codex/config.toml`.
 - `headhunter-web-mcp/` - browser/session-based HeadHunter applicant MCP for reading HH vacancy pages, applications and statuses through the logged-in web UI; registered in `.codex/config.toml` as the only active HH MCP server, `headhunter_web`.
 - `project-bootstrapper/` - planned Personal Office tooling prototype for turning intake/context into generated project spaces using Setronica-style operating standards.
+- `memory-os/` - local standard-library validator and inspector for protocol-managed Personal Office memory.
+- `personal-office-owner-operator-pack/` - OKF-like workflow pack for owner/operator commands, connector boundaries, and approval rules.
 - `../wiki/playbooks/headhunter-web-mcp-implementation-brief.md` - implementation brief for a browser/session-based HeadHunter applicant MCP fallback.
 
 ## Safety

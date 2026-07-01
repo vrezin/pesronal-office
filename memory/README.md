@@ -13,6 +13,8 @@ Memory helps agents recall relevant context without rereading the whole reposito
 - `knowledge-graph/` - machine-readable nodes and relations.
 - `retrieval/` - search rules, indexes, and retrieval logs.
 - `long-term/` - durable preferences, principles, and recurring rules.
+- `protocol/` - product-grade lifecycle, metadata, retrieval, and retirement rules.
+- `templates/` - protocol-managed memory templates.
 
 ## Rules
 
@@ -28,3 +30,17 @@ Memory helps agents recall relevant context without rereading the whole reposito
 2. Use `memory-system` for durable fact capture, retrieval, consolidation, entities, and graph updates.
 3. Search relevant memory before planning or answering.
 4. Rebuild graph and retrieval indexes when source artifacts materially change.
+
+## Memory OS Protocol
+
+New protocol-managed memory follows `protocol/metadata-contract.md`.
+
+Agents should use the lifecycle in `protocol/lifecycle.md`:
+
+- `use` - navigate maps, indexes, and narrow concept cards before source artifacts.
+- `enrich` - add summaries, source links, confidence, and relations without copying long raw content.
+- `create` - create memory only from source artifacts, user-provided facts, or cited external sources.
+- `change` - update memory when source truth, route, confidence, or status changes.
+- `retire` - mark memory stale, superseded, retired, or archived instead of deleting history.
+
+Protocol-managed memory is an agent navigation layer. It is not a replacement for domain truth and must not become a dump of raw documents.

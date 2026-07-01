@@ -31,3 +31,19 @@
 | Topic summaries | `memory/semantic/index.md` |
 | Entity records | `memory/entities/README.md` |
 | Relations | `memory/knowledge-graph/nodes.jsonl` and `memory/knowledge-graph/edges.jsonl` |
+
+## Memory OS Protocol Routes
+
+| Need | Start |
+|---|---|
+| Lifecycle operation | `memory/protocol/lifecycle.md` |
+| Metadata/frontmatter contract | `memory/protocol/metadata-contract.md` |
+| Concept type choice | `memory/protocol/concept-types.md` |
+| Progressive-disclosure retrieval | `memory/protocol/retrieval-policy.md` |
+| Stale/superseded/retired handling | `memory/protocol/retirement-policy.md` |
+| New protocol-managed memory templates | `memory/templates/` |
+| Owner/operator workflow pack | `tools/personal-office-owner-operator-pack/index.md` |
+
+## Protocol-Managed Memory Rule
+
+Start from this index and the relevant domain map. Read concept cards and summaries before source artifacts. Do not broad-load raw folders when a map or context card can identify the exact source path.

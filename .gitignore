@@ -6,8 +6,16 @@ __pycache__/
 # Runtime logs can be regenerated and grow quickly.
 *.cron.log
 
+# Operational runtime state. Canonical state snapshots belong in Markdown.
+automation/state/job-search-runtime.sqlite
+automation/state/job-search-runtime.sqlite-shm
+automation/state/job-search-runtime.sqlite-wal
+
 # Embedded/local tool checkouts should be committed intentionally, not by accident.
 tools/headhunter-mcp-server/
 tools/*/.git/
 tools/*/.venv/
 tools/*/__pycache__/
+/.client_secret_749886950505-rlhp2gpnnhk82ls28k39gj38fdcrqb1g.apps.googleusercontent.com.json
+/.env
+/.env.google-workspace.local
