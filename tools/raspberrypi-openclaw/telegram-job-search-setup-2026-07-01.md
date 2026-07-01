@@ -91,6 +91,21 @@ Expected binding:
 job-search <- telegram accountId=job-search-telegram
 ```
 
+Approve the Telegram sender before expecting normal agent routing. The first DM
+from a new Telegram user is treated as a pairing request:
+
+```bash
+openclaw pairing list --channel telegram
+openclaw pairing approve --channel telegram --account job-search-telegram --notify <PAIRING_CODE>
+openclaw config get commands.ownerAllowFrom
+```
+
+Expected owner allow entry:
+
+```text
+telegram:<telegram-user-id>
+```
+
 ## Verify
 
 ```bash
@@ -118,6 +133,7 @@ Observed on 2026-07-01:
 Telegram job-search-telegram: installed, configured, enabled, token=tokenFile
 Probe: running, mode=polling, bot:@adreclawbot, works
 Routing: job-search <- telegram accountId=job-search-telegram
+Pairing approved: telegram:113174019
 ```
 
 OpenClaw 2026.6.10 does not support reading Telegram history through:
@@ -127,6 +143,20 @@ openclaw message read --channel telegram
 ```
 
 It returns `Unsupported Telegram action: read`. Inbound Telegram processing should happen through Gateway routing into the `job-search` agent.
+
+## E2E Smoke
+
+Observed on 2026-07-01:
+
+- Input: Telegram DM from approved sender with LinkedIn job `4434492291`.
+- Route: `telegram:job-search-telegram` -> `job-search`.
+- Enrichment: LinkedIn MCP plus Xapo Greenhouse.
+- Created artifacts:
+  - `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-07-01-xapo-bank-head-of-engineering.md`;
+  - `personal-projects/personal-brand/workspace/job-intake/analyses/2026-07-01-xapo-bank-head-of-engineering-analysis.md`;
+  - updated `personal-projects/personal-brand/workspace/job-intake/INDEX.md`;
+  - updated `personal-projects/personal-brand/workspace/job-intake/COMPANY_NOTES.md`.
+- Telegram reply sent: `messageId=352`.
 
 ## Timer
 
