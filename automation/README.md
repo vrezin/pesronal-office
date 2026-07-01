@@ -44,7 +44,14 @@ Telegram ad-hoc job-search intake is scaffolded by:
 - `automation/scripts/run-pi-job-search-telegram-intake.sh`.
 - `automation/scripts/setup-pi-job-search-telegram-channel.sh`.
 
-It remains blocked until an OpenClaw Telegram channel is configured outside Git and `TELEGRAM_JOB_SEARCH_TARGET` is set for the wrapper.
+The active path is OpenClaw Gateway routing, not scheduled `openclaw message read`.
+Telegram account `job-search-telegram` is bound to the `job-search` agent:
+
+```bash
+openclaw agents bind --agent job-search --bind telegram:job-search-telegram
+```
+
+OpenClaw 2026.6.10 does not support Telegram via `openclaw message read`; use the wrapper only as a blocked/preflight diagnostic until it is rewritten for gateway event logs.
 
 Disabled-until-configured systemd templates:
 

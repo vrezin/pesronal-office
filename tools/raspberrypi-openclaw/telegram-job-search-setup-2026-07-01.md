@@ -77,6 +77,20 @@ openclaw channels add --channel telegram --account job-search-telegram --token-f
 
 and writes the non-token wrapper env file.
 
+Bind this Telegram account to the dedicated job-search agent:
+
+```bash
+openclaw agents bind --agent job-search --bind telegram:job-search-telegram
+openclaw gateway restart
+openclaw agents bindings
+```
+
+Expected binding:
+
+```text
+job-search <- telegram accountId=job-search-telegram
+```
+
 ## Verify
 
 ```bash
@@ -103,11 +117,20 @@ Observed on 2026-07-01:
 ```text
 Telegram job-search-telegram: installed, configured, enabled, token=tokenFile
 Probe: running, mode=polling, bot:@adreclawbot, works
+Routing: job-search <- telegram accountId=job-search-telegram
 ```
+
+OpenClaw 2026.6.10 does not support reading Telegram history through:
+
+```bash
+openclaw message read --channel telegram
+```
+
+It returns `Unsupported Telegram action: read`. Inbound Telegram processing should happen through Gateway routing into the `job-search` agent.
 
 ## Timer
 
-Templates exist but should not be enabled until the channel and target are configured:
+Templates exist but should not be enabled until the wrapper is rewritten for Gateway event logs or another supported inbound source:
 
 ```text
 automation/systemd/personal-office-pi-job-search-telegram-intake.service
