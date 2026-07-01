@@ -285,6 +285,23 @@ Start with one Pi-primary Personal Office core repo plus the current `job-search
 
 Promote `job-search-contour` to a separate repo only after the scheduled Gmail and Telegram loops are working and the boundary is clear enough to avoid premature repo fragmentation.
 
+### Current Implementation
+
+As of 2026-07-01, the Pi-primary Personal Office working tree exists at:
+
+- `/home/openclaw/personal-office-agent/personal-office`
+
+It is owned by the Pi `openclaw` user, tracks:
+
+- `git@github.com:vrezin/pesronal-office.git`
+
+Initial push was performed from the Raspberry Pi using the Pi-side GitHub SSH key:
+
+- branch: `main`
+- commit: `f7f447d` (`Add Pi Personal Office storage foundation`)
+
+Note: the GitHub repository name is currently spelled `pesronal-office`.
+
 ## Why Not Only Markdown/Git
 
 Markdown/Git is excellent for reviewable artifacts but weak for:
@@ -316,9 +333,9 @@ The standalone job-search contour should:
 
 ## Open Implementation Questions
 
-1. Create or promote a full Personal Office working tree on Pi as the primary repo.
-2. Choose the private Git remote location/provider for backup/history.
-3. Define Pi git identity and SSH deploy key.
+1. Done 2026-07-01: full Personal Office working tree created on Pi as the primary repo.
+2. Done 2026-07-01: private Git remote selected and pushed from Pi.
+3. Done 2026-07-01: Pi-side GitHub SSH key works for push.
 4. Define workstation-as-client workflow and conflict policy.
 5. Add scheduled sync wrappers with pull/run/commit/push phases.
 6. Decide the backup/export policy for SQLite after unattended scheduling is active.
