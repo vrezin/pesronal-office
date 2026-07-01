@@ -23,6 +23,8 @@ Scheduled automation must not require Git commits. Run logs and state markers ar
 - `linkedin-gmail-monitor` - uses the registered local LinkedIn MCP server from `.codex/config.toml`, with a loopback wrapper fallback if needed.
 - `pi-job-search-gmail-monitor` - Pi-primary OpenClaw job-search monitor. It uses Pi-local `google_workspace` Gmail access, `tools/job-search-runtime/` SQLite dedupe, and writes run logs/state without requiring Git commits.
 
+When `/home/openclaw/.config/personal-office/job-search-telegram.env` exists, the Gmail monitor also passes Telegram target/account to the `job-search` agent so actionable Gmail findings can produce Telegram decision packets.
+
 Pi-primary scheduling is defined by:
 
 - `automation/systemd/personal-office-pi-job-search-gmail-monitor.service`;

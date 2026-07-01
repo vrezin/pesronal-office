@@ -4,6 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="${PERSONAL_OFFICE_ROOT:-$(cd "$SCRIPT_DIR/../.." && pwd)}"
 PROMPT_FILE="$ROOT/automation/prompts/pi-job-search-gmail-monitor.md"
+TELEGRAM_ENV_FILE="${JOB_SEARCH_TELEGRAM_ENV_FILE:-$HOME/.config/personal-office/job-search-telegram.env}"
 AGENT="${OPENCLAW_JOB_SEARCH_AGENT:-job-search}"
 SESSION_KEY="${OPENCLAW_JOB_SEARCH_SESSION_KEY:-agent:job-search:pi-gmail-monitor}"
 TIMEOUT_SECONDS="${OPENCLAW_JOB_SEARCH_TIMEOUT_SECONDS:-3600}"
@@ -14,6 +15,14 @@ LOCK_NAME="pi-job-search-gmail-monitor"
 LOCK_OWNER="${RUN_STAMP}-$$"
 LOCK_TTL_SECONDS="${OPENCLAW_JOB_SEARCH_LOCK_TTL_SECONDS:-5400}"
 LOCK_ACQUIRED=0
+
+if [[ -f "$TELEGRAM_ENV_FILE" ]]; then
+  # shellcheck disable=SC1090
+  source "$TELEGRAM_ENV_FILE"
+fi
+
+TELEGRAM_TARGET="${TELEGRAM_JOB_SEARCH_TARGET:-}"
+TELEGRAM_ACCOUNT="${TELEGRAM_JOB_SEARCH_ACCOUNT:-}"
 
 cd "$ROOT"
 
@@ -27,6 +36,8 @@ cat >"$RUN_LOG" <<EOF
 - Agent: \`$AGENT\`
 - Session key: \`$SESSION_KEY\`
 - Repo root: \`$ROOT\`
+- Telegram target: \`${TELEGRAM_TARGET:-unset}\`
+- Telegram account: \`${TELEGRAM_ACCOUNT:-default}\`
 - Timeout seconds: \`$TIMEOUT_SECONDS\`
 - Status: running
 
@@ -68,7 +79,12 @@ cleanup() {
 }
 trap cleanup EXIT
 
-MESSAGE="$(printf 'Pi-primary Personal Office repo root: %s\n\n' "$ROOT"; cat "$PROMPT_FILE")"
+MESSAGE="$(
+  printf 'Pi-primary Personal Office repo root: %s\n' "$ROOT"
+  printf 'Telegram target: %s\n' "${TELEGRAM_TARGET:-unset}"
+  printf 'Telegram account: %s\n\n' "${TELEGRAM_ACCOUNT:-default}"
+  cat "$PROMPT_FILE"
+)"
 
 set +e
 timeout --kill-after=30s "$TIMEOUT_SECONDS" openclaw agent \

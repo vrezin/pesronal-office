@@ -10,7 +10,7 @@ This is an unattended run. Do not request interactive approval. If a tool, Gmail
 
 ## Objective
 
-Scan Pi-local Gmail through the OpenClaw MCP server `google_workspace` for HH.ru / HeadHunter and LinkedIn job-search messages, dedupe through SQLite, and update Personal Office job-search artifacts.
+Scan Pi-local Gmail through the OpenClaw MCP server `google_workspace` for HH.ru / HeadHunter and LinkedIn job-search messages, dedupe through SQLite, update Personal Office job-search artifacts, and produce Telegram decision packets for actionable items when Telegram is configured.
 
 ## Runtime Contract
 
@@ -79,12 +79,39 @@ For `new_vacancy`:
 - include relocation/lifestyle/compensation notes at the level supported by the source;
 - update `job-intake/INDEX.md` and `job-intake/COMPANY_NOTES.md`;
 - if only a thin digest/link exists, create a raw intake or clarification note instead of inventing a JD.
+- for actionable roles, prepare the Telegram output packet below.
 
 For `noise`:
 
 - record it in SQLite as `status=noise`;
 - mention the count in the run log;
 - do not create job-intake artifacts.
+
+## Telegram Outbound
+
+The wrapper passes `Telegram target` and `Telegram account` at the top of the message.
+
+If `Telegram target` is not `unset` and OpenClaw has a configured Telegram channel, send a concise decision packet with:
+
+```bash
+openclaw message send --channel telegram --target <target> --message <packet>
+```
+
+Add `--account <account>` when `Telegram account` is not `default`.
+
+For actionable vacancy output, use:
+
+```text
+Found: <company> - <role>
+Verdict: send / maybe / skip
+Why: <1-3 bullets>
+CV: <selected CV path or "не готовить">
+Cover letter: <draft path or "не готовить">
+Next action: <send now / ask question / wait / ignore>
+Artifacts: <paths>
+```
+
+If Telegram is not configured or send fails, do not block artifact writes. Write the intended Telegram packet and the send failure into the run log.
 
 ## Run Log And State
 
@@ -99,6 +126,7 @@ The run log must include:
 - message ids seen;
 - duplicate/no-op ids;
 - processed ids and resulting artifact paths;
+- Telegram packets sent or intended;
 - blocked items and why;
 - SQLite commands or summarized runtime status;
 - whether legacy state files were updated.
