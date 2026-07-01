@@ -28,6 +28,13 @@ Pi-primary scheduling is defined by:
 - `automation/systemd/personal-office-pi-job-search-gmail-monitor.service`;
 - `automation/systemd/personal-office-pi-job-search-gmail-monitor.timer`.
 
+Telegram ad-hoc job-search intake is scaffolded by:
+
+- `automation/prompts/pi-job-search-telegram-intake.md`;
+- `automation/scripts/run-pi-job-search-telegram-intake.sh`.
+
+It remains blocked until an OpenClaw Telegram channel is configured outside Git and `TELEGRAM_JOB_SEARCH_TARGET` is set for the wrapper.
+
 ## Planned Monitors
 
 - `yc-workatastartup-monitor` - planned for the week of 2026-06-22 as a basic Playwright/MCP-assisted monitor for new Work at a Startup roles. Until it exists, use the daily manual reminder in `tasks/active/2026-06-19-daily-check-yc-work-at-a-startup.md`.

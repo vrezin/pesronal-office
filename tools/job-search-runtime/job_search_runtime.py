@@ -229,6 +229,69 @@ def mark_message(
     print(f"Marked {source}:{gmail_message_id} status={status}")
 
 
+def telegram_update_status(db_path: Path, update_id: str) -> int:
+    init_db(db_path)
+    with connect(db_path) as conn:
+        row = conn.execute(
+            """
+            SELECT update_id, chat_id, message_id, received_at, status,
+                   run_id, artifact_path, summary
+            FROM telegram_updates
+            WHERE update_id = ?
+            """,
+            (update_id,),
+        ).fetchone()
+    if row is None:
+        print(json.dumps({"processed": False, "update_id": update_id}))
+    else:
+        payload = dict(row)
+        payload["processed"] = True
+        print(json.dumps(payload, ensure_ascii=False, sort_keys=True))
+    return 0
+
+
+def mark_telegram_update(
+    db_path: Path,
+    *,
+    update_id: str,
+    chat_id: str | None,
+    message_id: str | None,
+    received_at: str,
+    status: str,
+    run_id: str | None,
+    artifact_path: str | None,
+    summary: str | None,
+) -> None:
+    init_db(db_path)
+    with connect(db_path) as conn:
+        conn.execute(
+            """
+            INSERT INTO telegram_updates (
+                update_id,
+                chat_id,
+                message_id,
+                received_at,
+                status,
+                run_id,
+                artifact_path,
+                summary
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(update_id) DO UPDATE SET
+                chat_id = COALESCE(excluded.chat_id, telegram_updates.chat_id),
+                message_id = COALESCE(excluded.message_id, telegram_updates.message_id),
+                received_at = excluded.received_at,
+                status = excluded.status,
+                run_id = COALESCE(excluded.run_id, telegram_updates.run_id),
+                artifact_path = COALESCE(excluded.artifact_path, telegram_updates.artifact_path),
+                summary = COALESCE(excluded.summary, telegram_updates.summary)
+            """,
+            (update_id, chat_id, message_id, received_at, status, run_id, artifact_path, summary),
+        )
+        conn.commit()
+    print(f"Marked telegram update {update_id} status={status}")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -265,6 +328,23 @@ def parse_args() -> argparse.Namespace:
     mark_parser.add_argument("--artifact-path")
     mark_parser.add_argument("--run-id")
     mark_parser.add_argument("--notes")
+    telegram_status_parser = sub.add_parser(
+        "telegram-update-status",
+        help="Print JSON status for one Telegram update id",
+    )
+    telegram_status_parser.add_argument("--update-id", required=True)
+    telegram_mark_parser = sub.add_parser(
+        "mark-telegram-update",
+        help="Record or update one Telegram update id",
+    )
+    telegram_mark_parser.add_argument("--update-id", required=True)
+    telegram_mark_parser.add_argument("--chat-id")
+    telegram_mark_parser.add_argument("--message-id")
+    telegram_mark_parser.add_argument("--received-at", required=True)
+    telegram_mark_parser.add_argument("--status", default="processed")
+    telegram_mark_parser.add_argument("--run-id")
+    telegram_mark_parser.add_argument("--artifact-path")
+    telegram_mark_parser.add_argument("--summary")
     return parser.parse_args()
 
 
@@ -297,6 +377,20 @@ def main() -> int:
             artifact_path=args.artifact_path,
             run_id=args.run_id,
             notes=args.notes,
+        )
+    elif args.command == "telegram-update-status":
+        return telegram_update_status(db_path, args.update_id)
+    elif args.command == "mark-telegram-update":
+        mark_telegram_update(
+            db_path,
+            update_id=args.update_id,
+            chat_id=args.chat_id,
+            message_id=args.message_id,
+            received_at=args.received_at,
+            status=args.status,
+            run_id=args.run_id,
+            artifact_path=args.artifact_path,
+            summary=args.summary,
         )
     else:
         raise AssertionError(args.command)

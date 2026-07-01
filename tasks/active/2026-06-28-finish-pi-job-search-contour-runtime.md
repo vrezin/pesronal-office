@@ -55,6 +55,8 @@ Finish the Raspberry Pi job-search contour so the dedicated OpenClaw `job-search
 - Update 2026-07-01: First Pi-primary Gmail monitor smoke succeeded through OpenClaw `job-search` and Pi-local `google_workspace`. It scanned recent HH and LinkedIn Gmail messages, checked every Gmail id through SQLite first, marked 3 HH thin digests and 5 LinkedIn thin alerts/digests as `noise`, wrote `automation/runs/2026-07-01-1822-pi-job-search-gmail-monitor.md`, and advanced legacy HH/LinkedIn state files. A separate 5-second watchdog smoke wrote `automation/runs/2026-07-01-1829-pi-job-search-gmail-monitor.md` with `Status: blocked`, proving the wrapper leaves evidence when OpenClaw does not return before timeout.
 - Update 2026-07-01: Added Pi-primary systemd user timer templates for the monitor: `automation/systemd/personal-office-pi-job-search-gmail-monitor.service` and `automation/systemd/personal-office-pi-job-search-gmail-monitor.timer`.
 - Update 2026-07-01: Installed and enabled the Pi user timer under `openclaw`. `personal-office-pi-job-search-gmail-monitor.timer` is active/waiting and triggers `personal-office-pi-job-search-gmail-monitor.service`; first observed next trigger was `2026-07-01 20:20:40 +07`.
+- Update 2026-07-01: Telegram ad-hoc vacancy intake boundary scaffolded with `automation/prompts/pi-job-search-telegram-intake.md`, `automation/scripts/run-pi-job-search-telegram-intake.sh`, and runtime CLI commands `telegram-update-status` / `mark-telegram-update`. Pi currently has no configured OpenClaw chat channels, so the Telegram wrapper is expected to write a blocked run log until Telegram is configured outside Git.
+- Update 2026-07-01: Telegram wrapper blocked preflight verified on Pi. With no `TELEGRAM_JOB_SEARCH_TARGET`, it wrote `automation/runs/2026-07-01-1835-pi-job-search-telegram-intake.md` and exited before attempting Telegram reads.
 
 ## Gmail/GCalendar Integration Options
 
@@ -177,7 +179,7 @@ Cons:
 3. Done 2026-07-01: verify Pi-side GitHub SSH key for push.
 4. Done 2026-07-01 for first monitor slice: adapt/mirror HH and LinkedIn Gmail monitoring into a Pi-local OpenClaw prompt using `google_workspace` and SQLite dedupe.
 5. In progress 2026-07-01: harden conservative polling/backoff and timeout/watchdog behavior while installing unattended systemd timer.
-6. Implement Telegram inbound routing for ad-hoc vacancy intake.
-7. Implement Telegram outbound decision packets with verdict, selected CV, cover letter draft, and next action.
+6. In progress 2026-07-01: implement Telegram inbound routing for ad-hoc vacancy intake; wrapper/prompt/SQLite boundary exists, channel configuration remains external.
+7. In progress 2026-07-01: implement Telegram outbound decision packets with verdict, selected CV, cover letter draft, and next action; output contract exists in prompt, live send awaits channel configuration.
 8. Run a non-archived Inbox E2E check when the next fresh HH or LinkedIn message arrives.
 9. Keep Option A only as a proof-of-concept fallback; do not treat workstation/Codex handoff as solved production architecture.
