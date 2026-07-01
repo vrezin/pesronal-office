@@ -24,3 +24,4 @@ Already up to date.
 - Finished at: 2026-07-01T18:52:51+07:00
 - Exit code: `0`
 - Status: completed
+[job-search-sync] sync complete

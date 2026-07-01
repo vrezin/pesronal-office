@@ -152,5 +152,3 @@ git add \
 
 git commit -m "job-search: sync pi runtime artifacts" >/tmp/personal-office-job-search-sync-git.log 2>&1
 git push "$REMOTE" "HEAD:$BRANCH" >>/tmp/personal-office-job-search-sync-git.log 2>&1
-
-log "sync complete"
