@@ -168,16 +168,18 @@ Stored: <trace path if created>
 - Pi sync wrapper skeleton exists at `automation/scripts/run-pi-job-search-sync.sh`.
 - Pi runtime DB initialized at `automation/state/job-search-runtime.sqlite` inside `job-search-contour`.
 - Baseline duplicate ids seeded from Markdown monitor state: 5 HH ids and 2 LinkedIn ids.
+- Pi-primary Gmail monitor exists, is scheduled by systemd user timer, and has a successful Pi-local smoke run.
+- Telegram intake wrapper, prompt, SQLite update dedupe commands, setup script, and disabled systemd templates exist. Live Telegram E2E remains pending because no OpenClaw chat channel is configured yet.
 
 ## Remaining Build Work
 
-1. Create or promote a full Personal Office working tree on Pi as the primary repo.
-2. Configure private Git remote backup/sync for Pi.
-3. Decide Pi Git identity and deploy key.
-4. Adapt HH/LinkedIn Gmail monitor prompts to use Pi-local `google_workspace`.
-5. Create Pi-side scheduled wrappers/systemd timers.
-6. Add Telegram inbound routing to `job-search`.
-7. Add Telegram outbound decision packets.
-8. Extend duplicate-state handling from seeded baseline to normal scheduled writes.
+1. Done: Create or promote a full Personal Office working tree on Pi as the primary repo.
+2. Done: Configure private Git remote backup/sync for Pi.
+3. Done: Decide Pi Git identity and deploy key.
+4. Done for first slice: Adapt HH/LinkedIn Gmail monitor prompts to use Pi-local `google_workspace`.
+5. Done for Gmail: Create Pi-side scheduled wrappers/systemd timers.
+6. In progress: Add Telegram inbound routing to `job-search`; wrapper/prompt/setup path exists, live channel configuration is pending.
+7. In progress: Add Telegram outbound decision packets; output contract exists, live send is pending channel configuration.
+8. Done for Gmail and scaffolded for Telegram: Extend duplicate-state handling from seeded baseline to normal scheduled writes.
 9. Run a fresh Inbox E2E test when the next HH/LinkedIn message arrives.
 10. Run an ad-hoc Telegram vacancy intake test.

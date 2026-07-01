@@ -57,6 +57,7 @@ Finish the Raspberry Pi job-search contour so the dedicated OpenClaw `job-search
 - Update 2026-07-01: Installed and enabled the Pi user timer under `openclaw`. `personal-office-pi-job-search-gmail-monitor.timer` is active/waiting and triggers `personal-office-pi-job-search-gmail-monitor.service`; first observed next trigger was `2026-07-01 20:20:40 +07`.
 - Update 2026-07-01: Telegram ad-hoc vacancy intake boundary scaffolded with `automation/prompts/pi-job-search-telegram-intake.md`, `automation/scripts/run-pi-job-search-telegram-intake.sh`, and runtime CLI commands `telegram-update-status` / `mark-telegram-update`. Pi currently has no configured OpenClaw chat channels, so the Telegram wrapper is expected to write a blocked run log until Telegram is configured outside Git.
 - Update 2026-07-01: Telegram wrapper blocked preflight verified on Pi. With no `TELEGRAM_JOB_SEARCH_TARGET`, it wrote `automation/runs/2026-07-01-1835-pi-job-search-telegram-intake.md` and exited before attempting Telegram reads.
+- Update 2026-07-01: Added Telegram setup path without committing secrets: `automation/scripts/setup-pi-job-search-telegram-channel.sh`, disabled systemd templates for Telegram intake, and runbook `tools/raspberrypi-openclaw/telegram-job-search-setup-2026-07-01.md`. OpenClaw help confirms non-interactive setup supports `openclaw channels add --channel telegram --token <token>`.
 
 ## Gmail/GCalendar Integration Options
 

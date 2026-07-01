@@ -1,0 +1,10 @@
+[Unit]
+Description=Personal Office Pi job-search Telegram intake
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/openclaw/personal-office-agent/personal-office
+Environment=PERSONAL_OFFICE_ROOT=/home/openclaw/personal-office-agent/personal-office
+Environment=OPENCLAW_JOB_SEARCH_TELEGRAM_TIMEOUT_SECONDS=1200
+EnvironmentFile=-/home/openclaw/.config/personal-office/job-search-telegram.env
+ExecStart=/home/openclaw/personal-office-agent/personal-office/automation/scripts/run-pi-job-search-telegram-intake.sh

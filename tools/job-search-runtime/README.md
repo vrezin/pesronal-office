@@ -35,6 +35,20 @@ Show a compact status:
 python3 tools/job-search-runtime/job_search_runtime.py status
 ```
 
+Check and mark Gmail messages:
+
+```bash
+python3 tools/job-search-runtime/job_search_runtime.py message-status --source hh --gmail-message-id <GMAIL_ID>
+python3 tools/job-search-runtime/job_search_runtime.py mark-message --source hh --gmail-message-id <GMAIL_ID> --classification noise --status noise
+```
+
+Check and mark Telegram updates:
+
+```bash
+python3 tools/job-search-runtime/job_search_runtime.py telegram-update-status --update-id <UPDATE_ID>
+python3 tools/job-search-runtime/job_search_runtime.py mark-telegram-update --update-id <UPDATE_ID> --received-at <ISO_TIME> --status processed --summary "short summary"
+```
+
 Use a custom database path:
 
 ```bash

@@ -32,8 +32,14 @@ Telegram ad-hoc job-search intake is scaffolded by:
 
 - `automation/prompts/pi-job-search-telegram-intake.md`;
 - `automation/scripts/run-pi-job-search-telegram-intake.sh`.
+- `automation/scripts/setup-pi-job-search-telegram-channel.sh`.
 
 It remains blocked until an OpenClaw Telegram channel is configured outside Git and `TELEGRAM_JOB_SEARCH_TARGET` is set for the wrapper.
+
+Disabled-until-configured systemd templates:
+
+- `automation/systemd/personal-office-pi-job-search-telegram-intake.service`;
+- `automation/systemd/personal-office-pi-job-search-telegram-intake.timer`.
 
 ## Planned Monitors
 

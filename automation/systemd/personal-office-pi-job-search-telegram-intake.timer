@@ -1,0 +1,12 @@
+[Unit]
+Description=Run Personal Office Pi job-search Telegram intake every 5 minutes
+
+[Timer]
+OnBootSec=2m
+OnUnitActiveSec=5m
+RandomizedDelaySec=30s
+Persistent=true
+Unit=personal-office-pi-job-search-telegram-intake.service
+
+[Install]
+WantedBy=timers.target
