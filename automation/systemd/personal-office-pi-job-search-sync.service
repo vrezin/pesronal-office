@@ -1,0 +1,11 @@
+[Unit]
+Description=Personal Office Pi job-search artifact sync
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/openclaw/personal-office-agent/personal-office
+Environment=PERSONAL_OFFICE_ROOT=/home/openclaw/personal-office-agent/personal-office
+Environment=PERSONAL_OFFICE_SYNC_MODE=apply
+Environment=PERSONAL_OFFICE_SYNC_REMOTE=origin
+Environment=PERSONAL_OFFICE_SYNC_BRANCH=main
+ExecStart=/home/openclaw/personal-office-agent/personal-office/automation/scripts/run-pi-job-search-sync.sh

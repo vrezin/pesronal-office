@@ -6,8 +6,41 @@ REMOTE="${PERSONAL_OFFICE_SYNC_REMOTE:-origin}"
 BRANCH="${PERSONAL_OFFICE_SYNC_BRANCH:-main}"
 MODE="${PERSONAL_OFFICE_SYNC_MODE:-dry-run}"
 RUN_CMD="${*:-}"
+RUN_STAMP="$(date +%Y-%m-%d-%H%M)"
+RUN_LOG="${PERSONAL_OFFICE_SYNC_RUN_LOG:-$ROOT/automation/runs/${RUN_STAMP}-pi-job-search-sync.md}"
 
 cd "$ROOT"
+
+mkdir -p automation/runs automation/state
+
+cat >"$RUN_LOG" <<EOF
+# Pi Job Search Sync
+
+- Started at: $(date -Iseconds)
+- Root: \`$ROOT\`
+- Remote: \`$REMOTE\`
+- Branch: \`$BRANCH\`
+- Mode: \`$MODE\`
+- Status: running
+
+EOF
+
+exec > >(tee -a "$RUN_LOG") 2>&1
+
+on_exit() {
+  local status=$?
+  {
+    printf '\n## Wrapper Result\n\n'
+    printf -- '- Finished at: %s\n' "$(date -Iseconds)"
+    printf -- '- Exit code: `%s`\n' "$status"
+    if [[ "$status" -eq 0 ]]; then
+      printf -- '- Status: completed\n'
+    else
+      printf -- '- Status: blocked\n'
+    fi
+  } >>"$RUN_LOG"
+}
+trap on_exit EXIT
 
 log() {
   printf '[job-search-sync] %s\n' "$*" >&2

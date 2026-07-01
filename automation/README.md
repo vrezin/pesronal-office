@@ -30,6 +30,14 @@ Pi-primary scheduling is defined by:
 - `automation/systemd/personal-office-pi-job-search-gmail-monitor.service`;
 - `automation/systemd/personal-office-pi-job-search-gmail-monitor.timer`.
 
+Pi-primary artifact sync is defined by:
+
+- `automation/scripts/run-pi-job-search-sync.sh`;
+- `automation/systemd/personal-office-pi-job-search-sync.service`;
+- `automation/systemd/personal-office-pi-job-search-sync.timer`.
+
+The sync timer is separate from monitor execution. It may commit/push allowed runtime artifacts after monitors finish, but monitors themselves must remain useful without Git.
+
 Telegram ad-hoc job-search intake is scaffolded by:
 
 - `automation/prompts/pi-job-search-telegram-intake.md`;

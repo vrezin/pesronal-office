@@ -1,0 +1,12 @@
+[Unit]
+Description=Run Personal Office Pi job-search artifact sync every 30 minutes
+
+[Timer]
+OnBootSec=5m
+OnUnitActiveSec=30m
+RandomizedDelaySec=2m
+Persistent=true
+Unit=personal-office-pi-job-search-sync.service
+
+[Install]
+WantedBy=timers.target
