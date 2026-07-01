@@ -35,6 +35,13 @@ Show a compact status:
 python3 tools/job-search-runtime/job_search_runtime.py status
 ```
 
+Acquire and release a run lock:
+
+```bash
+python3 tools/job-search-runtime/job_search_runtime.py acquire-lock --lock-name pi-job-search-gmail-monitor --owner manual-test --ttl-seconds 300
+python3 tools/job-search-runtime/job_search_runtime.py release-lock --lock-name pi-job-search-gmail-monitor --owner manual-test
+```
+
 Check and mark Gmail messages:
 
 ```bash

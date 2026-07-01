@@ -10,6 +10,10 @@ TIMEOUT_SECONDS="${OPENCLAW_JOB_SEARCH_TIMEOUT_SECONDS:-3600}"
 RUN_STAMP="$(date +%Y-%m-%d-%H%M)"
 RUN_LOG="$ROOT/automation/runs/${RUN_STAMP}-pi-job-search-gmail-monitor.md"
 AGENT_OUTPUT="$(mktemp)"
+LOCK_NAME="pi-job-search-gmail-monitor"
+LOCK_OWNER="${RUN_STAMP}-$$"
+LOCK_TTL_SECONDS="${OPENCLAW_JOB_SEARCH_LOCK_TTL_SECONDS:-5400}"
+LOCK_ACQUIRED=0
 
 cd "$ROOT"
 
@@ -31,6 +35,38 @@ EOF
 python3 tools/job-search-runtime/job_search_runtime.py init
 python3 tools/job-search-runtime/job_search_runtime.py seed-monitor-state
 python3 tools/job-search-runtime/job_search_runtime.py status >>"$RUN_LOG"
+
+set +e
+lock_output="$(python3 tools/job-search-runtime/job_search_runtime.py acquire-lock --lock-name "$LOCK_NAME" --owner "$LOCK_OWNER" --ttl-seconds "$LOCK_TTL_SECONDS" 2>&1)"
+lock_status=$?
+set -e
+
+{
+  printf '\n## Lock\n\n'
+  printf '    %s\n' "$lock_output"
+  printf -- '- Lock exit code: `%s`\n' "$lock_status"
+} >>"$RUN_LOG"
+
+if [[ "$lock_status" -ne 0 ]]; then
+  {
+    printf '\n## Wrapper Result\n\n'
+    printf -- '- Finished at: %s\n' "$(date -Iseconds)"
+    printf -- '- Exit code: `0`\n'
+    printf -- '- Status: skipped\n'
+    printf -- '- Reason: another `%s` run lock is active. No Gmail scan attempted.\n' "$LOCK_NAME"
+  } >>"$RUN_LOG"
+  rm -f "$AGENT_OUTPUT"
+  exit 0
+fi
+
+LOCK_ACQUIRED=1
+cleanup() {
+  if [[ "$LOCK_ACQUIRED" -eq 1 ]]; then
+    python3 tools/job-search-runtime/job_search_runtime.py release-lock --lock-name "$LOCK_NAME" --owner "$LOCK_OWNER" >>"$RUN_LOG" 2>&1 || true
+  fi
+  rm -f "$AGENT_OUTPUT"
+}
+trap cleanup EXIT
 
 MESSAGE="$(printf 'Pi-primary Personal Office repo root: %s\n\n' "$ROOT"; cat "$PROMPT_FILE")"
 
@@ -64,5 +100,4 @@ set -e
   fi
 } >>"$RUN_LOG"
 
-rm -f "$AGENT_OUTPUT"
 exit "$status"

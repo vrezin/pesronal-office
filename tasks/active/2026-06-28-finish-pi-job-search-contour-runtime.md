@@ -58,6 +58,8 @@ Finish the Raspberry Pi job-search contour so the dedicated OpenClaw `job-search
 - Update 2026-07-01: Telegram ad-hoc vacancy intake boundary scaffolded with `automation/prompts/pi-job-search-telegram-intake.md`, `automation/scripts/run-pi-job-search-telegram-intake.sh`, and runtime CLI commands `telegram-update-status` / `mark-telegram-update`. Pi currently has no configured OpenClaw chat channels, so the Telegram wrapper is expected to write a blocked run log until Telegram is configured outside Git.
 - Update 2026-07-01: Telegram wrapper blocked preflight verified on Pi. With no `TELEGRAM_JOB_SEARCH_TARGET`, it wrote `automation/runs/2026-07-01-1835-pi-job-search-telegram-intake.md` and exited before attempting Telegram reads.
 - Update 2026-07-01: Added Telegram setup path without committing secrets: `automation/scripts/setup-pi-job-search-telegram-channel.sh`, disabled systemd templates for Telegram intake, and runbook `tools/raspberrypi-openclaw/telegram-job-search-setup-2026-07-01.md`. OpenClaw help confirms non-interactive setup supports `openclaw channels add --channel telegram --token <token>`.
+- Update 2026-07-01: Added SQLite TTL run locks to the Pi Gmail and Telegram wrappers. This prevents overlapping scheduled runs when an OpenClaw agent turn is still active or slow; skipped runs leave run-log evidence instead of starting a second scan.
+- Update 2026-07-01: Pi-side lock smoke passed. `acquire-lock` blocks a second owner until release, and `automation/runs/2026-07-01-1842-pi-job-search-telegram-intake.md` proves the Telegram wrapper acquires/releases `pi-job-search-telegram-intake` even on blocked preflight.
 
 ## Gmail/GCalendar Integration Options
 

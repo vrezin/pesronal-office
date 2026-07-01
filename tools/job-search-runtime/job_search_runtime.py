@@ -136,8 +136,84 @@ def print_status(db_path: Path) -> None:
             print("Processed messages:")
             for row in rows:
                 print(f"- {row['source']} {row['status']}: {row['count']}")
-        locks = conn.execute("SELECT COUNT(*) AS count FROM run_locks").fetchone()["count"]
-        print(f"Run locks: {locks}")
+        locks = conn.execute(
+            """
+            SELECT lock_name, owner, acquired_at, expires_at
+            FROM run_locks
+            ORDER BY lock_name
+            """
+        ).fetchall()
+        if not locks:
+            print("Run locks: 0")
+        else:
+            print(f"Run locks: {len(locks)}")
+            for row in locks:
+                print(
+                    f"- {row['lock_name']} owner={row['owner']} "
+                    f"acquired_at={row['acquired_at']} expires_at={row['expires_at']}"
+                )
+
+
+def acquire_lock(db_path: Path, lock_name: str, owner: str, ttl_seconds: int) -> int:
+    init_db(db_path)
+    with connect(db_path) as conn:
+        conn.execute(
+            """
+            DELETE FROM run_locks
+            WHERE lock_name = ?
+              AND expires_at <= strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
+            """,
+            (lock_name,),
+        )
+        try:
+            conn.execute(
+                """
+                INSERT INTO run_locks (lock_name, owner, acquired_at, expires_at, heartbeat_at)
+                VALUES (
+                    ?,
+                    ?,
+                    strftime('%Y-%m-%dT%H:%M:%fZ', 'now'),
+                    strftime('%Y-%m-%dT%H:%M:%fZ', 'now', ?),
+                    strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
+                )
+                """,
+                (lock_name, owner, f"+{ttl_seconds} seconds"),
+            )
+        except sqlite3.IntegrityError:
+            row = conn.execute(
+                "SELECT owner, acquired_at, expires_at FROM run_locks WHERE lock_name = ?",
+                (lock_name,),
+            ).fetchone()
+            print(
+                json.dumps(
+                    {
+                        "acquired": False,
+                        "lock_name": lock_name,
+                        "existing": dict(row) if row else None,
+                    },
+                    sort_keys=True,
+                )
+            )
+            conn.commit()
+            return 1
+        conn.commit()
+    print(json.dumps({"acquired": True, "lock_name": lock_name, "owner": owner}, sort_keys=True))
+    return 0
+
+
+def release_lock(db_path: Path, lock_name: str, owner: str | None) -> int:
+    init_db(db_path)
+    with connect(db_path) as conn:
+        if owner:
+            cursor = conn.execute(
+                "DELETE FROM run_locks WHERE lock_name = ? AND owner = ?",
+                (lock_name, owner),
+            )
+        else:
+            cursor = conn.execute("DELETE FROM run_locks WHERE lock_name = ?", (lock_name,))
+        conn.commit()
+    print(json.dumps({"released": cursor.rowcount, "lock_name": lock_name}, sort_keys=True))
+    return 0
 
 
 def message_status(db_path: Path, source: str, gmail_message_id: str) -> int:
@@ -306,6 +382,13 @@ def parse_args() -> argparse.Namespace:
         help="Seed processed Gmail ids from Markdown monitor state files",
     )
     sub.add_parser("status", help="Print a compact runtime database status")
+    lock_parser = sub.add_parser("acquire-lock", help="Acquire a TTL run lock")
+    lock_parser.add_argument("--lock-name", required=True)
+    lock_parser.add_argument("--owner", required=True)
+    lock_parser.add_argument("--ttl-seconds", type=int, default=3600)
+    release_parser = sub.add_parser("release-lock", help="Release a run lock")
+    release_parser.add_argument("--lock-name", required=True)
+    release_parser.add_argument("--owner")
     message_status_parser = sub.add_parser(
         "message-status",
         help="Print JSON status for one Gmail message id",
@@ -360,6 +443,10 @@ def main() -> int:
         print(f"Seeded {count} processed Gmail ids into {db_path}")
     elif args.command == "status":
         print_status(db_path)
+    elif args.command == "acquire-lock":
+        return acquire_lock(db_path, args.lock_name, args.owner, args.ttl_seconds)
+    elif args.command == "release-lock":
+        return release_lock(db_path, args.lock_name, args.owner)
     elif args.command == "message-status":
         return message_status(db_path, args.source, args.gmail_message_id)
     elif args.command == "mark-message":

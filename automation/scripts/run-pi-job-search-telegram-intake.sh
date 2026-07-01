@@ -15,6 +15,10 @@ RUN_LOG="$ROOT/automation/runs/${RUN_STAMP}-pi-job-search-telegram-intake.md"
 READ_OUTPUT="$(mktemp)"
 AGENT_OUTPUT="$(mktemp)"
 CHANNEL_OUTPUT="$(mktemp)"
+LOCK_NAME="pi-job-search-telegram-intake"
+LOCK_OWNER="${RUN_STAMP}-$$"
+LOCK_TTL_SECONDS="${OPENCLAW_JOB_SEARCH_TELEGRAM_LOCK_TTL_SECONDS:-1800}"
+LOCK_ACQUIRED=0
 
 cd "$ROOT"
 mkdir -p automation/runs automation/state
@@ -38,6 +42,38 @@ EOF
 python3 tools/job-search-runtime/job_search_runtime.py init
 python3 tools/job-search-runtime/job_search_runtime.py status >>"$RUN_LOG"
 
+set +e
+lock_output="$(python3 tools/job-search-runtime/job_search_runtime.py acquire-lock --lock-name "$LOCK_NAME" --owner "$LOCK_OWNER" --ttl-seconds "$LOCK_TTL_SECONDS" 2>&1)"
+lock_status=$?
+set -e
+
+{
+  printf '\n## Lock\n\n'
+  printf '    %s\n' "$lock_output"
+  printf -- '- Lock exit code: `%s`\n' "$lock_status"
+} >>"$RUN_LOG"
+
+if [[ "$lock_status" -ne 0 ]]; then
+  {
+    printf '\n## Wrapper Result\n\n'
+    printf -- '- Finished at: %s\n' "$(date -Iseconds)"
+    printf -- '- Exit code: `0`\n'
+    printf -- '- Status: skipped\n'
+    printf -- '- Reason: another `%s` run lock is active. No Telegram read attempted.\n' "$LOCK_NAME"
+  } >>"$RUN_LOG"
+  rm -f "$READ_OUTPUT" "$AGENT_OUTPUT" "$CHANNEL_OUTPUT"
+  exit 0
+fi
+
+LOCK_ACQUIRED=1
+cleanup() {
+  if [[ "$LOCK_ACQUIRED" -eq 1 ]]; then
+    python3 tools/job-search-runtime/job_search_runtime.py release-lock --lock-name "$LOCK_NAME" --owner "$LOCK_OWNER" >>"$RUN_LOG" 2>&1 || true
+  fi
+  rm -f "$READ_OUTPUT" "$AGENT_OUTPUT" "$CHANNEL_OUTPUT"
+}
+trap cleanup EXIT
+
 if [[ -z "$TARGET" ]]; then
   {
     printf '\n## Wrapper Result\n\n'
@@ -45,7 +81,6 @@ if [[ -z "$TARGET" ]]; then
     printf -- '- Status: blocked\n'
     printf -- '- Reason: TELEGRAM_JOB_SEARCH_TARGET is not set. Telegram intake was not attempted.\n'
   } >>"$RUN_LOG"
-  rm -f "$READ_OUTPUT" "$AGENT_OUTPUT" "$CHANNEL_OUTPUT"
   exit 2
 fi
 
@@ -62,7 +97,6 @@ if grep -q 'no configured chat channels' "$CHANNEL_OUTPUT"; then
     printf -- '- Status: blocked\n'
     printf -- '- Reason: no OpenClaw chat channels are configured. Configure Telegram outside Git before enabling this intake.\n'
   } >>"$RUN_LOG"
-  rm -f "$READ_OUTPUT" "$AGENT_OUTPUT" "$CHANNEL_OUTPUT"
   exit 2
 fi
 
@@ -90,7 +124,6 @@ if [[ "$read_status" -ne 0 ]]; then
     printf -- '- Status: blocked\n'
     printf -- '- Reason: OpenClaw Telegram read failed. No agent routing attempted.\n'
   } >>"$RUN_LOG"
-  rm -f "$READ_OUTPUT" "$AGENT_OUTPUT" "$CHANNEL_OUTPUT"
   exit "$read_status"
 fi
 
@@ -129,5 +162,4 @@ set -e
   fi
 } >>"$RUN_LOG"
 
-rm -f "$READ_OUTPUT" "$AGENT_OUTPUT" "$CHANNEL_OUTPUT"
 exit "$agent_status"
