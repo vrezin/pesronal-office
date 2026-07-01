@@ -4,7 +4,7 @@
 - Host: Raspberry Pi
 - User: `openclaw`
 - Repo: `/home/openclaw/personal-office-agent/personal-office`
-- Status: setup runbook; channel not configured yet
+- Status: Telegram channel configured on 2026-07-01; bot probe works
 
 ## Goal
 
@@ -37,6 +37,18 @@ Required inputs:
 
 - `OPENCLAW_TELEGRAM_BOT_TOKEN` or `OPENCLAW_TELEGRAM_BOT_TOKEN_FILE`;
 - `TELEGRAM_JOB_SEARCH_TARGET`, usually your Telegram chat id or allowed target.
+
+OpenClaw plugin allowlist must include Telegram. Check:
+
+```bash
+openclaw config get plugins.allow
+```
+
+If it only contains `codex`, allow Telegram:
+
+```bash
+openclaw config set plugins.allow '["codex","telegram"]' --strict-json
+```
 
 Recommended token location:
 
@@ -85,6 +97,13 @@ Expected after Telegram is configured:
 - each Telegram update id is checked through SQLite before processing;
 - actionable inputs create/update job-intake artifacts;
 - bot reply follows the Telegram output contract in `automation/prompts/pi-job-search-telegram-intake.md`.
+
+Observed on 2026-07-01:
+
+```text
+Telegram job-search-telegram: installed, configured, enabled, token=tokenFile
+Probe: running, mode=polling, bot:@adreclawbot, works
+```
 
 ## Timer
 

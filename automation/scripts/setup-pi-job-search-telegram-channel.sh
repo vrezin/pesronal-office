@@ -27,7 +27,7 @@ if [[ -z "$TARGET" ]]; then
   exit 2
 fi
 
-"$OPENCLAW_BIN" plugins enable telegram || true
+"$OPENCLAW_BIN" plugins enable telegram
 
 if [[ -n "$TOKEN_FILE" ]]; then
   "$OPENCLAW_BIN" channels add \
