@@ -4,6 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="${PERSONAL_OFFICE_ROOT:-$(cd "$SCRIPT_DIR/../.." && pwd)}"
 PROMPT_FILE="$ROOT/automation/prompts/pi-job-search-gmail-monitor.md"
+OPENCLAW_BIN="${OPENCLAW_BIN:-/home/openclaw/.local/bin/openclaw}"
 TELEGRAM_ENV_FILE="${JOB_SEARCH_TELEGRAM_ENV_FILE:-$HOME/.config/personal-office/job-search-telegram.env}"
 AGENT="${OPENCLAW_JOB_SEARCH_AGENT:-job-search}"
 SESSION_KEY="${OPENCLAW_JOB_SEARCH_SESSION_KEY:-agent:job-search:pi-gmail-monitor}"
@@ -34,6 +35,7 @@ cat >"$RUN_LOG" <<EOF
 - Started at: $(date -Iseconds)
 - Trigger: scheduled/manual wrapper
 - Agent: \`$AGENT\`
+- OpenClaw binary: \`$OPENCLAW_BIN\`
 - Session key: \`$SESSION_KEY\`
 - Repo root: \`$ROOT\`
 - Telegram target: \`${TELEGRAM_TARGET:-unset}\`
@@ -87,7 +89,7 @@ MESSAGE="$(
 )"
 
 set +e
-timeout --kill-after=30s "$TIMEOUT_SECONDS" openclaw agent \
+timeout --kill-after=30s "$TIMEOUT_SECONDS" "$OPENCLAW_BIN" agent \
   --agent "$AGENT" \
   --session-key "$SESSION_KEY" \
   --timeout "$TIMEOUT_SECONDS" \

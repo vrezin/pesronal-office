@@ -5,6 +5,8 @@ Description=Personal Office Pi job-search Gmail monitor
 Type=oneshot
 WorkingDirectory=/home/openclaw/personal-office-agent/personal-office
 Environment=PERSONAL_OFFICE_ROOT=/home/openclaw/personal-office-agent/personal-office
+Environment=OPENCLAW_BIN=/home/openclaw/.local/bin/openclaw
+Environment=PATH=/home/openclaw/.local/bin:/home/openclaw/.local/opt/node-v22-arm64/bin:/usr/local/bin:/usr/bin:/bin
 Environment=OPENCLAW_JOB_SEARCH_TIMEOUT_SECONDS=1200
 EnvironmentFile=-/home/openclaw/.config/personal-office/job-search-telegram.env
 ExecStart=/home/openclaw/personal-office-agent/personal-office/automation/scripts/run-pi-job-search-gmail-monitor.sh

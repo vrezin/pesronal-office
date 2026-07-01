@@ -4,6 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="${PERSONAL_OFFICE_ROOT:-$(cd "$SCRIPT_DIR/../.." && pwd)}"
 PROMPT_FILE="$ROOT/automation/prompts/pi-job-search-telegram-intake.md"
+OPENCLAW_BIN="${OPENCLAW_BIN:-/home/openclaw/.local/bin/openclaw}"
 AGENT="${OPENCLAW_JOB_SEARCH_AGENT:-job-search}"
 SESSION_KEY="${OPENCLAW_JOB_SEARCH_TELEGRAM_SESSION_KEY:-agent:job-search:telegram-intake}"
 TIMEOUT_SECONDS="${OPENCLAW_JOB_SEARCH_TELEGRAM_TIMEOUT_SECONDS:-1200}"
@@ -29,6 +30,7 @@ cat >"$RUN_LOG" <<EOF
 - Started at: $(date -Iseconds)
 - Trigger: scheduled/manual wrapper
 - Agent: \`$AGENT\`
+- OpenClaw binary: \`$OPENCLAW_BIN\`
 - Session key: \`$SESSION_KEY\`
 - Repo root: \`$ROOT\`
 - Telegram target: \`${TARGET:-unset}\`
@@ -84,7 +86,7 @@ if [[ -z "$TARGET" ]]; then
   exit 2
 fi
 
-openclaw channels list >"$CHANNEL_OUTPUT" 2>&1 || true
+"$OPENCLAW_BIN" channels list >"$CHANNEL_OUTPUT" 2>&1 || true
 {
   printf '\n## Channel Preflight\n\n'
   sed 's/^/    /' "$CHANNEL_OUTPUT"
@@ -106,7 +108,7 @@ if [[ -n "$ACCOUNT" ]]; then
 fi
 
 set +e
-openclaw "${read_args[@]}" >"$READ_OUTPUT" 2>&1
+"$OPENCLAW_BIN" "${read_args[@]}" >"$READ_OUTPUT" 2>&1
 read_status=$?
 set -e
 
@@ -136,7 +138,7 @@ MESSAGE="$(
 )"
 
 set +e
-timeout --kill-after=30s "$TIMEOUT_SECONDS" openclaw agent \
+timeout --kill-after=30s "$TIMEOUT_SECONDS" "$OPENCLAW_BIN" agent \
   --agent "$AGENT" \
   --session-key "$SESSION_KEY" \
   --timeout "$TIMEOUT_SECONDS" \

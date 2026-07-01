@@ -2,6 +2,7 @@
 set -euo pipefail
 
 CONFIG_DIR="${PERSONAL_OFFICE_CONFIG_DIR:-$HOME/.config/personal-office}"
+OPENCLAW_BIN="${OPENCLAW_BIN:-/home/openclaw/.local/bin/openclaw}"
 ENV_FILE="${JOB_SEARCH_TELEGRAM_ENV_FILE:-$CONFIG_DIR/job-search-telegram.env}"
 TOKEN_FILE="${OPENCLAW_TELEGRAM_BOT_TOKEN_FILE:-}"
 TOKEN="${OPENCLAW_TELEGRAM_BOT_TOKEN:-}"
@@ -25,7 +26,7 @@ if [[ -z "$TARGET" ]]; then
   exit 2
 fi
 
-openclaw channels add \
+"$OPENCLAW_BIN" channels add \
   --channel telegram \
   --account "$ACCOUNT" \
   --name "Personal Office Job Search" \
