@@ -63,6 +63,7 @@ Finish the Raspberry Pi job-search contour so the dedicated OpenClaw `job-search
 - Update 2026-07-01: Wired Telegram outbound readiness into the Pi Gmail monitor. The Gmail wrapper now loads `/home/openclaw/.config/personal-office/job-search-telegram.env` when present and passes Telegram target/account to the `job-search` agent; the Gmail prompt now requires Telegram decision packets for actionable findings, or an intended packet in the run log when Telegram is unavailable.
 - Update 2026-07-01: Pi Gmail wrapper outbound-readiness smoke wrote `automation/runs/2026-07-01-1846-pi-job-search-gmail-monitor.md`; the log shows `Telegram target: unset`, `Telegram account: default`, lock acquisition, timeout-blocked result, and lock release.
 - Update 2026-07-01: Added Pi-primary artifact sync timer templates and upgraded `automation/scripts/run-pi-job-search-sync.sh` to write its own run log. The sync phase is separate from Gmail/Telegram monitors and can push allowed runtime artifacts to the private remote after monitor runs.
+- Update 2026-07-01: First manual systemd sync service run succeeded and pushed `job-search: sync pi runtime artifacts`, but revealed the sync wrapper was appending final status to its run log after committing it. The wrapper was fixed to finalize the run log before `git add/commit` and keep commit/push output out of the committed run log.
 
 ## Gmail/GCalendar Integration Options
 

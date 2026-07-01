@@ -27,8 +27,10 @@ EOF
 
 exec > >(tee -a "$RUN_LOG") 2>&1
 
-on_exit() {
-  local status=$?
+FINALIZED=0
+
+finalize_run_log() {
+  local status="$1"
   {
     printf '\n## Wrapper Result\n\n'
     printf -- '- Finished at: %s\n' "$(date -Iseconds)"
@@ -39,6 +41,14 @@ on_exit() {
       printf -- '- Status: blocked\n'
     fi
   } >>"$RUN_LOG"
+  FINALIZED=1
+}
+
+on_exit() {
+  local status=$?
+  if [[ "$FINALIZED" -eq 0 ]]; then
+    finalize_run_log "$status"
+  fi
 }
 trap on_exit EXIT
 
@@ -116,6 +126,7 @@ fi
 
 if [[ -z "$(changed_allowed_paths)" ]]; then
   log "no allowed path changes to sync"
+  finalize_run_log 0
   exit 0
 fi
 
@@ -124,8 +135,12 @@ changed_allowed_paths >&2
 
 if [[ "$MODE" == "dry-run" ]]; then
   log "dry-run: not committing or pushing"
+  finalize_run_log 0
   exit 0
 fi
+
+log "committing and pushing allowed changes"
+finalize_run_log 0
 
 git add \
   automation/runs \
@@ -135,7 +150,7 @@ git add \
   tasks/waiting \
   personal-projects/personal-brand/workspace/job-intake
 
-git commit -m "job-search: sync pi runtime artifacts"
-git push "$REMOTE" "HEAD:$BRANCH"
+git commit -m "job-search: sync pi runtime artifacts" >/tmp/personal-office-job-search-sync-git.log 2>&1
+git push "$REMOTE" "HEAD:$BRANCH" >>/tmp/personal-office-job-search-sync-git.log 2>&1
 
 log "sync complete"
