@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import sqlite3
@@ -139,6 +140,95 @@ def print_status(db_path: Path) -> None:
         print(f"Run locks: {locks}")
 
 
+def message_status(db_path: Path, source: str, gmail_message_id: str) -> int:
+    init_db(db_path)
+    with connect(db_path) as conn:
+        row = conn.execute(
+            """
+            SELECT source, gmail_message_id, gmail_thread_id, internal_date,
+                   sender, subject, classification, status, artifact_path,
+                   run_id, first_seen_at, last_seen_at, notes
+            FROM processed_messages
+            WHERE source = ? AND gmail_message_id = ?
+            """,
+            (source, gmail_message_id),
+        ).fetchone()
+    if row is None:
+        print(json.dumps({"processed": False, "source": source, "gmail_message_id": gmail_message_id}))
+    else:
+        payload = dict(row)
+        payload["processed"] = True
+        print(json.dumps(payload, ensure_ascii=False, sort_keys=True))
+    return 0
+
+
+def mark_message(
+    db_path: Path,
+    *,
+    source: str,
+    gmail_message_id: str,
+    gmail_thread_id: str | None,
+    internal_date: str | None,
+    header_date: str | None,
+    sender: str | None,
+    subject: str | None,
+    classification: str | None,
+    status: str,
+    artifact_path: str | None,
+    run_id: str | None,
+    notes: str | None,
+) -> None:
+    init_db(db_path)
+    with connect(db_path) as conn:
+        conn.execute(
+            """
+            INSERT INTO processed_messages (
+                source,
+                gmail_message_id,
+                gmail_thread_id,
+                internal_date,
+                header_date,
+                sender,
+                subject,
+                classification,
+                status,
+                artifact_path,
+                run_id,
+                notes
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(source, gmail_message_id) DO UPDATE SET
+                gmail_thread_id = COALESCE(excluded.gmail_thread_id, processed_messages.gmail_thread_id),
+                internal_date = COALESCE(excluded.internal_date, processed_messages.internal_date),
+                header_date = COALESCE(excluded.header_date, processed_messages.header_date),
+                sender = COALESCE(excluded.sender, processed_messages.sender),
+                subject = COALESCE(excluded.subject, processed_messages.subject),
+                classification = COALESCE(excluded.classification, processed_messages.classification),
+                status = excluded.status,
+                artifact_path = COALESCE(excluded.artifact_path, processed_messages.artifact_path),
+                run_id = COALESCE(excluded.run_id, processed_messages.run_id),
+                last_seen_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now'),
+                notes = COALESCE(excluded.notes, processed_messages.notes)
+            """,
+            (
+                source,
+                gmail_message_id,
+                gmail_thread_id,
+                internal_date,
+                header_date,
+                sender,
+                subject,
+                classification,
+                status,
+                artifact_path,
+                run_id,
+                notes,
+            ),
+        )
+        conn.commit()
+    print(f"Marked {source}:{gmail_message_id} status={status}")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -153,6 +243,28 @@ def parse_args() -> argparse.Namespace:
         help="Seed processed Gmail ids from Markdown monitor state files",
     )
     sub.add_parser("status", help="Print a compact runtime database status")
+    message_status_parser = sub.add_parser(
+        "message-status",
+        help="Print JSON status for one Gmail message id",
+    )
+    message_status_parser.add_argument("--source", required=True, choices=["hh", "linkedin"])
+    message_status_parser.add_argument("--gmail-message-id", required=True)
+    mark_parser = sub.add_parser(
+        "mark-message",
+        help="Record or update one processed Gmail message id",
+    )
+    mark_parser.add_argument("--source", required=True, choices=["hh", "linkedin"])
+    mark_parser.add_argument("--gmail-message-id", required=True)
+    mark_parser.add_argument("--gmail-thread-id")
+    mark_parser.add_argument("--internal-date")
+    mark_parser.add_argument("--header-date")
+    mark_parser.add_argument("--sender")
+    mark_parser.add_argument("--subject")
+    mark_parser.add_argument("--classification")
+    mark_parser.add_argument("--status", default="processed")
+    mark_parser.add_argument("--artifact-path")
+    mark_parser.add_argument("--run-id")
+    mark_parser.add_argument("--notes")
     return parser.parse_args()
 
 
@@ -168,6 +280,24 @@ def main() -> int:
         print(f"Seeded {count} processed Gmail ids into {db_path}")
     elif args.command == "status":
         print_status(db_path)
+    elif args.command == "message-status":
+        return message_status(db_path, args.source, args.gmail_message_id)
+    elif args.command == "mark-message":
+        mark_message(
+            db_path,
+            source=args.source,
+            gmail_message_id=args.gmail_message_id,
+            gmail_thread_id=args.gmail_thread_id,
+            internal_date=args.internal_date,
+            header_date=args.header_date,
+            sender=args.sender,
+            subject=args.subject,
+            classification=args.classification,
+            status=args.status,
+            artifact_path=args.artifact_path,
+            run_id=args.run_id,
+            notes=args.notes,
+        )
     else:
         raise AssertionError(args.command)
     return 0
