@@ -8,9 +8,11 @@
 
 ## Verdict
 
-`maybe / selective`, closer to `B/C-class`.
+`rejected / closed`.
 
-This is a real and fairly clean fintech engineering-management role, but it is probably down-leveled for the current target profile: Team Lead for a 7-person team, not Head of Engineering / CTO / Director scope. It is worth a fast salary-and-scope check because remote-from-anywhere plus Uzbekistan IT Park/legal setup may be practical, but it does not deserve a tailored CV before a human response.
+HH rejection received on 2026-07-02 for vacancy `134758284`: the employer is not ready to invite the candidate. No follow-up is needed unless a direct recruiter/hiring-manager contact appears with materially different context.
+
+Before closure, this looked like a real and fairly clean fintech engineering-management role, but probably down-leveled for the current target profile: Team Lead for a 7-person team, not Head of Engineering / CTO / Director scope.
 
 ## Best CV
 
@@ -60,4 +62,11 @@ No ATS tailoring. No long cover letter. Use an existing CV if compensation and r
 
 ## Next Action
 
-Clarify salary, legal/remote setup, and hands-on Java depth. If the answers are acceptable, apply with the Stability & Governance CV and the short note above. If salary is clearly team-lead/local-market level, skip.
+Closed after HH rejection. Do not pursue further through the normal HH channel.
+
+## Status Update
+
+- 2026-07-02: HH email `19f24808a3ca3ecc` reported: `Работодатель не готов пригласить вас`.
+- Vacancy in email: `Team Lead команды разработки (Payment Mechanics)` at `UZUM TECHNOLOGIES. IT`.
+- Runtime classification: `status_update`.
+- Runtime status: `processed`.

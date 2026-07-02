@@ -1,6 +1,6 @@
 # Vacancy Review Index
 
-Updated: 2026-07-02
+Updated: 2026-07-03
 
 This is the operating index of reviewed vacancies. It summarizes the detailed artifacts in `analyses/` and links each row back to the full analysis.
 
@@ -23,7 +23,7 @@ This is the operating index of reviewed vacancies. It summarizes the detailed ar
 
 | Date | Company | Role | Track | CV | Decision | Priority | Next | Analysis |
 |---|---|---|---|---|---|---|---|---|
-| 2026-07-02 | UZUM TECHNOLOGIES. IT | Team Lead команды разработки (Payment Mechanics) | Stability & Governance / Product Engineering / Fintech payments | `CTO - Head of Engineering - Stability and Governance.pdf` | maybe / selective salary-and-scope check | B/C-class / medium practical, possible downlevel | Clarify compensation band, remote/legal setup under Uzbekistan labor code, and hands-on Java/payments depth. If acceptable, apply with Stability & Governance CV and short note; no tailored CV before a human response. | `analyses/parked/2026-07-02-uzum-technologies-team-lead-payment-mechanics-analysis.md` |
+| 2026-07-02 | UZUM TECHNOLOGIES. IT | Team Lead команды разработки (Payment Mechanics) | Stability & Governance / Product Engineering / Fintech payments | `CTO - Head of Engineering - Stability and Governance.pdf` | rejected / closed | closed | HH rejection received on 2026-07-02; no follow-up unless a direct contact appears with materially different context. | `analyses/parked/2026-07-02-uzum-technologies-team-lead-payment-mechanics-analysis.md` |
 | 2026-07-01 | Xapo Bank | Head of Engineering (Remote - Work from Anywhere) | Stability & Governance / Heavy Enterprise / AI Transformation | `CTO - Head of Engineering - Stability and Governance.pdf` | maybe / clarify first | B+ class / medium-high | Clarify residence/nationality eligibility and compensation band first. If acceptable, apply with Stability & Governance CV and short cover note; no targeted CV before those gates are known. | `analyses/2026-07-01-xapo-bank-head-of-engineering-analysis.md` |
 | 2026-06-23 | LinkedIn Dublin/Ireland selection: Toast / iForce / Aptiv / Primark / Amazon / Personio / Women in AI / Reconiq | Director Software Engineering / AI Pod / Cloud Platform / Similar Jobs cluster | AI Transformation + Stability & Governance / Developer Platform | AI Transformation CV only if reopened; no tailoring now | parked / market signal | C/B overall; Toast is B+ content signal | Do not apply from the batch unless Ireland/UK legal setup, relocation interest and compensation are clarified first. Toast is the only role to reopen if location gate changes. | `analyses/parked/2026-06-23-linkedin-director-software-engineering-dublin-selection-analysis.md` |
 | 2026-06-23 | НООСФЕРА | CTO / Head of Engineering / Tech Lead | Startup / Product Engineering + Stability & Governance / AI Transformation | `CTO - Co-founder CTO - Head of Product Engineering.pdf` | applied / waiting | B-class / medium-high | Application sent on 2026-06-23. If they reply, clarify compensation, product domain, team size and hands-on depth in Python/Go/AWS/Kubernetes. | `analyses/2026-06-23-noosfera-cto-head-engineering-tech-lead-analysis.md` |

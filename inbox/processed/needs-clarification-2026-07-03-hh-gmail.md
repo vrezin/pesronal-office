@@ -5,6 +5,7 @@
 - Gmail message ids:
   - `19f2342b5904a58d`
   - `19f2344884afb3be`
+  - `19f248268018bf80`
 - Classification: `status_update`
 - Runtime status: `needs_human`
 - Gmail was read-only; no labels, read state, archive state, stars, or importance were changed.
@@ -22,6 +23,14 @@ Two minutes later HH sent a related employer chat notification:
 ```text
 Владимир Сергеевич, здравствуйте! Спасибо за интерес к вакансии! Мы ценим ваше желание работать с нами, но уже закрыли эту позицию. Успехов в поиске работы! Майорова Мадина
 ```
+
+Later in the same Gmail thread, HH sent another employer chat notification:
+
+```text
+Владимир Сергеевич, здравствуйте! Большое спасибо за интерес к нашей компании! К сожалению, сейчас мы не готовы пригласить вас на следующий этап. Ценим ваше внимание и будем рады взаимодействию в будущем.Рахманова Эмилия
+```
+
+This later message also lacks a vacancy id, company name, location, and role title in the email body.
 
 ## Routing Decision
 
@@ -43,11 +52,12 @@ source_agent: job-search
 domain: personal-brand/job-search
 priority: normal
 user_intent: status_update
-summary: HH rejection/closure received for Tensor, role title "Руководитель направления разработки"; exact vacancy row is ambiguous.
+summary: HH rejection/closure received for Tensor-like "Руководитель направления разработки" thread; exact vacancy row remains ambiguous after a later same-thread rejection chat.
 verdict: clarify
 reasons:
   - HH email confirms rejection/closure, but does not include vacancy id or location.
   - Multiple Tensor/Saby rows exist with very similar titles.
+  - Later same-thread chat message also omits company, vacancy id, location and role title.
 cv: null
 cover_letter: null
 next_action: confirm which Tensor/Saby vacancy should be closed, or match through HH vacancy id in the authenticated HH contour.
@@ -59,4 +69,3 @@ artifacts:
 blocked_on:
   - Which Tensor/Saby vacancy row should be marked closed?
 ```
-
