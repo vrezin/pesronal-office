@@ -61,6 +61,9 @@ structured handoffs in the minimal format defined by
   helper for a separate intake Telegram account.
 - `tools/raspberrypi-openclaw/intake-agent-workspace-AGENTS.md` - bootstrap
   instructions copied to the OpenClaw `intake` workspace.
+- `tools/raspberrypi-openclaw/intake-agent-workspace-BOOTSTRAP.md` - runtime
+  bootstrap override that disables generic OpenClaw onboarding for the intake
+  workspace.
 - `secretaries/handoff-contract.md` - minimal internal agent handoff format.
 
 ## Runtime Evidence
@@ -79,6 +82,21 @@ structured handoffs in the minimal format defined by
   `intake <- telegram accountId=personal-office-intake-telegram`.
 - `job-search` has `0` routing rules and no direct Telegram binding.
 - `openclaw-gateway.service` was restarted and is active on the Pi.
+- First Telegram test exposed pairing mode; sender `telegram:113174019` was
+  approved with `openclaw pairing approve telegram <code>`.
+- Second Telegram test proved gateway routing to
+  `session:agent:intake:telegram:direct:113174019`, but failed because the
+  isolated `intake` agent had no OpenAI auth profile.
+- Runtime fix: initialized
+  `/home/openclaw/personal-office-agent/openclaw-agents/intake` from the
+  working default agent runtime state, then corrected
+  `schema_meta.agent_id` in `intake/openclaw-agent.sqlite` from `default` to
+  `intake`.
+- Final Telegram smoke succeeded: the intake agent created
+  `inbox/processed/2026-07-02-reminder-call-insurance.md`,
+  `tasks/active/2026-07-03-call-insurance.md`, created OpenClaw cron
+  `08e9a569-a568-456d-93dc-8a6a01daf279`, and sent a Telegram reply without
+  the previous auth/database identity errors.
 
 ## Setup Sketch
 
