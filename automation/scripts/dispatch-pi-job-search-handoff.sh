@@ -114,7 +114,13 @@ cleanup() {
 }
 trap cleanup EXIT
 
-SESSION_KEY="agent:job-search:handoff-dispatch:$(printf '%s' "$HANDOFF_PATH" | tr -c '[:alnum:]' '-' | tr '[:upper:]' '[:lower:]' | cut -c1-120)"
+SESSION_KEY_BASE="$(printf '%s' "$HANDOFF_PATH" | tr -c '[:alnum:]' '-' | tr '[:upper:]' '[:lower:]' | cut -c1-90)"
+SESSION_KEY_SUFFIX="${OPENCLAW_JOB_SEARCH_HANDOFF_SESSION_SUFFIX:-$RUN_STAMP}"
+SESSION_KEY="agent:job-search:handoff-dispatch:${SESSION_KEY_BASE}:${SESSION_KEY_SUFFIX}"
+
+{
+  printf -- '- Session key: `%s`\n' "$SESSION_KEY"
+} >>"$RUN_LOG"
 
 MESSAGE="$(
   printf 'Pi-primary Personal Office repo root: %s\n' "$ROOT"

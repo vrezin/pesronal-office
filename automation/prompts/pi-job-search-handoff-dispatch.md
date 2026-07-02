@@ -21,6 +21,19 @@ structured handoff for the intake/output secretary.
 
 - Do not send Telegram directly.
 - Do not stream tool logs or implementation chatter into the final answer.
+- Keep this dispatch narrow. First extract exact job id / HH id / company / role
+  from the handoff and search only exact identifiers before reading broad
+  indexes.
+- For LinkedIn job-alert/status cases, do not read full `INDEX.md`,
+  `COMPANY_NOTES.md`, or all analyses unless the live source exposes a full JD
+  that is not already represented by exact-id artifacts.
+- Fast path for known thin/status LinkedIn jobs:
+  1. grep the exact LinkedIn job id in `inbox/processed/`, `automation/runs/`,
+     and `personal-projects/personal-brand/workspace/job-intake/processed/`;
+  2. call LinkedIn details once if available;
+  3. if the live source still exposes only status/posting shell and existing
+     artifacts already record application/alert state, return `wait` or `no-op`
+     without creating JD/archive/analysis artifacts.
 - If the vacancy/opportunity was already processed, do not duplicate artifacts.
 - If source enrichment fails but durable artifacts already exist, use the
   durable artifacts as the evidence source and record the live-source failure in
@@ -60,3 +73,7 @@ artifacts:
 blocked_on:
   - question if any
 ```
+
+Aim to finish in under 120 seconds for duplicate/thin/status handoffs. If a
+normal full JD analysis would take longer, write a blocked/parked note and return
+a structured handoff instead of continuing broad exploration.
