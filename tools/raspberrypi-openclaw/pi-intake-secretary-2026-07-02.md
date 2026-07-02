@@ -65,6 +65,11 @@ structured handoffs in the minimal format defined by
   bootstrap override that disables generic OpenClaw onboarding for the intake
   workspace.
 - `secretaries/handoff-contract.md` - minimal internal agent handoff format.
+- `automation/prompts/pi-job-search-handoff-dispatch.md` - single-handoff
+  prompt for the `job-search` agent.
+- `automation/scripts/dispatch-pi-job-search-handoff.sh` - dispatcher from
+  intake-created handoff artifact to `job-search` agent run and structured
+  handoff output.
 
 ## Runtime Evidence
 
@@ -97,6 +102,26 @@ structured handoffs in the minimal format defined by
   `tasks/active/2026-07-03-call-insurance.md`, created OpenClaw cron
   `08e9a569-a568-456d-93dc-8a6a01daf279`, and sent a Telegram reply without
   the previous auth/database identity errors.
+- Follow-up routing smoke showed the remaining gap:
+  `intake -> durable handoff artifact` worked, and `job-search -> structured
+  handoff` worked when run manually, but there was no small dispatcher joining
+  those two steps.
+- Dispatcher target:
+  `intake handoff -> dispatch-pi-job-search-handoff.sh -> job-search structured
+  handoff -> intake/output reply`.
+- Dispatcher installed and smoke-tested:
+  `automation/scripts/dispatch-pi-job-search-handoff.sh` processed the existing
+  HH vacancy `134758284` handoff, called `job-search`, wrote
+  `automation/runs/2026-07-02-1805-pi-job-search-handoff-dispatch.md`, and
+  returned a structured handoff.
+- Integrated intake smoke succeeded: after the prompt update, `intake` routed a
+  Telegram-style HH vacancy message, reused the handoff artifact, called the
+  dispatcher, and returned a concise intake/output reply without exposing raw
+  dispatcher output as the user-facing answer.
+- Intake model was changed from `openai/gpt-5.5` to
+  `openai/gpt-5.4-mini`; `job-search` remains on `openai/gpt-5.5`.
+- Post-switch mini smoke succeeded: `intake` correctly classified a
+  non-operational smoke message as requiring no durable artifact.
 
 ## Setup Sketch
 

@@ -70,8 +70,18 @@ Known downstream routes:
 - raw life/health/family input:
   Life artifacts under `life/`, with health safety rules.
 
-If the input clearly belongs to job-search, create a thin intake trace and hand
-off rather than duplicating the job-search workflow.
+If the input clearly belongs to job-search, create a thin intake trace and
+handoff rather than duplicating the job-search workflow. Then dispatch that
+handoff through:
+
+```bash
+automation/scripts/dispatch-pi-job-search-handoff.sh <handoff-path>
+```
+
+Use the dispatcher output as internal evidence only. Rewrite the returned
+`secretaries/handoff-contract.md` YAML into a concise human reply. If the
+dispatcher is unavailable or returns blocked/skipped, keep the handoff artifact
+and tell the user what is blocked.
 
 Examples:
 
@@ -88,6 +98,13 @@ copy. Use `secretaries/handoff-contract.md`.
 
 Rewrite the handoff into a concise human reply. Do not forward shell logs,
 debugging chatter, tool calls, or raw system output to Telegram.
+
+For job-search handoffs, prefer the dispatcher wrapper above over calling the
+`job-search` agent ad hoc. The expected flow is:
+
+```text
+intake creates handoff -> dispatcher runs job-search -> intake rewrites result
+```
 
 ## Output Contract
 

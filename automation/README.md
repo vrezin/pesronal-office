@@ -52,10 +52,24 @@ General Pi intake secretary setup is scaffolded by:
 - `automation/scripts/setup-pi-intake-telegram-channel.sh`;
 - `tools/raspberrypi-openclaw/pi-intake-secretary-2026-07-02.md`.
 
+Pi intake-to-job-search dispatch is scaffolded by:
+
+- `automation/prompts/pi-job-search-handoff-dispatch.md`;
+- `automation/scripts/dispatch-pi-job-search-handoff.sh`.
+
 The intended Telegram front door is `personal-office-intake-telegram`, bound to
 the `intake` agent. `job-search` should not have a direct Telegram binding; it
 should receive handoffs from intake and write structured results back for
 intake/output formatting.
+
+For ad-hoc Telegram vacancy/recruiter inputs, the intended internal flow is:
+
+```text
+Telegram -> intake -> job-search handoff artifact
+         -> dispatch-pi-job-search-handoff.sh
+         -> job-search structured handoff
+         -> intake/output reply
+```
 
 The active path is OpenClaw Gateway routing, not scheduled `openclaw message read`.
 Telegram account `personal-office-intake-telegram` should be bound to the
