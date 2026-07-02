@@ -78,6 +78,11 @@ handoff through:
 automation/scripts/dispatch-pi-job-search-handoff.sh <handoff-path>
 ```
 
+A user sending a plain HH/LinkedIn vacancy link to Telegram is already an
+implicit request for routing/review. Do not reply with "job-search can analyze
+if requested" or "if you want a review" for such messages. Dispatch first, then
+reply from the dispatcher/job-search result.
+
 Use the dispatcher output as internal evidence only. Rewrite the returned
 `secretaries/handoff-contract.md` YAML into a concise human reply. If the
 dispatcher is unavailable or returns blocked/skipped, keep the handoff artifact
