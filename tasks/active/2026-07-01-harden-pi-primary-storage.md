@@ -82,6 +82,9 @@ always-on home automation host.
   `run-pi-job-search-sync.sh` now skips while Gmail/Telegram runtime locks are
   active. Verified Pi commit:
   `adb86e1 job-search: skip sync while runtime locks are active`.
+- First post-migration Telegram decision-packet smoke passed using the existing
+  Xapo Telegram intake as source truth. OpenClaw sent Telegram message id `358`,
+  and the run log was synced in `46203e1 job-search: sync pi runtime artifacts`.
 
 ## Target Direction
 
@@ -115,7 +118,7 @@ SSD/NVMe path is available.
 
 ## Next Actions
 
-1. Let one Telegram inbound intake run on the USB-backed runtime.
+1. Let one natural Telegram inbound intake run on the USB-backed runtime.
 2. Verify LinkedIn/HH auth state after the migration.
 3. Observe the next scheduled Gmail monitor with the sync-lock mitigation in
    place.

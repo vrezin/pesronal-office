@@ -173,6 +173,7 @@ Stored: <trace path if created>
 - Telegram channel `job-search-telegram` is configured, enabled, and bound to `job-search`.
 - Telegram inbound E2E passed for a forwarded LinkedIn URL, creating job-search artifacts and replying in Telegram.
 - Telegram outbound transport smoke passed on 2026-07-02; OpenClaw sent message id `357` through `job-search-telegram`.
+- Telegram outbound decision-packet smoke passed on 2026-07-02 from the existing Xapo Telegram intake. The packet included verdict, CV, cover-letter draft reference, next action, and artifact paths; OpenClaw sent Telegram message id `358`. Evidence: `automation/runs/2026-07-02-1649-pi-job-search-telegram-decision-packet-smoke.md`.
 - Pi-primary runtime hot paths moved from microSD to direct USB ext4 storage at `/srv/personal-office`, with bind mounts for the Personal Office repo, OpenClaw state, and Personal Office config/secrets.
 - Pi sync wrapper skips artifact sync while Gmail or Telegram runtime locks are active, preventing partial run-log commits during long OpenClaw agent turns. Evidence: `adb86e1 job-search: skip sync while runtime locks are active`.
 
@@ -184,7 +185,7 @@ Stored: <trace path if created>
 4. Done for first slice: Adapt HH/LinkedIn Gmail monitor prompts to use Pi-local `google_workspace`.
 5. Done for Gmail: Create Pi-side scheduled wrappers/systemd timers.
 6. Done for first slice: Add Telegram inbound routing to `job-search`; OpenClaw Gateway route passed a forwarded LinkedIn URL E2E.
-7. Done for transport, pending for next actionable vacancy: Telegram outbound send works; the full decision packet contract must be observed on the next role with enough JD detail.
+7. Done for first decision-packet slice: Telegram outbound send works and the full packet contract was observed on the Xapo intake.
 8. Done for Gmail and scaffolded for Telegram: Extend duplicate-state handling from seeded baseline to normal scheduled writes.
 9. Done: Run a fresh Inbox E2E scheduled Gmail test; 2026-07-02 run processed fresh LinkedIn status/update messages and a thin alert.
-10. Pending: observe the next actionable Telegram vacancy intake after the USB migration and confirm verdict/CV/CL packet quality.
+10. Follow-up: observe the next natural actionable Telegram vacancy after the USB migration to confirm the same packet quality without a manual smoke trigger.

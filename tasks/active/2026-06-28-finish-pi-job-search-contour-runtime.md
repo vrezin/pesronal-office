@@ -76,6 +76,7 @@ Finish the Raspberry Pi job-search contour so the dedicated OpenClaw `job-search
 - Update 2026-07-02: Pi sync wrapper pushed completed monitor artifacts/state after the run. Latest verified Pi commit: `cc3ba09 job-search: sync pi runtime artifacts`; Pi worktree was clean after sync.
 - Update 2026-07-02: Telegram outbound smoke passed after the USB migration using `openclaw message send --channel telegram --account job-search-telegram --target <configured target>`; OpenClaw reported `Sent via telegram. Message ID: 357`.
 - Update 2026-07-02: Fixed a sync race observed during the 16:23 monitor run. `run-pi-job-search-sync.sh` now checks SQLite runtime locks and skips sync while `pi-job-search-gmail-monitor` or `pi-job-search-telegram-intake` is active, avoiding partial run-log commits. Pi smoke passed with an active test lock, and the fix was pushed as `adb86e1 job-search: skip sync while runtime locks are active`.
+- Update 2026-07-02: Telegram outbound decision-packet smoke passed using the existing Telegram inbound Xapo intake as source truth. The packet included verdict, rationale, selected CV, cover-letter draft reference, next action, and artifact paths; OpenClaw sent it through `job-search-telegram` as Telegram message id `358`. Evidence: `automation/runs/2026-07-02-1649-pi-job-search-telegram-decision-packet-smoke.md`; synced in `46203e1 job-search: sync pi runtime artifacts`.
 
 ## Gmail/GCalendar Integration Options
 
@@ -199,7 +200,7 @@ Cons:
 4. Done 2026-07-01 for first monitor slice: adapt/mirror HH and LinkedIn Gmail monitoring into a Pi-local OpenClaw prompt using `google_workspace` and SQLite dedupe.
 5. Done 2026-07-02 for first production-like slice: conservative polling, timeout/watchdog behavior, SQLite locks, systemd timer, and post-run sync are installed and observed.
 6. Done 2026-07-01 for OpenClaw Gateway path: Telegram inbound routing for ad-hoc vacancy intake is live for `job-search-telegram` and passed one LinkedIn URL E2E. The old polling wrapper remains diagnostic/disabled.
-7. Done 2026-07-02 for transport smoke: Telegram outbound send through `job-search-telegram` works. Still pending: next actionable vacancy should produce the full decision packet with verdict, selected CV, cover letter draft, and next action.
+7. Done 2026-07-02 for decision-packet slice: Telegram outbound send through `job-search-telegram` works and a real Xapo intake packet with verdict, selected CV, cover-letter draft reference, next action, and artifact paths was sent.
 8. Done 2026-07-02 for fresh Inbox scheduled monitor: processed fresh LinkedIn status/update messages and a thin alert from Gmail using Pi-local `google_workspace` and SQLite dedupe.
 9. Keep Option A only as a proof-of-concept fallback; do not treat workstation/Codex handoff as solved production architecture.
-10. Observe the next scheduled run at about `2026-07-02 20:25 +07` with the sync-lock fix in place, then remove microSD rollback copies only after the storage acceptance window passes.
+10. Follow-up: observe the next scheduled run at about `2026-07-02 20:25 +07` with the sync-lock fix in place, then remove microSD rollback copies only after the storage acceptance window passes.
