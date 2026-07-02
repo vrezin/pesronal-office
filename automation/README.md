@@ -62,13 +62,27 @@ the `intake` agent. `job-search` should not have a direct Telegram binding; it
 should receive handoffs from intake and write structured results back for
 intake/output formatting.
 
+Ad-hoc job-search requests from Telegram should use async dispatch:
+
+- `automation/scripts/enqueue-pi-job-search-handoff.sh` - called by intake after
+  it creates a handoff; returns quickly so Telegram can acknowledge receipt.
+- `automation/scripts/dispatch-pi-job-search-handoff.sh` - called by the async
+  worker or by an operator for manual/synchronous dispatch.
+
+The async worker sends the final Telegram follow-up through
+`personal-office-intake-telegram` after the job-search result is recorded. This
+same follow-up pattern should be reused for actionable Gmail-derived A/B+
+vacancy decisions.
+
 For ad-hoc Telegram vacancy/recruiter inputs, the intended internal flow is:
 
 ```text
 Telegram -> intake -> job-search handoff artifact
-         -> dispatch-pi-job-search-handoff.sh
+         -> enqueue-pi-job-search-handoff.sh
+         -> immediate intake acknowledgement
+         -> async worker -> dispatch-pi-job-search-handoff.sh
          -> job-search structured handoff
-         -> intake/output reply
+         -> Telegram follow-up through intake account
 ```
 
 The active path is OpenClaw Gateway routing, not scheduled `openclaw message read`.

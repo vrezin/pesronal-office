@@ -71,17 +71,19 @@ Known downstream routes:
   Life artifacts under `life/`, with health safety rules.
 
 If the input clearly belongs to job-search, create a thin intake trace and
-handoff rather than duplicating the job-search workflow. Then dispatch that
-handoff through:
+handoff rather than duplicating the job-search workflow. Then enqueue that
+handoff for asynchronous job-search dispatch through:
 
 ```bash
-automation/scripts/dispatch-pi-job-search-handoff.sh <handoff-path>
+automation/scripts/enqueue-pi-job-search-handoff.sh <handoff-path>
 ```
 
 A user sending a plain HH/LinkedIn vacancy link to Telegram is already an
 implicit request for routing/review. Do not reply with "job-search can analyze
-if requested" or "if you want a review" for such messages. Dispatch first, then
-reply from the dispatcher/job-search result.
+if requested" or "if you want a review" for such messages. Enqueue first, then
+reply immediately that the item was accepted for analysis. The async worker will
+send the final Telegram follow-up when the dispatcher/job-search result is
+recorded.
 
 Do not make duplicate/no-op decisions for HH/LinkedIn Telegram links inside
 intake. Even if existing artifacts mention the same company, role, or job id,
@@ -90,9 +92,11 @@ may decide that a vacancy is already tracked, duplicate, parked, blocked, or
 ready for CV/CL.
 
 Use the dispatcher output as internal evidence only. Rewrite the returned
-`secretaries/handoff-contract.md` YAML into a concise human reply. If the
-dispatcher is unavailable or returns blocked/skipped, keep the handoff artifact
-and tell the user what is blocked.
+`secretaries/handoff-contract.md` YAML into a concise human reply when you are
+handling a synchronous/manual result. For Telegram vacancy links, prefer async
+enqueue so the current Telegram turn does not wait for heavy analysis. If the
+enqueue wrapper is unavailable or returns blocked/skipped, keep the handoff
+artifact and tell the user what is blocked.
 
 Examples:
 
@@ -114,6 +118,11 @@ For job-search handoffs, prefer the dispatcher wrapper above over calling the
 `job-search` agent ad hoc. The expected flow is:
 
 ```text
+Telegram/direct intake:
+intake creates handoff -> enqueue async dispatcher -> intake replies "accepted"
+-> async worker runs job-search -> async worker sends follow-up
+
+Manual/operator dispatch:
 intake creates handoff -> dispatcher runs job-search -> intake rewrites result
 ```
 
@@ -136,7 +145,7 @@ If replying to Telegram, keep the reply short:
 ```text
 Routed: <domain>
 Created/updated: <paths>
-Next: <single next action or "none">
+Next: accepted for async analysis; follow-up will arrive separately
 Blocked: <question if clarification is needed>
 ```
 
