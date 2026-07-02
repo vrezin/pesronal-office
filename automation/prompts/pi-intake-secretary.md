@@ -83,6 +83,12 @@ implicit request for routing/review. Do not reply with "job-search can analyze
 if requested" or "if you want a review" for such messages. Dispatch first, then
 reply from the dispatcher/job-search result.
 
+Do not make duplicate/no-op decisions for HH/LinkedIn Telegram links inside
+intake. Even if existing artifacts mention the same company, role, or job id,
+create or update a handoff and run the dispatcher. Only the job-search contour
+may decide that a vacancy is already tracked, duplicate, parked, blocked, or
+ready for CV/CL.
+
 Use the dispatcher output as internal evidence only. Rewrite the returned
 `secretaries/handoff-contract.md` YAML into a concise human reply. If the
 dispatcher is unavailable or returns blocked/skipped, keep the handoff artifact
