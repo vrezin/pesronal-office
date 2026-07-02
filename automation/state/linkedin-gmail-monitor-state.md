@@ -1,10 +1,10 @@
 # LinkedIn Gmail Monitor State
 
-- Last successful scan: 2026-07-02 20:28:39 +07
-- Last processed Gmail message id: 19f21faa18a56d48
-- Last processed Gmail internal date: 2026-07-02T08:38:19Z
-- Last run status: success, duplicate-only scan; 5 LinkedIn ids skipped by SQLite dedupe
+- Last successful scan: 2026-07-03 00:30:31 +07
+- Last processed Gmail message id: 19f233dc54d1f2ba
+- Last processed Gmail internal date: 2026-07-02T14:31:14Z
+- Last run status: success, processed 1 thin LinkedIn Axway Director Engineering alert; 4 duplicate LinkedIn ids skipped
 
 ## Notes
 
-Last successful run scanned `from:linkedin.com newer_than:7d` with a small batch cap through Pi-local `google_workspace` Gmail read-only access. No new LinkedIn messages were processed; all seen ids were already present in SQLite. No full JD analysis, handoff requiring user reply, or Telegram packet was created. Gmail was read-only; no labels, stars, archive state, read state, or messages were mutated. No git commit was attempted by policy.
+Last successful run scanned `from:linkedin.com newer_than:7d` with a small batch cap through Pi-local `google_workspace` Gmail read-only access. One thin Axway Director, Engineering alert for Dublin was recorded in `inbox/processed/2026-07-03-linkedin-thin-axway-director-engineering-alert.md`; no full JD analysis, job-intake index update, or Telegram packet was created. Gmail was read-only; no labels, stars, archive state, read state, or messages were mutated. No git commit was attempted by policy.
