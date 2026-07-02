@@ -3,7 +3,7 @@
 - Date: 2026-07-01
 - Runtime target: Raspberry Pi OpenClaw
 - Agent: `job-search`
-- Status: target architecture / process contract
+- Status: target architecture / process contract; first Pi-primary scheduled and Telegram transport slice is live
 - Storage decision: `tools/raspberrypi-openclaw/personal-office-shared-storage-decision-2026-07-01.md`
 
 ## Target Outcome
@@ -169,7 +169,12 @@ Stored: <trace path if created>
 - Pi runtime DB initialized at `automation/state/job-search-runtime.sqlite` inside `job-search-contour`.
 - Baseline duplicate ids seeded from Markdown monitor state: 5 HH ids and 2 LinkedIn ids.
 - Pi-primary Gmail monitor exists, is scheduled by systemd user timer, and has a successful Pi-local smoke run.
-- Telegram intake wrapper, prompt, SQLite update dedupe commands, setup script, and disabled systemd templates exist. Live Telegram E2E remains pending because no OpenClaw chat channel is configured yet.
+- Pi-primary Gmail monitor has processed fresh Inbox LinkedIn messages through Pi-local `google_workspace` and SQLite dedupe. Evidence: `automation/runs/2026-07-02-1623-pi-job-search-gmail-monitor.md` and `automation/runs/2026-07-02-1627-pi-job-search-gmail-monitor.md`.
+- Telegram channel `job-search-telegram` is configured, enabled, and bound to `job-search`.
+- Telegram inbound E2E passed for a forwarded LinkedIn URL, creating job-search artifacts and replying in Telegram.
+- Telegram outbound transport smoke passed on 2026-07-02; OpenClaw sent message id `357` through `job-search-telegram`.
+- Pi-primary runtime hot paths moved from microSD to direct USB ext4 storage at `/srv/personal-office`, with bind mounts for the Personal Office repo, OpenClaw state, and Personal Office config/secrets.
+- Pi sync wrapper skips artifact sync while Gmail or Telegram runtime locks are active, preventing partial run-log commits during long OpenClaw agent turns. Evidence: `adb86e1 job-search: skip sync while runtime locks are active`.
 
 ## Remaining Build Work
 
@@ -178,8 +183,8 @@ Stored: <trace path if created>
 3. Done: Decide Pi Git identity and deploy key.
 4. Done for first slice: Adapt HH/LinkedIn Gmail monitor prompts to use Pi-local `google_workspace`.
 5. Done for Gmail: Create Pi-side scheduled wrappers/systemd timers.
-6. In progress: Add Telegram inbound routing to `job-search`; wrapper/prompt/setup path exists, live channel configuration is pending.
-7. In progress: Add Telegram outbound decision packets; output contract exists, live send is pending channel configuration.
+6. Done for first slice: Add Telegram inbound routing to `job-search`; OpenClaw Gateway route passed a forwarded LinkedIn URL E2E.
+7. Done for transport, pending for next actionable vacancy: Telegram outbound send works; the full decision packet contract must be observed on the next role with enough JD detail.
 8. Done for Gmail and scaffolded for Telegram: Extend duplicate-state handling from seeded baseline to normal scheduled writes.
-9. Run a fresh Inbox E2E test when the next HH/LinkedIn message arrives.
-10. Run an ad-hoc Telegram vacancy intake test.
+9. Done: Run a fresh Inbox E2E scheduled Gmail test; 2026-07-02 run processed fresh LinkedIn status/update messages and a thin alert.
+10. Pending: observe the next actionable Telegram vacancy intake after the USB migration and confirm verdict/CV/CL packet quality.

@@ -7,6 +7,8 @@
 - Related OAuth bootstrap runbook: `tools/raspberrypi-openclaw/google-workspace-oauth-bootstrap-2026-06-30.md`
 - Related target process: `tools/raspberrypi-openclaw/job-search-business-contour-target-2026-07-01.md`
 - Related storage decision: `tools/raspberrypi-openclaw/personal-office-shared-storage-decision-2026-07-01.md`
+- Related storage hardening task: `tasks/active/2026-07-01-harden-pi-primary-storage.md`
+- Related storage hardening plan: `tools/raspberrypi-openclaw/pi-storage-hardening-plan-2026-07-01.md`
 - Related OpenClaw task: `tasks/active/2026-06-25-try-personal-office-on-raspberry-pi-openclaw.md`
 
 ## Goal
@@ -67,6 +69,13 @@ Finish the Raspberry Pi job-search contour so the dedicated OpenClaw `job-search
 - Update 2026-07-01: Second manual systemd sync service run exposed one remaining post-commit run-log append (`sync complete`). Removed that post-commit write so future sync runs should leave the repo clean after service success.
 - Update 2026-07-01: Manual Gmail systemd service run exposed a real systemd environment bug: `openclaw` was not in PATH, so `automation/runs/2026-07-01-1855-pi-job-search-gmail-monitor.md` recorded exit `127`. Fixed Gmail and Telegram wrappers to use `OPENCLAW_BIN` with default `/home/openclaw/.local/bin/openclaw`, and added explicit OpenClaw/PATH environment to systemd templates.
 - Update 2026-07-01: Manual Gmail systemd service run succeeded after the `OPENCLAW_BIN` fix. Wrapper log `automation/runs/2026-07-01-1857-pi-job-search-gmail-monitor.md` exited `0`; agent log `automation/runs/2026-07-01-1858-pi-job-search-gmail-monitor.md` shows Pi-local Gmail search succeeded, all 3 HH and 5 LinkedIn ids were duplicate/no-op via SQLite, no Gmail bodies were read, and legacy HH/LinkedIn state files advanced to `2026-07-01 18:58:56 +07`.
+- Update 2026-07-01: Storage reliability risk identified after Telegram/LinkedIn E2E made the Pi a real write-heavy Personal Office host. Current Pi root is `/dev/mmcblk0p2` ext4 on microSD with no external SSD detected; `/home/openclaw/personal-office-agent`, `/home/openclaw/.openclaw`, and `/home/openclaw/.config/personal-office` still write to microSD. Created storage hardening plan/task to move durable writable runtime state to SSD/NVMe before treating the Pi as a stable production-like home host.
+- Update 2026-07-01: OpenClaw Telegram channel was configured as `job-search-telegram`, bound to the `job-search` agent, and live Telegram inbound E2E passed. A forwarded LinkedIn URL for job `4434492291` was routed by OpenClaw Gateway to `job-search`, enriched, and replied in Telegram. Runbook/evidence: `tools/raspberrypi-openclaw/telegram-job-search-setup-2026-07-01.md`; committed Pi smoke: `32cf947 Record Telegram job-search E2E smoke`.
+- Update 2026-07-02: Pi runtime storage was moved off microSD hot paths onto direct USB ext4 storage. `/dev/sda1` is mounted at `/srv/personal-office`, with bind mounts for `/home/openclaw/personal-office-agent`, `/home/openclaw/.openclaw`, and `/home/openclaw/.config/personal-office`. OpenClaw, LinkedIn MCP, Gmail monitor timer, sync timer, and Telegram channel remained healthy after migration. See `tasks/active/2026-07-01-harden-pi-primary-storage.md`.
+- Update 2026-07-02: Scheduled Pi-local Gmail monitor passed on the USB-backed runtime. Wrapper log `automation/runs/2026-07-02-1623-pi-job-search-gmail-monitor.md` exited `0`; agent log `automation/runs/2026-07-02-1627-pi-job-search-gmail-monitor.md` shows Pi-local `google_workspace` Gmail read-only search succeeded, all seen Gmail ids were checked through SQLite first, HH ids were duplicate/no-op, 5 new LinkedIn messages were marked in SQLite, and processed traces were written to `inbox/processed/2026-07-02-linkedin-application-status-updates.md` and `inbox/processed/2026-07-02-linkedin-thin-jobgether-deputy-cto-alert.md`.
+- Update 2026-07-02: Pi sync wrapper pushed completed monitor artifacts/state after the run. Latest verified Pi commit: `cc3ba09 job-search: sync pi runtime artifacts`; Pi worktree was clean after sync.
+- Update 2026-07-02: Telegram outbound smoke passed after the USB migration using `openclaw message send --channel telegram --account job-search-telegram --target <configured target>`; OpenClaw reported `Sent via telegram. Message ID: 357`.
+- Update 2026-07-02: Fixed a sync race observed during the 16:23 monitor run. `run-pi-job-search-sync.sh` now checks SQLite runtime locks and skips sync while `pi-job-search-gmail-monitor` or `pi-job-search-telegram-intake` is active, avoiding partial run-log commits. Pi smoke passed with an active test lock, and the fix was pushed as `adb86e1 job-search: skip sync while runtime locks are active`.
 
 ## Gmail/GCalendar Integration Options
 
@@ -188,8 +197,9 @@ Cons:
 2. Done 2026-07-01: configure private Git remote and push from Pi.
 3. Done 2026-07-01: verify Pi-side GitHub SSH key for push.
 4. Done 2026-07-01 for first monitor slice: adapt/mirror HH and LinkedIn Gmail monitoring into a Pi-local OpenClaw prompt using `google_workspace` and SQLite dedupe.
-5. In progress 2026-07-01: harden conservative polling/backoff and timeout/watchdog behavior while installing unattended systemd timer.
-6. In progress 2026-07-01: implement Telegram inbound routing for ad-hoc vacancy intake; wrapper/prompt/SQLite boundary exists, channel configuration remains external.
-7. In progress 2026-07-01: implement Telegram outbound decision packets with verdict, selected CV, cover letter draft, and next action; output contract exists in prompt, live send awaits channel configuration.
-8. Run a non-archived Inbox E2E check when the next fresh HH or LinkedIn message arrives.
+5. Done 2026-07-02 for first production-like slice: conservative polling, timeout/watchdog behavior, SQLite locks, systemd timer, and post-run sync are installed and observed.
+6. Done 2026-07-01 for OpenClaw Gateway path: Telegram inbound routing for ad-hoc vacancy intake is live for `job-search-telegram` and passed one LinkedIn URL E2E. The old polling wrapper remains diagnostic/disabled.
+7. Done 2026-07-02 for transport smoke: Telegram outbound send through `job-search-telegram` works. Still pending: next actionable vacancy should produce the full decision packet with verdict, selected CV, cover letter draft, and next action.
+8. Done 2026-07-02 for fresh Inbox scheduled monitor: processed fresh LinkedIn status/update messages and a thin alert from Gmail using Pi-local `google_workspace` and SQLite dedupe.
 9. Keep Option A only as a proof-of-concept fallback; do not treat workstation/Codex handoff as solved production architecture.
+10. Observe the next scheduled run at about `2026-07-02 20:25 +07` with the sync-lock fix in place, then remove microSD rollback copies only after the storage acceptance window passes.
