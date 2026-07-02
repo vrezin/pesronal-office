@@ -216,6 +216,33 @@ def release_lock(db_path: Path, lock_name: str, owner: str | None) -> int:
     return 0
 
 
+def lock_status(db_path: Path, lock_name: str, active_exit_code: int) -> int:
+    init_db(db_path)
+    with connect(db_path) as conn:
+        conn.execute(
+            """
+            DELETE FROM run_locks
+            WHERE lock_name = ?
+              AND expires_at <= strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
+            """,
+            (lock_name,),
+        )
+        row = conn.execute(
+            """
+            SELECT lock_name, owner, acquired_at, expires_at, heartbeat_at
+            FROM run_locks
+            WHERE lock_name = ?
+            """,
+            (lock_name,),
+        ).fetchone()
+        conn.commit()
+    if row is None:
+        print(json.dumps({"active": False, "lock_name": lock_name}, sort_keys=True))
+        return 0
+    print(json.dumps({"active": True, **dict(row)}, sort_keys=True))
+    return active_exit_code
+
+
 def message_status(db_path: Path, source: str, gmail_message_id: str) -> int:
     init_db(db_path)
     with connect(db_path) as conn:
@@ -389,6 +416,14 @@ def parse_args() -> argparse.Namespace:
     release_parser = sub.add_parser("release-lock", help="Release a run lock")
     release_parser.add_argument("--lock-name", required=True)
     release_parser.add_argument("--owner")
+    lock_status_parser = sub.add_parser("lock-status", help="Print JSON status for one run lock")
+    lock_status_parser.add_argument("--lock-name", required=True)
+    lock_status_parser.add_argument(
+        "--active-exit-code",
+        type=int,
+        default=1,
+        help="Exit code to return when the lock is active",
+    )
     message_status_parser = sub.add_parser(
         "message-status",
         help="Print JSON status for one Gmail message id",
@@ -447,6 +482,8 @@ def main() -> int:
         return acquire_lock(db_path, args.lock_name, args.owner, args.ttl_seconds)
     elif args.command == "release-lock":
         return release_lock(db_path, args.lock_name, args.owner)
+    elif args.command == "lock-status":
+        return lock_status(db_path, args.lock_name, args.active_exit_code)
     elif args.command == "message-status":
         return message_status(db_path, args.source, args.gmail_message_id)
     elif args.command == "mark-message":

@@ -56,6 +56,35 @@ log() {
   printf '[job-search-sync] %s\n' "$*" >&2
 }
 
+skip_if_runtime_lock_active() {
+  local lock_name="$1"
+  local lock_output
+  local lock_status
+
+  set +e
+  lock_output="$(python3 tools/job-search-runtime/job_search_runtime.py lock-status --lock-name "$lock_name" --active-exit-code 75 2>&1)"
+  lock_status=$?
+  set -e
+
+  if [[ "$lock_status" -eq 75 ]]; then
+    log "skipped: runtime lock is active: $lock_name"
+    printf '    %s\n' "$lock_output"
+    {
+      printf '\n## Sync Skip\n\n'
+      printf -- '- Reason: runtime lock `%s` is active; avoiding partial artifact commit.\n' "$lock_name"
+      printf '    %s\n' "$lock_output"
+    } >>"$RUN_LOG"
+    finalize_run_log 0
+    exit 0
+  fi
+
+  if [[ "$lock_status" -ne 0 ]]; then
+    log "blocked: failed to inspect runtime lock: $lock_name"
+    printf '    %s\n' "$lock_output"
+    exit "$lock_status"
+  fi
+}
+
 changed_allowed_paths() {
   git status --porcelain -- \
     automation/runs \
@@ -85,6 +114,9 @@ fi
 
 python3 tools/job-search-runtime/job_search_runtime.py init
 python3 tools/job-search-runtime/job_search_runtime.py seed-monitor-state
+
+skip_if_runtime_lock_active "pi-job-search-gmail-monitor"
+skip_if_runtime_lock_active "pi-job-search-telegram-intake"
 
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   if [[ "$MODE" == "apply" ]]; then

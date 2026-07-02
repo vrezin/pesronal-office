@@ -39,6 +39,7 @@ Acquire and release a run lock:
 
 ```bash
 python3 tools/job-search-runtime/job_search_runtime.py acquire-lock --lock-name pi-job-search-gmail-monitor --owner manual-test --ttl-seconds 300
+python3 tools/job-search-runtime/job_search_runtime.py lock-status --lock-name pi-job-search-gmail-monitor
 python3 tools/job-search-runtime/job_search_runtime.py release-lock --lock-name pi-job-search-gmail-monitor --owner manual-test
 ```
 
