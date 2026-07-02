@@ -39,7 +39,8 @@ rules.
 
 Example: `job-search`
 
-- Intake secretary: receives Gmail and Telegram job-search signals.
+- Intake secretary: receives Telegram/manual job-search signals and routes them
+  to the domain contour.
 - Project secretary: owns `personal-projects/personal-brand/` routing.
 - Task secretary: creates follow-ups and waiting items.
 - Calendar secretary: handles interview/prep scheduling when needed.
@@ -58,17 +59,19 @@ changes, and sync, but should not own always-on Personal Office state.
 The Pi should have a general `intake` secretary for non-domain-specific incoming
 messages.
 
-`job-search` is the first proven downstream contour, but it is not the universal
-front door. General Personal Office input should first go to `intake`, then be
-routed to the smallest responsible secretary/domain.
+`job-search` is the first proven downstream contour, but it is not the front
+door. General Personal Office input should first go to `intake`, then be routed
+to the smallest responsible secretary/domain.
 
-Safe first Telegram topology:
+Telegram topology:
 
 - `personal-office-intake-telegram` -> `intake`;
-- `job-search-telegram` -> `job-search`.
+- no direct Telegram binding for `job-search`.
 
-This keeps the proven job-search channel working while the general intake router
-is tested.
+The existing Telegram bot token may be reused, but the channel/account should be
+renamed and rebound so user-visible input and output are owned by the intake
+secretary. Domain agents should communicate back through a minimal handoff
+contract, then intake writes the user-facing response.
 
 ## Routing Rules
 

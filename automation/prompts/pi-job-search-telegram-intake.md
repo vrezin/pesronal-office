@@ -1,8 +1,21 @@
-# Scheduled Task: Pi Job Search Telegram Intake
+# Deprecated: Pi Job Search Telegram Intake
 
-You are running as the OpenClaw `job-search` agent for ad-hoc Telegram vacancy intake.
+Direct Telegram intake for `job-search` is deprecated.
 
-The wrapper passes:
+Telegram input should go to the Pi `intake` secretary first. The intake
+secretary routes job-search-shaped inputs to `job-search` as an internal domain
+handoff, then rewrites the final user-facing answer.
+
+This file is kept only as historical reference for the earlier job-search-only
+Telegram slice.
+
+If this prompt is accidentally used, do not process Telegram input directly.
+Write a blocked run log and instruct the operator to use the `intake` secretary
+binding.
+
+## Previous Contract
+
+The older wrapper passed:
 
 - the Pi-primary Personal Office repo root;
 - the Telegram channel/target;

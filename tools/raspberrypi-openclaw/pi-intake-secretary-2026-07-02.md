@@ -1,18 +1,18 @@
 # Pi Intake Secretary
 
 - Date: 2026-07-02
-- Status: Target + setup scaffold
+- Status: Active
 - Runtime target: Raspberry Pi OpenClaw
 - Proposed agent: `intake`
-- Proposed Telegram account: `personal-office-intake-telegram`
+- Telegram account: `personal-office-intake-telegram`
 
 ## Decision
 
 The Pi-primary Personal Office should have a general `intake` secretary for
 incoming non-domain-specific mess.
 
-`job-search` remains a specialized downstream contour. It should not become the
-universal router for life, finance, company, calendar, and project inputs.
+`job-search` remains a specialized downstream contour. It should not own direct
+Telegram input or output.
 
 ## Role
 
@@ -32,6 +32,9 @@ The intake secretary must not own every domain.
 Examples:
 
 - vacancies, HH, LinkedIn, CV, cover letters -> hand off to `job-search`;
+- recruiter messages that look like consulting/advisory/fractional CTO/CIO
+  opportunities -> route as `personal-projects/opportunities/` first, even if
+  the link is on LinkedIn;
 - meetings, interview prep, reminders -> Calendar secretary route;
 - money, debts, assets, payments -> Finance secretary route;
 - AI Studio / Fincom / Setronica -> Company secretary route;
@@ -39,20 +42,16 @@ Examples:
 
 ## Telegram Account Strategy
 
-Do not rebind the existing `job-search-telegram` account yet.
+Use the existing Telegram bot token as the Personal Office intake front door.
 
-That account is already proven for the job-search contour. Rebinding it to a
-general intake router would risk breaking the working vacancy workflow.
+The old `job-search-telegram` binding is deprecated. The intended state is:
 
-Safer first step:
+- `personal-office-intake-telegram` -> `intake`;
+- no direct Telegram binding for `job-search`.
 
-- create a separate Telegram bot/account for general intake;
-- configure it as `personal-office-intake-telegram`;
-- bind it to OpenClaw agent `intake`;
-- keep `job-search-telegram` bound to `job-search`.
-
-Later, if router quality is good, one Telegram bot can become the only public
-front door and delegate job-search inputs downstream.
+The intake secretary owns user-facing language. Domain agents should return
+structured handoffs in the minimal format defined by
+`secretaries/handoff-contract.md`.
 
 ## Repo Artifacts Added
 
@@ -62,6 +61,7 @@ front door and delegate job-search inputs downstream.
   helper for a separate intake Telegram account.
 - `tools/raspberrypi-openclaw/intake-agent-workspace-AGENTS.md` - bootstrap
   instructions copied to the OpenClaw `intake` workspace.
+- `secretaries/handoff-contract.md` - minimal internal agent handoff format.
 
 ## Runtime Evidence
 
@@ -73,18 +73,19 @@ front door and delegate job-search inputs downstream.
 - Agent dir:
   `/home/openclaw/personal-office-agent/openclaw-agents/intake`.
 - Model: `openai/gpt-5.5`.
-- Routing rules: `0` until a separate Telegram account/bot is configured.
+- Initial routing rules: `0` before Telegram binding migration.
+- Telegram account `personal-office-intake-telegram` is configured and enabled.
+- Active binding:
+  `intake <- telegram accountId=personal-office-intake-telegram`.
+- `job-search` has `0` routing rules and no direct Telegram binding.
+- `openclaw-gateway.service` was restarted and is active on the Pi.
 
 ## Setup Sketch
 
-Create or choose a Telegram bot for general Personal Office intake, then on the
-Pi:
+Use the existing Telegram bot token file on the Pi:
 
 ```bash
-printf '%s\n' '<bot-token-from-botfather>' > /home/openclaw/.config/personal-office/secrets/telegram-intake-bot-token.txt
-chmod 600 /home/openclaw/.config/personal-office/secrets/telegram-intake-bot-token.txt
-
-OPENCLAW_TELEGRAM_BOT_TOKEN_FILE=/home/openclaw/.config/personal-office/secrets/telegram-intake-bot-token.txt \
+OPENCLAW_TELEGRAM_BOT_TOKEN_FILE=/home/openclaw/.config/personal-office/secrets/telegram-job-search-bot-token.txt \
 TELEGRAM_INTAKE_TARGET=<owner-chat-id> \
 automation/scripts/setup-pi-intake-telegram-channel.sh
 ```
@@ -93,7 +94,7 @@ Expected binding:
 
 ```text
 intake <- telegram accountId=personal-office-intake-telegram
-job-search <- telegram accountId=job-search-telegram
+job-search has no direct Telegram binding
 ```
 
 ## Acceptance
@@ -103,7 +104,9 @@ First slice is done when:
 - OpenClaw has an `intake` agent;
 - Telegram account `personal-office-intake-telegram` is configured and bound to
   `intake`;
+- `job-search` has no direct Telegram binding;
 - a manual Telegram message such as "remind me tomorrow to call X" creates or
   updates the correct repo artifact;
 - the bot replies with route, artifact path, and next action;
-- `job-search-telegram` still routes vacancy links to `job-search`.
+- a job-search-shaped Telegram input is routed via intake instead of direct
+  job-search binding.

@@ -28,6 +28,9 @@ Turn raw incoming input into durable Personal Office state.
 Inputs may come from Telegram, Gmail, manual operator messages, calendar
 signals, or future connectors.
 
+The intake secretary also owns user-facing Telegram replies. Domain agents may
+produce structured handoffs; intake rewrites them into normal human language.
+
 ## Default Flow
 
 1. Identify whether the input contains:
@@ -69,6 +72,22 @@ Known downstream routes:
 
 If the input clearly belongs to job-search, create a thin intake trace and hand
 off rather than duplicating the job-search workflow.
+
+Examples:
+
+- A plain HH/LinkedIn vacancy link can be routed to job-search.
+- A recruiter message that mentions a LinkedIn job but is really a consulting
+  engagement, implementation partner role, advisory opportunity, or fractional
+  CTO/CIO engagement should be routed as an opportunity first, not blindly as a
+  job application.
+
+## Internal Handoff
+
+When another agent returns a result, expect a minimal handoff, not polished
+copy. Use `secretaries/handoff-contract.md`.
+
+Rewrite the handoff into a concise human reply. Do not forward shell logs,
+debugging chatter, tool calls, or raw system output to Telegram.
 
 ## Output Contract
 

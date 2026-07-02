@@ -23,7 +23,9 @@ Scheduled automation must not require Git commits. Run logs and state markers ar
 - `linkedin-gmail-monitor` - uses the registered local LinkedIn MCP server from `.codex/config.toml`, with a loopback wrapper fallback if needed.
 - `pi-job-search-gmail-monitor` - Pi-primary OpenClaw job-search monitor. It uses Pi-local `google_workspace` Gmail access, `tools/job-search-runtime/` SQLite dedupe, and writes run logs/state without requiring Git commits.
 
-When `/home/openclaw/.config/personal-office/job-search-telegram.env` exists, the Gmail monitor also passes Telegram target/account to the `job-search` agent so actionable Gmail findings can produce Telegram decision packets.
+User-facing Telegram output belongs to the Pi `intake` secretary. Job-search
+monitors should write artifacts and structured handoffs, not stream logs or
+direct tool output to Telegram.
 
 Pi-primary scheduling is defined by:
 
@@ -50,15 +52,17 @@ General Pi intake secretary setup is scaffolded by:
 - `automation/scripts/setup-pi-intake-telegram-channel.sh`;
 - `tools/raspberrypi-openclaw/pi-intake-secretary-2026-07-02.md`.
 
-Use a separate Telegram account such as `personal-office-intake-telegram` for
-the general intake secretary until the router is proven. Do not rebind the
-working `job-search-telegram` account away from `job-search`.
+The intended Telegram front door is `personal-office-intake-telegram`, bound to
+the `intake` agent. `job-search` should not have a direct Telegram binding; it
+should receive handoffs from intake and write structured results back for
+intake/output formatting.
 
 The active path is OpenClaw Gateway routing, not scheduled `openclaw message read`.
-Telegram account `job-search-telegram` should be bound to the `job-search` agent:
+Telegram account `personal-office-intake-telegram` should be bound to the
+`intake` agent:
 
 ```bash
-openclaw agents bind --agent job-search --bind telegram:job-search-telegram
+openclaw agents bind --agent intake --bind telegram:personal-office-intake-telegram
 ```
 
 OpenClaw 2026.6.10 does not support Telegram via `openclaw message read`; use the wrapper only as a blocked/preflight diagnostic until it is rewritten for gateway event logs.

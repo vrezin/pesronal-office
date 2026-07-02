@@ -10,7 +10,10 @@ This is an unattended run. Do not request interactive approval. If a tool, Gmail
 
 ## Objective
 
-Scan Pi-local Gmail through the OpenClaw MCP server `google_workspace` for HH.ru / HeadHunter and LinkedIn job-search messages, dedupe through SQLite, update Personal Office job-search artifacts, and produce Telegram decision packets for actionable items when Telegram is configured.
+Scan Pi-local Gmail through the OpenClaw MCP server `google_workspace` for HH.ru / HeadHunter and LinkedIn job-search messages, dedupe through SQLite, and update Personal Office job-search artifacts.
+
+For actionable items, produce a structured handoff for the intake/output
+secretary. Do not stream tool logs or system chatter to Telegram.
 
 ## Runtime Contract
 
@@ -87,19 +90,13 @@ For `noise`:
 - mention the count in the run log;
 - do not create job-intake artifacts.
 
-## Telegram Outbound
+## User Reply Handoff
 
-The wrapper passes `Telegram target` and `Telegram account` at the top of the message.
+The wrapper may still pass Telegram target/account for compatibility, but
+`job-search` should not be the user-facing Telegram voice.
 
-If `Telegram target` is not `unset` and OpenClaw has a configured Telegram channel, send a concise decision packet with:
-
-```bash
-openclaw message send --channel telegram --target <target> --message <packet>
-```
-
-Add `--account <account>` when `Telegram account` is not `default`.
-
-For actionable vacancy output, use:
+For actionable vacancy output, write an internal handoff using
+`secretaries/handoff-contract.md`, with this user-facing content shape:
 
 ```text
 Found: <company> - <role>
@@ -111,7 +108,9 @@ Next action: <send now / ask question / wait / ignore>
 Artifacts: <paths>
 ```
 
-If Telegram is not configured or send fails, do not block artifact writes. Write the intended Telegram packet and the send failure into the run log.
+If a direct Telegram send is still enabled in a transitional run, the message
+must contain only the final decision packet, never tool logs or implementation
+chatter. Prefer writing the handoff into the run log for intake/output routing.
 
 ## Run Log And State
 
