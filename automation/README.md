@@ -44,8 +44,18 @@ Telegram ad-hoc job-search intake is scaffolded by:
 - `automation/scripts/run-pi-job-search-telegram-intake.sh`.
 - `automation/scripts/setup-pi-job-search-telegram-channel.sh`.
 
+General Pi intake secretary setup is scaffolded by:
+
+- `automation/prompts/pi-intake-secretary.md`;
+- `automation/scripts/setup-pi-intake-telegram-channel.sh`;
+- `tools/raspberrypi-openclaw/pi-intake-secretary-2026-07-02.md`.
+
+Use a separate Telegram account such as `personal-office-intake-telegram` for
+the general intake secretary until the router is proven. Do not rebind the
+working `job-search-telegram` account away from `job-search`.
+
 The active path is OpenClaw Gateway routing, not scheduled `openclaw message read`.
-Telegram account `job-search-telegram` is bound to the `job-search` agent:
+Telegram account `job-search-telegram` should be bound to the `job-search` agent:
 
 ```bash
 openclaw agents bind --agent job-search --bind telegram:job-search-telegram
