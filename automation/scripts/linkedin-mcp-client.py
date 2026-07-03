@@ -10,9 +10,17 @@ from pathlib import Path
 from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-LINKEDIN_SITE_PACKAGES = REPO_ROOT / "tools" / "linkedin-mcp" / ".venv" / "lib" / "python3.12" / "site-packages"
-if LINKEDIN_SITE_PACKAGES.exists():
-    sys.path.insert(0, str(LINKEDIN_SITE_PACKAGES))
+LINKEDIN_VENV_CANDIDATES = [
+    REPO_ROOT / "tools" / "linkedin-mcp" / ".venv",
+    REPO_ROOT.parent / "job-search-contour" / "tools" / "linkedin-mcp" / ".venv",
+]
+for venv in LINKEDIN_VENV_CANDIDATES:
+    for site_packages in sorted((venv / "lib").glob("python*/site-packages"), reverse=True):
+        if site_packages.exists():
+            sys.path.insert(0, str(site_packages))
+            break
+    if any((venv / "lib").glob("python*/site-packages/mcp")):
+        break
 
 from mcp import ClientSession
 from mcp.client.streamable_http import streamable_http_client
@@ -32,7 +40,7 @@ async def run() -> int:
     parser = argparse.ArgumentParser(description="LinkedIn MCP client helper")
     parser.add_argument(
         "--url",
-        default=os.environ.get("LINKEDIN_MCP_URL", "http://127.0.0.1:8000/mcp"),
+        default=os.environ.get("LINKEDIN_MCP_URL", "http://127.0.0.1:8019/mcp"),
         help="LinkedIn MCP streamable-http endpoint",
     )
     sub = parser.add_subparsers(dest="command", required=True)

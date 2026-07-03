@@ -16,11 +16,30 @@
 
 The email is a thin LinkedIn job alert. It exposes the company, title, location, and LinkedIn job id, but does not include a full job description, compensation, remote/legal setup, relocation support, team scope, or requirements.
 
+## LinkedIn MCP Enrichment
+
+- Checked: 2026-07-03
+- Tool path: `automation/scripts/linkedin-mcp-client.py job-details 4435338298`
+- MCP endpoint: `http://127.0.0.1:8019/mcp`
+- Result: live LinkedIn source still exposes only a posting shell.
+
+The LinkedIn MCP returned:
+
+- Company: Axway
+- Role: Director, Engineering
+- Location: Dublin, Ireland
+- Posted: 2 days ago
+- Signal: 34 people clicked Apply
+- Application flow: outside LinkedIn
+- Type: full-time
+
+The live source did not expose full JD text, responsibilities, requirements, compensation, remote/legal setup, relocation support, team scope, or hiring-manager details. Treat this as a source limitation, not as a skipped enrichment.
+
 ## Routing Decision
 
 Do not create a full JD archive or analysis from this email alone.
 
-This is only a thin market signal unless the LinkedIn connector or a later operator action retrieves the full job description. The existing `Director of Software Engineering` Dublin/Ireland cluster already notes that Ireland/UK legal setup and relocation economics are first gates.
+This is only a thin market signal unless a later operator action retrieves the full job description from another source. The existing `Director of Software Engineering` Dublin/Ireland cluster already notes that Ireland/UK legal setup and relocation economics are first gates.
 
 ## Handoff
 
@@ -34,6 +53,7 @@ summary: Thin LinkedIn alert for Axway Director, Engineering in Dublin; not enou
 verdict: no-op
 reasons:
   - Email contains only title, company, location, and LinkedIn job id.
+  - LinkedIn MCP enrichment was attempted and also returned only a posting shell.
   - Dublin/Ireland roles are already gated by legal setup, relocation interest, and compensation.
 cv: null
 cover_letter: null
@@ -42,4 +62,3 @@ artifacts:
   - inbox/processed/2026-07-03-linkedin-thin-axway-director-engineering-alert.md
 blocked_on: []
 ```
-

@@ -87,7 +87,6 @@ skip_if_runtime_lock_active() {
 
 changed_allowed_paths() {
   git status --porcelain -- \
-    automation/runs \
     automation/state \
     inbox/processed \
     tasks/active \
@@ -97,7 +96,6 @@ changed_allowed_paths() {
 
 changed_disallowed_paths() {
   git status --porcelain \
-    ':!automation/runs' \
     ':!automation/state' \
     ':!inbox/processed' \
     ':!tasks/active' \
@@ -175,7 +173,6 @@ log "committing and pushing allowed changes"
 finalize_run_log 0
 
 git add \
-  automation/runs \
   automation/state \
   inbox/processed \
   tasks/active \

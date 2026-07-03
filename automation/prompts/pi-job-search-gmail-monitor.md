@@ -78,6 +78,13 @@ For `invitation`:
 For `new_vacancy`:
 
 - if the message contains enough JD text, archive and analyze it using `personal-brand-career`;
+- if a LinkedIn email includes a LinkedIn job id or job URL, try source enrichment once before declaring it a thin alert:
+  1. prefer the registered OpenClaw MCP server `linkedin` and call `get_job_details` for the exact job id;
+  2. if the registered MCP tool is unavailable, verify the Pi user service `linkedin-mcp.service` is already running and call `automation/scripts/linkedin-mcp-client.py job-details <JOB_ID>` against `http://127.0.0.1:${LINKEDIN_MCP_PORT:-8019}/mcp`;
+  3. do not start duplicate LinkedIn MCP server instances;
+  4. if enrichment returns full JD details, archive/analyze the role normally;
+  5. if enrichment returns only title/company/location/status shell, record the live enrichment result in the processed note/run log and only then treat it as thin/no-op;
+  6. if enrichment fails, write the error in the run log and create a blocked or clarification artifact instead of silently downgrading to thin/no-op.
 - select the current best CV from `personal-projects/personal-brand/workspace/OPERATING_MODEL.md`;
 - include relocation/lifestyle/compensation notes at the level supported by the source;
 - update `job-intake/INDEX.md` and `job-intake/COMPANY_NOTES.md`;

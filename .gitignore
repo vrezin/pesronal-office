@@ -4,7 +4,10 @@ __pycache__/
 .idea/
 
 # Runtime logs can be regenerated and grow quickly.
-*.cron.log
+*.log
+*.out
+automation/runs/
+!automation/runs/README.md
 
 # Operational runtime state. Canonical state snapshots belong in Markdown.
 automation/state/job-search-runtime.sqlite
