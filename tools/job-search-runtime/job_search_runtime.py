@@ -9,6 +9,7 @@ import os
 import re
 import sqlite3
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
@@ -23,6 +24,23 @@ class SeededMessage:
     gmail_message_id: str
     internal_date: str | None
     notes: str
+
+
+@dataclass(frozen=True)
+class VacancyBackfillEntry:
+    vacancy_id: str
+    origin: str
+    source: str
+    date: str
+    company: str
+    role: str
+    status: str
+    verdict: str
+    effort_class: str | None
+    analysis_path: str | None
+    task_path: str | None
+    selected_cv_path: str | None
+    artifact_links: tuple[dict[str, str], ...]
 
 
 def connect(db_path: Path) -> sqlite3.Connection:
@@ -111,6 +129,544 @@ def seed_monitor_state(db_path: Path, repo_root: Path) -> int:
     return len(messages)
 
 
+def _utc_now() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def _slugify(value: str, *, max_length: int = 96) -> str:
+    translit = {
+        "а": "a",
+        "б": "b",
+        "в": "v",
+        "г": "g",
+        "д": "d",
+        "е": "e",
+        "ё": "e",
+        "ж": "zh",
+        "з": "z",
+        "и": "i",
+        "й": "y",
+        "к": "k",
+        "л": "l",
+        "м": "m",
+        "н": "n",
+        "о": "o",
+        "п": "p",
+        "р": "r",
+        "с": "s",
+        "т": "t",
+        "у": "u",
+        "ф": "f",
+        "х": "h",
+        "ц": "c",
+        "ч": "ch",
+        "ш": "sh",
+        "щ": "sch",
+        "ъ": "",
+        "ы": "y",
+        "ь": "",
+        "э": "e",
+        "ю": "yu",
+        "я": "ya",
+    }
+    lowered = value.lower()
+    converted = "".join(translit.get(ch, ch) for ch in lowered)
+    slug = re.sub(r"[^a-z0-9]+", "-", converted).strip("-")
+    slug = re.sub(r"-+", "-", slug)
+    return slug[:max_length].strip("-") or "unknown"
+
+
+def _strip_markdown(value: str) -> str:
+    value = re.sub(r"`([^`]+)`", r"\1", value)
+    value = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", value)
+    return value.replace("<br>", " ").replace("<br/>", " ").replace("<br />", " ").strip()
+
+
+def _split_markdown_row(line: str) -> list[str]:
+    stripped = line.strip()
+    if not stripped.startswith("|") or not stripped.endswith("|"):
+        return []
+    return [cell.strip() for cell in stripped.strip("|").split("|")]
+
+
+def _parse_index_rows(index_path: Path) -> list[dict[str, str]]:
+    rows: list[dict[str, str]] = []
+    headers: list[str] | None = None
+    for line in index_path.read_text(encoding="utf-8").splitlines():
+        cells = _split_markdown_row(line)
+        if not cells:
+            continue
+        if headers is None:
+            if cells[:4] == ["Date", "Company", "Role", "Track"]:
+                headers = cells
+            continue
+        if all(re.fullmatch(r":?-{3,}:?", cell) for cell in cells):
+            continue
+        if len(cells) < len(headers):
+            cells.extend([""] * (len(headers) - len(cells)))
+        rows.append(dict(zip(headers, cells, strict=False)))
+    return rows
+
+
+def _extract_code_path(value: str) -> str | None:
+    match = re.search(r"`([^`]+)`", value)
+    if match:
+        return match.group(1)
+    link = re.search(r"\[[^\]]+\]\(([^)]+)\)", value)
+    if link:
+        return link.group(1)
+    text = value.strip()
+    if text and ("/" in text or text.endswith(".md")):
+        return text
+    return None
+
+
+def _find_effort_class(*values: str) -> str | None:
+    text = " ".join(values)
+    match = re.search(r"\b([ABC][+-]?(?:-content)?-class)\b", text, flags=re.IGNORECASE)
+    if match:
+        return match.group(1)
+    match = re.search(r"\b([ABC][+-]?)-class\b", text, flags=re.IGNORECASE)
+    if match:
+        return f"{match.group(1).upper()}-class"
+    return None
+
+
+def _is_job_search_task(path: Path, text: str) -> bool:
+    haystack = f"{path.name}\n{text}".lower()
+    markers = [
+        "vacancy",
+        "ваканс",
+        "job-intake",
+        "employer",
+        "recruiter",
+        "linkedin",
+        "hh",
+        "cv",
+        "interview",
+        "screening",
+        "application",
+        "отклик",
+        "собесед",
+    ]
+    return any(marker in haystack for marker in markers)
+
+
+def _load_task_index(repo_root: Path) -> dict[str, list[tuple[Path, str]]]:
+    tasks: dict[str, list[tuple[Path, str]]] = {"active": [], "waiting": []}
+    for status in tasks:
+        task_dir = repo_root / "tasks" / status
+        if not task_dir.exists():
+            continue
+        for path in sorted(task_dir.glob("*.md")):
+            text = path.read_text(encoding="utf-8")
+            if _is_job_search_task(path, text):
+                tasks[status].append((path, text))
+    return tasks
+
+
+def _task_matches_entry(task_path: Path, task_text: str, row: dict[str, str]) -> bool:
+    company = _strip_markdown(row.get("Company", ""))
+    role = _strip_markdown(row.get("Role", ""))
+    stopwords = {
+        "analysis",
+        "application",
+        "architect",
+        "company",
+        "consultancy",
+        "cto",
+        "development",
+        "digital",
+        "director",
+        "engineering",
+        "global",
+        "group",
+        "dubai",
+        "cyprus",
+        "ireland",
+        "irish",
+        "latvia",
+        "london",
+        "moscow",
+        "remote",
+        "head",
+        "international",
+        "lead",
+        "manager",
+        "partner",
+        "product",
+        "recruitment",
+        "role",
+        "senior",
+        "software",
+        "technical",
+        "technology",
+        "technologies",
+        "unnamed",
+        "unknown",
+        "анализ",
+        "ваканс",
+        "директор",
+        "команд",
+        "компани",
+        "разработ",
+        "руковод",
+        "техничес",
+    }
+    primary_company = company.split("/")[0]
+    company_tokens = {
+        token
+        for token in re.findall(r"[a-zа-я0-9]{4,}", primary_company.lower(), flags=re.IGNORECASE)
+        if token not in stopwords
+    }
+    role_tokens = {
+        token
+        for token in re.findall(r"[a-zа-я0-9]{4,}", role.lower(), flags=re.IGNORECASE)
+        if token not in stopwords
+    }
+    if not company_tokens or not role_tokens:
+        return False
+    stem = task_path.stem.lower()
+    haystack = stem
+    company_match = any(token in haystack for token in company_tokens)
+    role_match = any(token in stem for token in role_tokens)
+    return company_match and role_match
+
+
+def _infer_historical_status(row: dict[str, str], task_status: str | None) -> str:
+    if task_status:
+        return task_status
+    text = " ".join(
+        _strip_markdown(row.get(key, ""))
+        for key in ("Decision", "Priority", "Next")
+    ).lower()
+    if any(marker in text for marker in ["waiting", "viewed", "sent", "interview", "screening", "in progress"]):
+        return "waiting"
+    if any(marker in text for marker in ["rejected", "closed", "archived", "expired", "skip"]):
+        return "historical_closed"
+    if any(marker in text for marker in ["parked", "market signal", "no active", "no action", "no by default"]):
+        return "historical_no_action"
+    if any(marker in text for marker in ["clarify", "maybe", "yes", "apply"]):
+        return "historical_open"
+    return "historical_backfill"
+
+
+def _resolve_artifact_path(repo_root: Path, path_value: str | None) -> str | None:
+    if not path_value:
+        return None
+    raw = path_value.strip()
+    if not raw:
+        return None
+    candidates = []
+    if raw.startswith("personal-projects/") or raw.startswith("tasks/") or raw.startswith("inbox/"):
+        candidates.append(repo_root / raw)
+    else:
+        candidates.append(repo_root / "personal-projects/personal-brand/workspace/job-intake" / raw)
+        candidates.append(repo_root / raw)
+    for candidate in candidates:
+        if candidate.exists():
+            try:
+                return candidate.relative_to(repo_root).as_posix()
+            except ValueError:
+                return candidate.as_posix()
+    return raw
+
+
+def _artifact_type(path: str) -> str:
+    if "/analyses/" in path:
+        return "analysis"
+    if "/jd-archive/" in path:
+        return "jd"
+    if "/search-runs/" in path:
+        return "search_run"
+    if "/prep/" in path:
+        return "prep"
+    if path.startswith("tasks/"):
+        return "task"
+    if path.startswith("inbox/"):
+        return "processed_trace"
+    if "/summaries/" in path:
+        return "summary"
+    return "artifact"
+
+
+def _build_backfill_entries(repo_root: Path, origin: str) -> tuple[list[VacancyBackfillEntry], dict[str, int]]:
+    index_path = repo_root / "personal-projects/personal-brand/workspace/job-intake/INDEX.md"
+    task_index = _load_task_index(repo_root)
+    entries: list[VacancyBackfillEntry] = []
+    stats = {"index_rows": 0, "active_tasks": 0, "waiting_tasks": 0, "missing_artifacts": 0}
+    used_ids: set[str] = set()
+    for row in _parse_index_rows(index_path):
+        stats["index_rows"] += 1
+        date = _strip_markdown(row.get("Date", ""))
+        company = _strip_markdown(row.get("Company", ""))
+        role = _strip_markdown(row.get("Role", ""))
+        verdict = _strip_markdown(row.get("Decision", ""))
+        selected_cv = _strip_markdown(row.get("CV", "")) or None
+        analysis = _resolve_artifact_path(repo_root, _extract_code_path(row.get("Analysis", "")))
+        task_status = None
+        task_path = None
+        for status, tasks in task_index.items():
+            for path, text in tasks:
+                if _task_matches_entry(path, text, row):
+                    task_status = status
+                    task_path = path.relative_to(repo_root).as_posix()
+                    stats[f"{status}_tasks"] += 1
+                    break
+            if task_path:
+                break
+        status = _infer_historical_status(row, task_status)
+        vacancy_id_base = f"backfill-{date}-{_slugify(company)}-{_slugify(role)}"
+        vacancy_id = vacancy_id_base
+        suffix = 2
+        while vacancy_id in used_ids:
+            vacancy_id = f"{vacancy_id_base}-{suffix}"
+            suffix += 1
+        used_ids.add(vacancy_id)
+        links: list[dict[str, str]] = []
+        for path_value in (analysis, task_path):
+            if not path_value:
+                continue
+            if not (repo_root / path_value).exists() and not path_value.startswith("../../"):
+                stats["missing_artifacts"] += 1
+            links.append({"path": path_value, "type": _artifact_type(path_value)})
+        entries.append(
+            VacancyBackfillEntry(
+                vacancy_id=vacancy_id,
+                origin=origin,
+                source=f"backfill:{origin}",
+                date=date,
+                company=company,
+                role=role,
+                status=status,
+                verdict=verdict,
+                effort_class=_find_effort_class(row.get("Priority", ""), row.get("Next", "")),
+                analysis_path=analysis,
+                task_path=task_path,
+                selected_cv_path=selected_cv,
+                artifact_links=tuple(links),
+            )
+        )
+    return entries, stats
+
+
+def generate_vacancy_backfill_manifest(repo_root: Path, output_path: Path, origin: str) -> None:
+    entries, stats = _build_backfill_entries(repo_root, origin)
+    payload = {
+        "schema_version": 1,
+        "kind": "job_search_vacancy_backfill",
+        "origin": origin,
+        "generated_at": _utc_now(),
+        "source_index": "personal-projects/personal-brand/workspace/job-intake/INDEX.md",
+        "policy": {
+            "mode": "registry_plus_active",
+            "pi_state_wins": True,
+            "processed_messages": "do_not_write_without_real_gmail_message_id",
+        },
+        "stats": stats | {"entries": len(entries)},
+        "entries": [
+            {
+                "vacancy_id": entry.vacancy_id,
+                "source": entry.source,
+                "date": entry.date,
+                "company": entry.company,
+                "role": entry.role,
+                "status": entry.status,
+                "verdict": entry.verdict,
+                "effort_class": entry.effort_class,
+                "analysis_path": entry.analysis_path,
+                "task_path": entry.task_path,
+                "selected_cv_path": entry.selected_cv_path,
+                "artifact_links": list(entry.artifact_links),
+            }
+            for entry in entries
+        ],
+    }
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(
+        json.dumps(
+            {"generated": str(output_path), "entries": len(entries), "stats": payload["stats"]},
+            ensure_ascii=False,
+            sort_keys=True,
+        )
+    )
+
+
+def _load_backfill_manifest(path: Path) -> dict:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("schema_version") != 1:
+        raise ValueError("manifest schema_version must be 1")
+    if payload.get("kind") != "job_search_vacancy_backfill":
+        raise ValueError("manifest kind must be job_search_vacancy_backfill")
+    if not isinstance(payload.get("entries"), list):
+        raise ValueError("manifest entries must be a list")
+    for index, entry in enumerate(payload["entries"]):
+        for key in ("vacancy_id", "source", "company", "role", "status"):
+            if not entry.get(key):
+                raise ValueError(f"entry {index} missing required field {key}")
+        if not str(entry["source"]).startswith("backfill:"):
+            raise ValueError(f"entry {index} source must start with backfill:")
+    return payload
+
+
+def _existing_vacancy(conn: sqlite3.Connection, entry: dict) -> sqlite3.Row | None:
+    return conn.execute(
+        """
+        SELECT vacancy_id, source, status, verdict, effort_class, analysis_path, task_path
+        FROM vacancies
+        WHERE vacancy_id = ?
+        """,
+        (entry["vacancy_id"],),
+    ).fetchone()
+
+
+def _should_update_existing(row: sqlite3.Row, entry: dict) -> bool:
+    if entry.get("status") in {"active", "waiting"}:
+        return True
+    return str(row["source"]).startswith("backfill:")
+
+
+def _entry_matches_existing(row: sqlite3.Row, entry: dict) -> bool:
+    fields = (
+        "status",
+        "verdict",
+        "effort_class",
+        "analysis_path",
+        "task_path",
+    )
+    return all((row[field] or None) == (entry.get(field) or None) for field in fields)
+
+
+def import_vacancy_backfill(db_path: Path, manifest_path: Path, mode: str) -> int:
+    payload = _load_backfill_manifest(manifest_path)
+    entries = payload["entries"]
+    counters = {
+        "entries": len(entries),
+        "would_insert": 0,
+        "would_update": 0,
+        "would_noop": 0,
+        "would_skip_existing": 0,
+        "inserted": 0,
+        "updated": 0,
+        "noop": 0,
+        "skipped_existing": 0,
+        "artifact_links": 0,
+        "conflicts": 0,
+    }
+    conflicts: list[dict[str, str]] = []
+    if mode == "dry-run":
+        if not db_path.exists():
+            counters["would_insert"] = len(entries)
+        else:
+            with connect(db_path) as conn:
+                for entry in entries:
+                    existing = _existing_vacancy(conn, entry)
+                    if existing is None:
+                        counters["would_insert"] += 1
+                    elif _entry_matches_existing(existing, entry):
+                        counters["would_noop"] += 1
+                    elif _should_update_existing(existing, entry):
+                        counters["would_update"] += 1
+                        if existing["status"] != entry["status"]:
+                            counters["conflicts"] += 1
+                            conflicts.append(
+                                {
+                                    "vacancy_id": entry["vacancy_id"],
+                                    "existing_status": existing["status"],
+                                    "incoming_status": entry["status"],
+                                }
+                            )
+                    else:
+                        counters["would_skip_existing"] += 1
+        print(json.dumps({"mode": mode, "db": str(db_path), "counters": counters, "conflicts": conflicts[:50]}, ensure_ascii=False, sort_keys=True))
+        return 0
+
+    init_db(db_path)
+    with connect(db_path) as conn:
+        for entry in entries:
+            existing = _existing_vacancy(conn, entry)
+            if existing is not None and _entry_matches_existing(existing, entry):
+                counters["noop"] += 1
+                continue
+            if existing is not None and not _should_update_existing(existing, entry):
+                counters["skipped_existing"] += 1
+                continue
+            values = (
+                entry["vacancy_id"],
+                entry["source"],
+                None,
+                None,
+                entry.get("company"),
+                entry.get("role"),
+                entry.get("verdict"),
+                entry.get("effort_class"),
+                entry.get("status"),
+                entry.get("analysis_path"),
+                entry.get("task_path"),
+                entry.get("selected_cv_path"),
+                None,
+            )
+            conn.execute(
+                """
+                INSERT INTO vacancies (
+                    vacancy_id,
+                    source,
+                    external_id,
+                    source_url,
+                    company,
+                    role,
+                    verdict,
+                    effort_class,
+                    status,
+                    analysis_path,
+                    task_path,
+                    selected_cv_path,
+                    cover_letter_path
+                )
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(vacancy_id) DO UPDATE SET
+                    company = COALESCE(excluded.company, vacancies.company),
+                    role = COALESCE(excluded.role, vacancies.role),
+                    verdict = COALESCE(excluded.verdict, vacancies.verdict),
+                    effort_class = COALESCE(excluded.effort_class, vacancies.effort_class),
+                    status = excluded.status,
+                    analysis_path = COALESCE(excluded.analysis_path, vacancies.analysis_path),
+                    task_path = COALESCE(excluded.task_path, vacancies.task_path),
+                    selected_cv_path = COALESCE(excluded.selected_cv_path, vacancies.selected_cv_path),
+                    updated_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
+                """,
+                values,
+            )
+            if existing is None:
+                counters["inserted"] += 1
+            else:
+                counters["updated"] += 1
+                if existing["status"] != entry["status"]:
+                    counters["conflicts"] += 1
+                    conflicts.append(
+                        {
+                            "vacancy_id": entry["vacancy_id"],
+                            "existing_status": existing["status"],
+                            "incoming_status": entry["status"],
+                        }
+                    )
+            for link in entry.get("artifact_links", []):
+                conn.execute(
+                    """
+                    INSERT INTO artifact_links (artifact_path, artifact_type, source, source_id)
+                    VALUES (?, ?, ?, ?)
+                    ON CONFLICT(artifact_path, source, source_id) DO UPDATE SET
+                        artifact_type = excluded.artifact_type
+                    """,
+                    (link["path"], link["type"], entry["source"], entry["vacancy_id"]),
+                )
+                counters["artifact_links"] += 1
+        conn.commit()
+    print(json.dumps({"mode": mode, "db": str(db_path), "counters": counters, "conflicts": conflicts[:50]}, ensure_ascii=False, sort_keys=True))
+    return 0
+
+
 def print_status(db_path: Path) -> None:
     if not db_path.exists():
         print(f"Database missing: {db_path}")
@@ -152,6 +708,20 @@ def print_status(db_path: Path) -> None:
                     f"- {row['lock_name']} owner={row['owner']} "
                     f"acquired_at={row['acquired_at']} expires_at={row['expires_at']}"
                 )
+        vacancy_rows = conn.execute(
+            """
+            SELECT source, status, COUNT(*) AS count
+            FROM vacancies
+            GROUP BY source, status
+            ORDER BY source, status
+            """
+        ).fetchall()
+        if not vacancy_rows:
+            print("Vacancies: none")
+        else:
+            print("Vacancies:")
+            for row in vacancy_rows:
+                print(f"- {row['source']} {row['status']}: {row['count']}")
 
 
 def acquire_lock(db_path: Path, lock_name: str, owner: str, ttl_seconds: int) -> int:
@@ -409,6 +979,26 @@ def parse_args() -> argparse.Namespace:
         help="Seed processed Gmail ids from Markdown monitor state files",
     )
     sub.add_parser("status", help="Print a compact runtime database status")
+    manifest_parser = sub.add_parser(
+        "generate-vacancy-backfill-manifest",
+        help="Generate a job-intake history backfill manifest from local Markdown",
+    )
+    manifest_parser.add_argument(
+        "--output",
+        required=True,
+        help="Manifest JSON path to write",
+    )
+    manifest_parser.add_argument(
+        "--origin",
+        default="local-personal-office-job-intake",
+        help="Backfill origin label used in vacancy source",
+    )
+    import_parser = sub.add_parser(
+        "import-vacancy-backfill",
+        help="Validate or apply a vacancy backfill manifest into SQLite",
+    )
+    import_parser.add_argument("--manifest", required=True)
+    import_parser.add_argument("--mode", required=True, choices=["dry-run", "apply"])
     lock_parser = sub.add_parser("acquire-lock", help="Acquire a TTL run lock")
     lock_parser.add_argument("--lock-name", required=True)
     lock_parser.add_argument("--owner", required=True)
@@ -478,6 +1068,10 @@ def main() -> int:
         print(f"Seeded {count} processed Gmail ids into {db_path}")
     elif args.command == "status":
         print_status(db_path)
+    elif args.command == "generate-vacancy-backfill-manifest":
+        generate_vacancy_backfill_manifest(repo_root, Path(args.output), args.origin)
+    elif args.command == "import-vacancy-backfill":
+        return import_vacancy_backfill(db_path, Path(args.manifest), args.mode)
     elif args.command == "acquire-lock":
         return acquire_lock(db_path, args.lock_name, args.owner, args.ttl_seconds)
     elif args.command == "release-lock":

@@ -77,6 +77,7 @@ Finish the Raspberry Pi job-search contour so the dedicated OpenClaw `job-search
 - Update 2026-07-02: Telegram outbound smoke passed after the USB migration using `openclaw message send --channel telegram --account job-search-telegram --target <configured target>`; OpenClaw reported `Sent via telegram. Message ID: 357`.
 - Update 2026-07-02: Fixed a sync race observed during the 16:23 monitor run. `run-pi-job-search-sync.sh` now checks SQLite runtime locks and skips sync while `pi-job-search-gmail-monitor` or `pi-job-search-telegram-intake` is active, avoiding partial run-log commits. Pi smoke passed with an active test lock, and the fix was pushed as `adb86e1 job-search: skip sync while runtime locks are active`.
 - Update 2026-07-02: Telegram outbound decision-packet smoke passed using the existing Telegram inbound Xapo intake as source truth. The packet included verdict, rationale, selected CV, cover-letter draft reference, next action, and artifact paths; OpenClaw sent it through `job-search-telegram` as Telegram message id `358`. Evidence: `automation/runs/2026-07-02-1649-pi-job-search-telegram-decision-packet-smoke.md`; synced in `46203e1 job-search: sync pi runtime artifacts`.
+- Update 2026-07-03: Pi job-search history backfill completed. Added `generate-vacancy-backfill-manifest` and `import-vacancy-backfill` to `tools/job-search-runtime/job_search_runtime.py`, generated `automation/state/job-search-backfill-manifest.json` from the local `job-intake/INDEX.md`, and applied it on the Pi canonical checkout. The Pi SQLite runtime now has 231 `backfill:local-personal-office-job-intake` vacancy rows and 262 artifact links, with zero import conflicts and no writes to `processed_messages`. Evidence: `automation/runs/2026-07-03-job-search-history-backfill.md`.
 
 ## Gmail/GCalendar Integration Options
 
@@ -204,3 +205,4 @@ Cons:
 8. Done 2026-07-02 for fresh Inbox scheduled monitor: processed fresh LinkedIn status/update messages and a thin alert from Gmail using Pi-local `google_workspace` and SQLite dedupe.
 9. Keep Option A only as a proof-of-concept fallback; do not treat workstation/Codex handoff as solved production architecture.
 10. Follow-up: observe the next scheduled run at about `2026-07-02 20:25 +07` with the sync-lock fix in place, then remove microSD rollback copies only after the storage acceptance window passes.
+11. Done 2026-07-03: backfill the Pi SQLite vacancy registry from the local job-intake history without reprocessing old Gmail messages.

@@ -40,6 +40,19 @@ Show a compact status:
 python3 tools/job-search-runtime/job_search_runtime.py status
 ```
 
+Generate and import the job-intake history backfill manifest:
+
+```bash
+python3 tools/job-search-runtime/job_search_runtime.py generate-vacancy-backfill-manifest --output automation/state/job-search-backfill-manifest.json
+python3 tools/job-search-runtime/job_search_runtime.py import-vacancy-backfill --manifest automation/state/job-search-backfill-manifest.json --mode dry-run
+python3 tools/job-search-runtime/job_search_runtime.py import-vacancy-backfill --manifest automation/state/job-search-backfill-manifest.json --mode apply
+```
+
+The importer writes `vacancies` and `artifact_links` only. It does not write
+`processed_messages` because historical rows do not prove a real Gmail message
+id. Existing non-backfill Pi rows win unless the incoming manifest row is an
+explicit `active` or `waiting` task state.
+
 Acquire and release a run lock:
 
 ```bash
