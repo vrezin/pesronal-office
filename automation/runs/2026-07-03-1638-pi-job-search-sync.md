@@ -1,0 +1,267 @@
+# Pi Job Search Sync
+
+- Started at: 2026-07-03T16:38:52+07:00
+- Root: `/home/openclaw/personal-office-agent/personal-office`
+- Remote: `origin`
+- Branch: `main`
+- Mode: `apply`
+- Status: running
+
+[job-search-sync] root=/home/openclaw/personal-office-agent/personal-office remote=origin branch=main mode=apply
+Initialized automation/state/job-search-runtime.sqlite
+Seeded 3 processed Gmail ids into automation/state/job-search-runtime.sqlite
+[job-search-sync] pulling origin/main
+From github.com:vrezin/pesronal-office
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[job-search-sync] no run command provided; initialized runtime state only
+[job-search-sync] blocked: disallowed path changes detected
+ M .codex/config.toml
+ M .gitignore
+ M automation/README.md
+ M automation/scripts/linkedin-mcp-client.py
+ M tools/README.md
+ M tools/headhunter-web-mcp/README.md
+ M tools/headhunter-web-mcp/hh_web/browser.py
+ M tools/headhunter-web-mcp/hh_web/pages.py
+ M tools/headhunter-web-mcp/hh_web/tools.py
+ M tools/headhunter-web-mcp/scripts/auth.sh
+ M tools/job-search-runtime/README.md
+ M tools/linkedin-mcp/README.md
+ M tools/linkedin-mcp/scripts/start-local.sh
+ M tools/raspberrypi-openclaw/job-search-contour-migration-2026-06-28.md
+?? automation/prompts/pi-archivist.md
+?? automation/rollups/
+?? automation/runs/2026-06-13-0401-hh-gmail-monitor.md
+?? automation/runs/2026-06-13-0401-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-13-0801-hh-gmail-monitor.md
+?? automation/runs/2026-06-13-0801-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-13-1201-hh-gmail-monitor.md
+?? automation/runs/2026-06-13-1201-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-13-1602-hh-gmail-monitor.md
+?? automation/runs/2026-06-13-1603-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-13-2001-hh-gmail-monitor.md
+?? automation/runs/2026-06-13-2001-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-14-0001-hh-gmail-monitor.md
+?? automation/runs/2026-06-14-0002-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-14-0400-hh-gmail-monitor.md
+?? automation/runs/2026-06-14-0401-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-14-0801-hh-gmail-monitor.md
+?? automation/runs/2026-06-14-0801-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-14-1200-hh-gmail-monitor.md
+?? automation/runs/2026-06-14-1201-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-14-1600-hh-gmail-monitor.md
+?? automation/runs/2026-06-14-1602-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-14-2000-hh-gmail-monitor.md
+?? automation/runs/2026-06-14-2001-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-15-0000-hh-gmail-monitor.md
+?? automation/runs/2026-06-15-0001-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-15-0907-hh-gmail-monitor.md
+?? automation/runs/2026-06-15-0907-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-15-1401-hh-gmail-monitor.md
+?? automation/runs/2026-06-15-1402-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-15-2201-hh-gmail-monitor.md
+?? automation/runs/2026-06-15-2201-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-17-hh-linkedin-mail-and-applications-scan.md
+?? automation/runs/2026-06-18-2201-hh-gmail-monitor.md
+?? automation/runs/2026-06-18-2201-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-18-gmail-check-blocked-token-expired.md
+?? automation/runs/2026-06-18-hh-linkedin-mail-scan-after-agent-restart.md
+?? automation/runs/2026-06-19-0932-manual-hh-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-19-1400-hh-gmail-monitor.md
+?? automation/runs/2026-06-19-1401-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-19-2200-hh-gmail-monitor.md
+?? automation/runs/2026-06-19-2202-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-20-1002-hh-gmail-monitor.md
+?? automation/runs/2026-06-20-1004-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-20-1015-linkedin-gmail-noise-cleanup-blocked.md
+?? automation/runs/2026-06-20-1401-hh-gmail-monitor.md
+?? automation/runs/2026-06-20-1401-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-21-1401-hh-gmail-monitor.md
+?? automation/runs/2026-06-21-1402-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-21-2200-hh-gmail-monitor.md
+?? automation/runs/2026-06-21-2201-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-22-0805-hh-gmail-monitor.md
+?? automation/runs/2026-06-22-0805-linkedin-gmail-monitor-blocked.md
+?? automation/runs/2026-06-22-1400-hh-gmail-monitor.md
+?? automation/runs/2026-06-22-1406-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-22-2201-hh-gmail-monitor.md
+?? automation/runs/2026-06-22-2201-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-22-manual-hh-linkedin-gmail-cleanup.md
+?? automation/runs/2026-06-23-0801-hh-gmail-monitor.md
+?? automation/runs/2026-06-23-0802-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-23-0955-hh-gmail-monitor.md
+?? automation/runs/2026-06-23-0956-linkedin-gmail-monitor.md
+?? automation/runs/2026-06-23-1400-hh-gmail-monitor.md
+?? automation/runs/2026-06-23-1401-linkedin-gmail-monitor.md
+?? automation/runs/2026-07-01-1456-pi-job-search-runtime-storage-foundation.md
+?? automation/runs/2026-07-01-1822-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-01-1829-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-01-1835-pi-job-search-telegram-intake.md
+?? automation/runs/2026-07-01-1842-pi-job-search-telegram-intake.md
+?? automation/runs/2026-07-01-1846-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-01-1850-pi-job-search-sync.md
+?? automation/runs/2026-07-01-1852-pi-job-search-sync.md
+?? automation/runs/2026-07-01-1854-pi-job-search-sync.md
+?? automation/runs/2026-07-01-1855-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-01-1857-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-01-1858-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-01-1901-pi-job-search-sync.md
+?? automation/runs/2026-07-01-1931-pi-job-search-sync.md
+?? automation/runs/2026-07-01-2002-pi-job-search-sync.md
+?? automation/runs/2026-07-01-2024-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-01-2027-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-01-2033-pi-job-search-sync.md
+?? automation/runs/2026-07-01-2104-pi-job-search-sync.md
+?? automation/runs/2026-07-01-2135-pi-job-search-sync.md
+?? automation/runs/2026-07-01-2207-pi-job-search-sync.md
+?? automation/runs/2026-07-01-2238-pi-job-search-sync.md
+?? automation/runs/2026-07-01-2310-pi-job-search-sync.md
+?? automation/runs/2026-07-01-2342-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0013-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0018-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-0020-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-0045-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0116-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0147-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0218-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0250-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0321-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0352-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0424-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-0424-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0426-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-0456-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0527-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0558-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0630-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0701-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0733-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0804-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0821-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-0823-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-0835-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0906-pi-job-search-sync.md
+?? automation/runs/2026-07-02-0937-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1008-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1039-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1110-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1142-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1214-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1219-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-1222-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-1246-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1317-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1349-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1420-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1451-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1523-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1555-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1623-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-1627-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-1627-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1641-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1649-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1649-pi-job-search-telegram-decision-packet-smoke.md
+?? automation/runs/2026-07-02-1657-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1729-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1746-hh-vacancy-134758284-smoke-test.md
+?? automation/runs/2026-07-02-1749-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-1752-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-1755-openclaw-intake-job-routing-smoke.md
+?? automation/runs/2026-07-02-1800-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1805-pi-job-search-handoff-dispatch.md
+?? automation/runs/2026-07-02-1810-pi-job-search-handoff-dispatch.md
+?? automation/runs/2026-07-02-1813-pi-job-search-handoff-dispatch.md
+?? automation/runs/2026-07-02-1820-openclaw-dispatcher-model-switch.md
+?? automation/runs/2026-07-02-1831-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1843-pi-job-search-handoff-dispatch.md
+?? automation/runs/2026-07-02-1848-linkedin-live-dispatcher-regression.md
+?? automation/runs/2026-07-02-1857-linkedin-duplicate-decision-leak-regression.md
+?? automation/runs/2026-07-02-1902-intake-bootstrap-dispatcher-cache-regression.md
+?? automation/runs/2026-07-02-1903-pi-job-search-sync.md
+?? automation/runs/2026-07-02-1909-pi-job-search-handoff-dispatch.md
+?? automation/runs/2026-07-02-1916-job-search-dispatch-timeout-postmortem.md
+?? automation/runs/2026-07-02-1916-pi-job-search-handoff-dispatch.md
+?? automation/runs/2026-07-02-1922-pi-job-search-handoff-dispatch.md
+?? automation/runs/2026-07-02-1935-pi-job-search-sync.md
+?? automation/runs/2026-07-02-2007-pi-job-search-sync.md
+?? automation/runs/2026-07-02-2026-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-02-2031-pi-job-search-handoff-dispatch.md
+?? automation/runs/2026-07-02-2033-linkedin-4431600451-dispatch-interrupted.md
+?? automation/runs/2026-07-02-2039-pi-job-search-sync.md
+?? automation/runs/2026-07-02-2111-pi-job-search-sync.md
+?? automation/runs/2026-07-02-2138-pi-job-search-handoff-dispatch.md
+?? automation/runs/2026-07-02-213832-pi-job-search-handoff-async-dispatch.out
+?? automation/runs/2026-07-02-213832-pi-job-search-handoff-async.md
+?? automation/runs/2026-07-02-214008-linkedin-4431600451-handoff-complete.md
+?? automation/runs/2026-07-02-2143-pi-job-search-sync.md
+?? automation/runs/2026-07-02-2214-pi-job-search-sync.md
+?? automation/runs/2026-07-02-2246-pi-job-search-sync.md
+?? automation/runs/2026-07-02-2318-pi-job-search-sync.md
+?? automation/runs/2026-07-02-2349-pi-job-search-sync.md
+?? automation/runs/2026-07-02-job-search-async-dispatch-design.md
+?? automation/runs/2026-07-03-0021-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0026-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-03-0052-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0124-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0155-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0227-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0259-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0331-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0402-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0418-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-03-0422-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-03-0434-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0505-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0536-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0608-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0640-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0712-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0743-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0814-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0826-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-03-0828-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-03-0846-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0917-pi-job-search-sync.md
+?? automation/runs/2026-07-03-0949-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1020-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1052-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1124-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1156-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1217-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-03-1218-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-03-122519-pi-archivist.md
+?? automation/runs/2026-07-03-1227-pi-job-search-sync.md
+?? automation/runs/2026-07-03-123017-pi-archivist.md
+?? automation/runs/2026-07-03-123259-pi-archivist.md
+?? automation/runs/2026-07-03-123315-pi-archivist.md
+?? automation/runs/2026-07-03-1258-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1329-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1400-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1430-linkedin-mcp-shared-runtime-cutover.md
+?? automation/runs/2026-07-03-1432-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1504-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1535-hh-web-shared-runtime-smoke.md
+?? automation/runs/2026-07-03-1535-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1607-pi-job-search-sync.md
+?? automation/runs/2026-07-03-1624-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-03-1625-pi-job-search-gmail-monitor.md
+?? automation/runs/2026-07-03-1638-pi-job-search-sync.md
+?? automation/scripts/run-pi-archivist.sh
+?? automation/systemd/personal-office-hh-direct-route.service
+?? automation/systemd/personal-office-hh-direct-route.timer
+?? automation/systemd/personal-office-linkedin-mcp.service
+?? automation/systemd/personal-office-pi-archivist.service
+?? automation/systemd/personal-office-pi-archivist.timer
+?? tools/job-search-runtime/run-headhunter-web-mcp.sh
+?? tools/job-search-runtime/setup-hh-direct-route.sh
+?? tools/job-search-runtime/setup-shared-env.sh
+?? tools/job-search-runtime/shared-requirements.txt
+?? tools/personal-office-archivist/
+
+## Wrapper Result
+
+- Finished at: 2026-07-03T16:38:55+07:00
+- Exit code: `3`
+- Status: blocked

@@ -1,0 +1,6 @@
+# Shared Python runtime dependencies for Personal Office job-search tools.
+#
+# System packages still belong in apt: python3/python3-venv, git, curl,
+# chromium/browser libraries, build-essential/python-dev when native wheels need
+# them. Python application packages belong here or in the local tool projects.
+linkedin-scraper-mcp==4.13.2

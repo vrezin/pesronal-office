@@ -1,0 +1,18 @@
+[Unit]
+Description=Personal Office LinkedIn MCP server
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/openclaw/personal-office-agent/personal-office/tools/linkedin-mcp
+Environment=LINKEDIN_MCP_PORT=8019
+Environment=LINKEDIN_CHROME_PATH=/usr/bin/chromium
+Environment=PERSONAL_OFFICE_JOB_SEARCH_VENV=/home/openclaw/personal-office-agent/personal-office/.runtime/job-search-venv
+Environment=PLAYWRIGHT_BROWSERS_PATH=/home/openclaw/personal-office-agent/personal-office/tools/linkedin-mcp/patchright-browsers
+Environment=PLAYWRIGHT_SKIP_BROWSER_GC=1
+ExecStart=/home/openclaw/personal-office-agent/personal-office/tools/linkedin-mcp/scripts/start-local.sh
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

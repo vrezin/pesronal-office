@@ -1,0 +1,10 @@
+[Unit]
+Description=Refresh Personal Office HH direct routes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=30min
+Unit=personal-office-hh-direct-route.service
+
+[Install]
+WantedBy=timers.target

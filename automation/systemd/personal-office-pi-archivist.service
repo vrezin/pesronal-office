@@ -1,0 +1,10 @@
+[Unit]
+Description=Personal Office Pi archivist
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/openclaw/personal-office-agent/personal-office
+Environment=PERSONAL_OFFICE_ROOT=/home/openclaw/personal-office-agent/personal-office
+Environment=PERSONAL_OFFICE_ARCHIVIST_MODE=dry-run
+Environment=PATH=/home/openclaw/.local/bin:/home/openclaw/.local/opt/node-v22-arm64/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/home/openclaw/personal-office-agent/personal-office/automation/scripts/run-pi-archivist.sh

@@ -34,6 +34,8 @@ class BrowserSession:
         self._slowmo = _env_int("HH_WEB_SLOWMO_MS", 0)
         self._timeout = _env_int("HH_WEB_TIMEOUT_MS", 15000)
         self._user_agent = _env("HH_WEB_USER_AGENT", "")
+        self._chromium_executable = _env("HH_WEB_CHROMIUM_EXECUTABLE", "")
+        self._chromium_no_sandbox = _env("HH_WEB_CHROMIUM_NO_SANDBOX", "0") == "1"
 
     @property
     def storage_state_path(self) -> Path:
@@ -51,10 +53,15 @@ class BrowserSession:
         if self._context is not None:
             return self._context
         pw = await self._ensure_playwright()
-        self._browser = await pw.chromium.launch(
-            headless=self._headless,
-            slow_mo=self._slowmo,
-        )
+        browser_args: dict = {
+            "headless": self._headless,
+            "slow_mo": self._slowmo,
+        }
+        if self._chromium_executable:
+            browser_args["executable_path"] = self._chromium_executable
+        if self._chromium_no_sandbox:
+            browser_args["args"] = ["--no-sandbox"]
+        self._browser = await pw.chromium.launch(**browser_args)
         launch_args: dict = {}
         if self._user_agent:
             launch_args["user_agent"] = self._user_agent

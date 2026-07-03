@@ -5,10 +5,18 @@ Web-based MCP server for working with hh.ru as an applicant, using browser sessi
 ## Setup
 
 ```bash
-cd tools/headhunter-web-mcp
-uv sync
+tools/job-search-runtime/setup-shared-env.sh
 playwright install chromium
 ```
+
+The target runtime is the shared Personal Office job-search environment:
+
+```text
+<repo-root>/.runtime/job-search-venv
+```
+
+Tool-local `.venv` directories are migration/fallback state, not the target
+steady state.
 
 ## Authentication
 
@@ -17,6 +25,24 @@ bash scripts/auth.sh
 ```
 
 Opens a headed browser, logs in manually, saves session to `.local/state/hh-storage-state.json`.
+The script uses the shared job-search runtime by default:
+
+```text
+<repo-root>/.runtime/job-search-venv
+```
+
+On the Pi, it also uses `/usr/bin/chromium` with `--no-sandbox` when available.
+
+Pi auth refresh flow:
+
+```bash
+ssh -Y openclaw@raspberrypi-codex
+cd <repo-root>
+bash tools/headhunter-web-mcp/scripts/auth.sh
+```
+
+After login completes, rerun `hh_web_healthcheck` from the shared runtime before
+deleting any old `.venv` fallback.
 
 Current local setup note:
 
@@ -24,13 +50,16 @@ Current local setup note:
 - The working applicant session state was copied from the working Linux host at `192.168.1.72`.
 - The local MCP runtime uses that copied `.local/state/hh-storage-state.json` in headless mode.
 - Do not commit `.local/` or print its contents; it contains authenticated HH cookies.
+- 2026-07-03 Pi shared-runtime smoke: the only available storage state was dated
+  2026-06-12 and opened an anonymous/login page. Refresh auth into the canonical
+  `.local/state/hh-storage-state.json` before treating HH Web as green.
 
 ## Usage
 
 The server runs over stdio MCP transport:
 
 ```bash
-uv run headhunter-web-mcp
+tools/job-search-runtime/run-headhunter-web-mcp.sh
 ```
 
 ## Codex Registration
@@ -39,8 +68,8 @@ Add to `.codex/config.toml`:
 
 ```toml
 [mcp_servers.headhunter_web]
-command = "/home/adre/.local/bin/uv"
-args = ["run", "--directory", "/home/adre/personal-office/tools/headhunter-web-mcp", "headhunter-web-mcp"]
+command = "<repo-root>/tools/job-search-runtime/run-headhunter-web-mcp.sh"
+args = []
 
 [mcp_servers.headhunter_web.env]
 UV_CACHE_DIR = "/home/adre/personal-office/.cache/uv"
@@ -212,3 +241,6 @@ status.
 | `HH_WEB_SLOWMO_MS` | `0` | Slow down actions by ms |
 | `HH_WEB_TIMEOUT_MS` | `15000` | Default timeout in ms |
 | `HH_WEB_USER_AGENT` | (empty) | Custom user agent |
+| `HH_WEB_CHROMIUM_EXECUTABLE` | (empty) | Optional system Chromium executable path |
+| `HH_WEB_CHROMIUM_NO_SANDBOX` | `0` | Pass `--no-sandbox` when launching Chromium |
+| `HH_WEB_NAV_TIMEOUT_MS` | `15000` | Navigation timeout in ms |

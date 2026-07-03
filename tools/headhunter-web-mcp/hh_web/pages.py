@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import re
 from urllib.parse import urlencode, urlparse
 
@@ -8,10 +9,23 @@ from playwright.async_api import Page
 from .models import ApplicationStatus, ResumeCard, ResumeDetails, VacancyCard
 
 
+def _nav_timeout(default: int = 15000) -> int:
+    value = os.environ.get("HH_WEB_NAV_TIMEOUT_MS", "")
+    return int(value) if value else default
+
+
+def _wait_until(default: str = "commit") -> str:
+    return os.environ.get("HH_WEB_WAIT_UNTIL", default)
+
+
+async def goto_hh(page: Page, url: str, *, timeout: int | None = None) -> None:
+    await page.goto(url, wait_until=_wait_until(), timeout=timeout or _nav_timeout())
+
+
 async def check_logged_in(page: Page) -> tuple[bool, str]:
     """Check if the user is logged in on hh.ru."""
     try:
-        await page.goto("https://hh.ru/applicant/resumes", wait_until="domcontentloaded", timeout=15000)
+        await goto_hh(page, "https://hh.ru/applicant/resumes")
         await page.wait_for_timeout(3000)
         url = page.url
         if "auth.hh.ru" in url or "/login" in url:
@@ -58,7 +72,7 @@ async def navigate_to_vacancy(page: Page, vacancy_id_or_url: str) -> str:
     """Navigate to a vacancy page. Returns the final URL."""
     vid = await extract_vacancy_id(vacancy_id_or_url)
     url = normalize_vacancy_url(vid)
-    await page.goto(url, wait_until="domcontentloaded", timeout=15000)
+    await goto_hh(page, url)
     await page.wait_for_timeout(1500)
     return page.url
 
@@ -371,7 +385,7 @@ async def parse_resumes(page: Page) -> tuple[list[ResumeCard], list[str]]:
     warnings: list[str] = []
     resumes: list[ResumeCard] = []
 
-    await page.goto("https://hh.ru/applicant/resumes", wait_until="domcontentloaded", timeout=15000)
+    await goto_hh(page, "https://hh.ru/applicant/resumes")
     await page.wait_for_timeout(3000)
 
     if "auth" in page.url or "login" in page.url:
@@ -508,7 +522,7 @@ async def parse_resume_details(page: Page, resume: str | None = None) -> tuple[R
     if not resume_id:
         return None, warnings
 
-    await page.goto(f"https://hh.ru/resume/{resume_id}?hhtmFrom=resume_list", wait_until="domcontentloaded", timeout=15000)
+    await goto_hh(page, f"https://hh.ru/resume/{resume_id}?hhtmFrom=resume_list")
     await page.wait_for_timeout(3000)
 
     if "auth" in page.url or "login" in page.url:
@@ -658,7 +672,7 @@ async def parse_applications(page: Page, max_pages: int = 4) -> tuple[list[dict]
         if page_num > 0:
             url = f"{url}?page={page_num}"
 
-        await page.goto(url, wait_until="domcontentloaded", timeout=15000)
+        await goto_hh(page, url)
         await page.wait_for_timeout(2500)
 
         if "auth" in page.url or "login" in page.url:

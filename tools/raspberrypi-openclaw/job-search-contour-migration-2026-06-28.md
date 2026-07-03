@@ -65,6 +65,7 @@ Excluded or not treated as authoritative:
 - 2026-07-01 Google Workspace read-only smoke note: Gmail label listing returned 49 labels and Google Calendar listing returned 6 calendars. No Gmail message bodies or calendar event details were read.
 - 2026-07-01 OpenClaw note: `google_workspace` is enabled as a stdio MCP server through `start-google-workspace-mcp.sh`; `openclaw mcp probe google_workspace --json` passes and exposes 11 read-oriented Gmail/Calendar tools plus auth/resource/prompt helpers.
 - 2026-07-01 Pi-local Gmail routing smoke note: the `job-search` agent searched archived Gmail through `google_workspace`, read minimal content for one HH and one LinkedIn message, classified both as `new_vacancy` digests, recognized both as already-processed duplicates, and made no-op routing decisions. Run log: `automation/runs/2026-07-01-1248-pi-gmail-e2e-routing-smoke.md`.
+- 2026-07-03 shared-runtime migration note: the old `job-search-contour` remains historical runtime/auth context only. New job-search Python dependencies should run from the canonical Personal Office shared runtime at `<repo-root>/.runtime/job-search-venv`; the LinkedIn MCP Pi service template now lives in `automation/systemd/personal-office-linkedin-mcp.service`.
 
 ## Pi State After This Pass
 

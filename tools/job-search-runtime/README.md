@@ -8,6 +8,11 @@ This is not the Personal Office source of truth. Canonical outcomes still belong
 
 - `schema.sql` - SQLite schema for runtime dedupe, locks, cursors, runs, Telegram updates, and artifact mappings.
 - `job_search_runtime.py` - standard-library CLI for initializing and inspecting the SQLite database.
+- `shared-requirements.txt` - shared Python runtime requirements for job-search MCP/tools that are not owned by a local project.
+- `setup-shared-env.sh` - rebuilds the shared job-search Python runtime.
+- `setup-hh-direct-route.sh` - refreshes direct HH routes through the normal
+  LAN gateway so HH Web does not use the `personal-office` VPN policy route.
+- `run-headhunter-web-mcp.sh` - launches the active HH Web MCP through the shared runtime.
 
 ## Default Database
 
@@ -62,6 +67,84 @@ Use a custom database path:
 ```bash
 python3 tools/job-search-runtime/job_search_runtime.py --db /path/to/job-search-runtime.sqlite status
 ```
+
+## Shared Python Runtime
+
+Target shape for Pi and canonical Personal Office:
+
+- apt owns only the system base: `python3`, `python3-venv`, `git`, `curl`, Chromium/browser libraries, and native build libraries when needed.
+- Python application dependencies use one shared job-search runtime at:
+
+```text
+<repo-root>/.runtime/job-search-venv
+```
+
+- uv, when available, uses the shared cache:
+
+```text
+<repo-root>/.cache/uv
+```
+
+- Per-tool `.venv` directories under `tools/headhunter-web-mcp/` and
+  `tools/linkedin-mcp/` are migration/fallback state, not the target steady
+  state.
+- `tools/headhunter-mcp-server/` is a disabled historical HH API experiment.
+  There is no usable API key/OAuth contour for the applicant workflow, so the
+  shared runtime must not install or launch it. HH Web is the only active HH MCP
+  contour.
+- `tools/zenmoney-mcp/.venv` is outside this policy because finance tooling is a
+  separate sensitive contour.
+
+Build or refresh the shared runtime:
+
+```bash
+tools/job-search-runtime/setup-shared-env.sh
+```
+
+If Pi downloads from `files.pythonhosted.org` are slow, download large ARM
+wheels on the workstation and copy them into:
+
+```text
+<repo-root>/.cache/wheelhouse
+```
+
+Then rerun setup with normal pip behavior; direct file installs can also be used
+for especially large wheels before rerunning the setup script.
+
+The setup script uses `uv` when available and falls back to standard
+`python3 -m venv` plus pip when the Pi only has distro-managed Python.
+
+## HH Direct Route
+
+HH Web should bypass the `personal-office` VPN policy route. Russian HH pages
+can become slow or challenge-heavy when opened through the VPN path.
+
+On the Pi, install the system-level route refresher:
+
+```bash
+sudo cp automation/systemd/personal-office-hh-direct-route.service /etc/systemd/system/
+sudo cp automation/systemd/personal-office-hh-direct-route.timer /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now personal-office-hh-direct-route.timer
+sudo systemctl start personal-office-hh-direct-route.service
+```
+
+The service resolves `hh.ru`, `www.hh.ru`, `auth.hh.ru`, and `api.hh.ru`, then
+adds `/32` routes for the current IPv4 addresses into table `51820` via the main
+LAN default gateway.
+
+The setup script installs:
+
+- shared standalone job-search packages from `shared-requirements.txt`;
+- editable/project dependencies from `tools/headhunter-web-mcp/`.
+
+LinkedIn currently starts through `tools/linkedin-mcp/scripts/start-local.sh`.
+That launcher now prefers `<repo-root>/.runtime/job-search-venv/bin/linkedin-mcp-server`
+and falls back to `tools/linkedin-mcp/.venv/bin/linkedin-mcp-server` while the
+Pi migration is in progress.
+
+After the shared runtime is verified on the Pi, the archivist may treat old
+job-search per-tool `.venv` directories as removable rebuildable runtime state.
 
 ## Rule
 

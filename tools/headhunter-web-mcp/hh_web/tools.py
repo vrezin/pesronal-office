@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import os
 import random
 import re
 
@@ -29,10 +30,16 @@ from .pages import (
     parse_search_results,
     parse_vacancy_page,
     resolve_resume_id,
+    goto_hh,
 )
 from .parser import raw_to_vacancy_full, vacancy_to_job_intake
 
 logger = logging.getLogger("hh_web.tools")
+
+
+def _nav_timeout(default: int = 15000) -> int:
+    value = os.environ.get("HH_WEB_NAV_TIMEOUT_MS", "")
+    return int(value) if value else default
 
 
 async def healthcheck() -> dict:
@@ -55,7 +62,7 @@ async def healthcheck() -> dict:
 
     try:
         page = await session.get_page()
-        await page.goto("https://hh.ru", wait_until="domcontentloaded", timeout=15000)
+        await goto_hh(page, "https://hh.ru", timeout=_nav_timeout())
         await page.wait_for_timeout(2000)
         hh_reachable = True
 
@@ -149,7 +156,7 @@ async def search_vacancies(
 
     pg = await session.new_page()
     try:
-        await pg.goto(search_url, wait_until="domcontentloaded", timeout=15000)
+        await goto_hh(pg, search_url)
         await pg.wait_for_timeout(2000)
 
         cards, total, warnings = await parse_search_results(pg)
@@ -245,7 +252,7 @@ async def get_suitable_vacancies(
             salary_from=salary_from,
             text=text,
         )
-        await search_page.goto(search_url, wait_until="domcontentloaded", timeout=15000)
+        await goto_hh(search_page, search_url)
         await search_page.wait_for_timeout(2500)
 
         cards, total, search_warnings = await parse_search_results(search_page)
@@ -483,7 +490,7 @@ async def open_chat_by_chat_id(chat_id: str) -> dict:
     warnings: list[str] = []
     try:
         url = f"https://hh.ru/applicant/resumes?dl_command=open_chat&chat_id={chat_id}"
-        await page.goto(url, wait_until="domcontentloaded", timeout=15000)
+        await goto_hh(page, url)
         await page.wait_for_timeout(3500)
 
         body = await page.inner_text("body")

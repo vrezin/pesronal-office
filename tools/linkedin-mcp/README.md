@@ -8,7 +8,8 @@ Codex connects to the local streamable HTTP endpoint at `http://127.0.0.1:8019/m
 ## What Lives Here
 
 - Authenticated browser profile copied from the working Linux host.
-- Local Python virtualenv with `linkedin-scraper-mcp` installed.
+- Shared Personal Office job-search Python runtime preferred. The old local
+  virtualenv fallback is migration-only and should not be used by the Pi service.
 - Helper scripts for start/stop and one-shot task execution.
 
 ## Run
@@ -16,13 +17,37 @@ Codex connects to the local streamable HTTP endpoint at `http://127.0.0.1:8019/m
 Start the server locally:
 
 ```bash
-./scripts/start.sh
+./scripts/start-local.sh
 ```
 
 Start the local agent-facing server on loopback:
 
 ```bash
 ./scripts/start-local.sh
+```
+
+`start-local.sh` first checks:
+
+```text
+<repo-root>/.runtime/job-search-venv/bin/linkedin-mcp-server
+```
+
+and falls back to:
+
+```text
+tools/linkedin-mcp/.venv/bin/linkedin-mcp-server
+```
+
+The Pi user service is managed from:
+
+```text
+automation/systemd/personal-office-linkedin-mcp.service
+```
+
+Build the shared runtime with:
+
+```bash
+tools/job-search-runtime/setup-shared-env.sh
 ```
 
 Start the daemon-friendly singleton wrapper:
@@ -52,7 +77,7 @@ Stop the server if it was started in background mode:
 ## Notes
 
 - Keep this tool local to `personal-office`; do not move auth material into company repos.
-- Do not commit `profile/`, `cookies.json`, browser caches, or the virtualenv.
+- Do not commit `profile/`, `cookies.json`, browser caches, or Python runtime directories.
 - If LinkedIn invalidates the copied session, log in again through this local profile and refresh the state here.
 - The Codex runtime configuration points to the streamable HTTP endpoint, not to a launcher script.
 - Use `scripts/start-daemon.sh` to ensure the server is running once per machine session.

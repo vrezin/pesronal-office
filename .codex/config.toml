@@ -24,8 +24,8 @@ url = "http://127.0.0.1:8019/mcp"
 approval_mode = "approve"
 
 [mcp_servers.headhunter_web]
-command = "/home/adre/.local/bin/uv"
-args = ["run", "--directory", "/home/adre/personal-office/tools/headhunter-web-mcp", "headhunter-web-mcp"]
+command = "/home/adre/personal-office/tools/job-search-runtime/run-headhunter-web-mcp.sh"
+args = []
 
 [mcp_servers.headhunter_web.env]
 UV_CACHE_DIR = "/home/adre/personal-office/.cache/uv"
@@ -50,4 +50,7 @@ approval_mode = "approve"
 approval_mode = "approve"
 
 [mcp_servers.headhunter_web.tools.hh_web_open_chat_by_chat_id]
+approval_mode = "approve"
+
+[mcp_servers.headhunter_web.tools.hh_web_list_resumes]
 approval_mode = "approve"

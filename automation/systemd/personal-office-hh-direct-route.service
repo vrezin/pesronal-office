@@ -1,0 +1,8 @@
+[Unit]
+Description=Personal Office HH direct route refresh
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/openclaw/personal-office-agent/personal-office/tools/job-search-runtime/setup-hh-direct-route.sh

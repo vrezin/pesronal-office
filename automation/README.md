@@ -10,6 +10,8 @@ Scheduled Personal Office jobs live here.
 - `cron/` - crontab snippets.
 - `state/` - last-run markers and idempotency state.
 - `runs/` - per-run logs written by scheduled agents.
+- `rollups/` - review-only cleanup rollups that allow old high-volume run logs
+  or receipt notes to be compacted later.
 
 ## Rule
 
@@ -21,7 +23,23 @@ Scheduled automation must not require Git commits. Run logs and state markers ar
 
 - `hh-gmail-monitor`
 - `linkedin-gmail-monitor` - uses the registered local LinkedIn MCP server from `.codex/config.toml`, with a loopback wrapper fallback if needed.
+- `linkedin-mcp` - Pi user service on `127.0.0.1:8019`; the service template is `automation/systemd/personal-office-linkedin-mcp.service` and it runs the shared job-search runtime from `<repo-root>/.runtime/job-search-venv`.
 - `pi-job-search-gmail-monitor` - Pi-primary OpenClaw job-search monitor. It uses Pi-local `google_workspace` Gmail access, `tools/job-search-runtime/` SQLite dedupe, and writes run logs/state without requiring Git commits.
+- `pi-archivist` - Pi-primary maintenance scanner and safe generated-file cleaner. It runs dry-run by default, writes cleanup candidates to `automation/runs/`, updates `automation/state/pi-archivist-state.md`, and leaves semantic Markdown as review-only until rollups/compaction preserve the useful facts.
+
+Job-search Python dependencies should converge on the shared runtime managed by:
+
+- `tools/job-search-runtime/setup-shared-env.sh`;
+- `<repo-root>/.runtime/job-search-venv`;
+- `<repo-root>/.cache/uv`.
+
+Use apt for system packages only. Do not create new per-tool `.venv` directories
+for job-search tools unless a version conflict is documented in that tool's
+README and in the rollout task.
+
+HH API is not an active contour. `tools/headhunter-mcp-server/` is retained only
+as historical reference because there is no usable API key/OAuth path for the
+applicant workflow. HH Web is the only active HH MCP contour.
 
 User-facing Telegram output belongs to the Pi `intake` secretary. Job-search
 monitors should write artifacts and structured handoffs, not stream logs or
@@ -31,6 +49,20 @@ Pi-primary scheduling is defined by:
 
 - `automation/systemd/personal-office-pi-job-search-gmail-monitor.service`;
 - `automation/systemd/personal-office-pi-job-search-gmail-monitor.timer`.
+
+Pi-primary LinkedIn MCP service is defined by:
+
+- `automation/systemd/personal-office-linkedin-mcp.service`.
+
+Pi-primary HH direct route refresh is defined by system-level templates:
+
+- `automation/systemd/personal-office-hh-direct-route.service`;
+- `automation/systemd/personal-office-hh-direct-route.timer`.
+
+Pi-primary archivist scheduling is defined by:
+
+- `automation/systemd/personal-office-pi-archivist.service`;
+- `automation/systemd/personal-office-pi-archivist.timer`.
 
 Pi-primary artifact sync is defined by:
 
@@ -52,38 +84,10 @@ General Pi intake secretary setup is scaffolded by:
 - `automation/scripts/setup-pi-intake-telegram-channel.sh`;
 - `tools/raspberrypi-openclaw/pi-intake-secretary-2026-07-02.md`.
 
-Pi intake-to-job-search dispatch is scaffolded by:
-
-- `automation/prompts/pi-job-search-handoff-dispatch.md`;
-- `automation/scripts/dispatch-pi-job-search-handoff.sh`.
-
 The intended Telegram front door is `personal-office-intake-telegram`, bound to
 the `intake` agent. `job-search` should not have a direct Telegram binding; it
 should receive handoffs from intake and write structured results back for
 intake/output formatting.
-
-Ad-hoc job-search requests from Telegram should use async dispatch:
-
-- `automation/scripts/enqueue-pi-job-search-handoff.sh` - called by intake after
-  it creates a handoff; returns quickly so Telegram can acknowledge receipt.
-- `automation/scripts/dispatch-pi-job-search-handoff.sh` - called by the async
-  worker or by an operator for manual/synchronous dispatch.
-
-The async worker sends the final Telegram follow-up through
-`personal-office-intake-telegram` after the job-search result is recorded. This
-same follow-up pattern should be reused for actionable Gmail-derived A/B+
-vacancy decisions.
-
-For ad-hoc Telegram vacancy/recruiter inputs, the intended internal flow is:
-
-```text
-Telegram -> intake -> job-search handoff artifact
-         -> enqueue-pi-job-search-handoff.sh
-         -> immediate intake acknowledgement
-         -> async worker -> dispatch-pi-job-search-handoff.sh
-         -> job-search structured handoff
-         -> Telegram follow-up through intake account
-```
 
 The active path is OpenClaw Gateway routing, not scheduled `openclaw message read`.
 Telegram account `personal-office-intake-telegram` should be bound to the
