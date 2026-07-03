@@ -10,7 +10,7 @@
 - Salary: not stated
 - Link: https://novosibirsk.hh.ru/vacancy/133129099
 - Archive file: `jd-archive/2026-06-23-noosfera-cto-head-engineering-tech-lead.md`
-- Current status: applied / waiting for employer response on 2026-06-23
+- Current status: rejected by employer on 2026-06-24
 
 ## Raw JD Summary
 
@@ -100,5 +100,6 @@ Prior context: НООСФЕРА already appeared in the intake as a separate AI-
 ## Decision
 
 - Apply: sent on 2026-06-23
-- Priority: B-class / medium-high
-- Next action: wait for employer response. If they reply, clarify compensation, product domain, team size and hands-on depth.
+- Status update: HH rejection received on 2026-06-24 in Gmail message `19efa122ccf2f038`.
+- Priority: closed
+- Next action: no follow-up unless a direct recruiter or hiring manager reopens the conversation with materially different context.

@@ -2,7 +2,7 @@
 
 Date: 2026-06-23
 Source: user-pasted HH vacancy links
-Status: processed; four B/B-C applications sent
+Status: processed; four B/B-C applications sent; КОРУС invitation received 2026-06-25
 
 ## Effort Rule Applied
 
@@ -34,7 +34,15 @@ Applications sent by user on 2026-06-23:
 3. КОРУС `134377392`.
 4. Цифра `134172529`.
 
-Current next action: wait for employer responses. Do not tailor more materials unless a human reply arrives.
+Current next action: reply to the КОРУС HH chat invitation; keep waiting for the remaining employer responses. Do not tailor more materials unless a human reply arrives.
+
+## 2026-06-25 КОРУС Invitation Update
+
+HH Gmail message `19efc1658940ce9e` says КОРУС replied to the `Корпоративный архитектор (ИТ-архитектура)` application:
+
+> Добрый день! Спасибо за ваш отклик и интерес к вакансии Корпоративный архитектор (ИТ-архитектура)! Готовы обсудить детали?
+
+The КОРУС lane is now active/high-priority. Reply in HH chat and clarify remote/hybrid format, ERP/integrator hard filters, presale-vs-delivery split, architecture authority and compensation.
 
 ## Fast Apply Text
 

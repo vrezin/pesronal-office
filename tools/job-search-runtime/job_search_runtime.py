@@ -363,12 +363,14 @@ def _resolve_artifact_path(repo_root: Path, path_value: str | None) -> str | Non
     else:
         candidates.append(repo_root / "personal-projects/personal-brand/workspace/job-intake" / raw)
         candidates.append(repo_root / raw)
+    root_resolved = repo_root.resolve()
     for candidate in candidates:
         if candidate.exists():
+            resolved = candidate.resolve()
             try:
-                return candidate.relative_to(repo_root).as_posix()
+                return resolved.relative_to(root_resolved).as_posix()
             except ValueError:
-                return candidate.as_posix()
+                return resolved.as_posix()
     return raw
 
 
@@ -651,6 +653,10 @@ def import_vacancy_backfill(db_path: Path, manifest_path: Path, mode: str) -> in
                             "incoming_status": entry["status"],
                         }
                     )
+            conn.execute(
+                "DELETE FROM artifact_links WHERE source = ? AND source_id = ?",
+                (entry["source"], entry["vacancy_id"]),
+            )
             for link in entry.get("artifact_links", []):
                 conn.execute(
                     """

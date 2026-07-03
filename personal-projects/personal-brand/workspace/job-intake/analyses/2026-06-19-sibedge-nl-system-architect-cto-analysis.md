@@ -7,7 +7,7 @@ Sources:
 - Sibedge partner posting: https://hh.ru/vacancy/134364162
 - Direct employer posting / ООО НЛ Континент: https://novosibirsk.hh.ru/vacancy/133500815
 
-Status: applied / recruiter call completed / LinkedIn recruiter invite pending decision
+Status: 2026-07-03 follow-up held / waiting for HR feedback
 
 ## Verdict
 
@@ -20,6 +20,14 @@ This is materially relevant: the role is not a pure 1C implementation PM. It is 
 2026-06-22 call note: user learned that the IT department formed historically and grew organically. The company intends a strong transformation: separate IT into its own structure, build a fuller digital transformation contour, and move toward a product model at roughly 50-70 people. Practical focus is 1C plus fintech; the first task is creating an integration bus. The role sounds more leadership/management-oriented than pure hands-on architecture.
 
 2026-06-22 LinkedIn signal: Julia Lyova sent a LinkedIn connection invitation after the call flow was already active. Treat this as a contact-channel signal for the same Sibedge/NL process, not a new vacancy.
+
+2026-07-02 technical interview note: the CTO-side technical interview was held. User's subjective read was normal / reasonably positive. The interviewer said that one hour was not enough, so a further interview or other next-step review may follow. Treat this as continued interest / open process, not as an offer-stage signal yet.
+
+2026-07-03 prep correction from user: AI was opened by the interviewer side during the 2026-07-02 conversation. Keep AI as a live secondary topic for the follow-up: practical engineering productivity, legacy-system analysis/documentation, support/process automation, quality controls and decision support. Do not let AI displace the core 1C/fintech integration-bus and architecture-transformation mandate.
+
+2026-07-02 evening scheduling note: Юля Лёва wrote that Алексей proposed continuing tomorrow at 10:30 MSK for 30 minutes. Vladimir confirmed he can attend. The follow-up is scheduled for 2026-07-03 14:30-15:00 Novosibirsk / 10:30-11:00 MSK by Microsoft Teams. Meeting note: `../../../../calendar/meetings/2026-07-03-sibedge-nl-cto-follow-up.md`.
+
+2026-07-03 follow-up outcome: Vladimir and Алексей discussed a case. Next communicated state is to wait for HR feedback. Do not infer offer-stage state from this alone; no compensation, format, authority, or final decision path confirmation is recorded yet.
 
 ## Fit
 
@@ -86,11 +94,7 @@ Updated framing after call:
 
 ## Suggested Next Action
 
-Create direct approach route before generic HH application:
-
-- search NL International CTO/CPO/IT director / transformation leader;
-- search Sibedge hiring contact for this partnership vacancy;
-- if no contact found quickly, apply via HH with calibrated note emphasizing legacy decomposition, platform architecture, and honest 1C boundary.
+Wait for HR / Юля Лёва feedback after the 2026-07-03 case discussion. If the process continues, clarify whether hands-on 1C is a hard filter, and the practical decision path around system landscape, authority, first 90 days, compensation and office/hybrid format.
 
 ## Cover Letter Draft
 

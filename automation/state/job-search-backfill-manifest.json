@@ -2,7 +2,7 @@
   "schema_version": 1,
   "kind": "job_search_vacancy_backfill",
   "origin": "local-personal-office-job-intake",
-  "generated_at": "2026-07-03T11:03:23Z",
+  "generated_at": "2026-07-03T11:08:38Z",
   "source_index": "personal-projects/personal-brand/workspace/job-intake/INDEX.md",
   "policy": {
     "mode": "registry_plus_active",
@@ -106,13 +106,13 @@
       "status": "historical_closed",
       "verdict": "rejected / closed",
       "effort_class": "C-class",
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-07-03-hh-gmail-status-updates.md",
+      "analysis_path": "inbox/processed/2026-07-03-hh-gmail-status-updates.md",
       "task_path": null,
       "selected_cv_path": "none",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-07-03-hh-gmail-status-updates.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-07-03-hh-gmail-status-updates.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -735,13 +735,13 @@
       "status": "historical_closed",
       "verdict": "rejected",
       "effort_class": null,
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-26-hh-improvado-kz-ai-principal-engineer-rejection.md",
+      "analysis_path": "inbox/processed/2026-06-26-hh-improvado-kz-ai-principal-engineer-rejection.md",
       "task_path": null,
       "selected_cv_path": "unknown",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-26-hh-improvado-kz-ai-principal-engineer-rejection.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-06-26-hh-improvado-kz-ai-principal-engineer-rejection.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -1097,12 +1097,12 @@
       "status": "waiting",
       "verdict": "moved out of job search",
       "effort_class": null,
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../personal-projects/opportunities/2026-07-02-techyons-implementation-partner.md",
+      "analysis_path": "personal-projects/opportunities/2026-07-02-techyons-implementation-partner.md",
       "task_path": "tasks/waiting/2026-06-25-techyons-implementation-partner-employer-response.md",
       "selected_cv_path": "LinkedIn profile / Easy Apply",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../personal-projects/opportunities/2026-07-02-techyons-implementation-partner.md",
+          "path": "personal-projects/opportunities/2026-07-02-techyons-implementation-partner.md",
           "type": "artifact"
         },
         {
@@ -1120,13 +1120,13 @@
       "status": "historical_closed",
       "verdict": "rejected / closed",
       "effort_class": "C-class",
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-28-linkedin-1c-pro-consulting-rejection.md",
+      "analysis_path": "inbox/processed/2026-06-28-linkedin-1c-pro-consulting-rejection.md",
       "task_path": null,
       "selected_cv_path": "LinkedIn profile / Easy Apply",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-28-linkedin-1c-pro-consulting-rejection.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-06-28-linkedin-1c-pro-consulting-rejection.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -1261,12 +1261,12 @@
       "status": "historical_no_action",
       "verdict": "parked / Lisbon on-site gate",
       "effort_class": "B-class",
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../automation/runs/2026-06-25-0802-linkedin-gmail-monitor.md",
+      "analysis_path": "automation/runs/2026-06-25-0802-linkedin-gmail-monitor.md",
       "task_path": null,
       "selected_cv_path": "AI Transformation Lead - AI Automation Architect.pdf only if reopened",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../automation/runs/2026-06-25-0802-linkedin-gmail-monitor.md",
+          "path": "automation/runs/2026-06-25-0802-linkedin-gmail-monitor.md",
           "type": "artifact"
         }
       ]
@@ -1280,12 +1280,12 @@
       "status": "historical_no_action",
       "verdict": "parked / Prague hybrid and PM-heavy",
       "effort_class": "C-class",
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../automation/runs/2026-06-25-0802-linkedin-gmail-monitor.md",
+      "analysis_path": "automation/runs/2026-06-25-0802-linkedin-gmail-monitor.md",
       "task_path": null,
       "selected_cv_path": "none recommended",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../automation/runs/2026-06-25-0802-linkedin-gmail-monitor.md",
+          "path": "automation/runs/2026-06-25-0802-linkedin-gmail-monitor.md",
           "type": "artifact"
         }
       ]
@@ -1432,13 +1432,13 @@
       "status": "historical_closed",
       "verdict": "rejected",
       "effort_class": null,
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-24-hh-gmail-status-updates.md",
+      "analysis_path": "inbox/processed/2026-06-24-hh-gmail-status-updates.md",
       "task_path": null,
       "selected_cv_path": "unknown",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-24-hh-gmail-status-updates.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-06-24-hh-gmail-status-updates.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -1451,13 +1451,13 @@
       "status": "historical_closed",
       "verdict": "rejected",
       "effort_class": null,
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-25-hh-gmail-status-updates.md",
+      "analysis_path": "inbox/processed/2026-06-25-hh-gmail-status-updates.md",
       "task_path": null,
       "selected_cv_path": "unknown",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-25-hh-gmail-status-updates.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-06-25-hh-gmail-status-updates.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -1470,13 +1470,13 @@
       "status": "historical_closed",
       "verdict": "rejected",
       "effort_class": null,
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-24-hh-gmail-status-updates.md",
+      "analysis_path": "inbox/processed/2026-06-24-hh-gmail-status-updates.md",
       "task_path": null,
       "selected_cv_path": "unknown",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-24-hh-gmail-status-updates.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-06-24-hh-gmail-status-updates.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -1489,13 +1489,13 @@
       "status": "historical_closed",
       "verdict": "rejected",
       "effort_class": null,
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-23-hh-gmail-status-updates.md",
+      "analysis_path": "inbox/processed/2026-06-23-hh-gmail-status-updates.md",
       "task_path": null,
       "selected_cv_path": "unknown",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-23-hh-gmail-status-updates.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-06-23-hh-gmail-status-updates.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -1508,13 +1508,13 @@
       "status": "historical_closed",
       "verdict": "rejected",
       "effort_class": null,
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-23-hh-gmail-status-updates.md",
+      "analysis_path": "inbox/processed/2026-06-23-hh-gmail-status-updates.md",
       "task_path": null,
       "selected_cv_path": "unknown",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-23-hh-gmail-status-updates.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-06-23-hh-gmail-status-updates.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -1527,13 +1527,13 @@
       "status": "historical_closed",
       "verdict": "rejected",
       "effort_class": null,
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-23-hh-gmail-status-updates.md",
+      "analysis_path": "inbox/processed/2026-06-23-hh-gmail-status-updates.md",
       "task_path": null,
       "selected_cv_path": "Product Engineering or Stability & Governance, depending on exact variant",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-23-hh-gmail-status-updates.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-06-23-hh-gmail-status-updates.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -2018,13 +2018,13 @@
       "status": "waiting",
       "verdict": "rejected / closed",
       "effort_class": null,
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-07-01-korus-corporate-architect-rejection.md",
+      "analysis_path": "inbox/processed/2026-07-01-korus-corporate-architect-rejection.md",
       "task_path": null,
       "selected_cv_path": "Director of Development - Business Unit Technical Leader.pdf",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-07-01-korus-corporate-architect-rejection.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-07-01-korus-corporate-architect-rejection.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -2037,13 +2037,13 @@
       "status": "waiting",
       "verdict": "applied / waiting",
       "effort_class": "C-class",
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-23-hh-architecture-links-a-b-c-triage.md",
+      "analysis_path": "inbox/processed/2026-06-23-hh-architecture-links-a-b-c-triage.md",
       "task_path": null,
       "selected_cv_path": "CTO - Head of Engineering - Stability and Governance.pdf",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-06-23-hh-architecture-links-a-b-c-triage.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-06-23-hh-architecture-links-a-b-c-triage.md",
+          "type": "processed_trace"
         }
       ]
     },
@@ -4193,13 +4193,13 @@
       "status": "historical_closed",
       "verdict": "rejected / closed",
       "effort_class": null,
-      "analysis_path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-07-02-hh-tensor-head-development-direction-rejection.md",
+      "analysis_path": "inbox/processed/2026-07-02-hh-tensor-head-development-direction-rejection.md",
       "task_path": null,
       "selected_cv_path": "CTO - Head of Engineering - Stability and Governance.pdf",
       "artifact_links": [
         {
-          "path": "personal-projects/personal-brand/workspace/job-intake/../../../../inbox/processed/2026-07-02-hh-tensor-head-development-direction-rejection.md",
-          "type": "artifact"
+          "path": "inbox/processed/2026-07-02-hh-tensor-head-development-direction-rejection.md",
+          "type": "processed_trace"
         }
       ]
     },

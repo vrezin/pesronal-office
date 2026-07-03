@@ -112,3 +112,36 @@ The first thing I would want to understand is where WHMCS is currently most deep
 ## Company Remark - Hiring Signal
 
 For a CTO-level role, requesting a unilateral candidate video before even a short intro call is an asymmetric screening process. It asks the candidate to invest personal/reputational effort before the employer has confirmed context, budget, legal setup, decision-maker access, or basic mutual fit. Treat this as a negative hiring signal and reduce confidence in the employer unless they later move to a normal conversation.
+
+## Interview Scheduling / Missed Call Update - 2026-06-26
+
+- Ana Bundalo Milkovic invited the user to schedule an interview for the `Engineering Team Lead` position.
+- User replied on 2026-06-22 that he remained interested.
+- Call was scheduled for 2026-06-26 17:00-17:30 Novosibirsk Time.
+- Ana wrote at 17:06 that she was waiting on the call.
+- User replied at 17:21 apologizing and asking to reschedule because of an emergency / hospital situation.
+- 2026-07-02: Ana replied warmly, hoped Vladimir had recovered, and approved rescheduling through Calendly: `https://calendly.com/ana-rapidseedbox/30min`.
+- Timeline nuance: HH already showed `Собеседование` by 2026-06-12 for the 2026-06-08 RapidSeedbox role, but that status corresponded to an automated/form screening step with a video request, not a real human interview signal. The first normal human scheduling email from Ana arrived only on 2026-06-22, roughly two weeks after initial intake/application date.
+- User reassessment on 2026-07-02: the one-week response latency after an accident/hospital reschedule request is a poor recruiting/operating signal for a CTO / leadership hire. Combined with the slow real-human scheduling response, earlier automated/form video-screening step, and `Fractional CTO` vs `Engineering Team Lead` title mismatch, the process should not receive active investment.
+- 2026-07-02 scheduling update: a low-priority fallback call was booked for 2026-07-03 16:00-16:30 Novosibirsk Time.
+- Current state: parked by default / low-investment call scheduled. Use the call only to clarify title, compensation, 4h/day/full-time shape, PHP/WHMCS depth and decision-maker access.
+
+## Rescheduled Call Live Clarification - 2026-07-03
+
+- Role is presented as CTO.
+- Commitment: 20 hours/week.
+- Compensation: 50 USD/hour.
+- Approximate gross monthly run-rate: 4,000 USD/month.
+- Goal is migration from PHP to a more modern stack.
+- Future PHP development is not expected; PHP/WHMCS is the legacy source context, not the target hands-on development lane.
+- If the process continues, the next conversation is expected to be with the CEO.
+- Interview loop remains heavy for the opportunity size: four more stages, including two technical interviews.
+
+Updated assessment: role/time/compensation are no longer vague, but the process
+still deserves a low-investment filter. Continue only if the role stays true
+playing CTO ownership and any test task / technical loop is proportional to a
+20-hour/week, 50 USD/hour fractional scope. The PHP-specific fit risk is lower
+if the role is genuinely migration leadership rather than ongoing PHP feature
+development. CEO access is a positive signal; if it happens, use it to confirm
+true ownership, decision authority, first-90-day success criteria and whether the
+remaining interview loop is proportional.

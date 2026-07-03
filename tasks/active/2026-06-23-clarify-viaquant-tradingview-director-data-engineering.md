@@ -4,8 +4,8 @@
 - Status: active
 - Source: LinkedIn Gmail monitor
 - LinkedIn job id: `4431391556`
-- Related analysis: `../../personal-projects/personal-brand/workspace/job-intake/analyses/parked/2026-06-23-viaquant-partners-director-data-engineering-analysis.md`
-- JD archive: `../../personal-projects/personal-brand/workspace/job-intake/jd-archive/parked/2026-06-23-viaquant-partners-director-data-engineering.md`
+- Related analysis: `personal-projects/personal-brand/workspace/job-intake/summaries/2026-07-01-closed-parked-vacancies-rollup.md`
+- JD archive: `personal-projects/personal-brand/workspace/job-intake/summaries/2026-07-01-closed-parked-vacancies-rollup.md`
 
 ## Why This Exists
 

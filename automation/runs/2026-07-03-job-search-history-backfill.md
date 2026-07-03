@@ -87,6 +87,21 @@ Result after tightening no-op detection:
 - Would no-op: 231
 - Conflicts: 0
 
+## Artifact Availability Correction
+
+The first completion audit found that the Pi SQLite rows were present but many
+manifest-linked Markdown artifacts were not yet present in the Pi checkout.
+The manifest generator was corrected to normalize repo-relative paths, then
+the 189 unique manifest-linked local artifact files were copied to the Pi.
+
+Corrective apply result:
+
+- Would update after path normalization: 15
+- Updated rows: 15
+- Rewritten artifact links: 16
+- Missing manifest-linked artifacts on Pi after copy: 0
+- Final repeat dry-run: 231 no-op rows, 0 inserts, 0 updates, 0 conflicts
+
 ## Notes
 
 - Existing Pi state is treated as authoritative. This run inserted only new

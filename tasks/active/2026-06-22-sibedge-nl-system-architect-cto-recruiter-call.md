@@ -60,3 +60,13 @@ Google Calendar event creation was attempted and failed due connector tool/resou
 Interpretation: useful contact-channel signal, not a new vacancy and not a separate intake.
 
 Next action: decide whether to accept Julia's LinkedIn connection request if continuing the Sibedge/NL process is useful after the recruiter call.
+
+## 2026-06-24 Feedback Check
+
+The local artifacts do not contain an exact saved promise that NL / Sibedge feedback would arrive on 2026-06-24, but after the Monday recruiter call this is a reasonable same-week waiting item.
+
+Gmail checks on 2026-06-24 found no new matching message for Sibedge / NL / Юля Лёва / vacancy ids `134364162` or `133500815`.
+
+Later on 2026-06-24, Vladimir followed up directly. Юля Лёва replied that leadership is preparing for a Thursday/Friday strategy session and has not yet reviewed the recording and resume. She asked for time until Wednesday, interpreted as 2026-07-01. Vladimir agreed.
+
+Today's posture: no longer expect feedback on 2026-06-24. Keep waiting until the 2026-07-01 checkpoint; do not spend deep prep time unless a concrete reply arrives.
