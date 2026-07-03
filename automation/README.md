@@ -21,8 +21,8 @@ Scheduled automation must not require Git commits. Run logs and state markers ar
 
 ## Active Monitors
 
-- `hh-gmail-monitor`
-- `linkedin-gmail-monitor` - uses the registered local LinkedIn MCP server from `.codex/config.toml`, with a loopback wrapper fallback if needed.
+- `hh-gmail-monitor` - legacy local wrapper; disabled from local cron on 2026-07-03 after Pi-primary cutover. Keep only as a manual fallback.
+- `linkedin-gmail-monitor` - legacy local wrapper; disabled from local cron on 2026-07-03 after Pi-primary cutover. Keep only as a manual fallback.
 - `linkedin-mcp` - Pi user service on `127.0.0.1:8019`; the service template is `automation/systemd/personal-office-linkedin-mcp.service` and it runs the shared job-search runtime from `<repo-root>/.runtime/job-search-venv`.
 - `pi-job-search-gmail-monitor` - Pi-primary OpenClaw job-search monitor. It uses Pi-local `google_workspace` Gmail access, `tools/job-search-runtime/` SQLite dedupe, and writes run logs/state without requiring Git commits.
 - `pi-archivist` - Pi-primary maintenance scanner and safe generated-file cleaner. It runs dry-run by default, writes cleanup candidates to `automation/runs/`, updates `automation/state/pi-archivist-state.md`, and leaves semantic Markdown as review-only until rollups/compaction preserve the useful facts.
@@ -71,6 +71,11 @@ Pi-primary artifact sync is defined by:
 - `automation/systemd/personal-office-pi-job-search-sync.timer`.
 
 The sync timer is separate from monitor execution. It may commit/push allowed runtime artifacts after monitors finish, but monitors themselves must remain useful without Git.
+
+Local workstation cron is not an active job-search contour after the Pi-primary
+cutover. Do not schedule `run-hh-gmail-monitor.sh` or
+`run-linkedin-gmail-monitor.sh` locally unless the Pi contour is explicitly
+down and the local run is marked as a temporary fallback.
 
 Telegram ad-hoc job-search intake is scaffolded by:
 
