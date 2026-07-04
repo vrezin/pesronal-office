@@ -83,3 +83,38 @@ text is provided or `headhunter_web` is available in the job-search runtime.
   runtime even though the Pi HH Web contour exists.
 - Consider making the async wrapper write a final blocked status if a background
   worker exits before populating dispatch output.
+
+## Second Handoff Check
+
+At 2026-07-04T18:08:49+07:00, intake created a second Emphasoft handoff with a
+stable HH vacancy id:
+
+- Handoff: `personal-projects/personal-brand/workspace/job-intake/processed/2026-07-04-hh-vacancy-134804503-emphasoft-handoff.md`
+- HH vacancy id: `134804503`
+- Async log: `automation/runs/2026-07-04-180849-pi-job-search-handoff-async.md`
+- Async dispatch output: `automation/runs/2026-07-04-180849-pi-job-search-handoff-async-dispatch.md`
+
+The async dispatch output was again empty and no
+`pi-job-search-handoff-dispatch` lock remained active afterward. This means the
+PATH fix solved the direct dispatcher `node` failure, but the async background
+worker can still die before dispatch output is populated.
+
+A manual dispatcher retry completed:
+
+- Wrapper run log: `automation/runs/2026-07-04-1815-pi-job-search-handoff-dispatch.md`
+- Job-search evidence note: `automation/runs/2026-07-04-181624-pi-job-search-handoff-dispatch.md`
+- Dispatcher status: `completed`
+- Job-search verdict: `clarify`
+
+The second retry confirmed the remaining analysis blocker:
+
+- stable HH id exists;
+- no full JD artifact exists;
+- `headhunter_web` is still unavailable in the job-search handoff runtime;
+- no `INDEX.md`, `COMPANY_NOTES.md`, JD archive, analysis, CV, or cover-letter
+  artifact should be created from the link alone.
+
+Sent Telegram follow-up through `personal-office-intake-telegram`:
+
+- Target: `113174019`
+- Message id: `397`
