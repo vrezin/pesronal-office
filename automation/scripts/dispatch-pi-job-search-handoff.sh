@@ -23,6 +23,7 @@ fi
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="${PERSONAL_OFFICE_ROOT:-$(cd "$SCRIPT_DIR/../.." && pwd)}"
 OPENCLAW_BIN="${OPENCLAW_BIN:-/home/openclaw/.local/bin/openclaw}"
+export PATH="/home/openclaw/.local/opt/node-v22-arm64/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 PROMPT_FILE="${JOB_SEARCH_HANDOFF_PROMPT_FILE:-$ROOT/automation/prompts/pi-job-search-handoff-dispatch.md}"
 AGENT="${OPENCLAW_JOB_SEARCH_AGENT:-job-search}"
 TIMEOUT_SECONDS="${OPENCLAW_JOB_SEARCH_HANDOFF_TIMEOUT_SECONDS:-900}"

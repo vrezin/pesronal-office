@@ -26,6 +26,7 @@ fi
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="${PERSONAL_OFFICE_ROOT:-$(cd "$SCRIPT_DIR/../.." && pwd)}"
 OPENCLAW_BIN="${OPENCLAW_BIN:-/home/openclaw/.local/bin/openclaw}"
+export PATH="/home/openclaw/.local/opt/node-v22-arm64/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 CONFIG_DIR="${PERSONAL_OFFICE_CONFIG_DIR:-$HOME/.config/personal-office}"
 INTAKE_ENV_FILE="${INTAKE_TELEGRAM_ENV_FILE:-$CONFIG_DIR/intake-telegram.env}"
 DISPATCH_SCRIPT="${JOB_SEARCH_HANDOFF_DISPATCH_SCRIPT:-$ROOT/automation/scripts/dispatch-pi-job-search-handoff.sh}"
