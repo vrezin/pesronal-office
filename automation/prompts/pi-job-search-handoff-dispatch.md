@@ -31,9 +31,20 @@ structured handoff for the intake/output secretary.
   1. grep the exact LinkedIn job id in `inbox/processed/`, `automation/runs/`,
      and `personal-projects/personal-brand/workspace/job-intake/processed/`;
   2. call LinkedIn details once if available;
-  3. if the live source still exposes only status/posting shell and existing
+  3. inspect the full returned `sections.job_posting` text, not only the top
+     status/header block;
+  4. if `sections.job_posting` contains an "About this job" / "Об этой вакансии"
+     section with substantive role, company, requirements, compensation, or
+     logistics paragraphs, treat it as a full JD and create the normal JD archive
+     and analysis artifacts;
+  5. classify LinkedIn as `posting shell only` only when the returned text lacks
+     substantive body paragraphs after the header/status fields;
+  6. if the live source still exposes only status/posting shell and existing
      artifacts already record application/alert state, return `wait` or `no-op`
      without creating JD/archive/analysis artifacts.
+- When a LinkedIn MCP result is classified as thin, record the exact evidence for
+  that classification in the run log: which sections were present and which full
+  JD markers were missing.
 - If the vacancy/opportunity was already processed, do not duplicate artifacts.
 - If source enrichment fails but durable artifacts already exist, use the
   durable artifacts as the evidence source and record the live-source failure in
