@@ -12,7 +12,7 @@
 - Salary: not specified
 - Experience: not specified in extracted header
 - Schedule: not specified in extracted header
-- Application status: unknown
+- Application status: application submitted on 2026-07-04
 
 ## Raw JD
 

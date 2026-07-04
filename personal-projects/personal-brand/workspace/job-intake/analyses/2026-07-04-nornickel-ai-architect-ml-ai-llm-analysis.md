@@ -11,6 +11,7 @@
 - Salary: not specified
 - Link: `https://novosibirsk.hh.ru/vacancy/134845968`
 - Archive file: `personal-projects/personal-brand/workspace/job-intake/jd-archive/2026-07-04-nornickel-ai-architect-ml-ai-llm.md`
+- Application status: submitted on 2026-07-04
 
 ## Raw JD Summary
 
@@ -99,4 +100,4 @@
 
 - Apply: yes, if quick HH response with existing AI Transformation CV is possible
 - Priority: B+-class / go with clarification
-- Next action: send existing AI Transformation CV and the short cover note; clarify Moscow cadence, compensation and first-year mandate before any tailoring
+- Next action: application sent; wait for employer response and use the existing questions to clarify Moscow cadence, compensation and first-year mandate if they reply
