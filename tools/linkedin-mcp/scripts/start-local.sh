@@ -16,6 +16,30 @@ if [[ ! -x "$LINKEDIN_BIN" ]]; then
   exit 1
 fi
 
+PATCH_FILE="$DIR/patches/2026-07-04-job-posting-lazy-body-extraction.patch"
+if [[ -r "$PATCH_FILE" ]]; then
+  shopt -s nullglob
+  extractor_candidates=(
+    "$SHARED_VENV"/lib/python*/site-packages/linkedin_mcp_server/scraping/extractor.py
+    "$DIR"/.venv/lib/python*/site-packages/linkedin_mcp_server/scraping/extractor.py
+  )
+  shopt -u nullglob
+
+  for extractor_file in "${extractor_candidates[@]}"; do
+    if [[ ! -f "$extractor_file" ]]; then
+      continue
+    fi
+    if grep -q "_extract_loaded_job_posting" "$extractor_file"; then
+      continue
+    fi
+    if ! command -v patch >/dev/null 2>&1; then
+      echo "LinkedIn MCP runtime patch is pending, but 'patch' is unavailable." >&2
+      exit 1
+    fi
+    patch --forward --silent "$extractor_file" "$PATCH_FILE"
+  done
+fi
+
 args=(
   --transport streamable-http
   --host 127.0.0.1

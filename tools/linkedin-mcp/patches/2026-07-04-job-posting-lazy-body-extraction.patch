@@ -1,0 +1,142 @@
+--- extractor.py.orig
++++ extractor.py
+@@ -1278,6 +1278,129 @@
+             references=build_references(raw_result["references"], section_name),
+         )
+ 
++    async def _extract_loaded_job_posting(
++        self,
++        url: str,
++        max_scrolls: int | None = None,
++    ) -> ExtractedSection:
++        """Extract a job posting with job-page specific lazy-load handling.
++
++        LinkedIn job detail pages often render the top card immediately and
++        hydrate the actual "About this job" body only after wheel/inner-container
++        scrolling. The generic extractor can therefore capture a header-only
++        shell. This routine records multiple snapshots while scrolling and
++        expanding body controls, then returns the richest visible text.
++        """
++        await detect_rate_limit(self._page)
++
++        try:
++            await self._page.wait_for_selector("main", timeout=10000)
++        except PlaywrightTimeoutError:
++            logger.debug("No <main> element found on %s", url)
++
++        await handle_modal_close(self._page)
++
++        best_raw = ""
++        best_references: list[Reference] = []
++        scrolls = max_scrolls if max_scrolls is not None else 8
++
++        async def capture_snapshot() -> None:
++            nonlocal best_raw, best_references
++            raw_result = await self._extract_root_content(["main"])
++            raw = raw_result["text"]
++            if isinstance(raw, str) and len(raw) > len(best_raw):
++                best_raw = raw
++                best_references = raw_result["references"]
++
++        async def expand_visible_body_controls() -> None:
++            try:
++                await self._page.evaluate(
++                    r"""() => {
++                        const patterns = [
++                          /show\s+more/i,
++                          /see\s+more/i,
++                          /read\s+more/i,
++                          /развернуть/i,
++                          /показать\s+ещ[её]/i
++                        ];
++                        const controls = [
++                          ...document.querySelectorAll('main button, main a, main [role="button"]')
++                        ];
++                        for (const control of controls) {
++                          const text = (control.innerText || control.textContent || '').trim();
++                          if (!text) continue;
++                          if (!patterns.some(pattern => pattern.test(text))) continue;
++                          try { control.scrollIntoView({block: 'center'}); } catch {}
++                          try { control.click(); } catch {}
++                        }
++                    }"""
++                )
++            except Exception:
++                logger.debug("Job body expand controls failed", exc_info=True)
++
++        try:
++            await self._page.wait_for_function(
++                """() => {
++                    const main = document.querySelector('main');
++                    if (!main) return false;
++                    return main.innerText.length > 200;
++                }""",
++                timeout=10000,
++            )
++        except PlaywrightTimeoutError:
++            logger.debug("Job header content did not appear on %s", url)
++
++        await capture_snapshot()
++
++        viewport = self._page.viewport_size or {"width": 1280, "height": 720}
++        await self._page.mouse.move(viewport["width"] // 2, viewport["height"] // 2)
++
++        for _ in range(scrolls):
++            await expand_visible_body_controls()
++            await capture_snapshot()
++
++            try:
++                await self._page.mouse.wheel(0, 1600)
++            except Exception:
++                logger.debug("Job page mouse wheel failed", exc_info=True)
++
++            await self._scroll_main_scrollable_region(
++                position="bottom",
++                attempts=1,
++                pause_time=0.2,
++            )
++            await asyncio.sleep(0.8)
++            await capture_snapshot()
++
++            lowered = best_raw.lower()
++            if (
++                ("об этой вакансии" in lowered or "about this job" in lowered)
++                and len(best_raw) > 4000
++            ):
++                # One extra expand/capture pass catches text that appears after
++                # the body heading is visible.
++                await expand_visible_body_controls()
++                await asyncio.sleep(0.5)
++                await capture_snapshot()
++                break
++
++        if not best_raw:
++            return ExtractedSection(text="", references=[])
++
++        truncated = _truncate_linkedin_noise(best_raw)
++        if not truncated and best_raw.strip():
++            logger.warning(
++                "Job page %s returned only LinkedIn chrome (likely rate-limited)",
++                url,
++            )
++            return ExtractedSection(text=_RATE_LIMITED_MSG, references=[])
++
++        cleaned = _filter_linkedin_noise_lines(truncated)
++        return ExtractedSection(
++            text=cleaned,
++            references=build_references(best_references, "job_posting"),
++        )
++
+     async def _extract_overlay(
+         self,
+         url: str,
+@@ -2489,7 +2612,8 @@
+             {url, sections: {name: text}}
+         """
+         url = f"https://www.linkedin.com/jobs/view/{job_id}/"
+-        extracted = await self.extract_page(url, section_name="job_posting")
++        await self._navigate_to_page(url)
++        extracted = await self._extract_loaded_job_posting(url)
+ 
+         sections: dict[str, str] = {}
+         references: dict[str, list[Reference]] = {}
