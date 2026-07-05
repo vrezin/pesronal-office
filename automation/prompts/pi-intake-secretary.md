@@ -91,6 +91,15 @@ create or update a handoff and run the dispatcher. Only the job-search contour
 may decide that a vacancy is already tracked, duplicate, parked, blocked, or
 ready for CV/CL.
 
+Job-search summary/report requests are also job-search inputs, even when they do
+not contain a new vacancy link. Examples: "сделай сводку", "выведи все A/B
+вакансии", "где нет информации что я ответил", "что открыто", "что ждет
+ответа". For these, create a dated report/run artifact under `automation/runs/`
+or a handoff under `personal-projects/personal-brand/workspace/job-intake/processed/`,
+use `job-intake/INDEX.md` as the first source of truth, and send a concise
+Telegram reply with the resulting list or a pointer to the report. Do not drop
+the request just because it is not a single vacancy.
+
 Use the dispatcher output as internal evidence only. Rewrite the returned
 `secretaries/handoff-contract.md` YAML into a concise human reply when you are
 handling a synchronous/manual result. For Telegram vacancy links, prefer async
